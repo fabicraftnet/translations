@@ -1,0 +1,212 @@
+# ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+# ┃      HuskHomes Locales       ┃
+# ┃    Developed by William278   ┃
+# ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+# ┣╸ See plugin about menu for international locale credits
+# ┣╸ Formatted in MineDown: https://github.com/WiIIiam278/MineDown
+# ┗╸ Translate HuskHomes: https://william278.net/docs/huskhomes/translations
+
+locales:
+  teleporting_offline_player: "Teleportataan paikkaan, jossa pelaaja [%1%](#a78bfa) viimeksi poistui palvelimelta"
+  teleporting_warmup_start: "Teleportataan [%1%](#a78bfa) sekuntin kuluttua. Älä liiku"
+  teleporting_cancelled_movement: "[Odottava teleporttauspyyntö peruttu](#ef4444)"
+  teleporting_cancelled_damage: "[Odottava teleporttauspyyntö peruttu](#ef4444)"
+  teleporting_complete: "Teleporttaus onnistui"
+  teleporting_action_bar_warmup: "Teleportataan [%1%](#a78bfa)..."
+  teleporting_action_bar_processing: "Teleportataan..."
+  teleporting_action_bar_cancelled: "Teleporttaus peruutettu"
+  teleporting_other_complete: "Teleportattiin [%1%](#a78bfa) pelaajan [%2%](#a78bfa) luo"
+  teleporting_other_complete_position: "Teleportattiin [%1%](#a78bfa) sijaintiin [%2%](#a78bfa), [%3%](#a78bfa), [%4%](#a78bfa)"
+  teleporting_all_players: "Teleportataan kaikki pelaajat sijaintiisi..."
+  teleporting_random_generation: "Etsitään satunnaista turvallista sijaintia, johon sinut voidaan teleportata..." # Tähän joku hauska viesti
+  tpa_request_sent: "Lähetettiin pyyntö pelaajalle [%1%](#a78bfa)"
+  tpahere_request_sent: "Lähetettiin pyyntö pelaajalle [%1%](#a78bfa)"
+  tpaall_request_sent: "Lähetettiin pyyntö kaikille pelaajille"
+  tpa_request_received: "[%1%](#a78bfa) pyytää lupaa teleportata luoksesi"
+  tpahere_request_received: "[%1%](#a78bfa) pyytää sinua teleporttaamaan hänen luokse"
+  teleport_request_buttons: '[[Hyväksy…]](#4ade80 show_text=Hyväksy teleporttauspyyntö\nPaina hyväksyäksesi pelaajan %1% teleporttauspyyntö run_command=/huskhomes:tpaccept %1%)   [[Hylkää…]](#ef4444 show_text=Hylkää teleporttauspyyntö\nPaina hylkääksesi pelaajan %1% teleporttauspyynnön run_command=/huskhomes:tpdeny %1%)'
+  teleport_request_accepted_confirmation: "Teleporttauspyyntö hyväksytty"
+  teleport_request_declined_confirmation: "Teleporttauspyyntö hylätty"
+  teleport_request_accepted: "[%1%](#a78bfa) hyväksyi teleporttauspyyntösi"
+  teleport_request_declined: "[%1%](#a78bfa) hylkäsi teleporttauspyyntösi"
+  tpignore_toggle_on: "Teleporttaus [poistettu käytöstä](#a78bfa)"
+  tpignore_toggle_off: "Teleporttaus [käytössä](#a78bfa)"
+  tpignore_on_notification: "Sinulla on teleporttaus pois käytöstä %1%"
+  tpignore_toggle_button: "[[Ota käyttöön / poista käytöstä…]](#a78bfa show_text=Paina laittaaksesi teleporttauspyynnöt päälle / pois päältä run_command=/huskhomes:tpignore)"
+  edit_home_menu_title: "[Viewing details for your home,](#00fb9a) [%1%](#00fb9a bold)[:](#00fb9a)"
+  edit_home_menu_title_other: "[Viewing details for %1%'s home,](#00fb9a) [%2%](#00fb9a bold)[:](#00fb9a)"
+  edit_home_menu_metadata_private: '[%1%](show_text=Set Timestamp:\nWhen the home was set)   [%2%](show_text=Home ID:\n%3%)   [Private Home](show_text=Privacy:\nThe home is private to the owner)'
+  edit_home_menu_metadata_public: '[%1%](show_text=Set Timestamp:\nWhen the home was set)   [%2%](show_text=Home ID:\n%3%)   [Public Home](show_text=Privacy:\nAnyone can teleport to the home)'
+  edit_home_menu_description: '[%1%](show_text=Description:\n%2%)\n'
+  edit_home_menu_world: '[%1%](show_text=World:\nThe world where the home is set)'
+  edit_home_menu_world_server: '[%1%](show_text=World:\nThe world where the home is set)   [%2%](how_text=Server:\nThe server where the home is set)'
+  edit_home_menu_coordinates: '[x: %1%, y: %2%, z: %3%](#ffc43b-#f5c962 show_text=Coordinates:\nLocation of the home in the world\nyaw: %4%, pitch: %5%)\n'
+  edit_home_menu_use_buttons: "[[Teleporttaa...]](#00fb9a show_text=Paina teleportataksesi kotiin run_command=/huskhomes:home %1%)"
+  edit_home_menu_manage_buttons: '[[Poista...]]( show_text=Paina poistaaksesi kodin\nPoistoa ei voi peruuttaa suggest_command=/huskhomes:delhome %1%)   [[⚐ Relocate…]](#ffc43b-#f5c962 show_text=Click to relocate this home to your position run_command=/huskhomes:edithome %1% relocate)   %2%'
+  edit_home_menu_privacy_button_public: "[[Tee julkiseksi]](show_text=Click to open this home to the public run_command=/huskhomes:edithome %1% privacy)"
+  edit_home_menu_privacy_button_private: "[[Tee yksityiseksi]](show_text=Click to make this home private run_command=/huskhomes:edithome %1% privacy)"
+  edit_home_menu_meta_edit_buttons: "[[Nimeä uudelleen…]]( show_text=Paina ehdottaaksesi suggest_command=/huskhomes:edithome %1% rename )   [[Description…]](#bb50ff-#b43fff show_text=Click to suggest the edit description command suggest_command=/huskhomes:edithome %1% description )"
+  edit_home_privacy_public_success: "[Successfully made your home,](#00fb9a) [%1%](#00fb9a bold)[, open to the public.](#00fb9a)"
+  edit_home_privacy_public_success_other: "[Successfully made %1%'s home,](#00fb9a) [%2%](#00fb9a bold)[, open to the public.](#00fb9a)"
+  edit_home_privacy_private_success: "[Successfully made your home,](#00fb9a) [%1%](#00fb9a bold)[, private.](#00fb9a)"
+  edit_home_privacy_private_success_other: "[Successfully made %1%'s home,](#00fb9a) [%2%](#00fb9a bold)[, private.](#00fb9a)"
+  edit_home_update_location: "Koti asetettu nykyiseen sijaintiin"
+  edit_home_update_location_other: "Koti asetettu nykyiseen sijaintiin"
+  edit_home_update_description: '[Successfully changed the description of your home, %1%:](#00fb9a) \n[←](white) [Old:](#00fb9a) ["%2%"](gray)\n[→](white) [New:](#00fb9a) ["%3%" ](gray)'
+  edit_home_update_description_other: '[Successfully changed the description of %1%''s home, %2%:](#00fb9a) \n[←](white) [Old:](#00fb9a) ["%3%"](gray)\n[→](white) [New:](#00fb9a) ["%4%" ](gray)'
+  edit_home_update_name: "Nimettiin uudelleen koti: %2%"
+  edit_home_update_name_other: "Nimettiin uudelleen pelaajan %1% koti: %3%"
+  edit_warp_menu_title: "[Viewing details for the warp,](#00fb9a) [%1%](#00fb9a bold)[:](#00fb9a)"
+  edit_warp_menu_metadata: '[%1%](show_text=Set Timestamp:\nWarp luotu)   [%2%]( show_text=Warp ID:\n%3%)'
+  edit_warp_menu_description: '[%1%]( show_text=Kuvaus:\n%2%)\n'
+  edit_warp_menu_world: '[%1%](show_text=World:\nThe world where the warp is set)'
+  edit_warp_menu_world_server: '[%1%](show_text=World:\nThe world where the warp is set)   [%2%](show_text=Server:\nThe server where the warp is set)'
+  edit_warp_menu_coordinates: '[[%1%](#a78bfa), [%2%](#a78bfa), [%3%](#a78bfa)](show_text=Koordinaatit:\nWarpin sijainti\nyaw: %4%, pitch: %5%)\n'
+  edit_warp_menu_use_buttons: "[[Teleporttaa...]](#a78bfa show_text=Paina teleportataksesi warpille run_command=/huskhomes:warp %1%)"
+  edit_warp_menu_manage_buttons: '[[Poista...]](#ef4444 show_text=Paina poistaaksesi warpin\nPoistoa ei voi peruuttaa suggest_command=/huskhomes:delwarp %1%)   [[Aseta…]](show_text=Paina asettaaksesi warpin sijaintiisi run_command=/huskhomes:editwarp %1% relocate)'
+  edit_warp_menu_meta_edit_buttons: "[[Nimeä uudelleen...]](#a78bfa show_text=Paina ehdottaaksesi suggest_command=/huskhomes:editwarp %1% rename )   [[Kuvaus...]](#a78bfa show_text=Paina ehdottaaksesi suggest_command=/huskhomes:editwarp %1% description )"
+  edit_warp_update_location: "Asetettiin warp [%1%] nykyiseen sijaintiin"
+  edit_warp_update_description: '[Successfully changed the description of the warp, %1%:](#00fb9a) \n[←](white) [Old:](#00fb9a) ["%2%"](gray)\n[→](white) [New:](#00fb9a) ["%3%" ](gray)'
+  edit_warp_update_name: "[Successfully renamed the warp: %1% →](#00fb9a) [%2%](#00fb9a bold)"
+  home_list_page_title: '[%1%''s Homes:](#00fb9a) [(%2%-%3% of](#00fb9a) [%4%](#00fb9a bold)[)](#00fb9a)\n'
+  public_home_list_page_title: '[Julkiset kodit:](#00fb9a) [(%1%-%2% of](#00fb9a) [%3%](#00fb9a bold)[)](#00fb9a)\n'
+  warp_list_page_title: 'Warpit: [(%1%-%2% of](#00fb9a) [%3%](#00fb9a bold)[)](#00fb9a)\n'
+  command_list_title: 'HuskHomes [|](#00fb9a) Komennot\n'
+  home_list_item: '[[%1%]](show_text=%1%\n%3%\n %4% run_command=/huskhomes:edithome %2%)'
+  public_home_list_item: '[[%1%]](show_text=%1%\n☻ %3%\n %4% run_command=/huskhomes:phome %2%)'
+  home_is_public: "Julkinen"
+  home_is_private: "Yksityinen"
+  warp_list_item: '[[%1%]](show_text=%1%\n %3% run_command=/huskhomes:warp %2%)'
+  command_list_item: '[/%1%](show_text=Paina ehdottaaksesi suggest_command=/%1%)   [%2%](show_text=/%1%\n%3%)'
+  list_item_divider: " [•](gray) "
+  list_footer: \n%1%[Sivu](#00fb9a) [%2%](#00fb9a)/[%3%](#00fb9a)%4%   %5%
+  list_previous_page_button: "[◀](white show_text=Edellinen sivu run_command=%2% %1%) "
+  list_next_page_button: " [▶](white show_text=Seuraava sivu run_command=%2% %1%)"
+  list_page_jumpers: (%1%)
+  list_page_jumper_button: "[%1%](show_text=Siirry sivulle %1% run_command=%2% %1%)"
+  list_page_jumper_current_page: "[%1%](#00fb9a)"
+  list_page_jumper_separator: " "
+  list_page_jumper_group_separator: …
+  home_deleted: "Poistettiin koti"
+  home_deleted_other: "Poistettiin pelaajan [%1%](#a78bfa) koti"
+  warp_deleted: "Poistettiin warp [%1%](#a78bfa)"
+  set_home_used_free_slots: "[You have used all %1% of your free home slots. Setting additional homes will cost %2% each.](gray)"
+  set_home_success: "Asetettiin koti nykyiseen sijaintiin"
+  set_warp_success: "Asetettiin warp [%1%] nykyiseen sijaintiin"
+  set_spawn_success: "Asetettiin spawn nykyiseen sijaintiin"
+  spawn_warp_default_description: Palvelimen /spawn -sijainti
+  item_no_description: (Ei kuvausta)
+  delete_all_homes_confirm: '[Oletko varma, että haluat poistaa kaikki kotisi?](#ef4444)\n[Poistettuja koteja ei ole mahdollista palauttaa.](#ef4444)\n[[Vahvista]](#facc15 show_text=Paina vahvistaaksesi. run_command=/delhome all confirm)'
+  delete_all_warps_confirm: '[Oletko varma, että haluat poistaa kaikki warpit?](#ef4444)\n[Poistettuja warpeja ei ole mahdollista palauttaa.](#ef4444)\n[[Vahvista]](#facc15 show_text=Paina vahvistaaksesi run_command=/delwarp all confirm)'
+  delete_all_homes_success: "[Poistettiin onnistuneesti kaikki kodit.]"
+  delete_all_warps_success: "[Poistettiin kaikki warpit.]"
+  economy_transaction_complete: "[%1% has been deducted from your account. (%2%)](gray)"
+  economy_action_additional_home_slot: Bought an additional home slot
+  economy_action_make_home_public: Made a home public
+  economy_action_back_command: Used the /back command
+  economy_action_random_teleport: Used the /rtp command
+  economy_action_home_teleport: Teleported to a home
+  economy_action_public_home_teleport: Teleported to a public home
+  economy_action_warp_teleport: Teleported to a warp
+  economy_action_spawn_teleport: Teleported to spawn
+  economy_action_send_teleport_request: Teleporttauspyyntö lähetetty
+  economy_action_accept_teleport_request: Teleporttauspyyntö hyväksytty
+  return_by_death_notification: "[Palaa sinne jossa kuolit?](gray) [[Teleport…]](#00fb9a show_text=Paina teleportataksesi sijaintiin jossa kuolit run_command=/huskhomes:back)" # Tää ei kaiketi oo tulossa käyttöön
+  map_hook_public_homes_marker_set_name: Julkiset kodit
+  map_hook_warps_marker_set_name: Warpit
+  up_to_date: "[HuskHomes](#00fb9a) [|](#94a3b8) You are running the latest version of HuskHomes (v%1%)."
+  update_available: "[HuskHomes](#00fb9a) [|](#94a3b8) A new version of HuskHomes is available: v%1% (running: v%2%)."
+  reload_complete: '[HuskHomes](#00fb9a) [|](#94a3b8) Reloaded config and message files.\n[Ensure config files are up-to-date on all servers! A restart is needed for config changes to take effect](#facc15)'
+  user_home_slots_status: "[HuskHomes](#00fb9a) [|](#94a3b8) %1% has %2% home slot(s) and has set %3% home(s)."
+  user_home_slots_updated: "[HuskHomes](#00fb9a) [|](#94a3b8) %1%'s home slot count has been set to %2%."
+  system_status_header: "[HuskHomes](#00fb9a) [|](#94a3b8) System status report:"
+  system_dump_confirm: '[HuskHomes](#00fb9a) [|](#94a3b8) Prepare a system dump? This will include:\n[• Your latest server logs and HuskHomes config files](gray)\n[• Current plugin system status information](gray)\n[• Information about your Java & Minecraft server environment](gray)\n[• A list of other currently installed plugins](gray)\n[To confirm, use:](#00fb9a) [/huskhomes dump confirm](#00fb9a italic show_text=Click to prepare dump run_command=/huskhomes dump confirm)'
+  system_dump_started: "[HuskHomes](#00fb9a) [|](#94a3b8) Preparing system status dump, please wait…"
+  system_dump_ready: "[HuskHomes](#00fb9a) [|](#94a3b8) System status dump prepared! Click to view:"
+  importer_list_title: '[HuskHomes](#00fb9a) [|](#94a3b8) Available Data Importers:\n'
+  importer_list_item: '[%1%](#00fb9a show_text=Click to import data through this importer. suggest_command=/huskhomes:huskhomes import start %1%)    [%2%](white show_text=This importer supports importing:\n%2% suggest_command=/huskhomes:huskhomes import start %1%)'
+  delete_player_confirm: '[Warning:](#ff3300) [Are you sure you want to delete all of %1%''s data?](#ff7e5e)\n[All associated homes will also be deleted. This action is irreversible.](gray)\n[→](gray) [[Confirm]](show_text=Click to confirm deletion. This cannot be undone. run_command=/huskhomes:huskhomes delete player %1% confirm)'
+  delete_player_success: "[Successfully deleted all player data for](#00fb9a) [%1%](#00fb9a bold)[, including %2% home(s).](#00fb9a)"
+  bulk_delete_warps_confirm: '[Warning:](#ff3300) [Are you sure you want to delete all warps in the world \"%1%\"?](#ff7e5e)\n[This action is irreversible.](gray)\n[→](gray) [[Confirm]](show_text=Click to confirm deletion. This cannot be undone. run_command=/huskhomes:huskhomes delete warps %1% %2% confirm)'
+  bulk_delete_warps_success: "[Successfully deleted](#00fb9a) [%1%](#00fb9a bold) [warps.](#00fb9a)"
+  bulk_delete_homes_confirm: '[Warning:](#ff3300) [Are you sure you want to delete all homes in the world \"%1%\"?](#ff7e5e)\n[This action is irreversible.](gray)\n[→](gray) [[Confirm]](show_text=Click to confirm deletion. This cannot be undone. run_command=/huskhomes:huskhomes delete homes %1% %2% confirm)'
+  bulk_delete_homes_success: "[Successfully deleted](#00fb9a) [%1%](#00fb9a bold) [homes.](#00fb9a)"
+  error_invalid_importer: "[Invalid importer. Please check the](#ef4444) [plugin docs](#facc15 italic show_text=Click to open link open_url=https://william278.net/docs/huskhomes/importing-data) [for more details.](#ef4444)"
+  error_home_name_taken: "[You already have a home set with that name.](#ef4444)"
+  error_home_name_length: "[Home names can only contain up to 16 characters!](#ef4444)"
+  error_home_name_characters: "[Home names must be alphanumeric (A-Z, 0-9, -_)](#ef4444)"
+  error_warp_name_taken: "[There is already a warp set with that name.](#ef4444)"
+  error_warp_name_length: "[Warpin nimi voi olla enintään [16](#facc15) merkkiä pitkä](#ef4444)"
+  error_warp_name_characters: "[Warpin nimi voi sisältää vain (A-Z,0-9, -_)](#ef4444)"
+  error_home_description_length: "[Kodin kuvauksen tulee olla alle [255](#facc15) merkkiä pitkä](#ef4444)"
+  error_home_description_characters: "[Kodin kuvaus voi sisältää vain kirjaimia, numeroita, merkkejä, välilyöntejä, tavuviivoja (-) ja alaviivoja (_)](#ef4444)"
+  error_warp_description_length: "[Warp kuvauksen tulee olla alle [255](#facc15) merkkiä pitkä](#ef4444)"
+  error_warp_description_characters: "[Warpin kuvaus voi sisältää vain kirjaimia, numeroita, merkkejä, välilyöntejä, tavuviivoja (-) ja alaviivoja (_)](#ef4444)"
+  error_no_permission: "[Sinulla ei ole oikeutta suorittaa kyseistä komentoa.](#ef4444)"
+  error_invalid_syntax: "[Virheellinen syntaksi. Käyttö:](#ef4444) [%1%](#ff7e5e italic show_text=Paina ehdottaaksesi suggest_command=%1%)"
+  error_already_teleporting: "[Odota, kunnes nykyinen teleporttaus on valmis](#ef4444)"
+  error_no_last_position: "[Sinulla ei ole viimeistä sijaintia, johon palata](#ef4444)"
+  error_in_game_only: "[That command can only be run in-game.](#ef4444)"
+  error_invalid_server: "[Failed to finish teleportation as the target server could not be found or was offline.](#ff7e5e)"
+  error_home_invalid: '[Et ole määrittänyt kotia nimeltä "%1%"](#ef4444)'
+  error_warp_invalid: "[Tuota warppia ei ole olemassa](#ef4444)"
+  error_insufficient_funds: "[Sinulla ei ole tarpeeksi rahaa (Hinta: %1%)](#ef4444)"
+  error_edit_home_privacy_already_public: "[Tämä koti on jo asetettu julkiseksi](#ef4444)"
+  error_edit_home_privacy_already_private: "[Tämä koti on jo asetettu yksityiseksi](#ef4444)"
+  error_no_homes_set: "[Et ole asettanut kotia.](#ef4444)"
+  error_no_public_homes_set: "[Julkisia koteja ei ole asetettu](#ef4444)"
+  error_no_warps_set: "[Warppeja ei ole asetettu](#ef4444)"
+  error_unknown_public_home: '[Could not find a public home with the name "%1%".](#ef4444)'
+  error_public_home_invalid: "[Could not find a public home owned by %1% called %2%.](#ef4444)"
+  error_set_home_maximum_homes: "[Voit asettaa vain yhden kodin](#ef4444)"
+  error_set_home_not_enough_slots: "[Olet jo asettanut kodin](#ef4444)"
+  error_spawn_not_set: "[Spawnin sijaintia ei ole asetettu](#ef4444)"
+  error_no_teleport_requests: "[Sinulla ei ole odottavia teleporttauspyyntöjä](#ef4444)"
+  error_teleport_warmup_stand_still: "[Sinun täytyy olla paikallaan aloittaaksesi teleporttauksen](#ef4444)"
+  error_teleport_request_expired: "[Lähettämäsi teleporttauspyyntö on vanhentunut](#ef4444)"
+  error_teleport_request_sender_not_online: "[Teleporttauspyynnön lähettäjä ei ole enää paikalla](#ef4444)"
+  error_ignoring_teleport_requests: "[You are currently ignoring teleport requests.](#ef4444) [[Stop Ignoring…]](#ff7e5e show_text=Click to listen for incoming teleport requests run_command=/huskhomes:tpignore)"
+  error_invalid_teleport_request: "[Sinulla ei ole odottavia teleporttauspyyntöjä pelaajalta %1%.](#ef4444)"
+  error_teleport_request_self: "[Et voi lähettää itsellesi teleporttauspyyntöä.](#ef4444)"
+  error_target_not_found: "[Pelaajaa ei löytynyt.](#ef4444)"
+  error_player_not_found: "[Pelaajaa [%1%](#facc15) ei löytynyt.](#ef4444)"
+  error_player_not_teleportable: "[Pelaaja [%1%](#facc15) ei voi teleportata juuri nyt](#ef4444)"
+  error_rtp_restricted_world: "[Et voi satunnaisteleportata tässä maailmassa](#ef4444)"
+  error_on_cooldown: "[Sinun on odotettava [%1%](#facc15) ennen kuin voit yrittää uudelleen](#ef4444)"
+  error_console_command_only: "[Tämä komento voidaan suorittaa vain konsolista](#ef4444)"
+  error_rtp_randomization_timeout: "[Turvallista paikkaa teleportata ei löytynyt](#ef4444)"
+  error_invalid_world: "[Maailmaa ei ole olemassa](#ef4444)"
+  error_no_offline_position: "[Ei löytynyt sijaintia, missä pelaaja %1% viimeksi kirjautui ulos](#ef4444)"
+  error_no_homes_set_other: "[[%1%](#facc15) ei ole asettanut yhtään kotia](#ef4444)"
+  error_home_invalid_other: "[[%1%](#facc15) ei ole asettanut kotia nimeltä %2%](#ef4444)"
+  error_edit_home_maximum_public_homes: "[Voit tehdä enintään [%1%](#facc15) kodista julkisen](#ef4444)"
+  error_illegal_target_coordinates: "[Teleporttaus peruutettu, koska se ylittää maailman mahdolliset rajat](#ef4444)"
+  error_no_players_online: "[Palvelimella ei ole pelaajia, jotka voisivat teleportata luoksesi](#ef4444)"
+  error_no_importers_available: "[No importers are currently available. Please check the](#ff7e5e) [plugin docs](#ff7e5e italic show_text=Click to open link open_url=https://william278.net/docs/huskhomes/importing-data) [for more details.](#ef4444)"
+  home_command_description: Teleporttaa kotiin
+  sethome_command_description: Asettaa uuden kodin
+  delhome_command_description: Poistaa aiemmin asettaman kodin
+  edithome_command_description: Muokkaa kotiasi
+  warp_command_description: Teleporttaa warppin
+  setwarp_command_description: Aseta uusi warp
+  delwarp_command_description: Poista warp
+  editwarp_command_description: Muokkaa warppia
+  back_command_description: Teleporttaa takaisin edelliseen sijaintiisi
+  homelist_command_description: Näytä luettelo kodeista
+  warplist_command_description: Näytä luettelo warpeista
+  phomelist_command_description: Näytä luettelo julkisista kodeista
+  phome_command_description: Teleporttaa julkiseen kotiin
+  tp_command_description: Teleporttaa pelaajaan tai sijaintiin
+  tphere_command_description: Teleporttaa toinen pelaaja luoksesi
+  tpa_command_description: Pyydä lupaa teleportata toisen pelaajan luokse
+  tpahere_command_description: Pyydä lupaa teleportata toinen pelaaja luoksesi
+  tpaccept_command_description: Hyväksy teleporttauspyyntö
+  tpdecline_command_description: Hylkää teleporttauspyyntö
+  tpignore_command_description: Ohita saapuvat teleporttauspyynnöt
+  tpoffline_command_description: Teleporttaa sinut sijaintiin, missä pelaaja viimeksi on ollut paikalla
+  rtp_command_description: Satunnaisteleporttaus
+  spawn_command_description: Teleporttaa spawnille
+  setspawn_command_description: Aseta spawn-sijainti
+  tpaall_command_description: Pyydä kaikkia teleporttaamaan luoksesi
+  tpall_command_description: Teleporttaa kaikki pelaajat luoksesi
+  huskhomes_command_description: View plugin information & reload configs

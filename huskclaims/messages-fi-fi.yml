@@ -111,7 +111,8 @@ locales:
   trust_list_group: "[%1%](#a78bfa show_text=Ryhmän jäsenet:\\n&8%3%)"
   trust_list_deleted_group: "[%1%](#94a3b8 strikethrough show_text=Tontin omistaja on poistanut tämän ryhmän. Paina poistaaksesi ryhmän oikeudet tontilta suggest_command=/untrust %1%)"
   trust_list_tag: "[%1%](white show_text=%2%)"
-  trust_list_unregistered_tag: "[%1%](gray italic show_text=The tag has not been registered on the server\\n&8Click to remove from the claim
+  trust_list_unregistered_tag:
+    "[%1%](gray italic show_text=The tag has not been registered on the server\\n&8Click to remove from the claim
     suggest_command=/untrust %1%)"
   ban_list_header: "Tontin porttikiellot: [%1%](#a78bfa):\\n"
   ban_list_claim: "Pelaajan [%1%](#a78bfa) tontti"
@@ -193,14 +194,14 @@ locales:
   sign_notify_line_separator: " / "
   sign_write_on_front: "%1% kirjoitti kyltin etupuolelle"
   sign_write_on_back: "%1% kirjoitti kyltin takapuolelle"
-  sign_write_filtered: "\n⚠ Kyltin teksti sensuroitu - alkuperäinen viesti näkyvissä"
-  sign_filtered: "⚠ Kylttisi teksti sisälsi kiellettyjä sanoja ja sensuroitiin(#ef4444)"
+  sign_write_filtered: "\nKyltin teksti sensuroitu - alkuperäinen viesti näkyvissä"
+  sign_filtered: "Kylttisi teksti sisälsi kiellettyjä sanoja ja sensuroitiin(#ef4444)"
   death_drops_locked: "Pudottamasi tavarat on suojattu. Käytä komentoa [/unlockdrops](#a78bfa show_textPaina avataksesi tavaroiden lukituksen run_command=/unlockdrops) salliaksesi muiden pelaajien poimia tavarasi"
   death_drops_unlocked: "Muut pelaajat voivat nyt poimia pudottamasi tavarat"
   administrator_username: an administrator
   up_to_date: "[HuskClaims](#facc15 bold) [| You are running the latest version of HuskClaims (v%1%)](#facc15)"
   update_available: "[HuskClaims](#facc15 bold) [| A new version of HuskClaims is available: v%1% [(running: v%2%)]((#facc15)](#facc15)"
-  reload_complete: "[HuskClaims](#facc15 bold) [| Reloaded config and message files.](#facc15)\\n[⚠ Ensure config files are up-to-date on all servers!](#facc15)\\n[A restart is needed for config changes to take effect](#facc15 italic)"
+  reload_complete: "[HuskClaims](#facc15 bold) [| Reloaded config and message files.](#facc15)\\n[Ensure config files are up-to-date on all servers!](#facc15)\\n[A restart is needed for config changes to take effect](#facc15 italic)"
   system_status_header: "[HuskClaims](bold) [| System status report:]"
   system_dump_confirm: "[HuskClaims](bold) [| Prepare a system dump? This
     will include:]\n[• Your latest server logs and HuskClaims config files](gray)\\n[• Current plugin system status information](gray)\\n[• Information about your Java & Minecraft server environment](gray)\\n[• A list of other currently installed plugins](gray)\\n[To confirm, use:] [/huskclaims dump confirm](italic show_text=Click to prepare dump run_command=/huskclaims dump confirm)"
@@ -209,14 +210,12 @@ locales:
   system_dump_ready: "[HuskClaims](bold) [| System status dump prepared!
     Click to view:]"
   available_importers: "[HuskClaims](bold) [| Available importers:] [%1%](white)"
-  command_list_header: "[HuskClaims](bold) [| Command List:]\\n"
-  command_list_row: "[%1%](italic show_text=%1%\\n&7%2%
-    suggest_command=%1%)   [%3%](gray show_text=&7%4% suggest_command=%1%)"
+  command_list_header: "HuskClaims [|](#94a3b8) Komennot:\\n"
+  command_list_row: "[%1%](show_text=%1%\\n%2% suggest_command=%1%)   [%3%](#94a3b8 show_text=%4% suggest_command=%1%)"
   audit_log_header: "[HuskClaims](bold) [| Audit Logs for %1%:]\\n"
   audit_log_row: "[%1%](gray)   [%2%]   [%3%](#ff304f)    [%4%]"
   claim_flags_header: "[HuskClaims](bold) [| Flags for %1%'s claim:]\\n"
-  claim_flags_wilderness_header: "[HuskClaims](bold) [| Flags for the
-    wilderness of '%1%':]\\n"
+  claim_flags_wilderness_header: "[HuskClaims](bold) [| Flags for the wilderness of '%1%':]\\n"
   claim_flag_enabled: "[%1%](show_text=Paina poistaaksesi käytöstä run_command=/claimflags set %1% false)"
   claim_flag_disabled: "[%1%](#ff7e5e show_text=Paina ottaaksesi käyttöön run_command=/claimflags set %1% true)"
   trapped_teleporting: "Teleportataan suojaan..."
@@ -225,9 +224,9 @@ locales:
   usergroup_command_description: Luo ja hallinnoi ryhmiä
   unclaim_command_description: Poista tontti, jolla seisot
   claimslist_command_description: Tarkastele tonttilistaa
-  adminclaimslist_command_description: Tarkastele admintonttilistaa 
+  adminclaimslist_command_description: Tarkastele admintonttilistaa
   extendclaim_command_description: Kasvata tontin kokoa suuntaan, jonne katsot
-  claimblocks_command_description: Tarkastele tonttipalikoiden määrää 
+  claimblocks_command_description: Tarkastele tonttipalikoiden määrää
   restrictclaim_command_description: Siirrä tavallisen tontin oikeuksia alitonttiin
   claim_command_description: Luo tontin tai vaihtaa tavalliseen tonttitilaan
   childclaim_command_description: Luo alitontin tai vaihtaa alitonttitilaan
