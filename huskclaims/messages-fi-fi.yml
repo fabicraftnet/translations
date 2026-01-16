@@ -1,0 +1,245 @@
+---
+locales:
+  error_no_permission: "[Sinulla ei ole oikeutta käyttää tätä komentoa](#ef4444)"
+  error_on_cooldown: "[Odota hetki ja yritä uudelleen](#ef4444)"
+  error_no_permission_tag: "[Sinulla ei ole oikeutta [%1%](#facc15) tägiin](#ef4444)"
+  error_command_in_game_only: "[Tätä komentoa voi käyttää vain pelissä](#ef4444)"
+  error_insufficient_funds: "[You do not have enough money to do that](#ef4444)"
+  error_invalid_syntax: "[Virheellinen syntaksi. Käyttö: [%1%](#facc15)](#ef4444)"
+  error_invalid_user: "[Käyttäjää [%1%](#facc15) ei löytynyt](#ef4444)"
+  error_invalid_group: "[Ryhmää [%1%](#facc15) ei löytynyt](#ef4444)"
+  error_no_groups: "[Sinulla ei ole yhtään ryhmää.](#ef4444)\\n[Luodaksesi ryhmän, kirjoita](#ef4444) [/usergroup <name> add <user(s)>.](#facc15 show_text=Paina liittääksesi komento chattiin suggest_command=/usergroup)"
+  error_invalid_tag: "[Tägiä %1% ei löytynyt](#ef4444)"
+  error_invalid_group_name: "[%1% ei ole kelvollinen ryhmän nimi](#ef4444)"
+  error_not_enough_claim_blocks: "[Sinulla ei ole tarpeeksi tonttipalikoita (Tarvitset %1% lisää)](#ef4444)"
+  error_claim_too_small: "[Tontin koko olisi alle sallitun koon (Pienin sallittu tontin koko: %1%x%1%)](#ef4444)"
+  error_claim_action_too_big: "[You can only create/extend claims by %1% claim blocks at a time (this action would have affected: %2%). Try again with a smaller selection](#ef4444)"
+  error_not_in_claim: "[Et seiso tontilla](#ef4444)"
+  error_trust_level_rank: "[Et voi muokata pelaajan %1% oikeuksia](#ef4444)"
+  error_not_trusted: "[Kohteella %1% ei ole oikeuksia tällä tontilla](#ef4444)"
+  error_already_group_member: "[%1% on jo ryhmäsi %2% jäsen](#ef4444)"
+  error_not_group_member: "[%1% ei ole ryhmäsi %2% jäsen](#ef4444)"
+  error_no_claiming_permission: "[Sinulla ei ole oikeutta luota tai muokata tontteja](#ef4444)"
+  error_no_claims_made: "[Pelaajalla %1% ei ole tontteja](#ef4444)"
+  error_no_admin_claims_made: "[Admintontteja ei ole luotu](#ef4444)"
+  error_restrict_not_child: "[Sinun täytyy seisoa alitontin sisällä.](#ef4444)\\n[Tällä komennolla voidaan estää tavallisen tontin oikeuksia siirtymästä alitonttiin](#ef4444)"
+  error_parent_claim_deleted: "[Tontti, jonka alitontin kokoa olit muuttamassa poistettiin](#ef4444)"
+  error_claim_deleted: "[Tontti, jonka kokoa olit muuttamassa poistettiin](#ef4444)"
+  error_delete_all_children: "[Olet alitonttitilassa. Poistaaksesi kaikki tonttisi, vaihda tavalliseen tonttitilaan komennolla](#ef4444) [/claim](#facc15 show_text=Paina liittääksesi komento chattiin suggest_command=/claim)"
+  error_transfer_same_owner: "[%1% on jo tontin omistaja](#ef4444)"
+  error_admin_claim_transfer: "[Et voi siirtää admintontin omistajuutta](#ef4444)"
+  error_look_at_pet_transfer: "[Sinun on katsottava siirrettävää lemmikkiä](#ef4444)"
+  error_huskhomes_not_found: "[HuskHomes could not be found on the server](#ef4444)"
+  error_economy_not_found: "[An economy plugin could not be found on the server](#ef4444)"
+  error_no_death_drops: "[Pelaajalla %1% ei ole lukittuja tavaroita](#ef4444)"
+  error_user_banned: "[Pelaajalla %1% on porttikielto tälle tontille](#ef4444)"
+  error_user_not_banned: "[Pelaajalla %1% ei ole porttikieltoa tälle tontille](#ef4444)"
+  error_cannot_ban_owner: "[Et voi antaa porttikieltoa tontin omistajalle](#ef4444)"
+  error_cannot_ban_self: "[Et voi antaa itsellesi porttikieltoa](#ef4444)"
+  error_ban_list_empty: "[Pelaajilla ei ole porttikieltoja tälle tontille](#ef4444)"
+  error_not_trapped: "[Voit rakentaa tällä tontilla, joten et ole jumissa](#ef4444)"
+  error_no_permission_flag: "[Sinulla ei ole oikeutta käyttää parametria [%1%](#facc15)](#ef4444)"
+  error_no_flags: "[Sinulla ei ole käytettävissä yhtään parametria](#ef4444)"
+  group_list: "Ryhmät: [%1%](#a78bfa)"
+  group_list_item: "[%1%](#a78bfa show_text=%2% pelaajan ryhmä:\\n run_command=/group %1%)"
+  group_member_list: "Ryhmän [%1%](#a78bfa) jäsenet: [%2%](#94a3b8)"
+  group_added_player: "Lisättiin pelaaja [%1%](#a78bfa) ryhmään [%2%](#a78bfa)"
+  group_removed_player: "Poistettiin pelaaja [%1%](#a78bfa) ryhmästä [%2%](#a78bfa)"
+  group_created: "Luotiin [%1%](#a78bfa) niminen ryhmä, jossa jäseninä: [%2%](#94a3b8 show_text=Paina katsoaksesi ryhmää run_command=/group %1%)"
+  group_deleted: "[Poistettiin ryhmä [%1%](#ffffff)](#4ade80)\\nJäsenet menettävät pääsyn kaikkiin tontteihin, missä oikeudet on annettu ryhmälle"
+  world_not_claimable: "[Tonttien luominen ei ole sallittua tässä maailmassa](#ef4444)"
+  region_outside_world_limits: "[Et voi luoda tonttia maailman rajojen ulkopuolelle](#ef4444)"
+  land_already_claimed: "[Tämä palikka on pelaajan [%1%](#a78bfa) tontilla](#ef4444)"
+  land_selection_overlaps: "[Valinta menee päällekkäin [%1%](##facc15) tontin kanssa](#ef4444)"
+  land_selection_overlaps_child: "[Valinta menee päällekkäin [%1%](##facc15) muun alitontin kanssa](#ef4444)"
+  land_already_child_claim: "[Tällä alueella on jo alitontti](#ef4444)"
+  land_selection_restricted: "[Valinta menee päällekkäin alueen kanssa, johon sinulla ei ole rakennusoikeutta](#ef4444)"
+  husktowns_claim_overlaps: "[Et voi luoda tonttia tähän, koska se menisi olemassa olevan tontin päälle](#ef4444)"
+  claim_tool_required: "[Sinulla on oltava tonttilapio kädessä tehdäksesi tuon](#ef4444)"
+  selection_resize_not_enclosing_children: "[Tontin kokoa ei voitu muuttaa, sillä osa alitonteista jäisi tontin ulkopuolelle](#ef4444)"
+  selection_child_not_enclosing_parent: "[Alitontin kokoa ei voitu muuttaa, sillä se ei olisi enää kokonaan tontin sisällä](#ef4444)"
+  selection_child_no_parent: "Olet [alitonttitilassa](#a78bfa). Alitonttien on oltava kokonaan tontin sisäpuolella. Voit vaihtaa tavalliseen tonttitilaan kirjoittamalla] [/claim](#a78bfa show_text=Paina liittääksesi komento chattiin suggest_command=/claim)"
+  claim_selection_create: "Asetettiin kulma perustontille. Klikkaa hiiren oikealla painikkeella asettaaksesi toisen kulman"
+  claim_selection_create_child: "Asetettiin kulma alitontille. Klikkaa hiiren oikealla painikkeella asettaaksesi toisen kulman"
+  claim_selection_resize: "Muutetaan tontin kokoa. Klikkaa hiiren oikealla painikkeella asettaaksesi uuden kulman sijainnin"
+  claim_selection_resize_child: "Muutetaan alitontin kokoa. Klikkaa hiiren oikealla painikkeella asettaaksesi uuden kulman sijainnin"
+  claim_selection_cancelled: "Tontin valinta peruutettu"
+  claim_created: "[Luotiin onnistuneesti tontti käyttäen [%1%](#ffffff) tonttipalikkaa](#4ade80)"
+  claim_created_trust_prompt: "Käytä komentoa [/%1%](#a78bfa show_text=Paina ehdottaaksesi suggest_command=/%1%) antaaksesi pelaajalle [%2%oikeudet](%3% trust show_text=&%3%&%2%\\n%4% suggest_command=/%1%) tontille"
+  created_child_claim: "[Luotiin onnistuneesti alitontti](#4ade80)"
+  created_admin_claim: "[Luotiin onnistuneesti admintontti](#4ade80)"
+  claim_resized_spent_blocks: "Muutettiin tontin kokoa ja käytettiin [%1%](#a78bfa) tonttipalikkaa"
+  claim_resized_reclaimed_blocks: "Muutettiin tontin kokoa ja palautettiin [%1%](#a78bfa) tonttipalikkaa"
+  claim_resized_admin: "Admintontin kokoa muutettiin"
+  child_claim_resized: "Alitontin kokoa muutettiin"
+  confirm_deletion_parent_claim: "Tällä tontilla on alitontteja. Tontin poistaminen poistaa myös kaikki alitontit. \\nVahvistaaksesi poiston, kirjoita [/%1%](#a78bfa show_text=Paina ehdottaaksesi suggest_command=/%1%)"
+  claim_deleted: "[Poistettiin tontti. Aluetta ei enää suojata grieffaukselta. Palautettiin [%1%](#ffffff) tonttipalikkaa](#4ade80)"
+  delete_all_claims: "[Poistettiin kaikki pelaajan [%1%](#ffffff) tontit [(%2%)](#ffffff) Palautettiin [%3%](#ffffff) tonttipalikkaa](#4ade80)"
+  delete_all_claims_confirm: "[Oletko varma, että haluat poistaa kaikki pelaajan [%1%](#facc15) tontit? [(%2%)](#facc15)](#ef4444)\\nVahvistaaksesi poiston, kirjoita [/%3%](#a78bfa show_text=Paina ehdottaaksesi suggest_command=/%3%)"
+  delete_all_admin_claims: "[Poistettiin kaikki admintontit [(%1%)](#ef4444)](#4ade80)"
+  delete_all_admin_claims_confirm: "[Oletko varma, että haluat poistaa kaikki admintontit? [(%1%)](#ef4444)](#ef4444)\\n[Vahvistaaksesi poiston, kirjoita] [/%2%](#a78bfa show_text=Paina ehdottaaksesi suggest_command=/%2%)"
+  admin_claim_deleted: "[Poistettiin admintontti. Alue ei enää suojata grieffaukselta](#4ade80)"
+  child_claim_deleted: "[Poistettiin alitontti](#4ade80)"
+  trust_level_set: "Kohteelle [%1%](#a78bfa) annettiin oikeus [[%2%]](%3% trust show_text=&%3%&%2%\\n%4%)"
+  trust_level_removed: "Poistettiin kohteen [%1%](#a78bfa) oikeudet tontilta"
+  user_banned: "Pelaajalla [%1%](#a78bfa) on porttikielto tälle tontille"
+  user_unbanned: "Pelaajan [%1%](#a78bfa) porttikielto on poistettu tältä tontilta"
+  user_banned_you: "Sinulla on porttikielto pelaajan [%1%](#a78bfa) tontille"
+  claim_private_enabled: "Asetettiin tontti yksityiseksi. Vain ne pelaajat, joilla on jokin oikeus voi astua tontille"
+  claim_private_disabled: "Asetettiin tontti takaisin julkiseksi. Muut pelaajat voivat taas astua tontille"
+  claim_enter_is_private: "Sinulla ei ole oikeutta saapua pelaajan [%1%](#a78bfa) yksityiselle tontille"
+  no_inspecting_permission: "Sinulla ei ole oikeutta tarkastella tontteja"
+  no_claiming_permission: "Sinulla ei ole oikeutta luoda tai muokata tontteja"
+  no_claiming_child_permission: "Sinulla ei ole oikeutta luoda tai muokata alitontteja"
+  no_resizing_permission: "Sinulla ei ole oikeutta muokata tämän tontin kokoa"
+  no_resizing_child_permission: "Sinulla ei ole oikeutta muokata tämän alitontin kokoa"
+  no_claim_privilege: "Sinulla ei ole oikeutta tehdä tuota tällä tontilla"
+  no_deletion_permission: "Sinulla ei ole oikeutta poistaa tätä tonttia"
+  no_child_deletion_permission: "Sinulla ei ole oikeutta poistaa tätä alitonttia"
+  no_operation_permission: "Tämä palikka on pelaajan [%1%](#a78bfa) tontilla"
+  no_transfer_permission: "Sinulla ei ole oikeutta siirtää tätä claimia"
+  no_wilderness_permission: "You are not allowed do that in the wilderness"
+  enabled_operation_group: "[Successfully enabled [%1%](#ffffff) in this claim](#4ade80)"
+  disabled_operation_group: "[Successfully disabled [%1%](#ffffff) in this claim](#4ade80)"
+  trust_list_header: "Pelaajat, joilla on oikeuksia pelaajan %1%\\n"
+  trust_list_claim: "[%1%](#a78bfa) tontille:"
+  trust_list_child_claim: "[%1%](#a78bfa) alitontille:"
+  trust_list_row: "[●](%1% show_text=&%1%&%2%\\n%3%) %4%"
+  trust_list_key: \n%1%
+  trust_list_key_level: "[[%1%]](%2% show_text=&%2%&● %1%\\n %3% suggest_command=/%4% )"
+  trust_list_user: "[%1%](#ffffff)"
+  trust_list_group: "[%1%](#a78bfa show_text=Ryhmän jäsenet:\\n&8%3%)"
+  trust_list_deleted_group: "[%1%](#94a3b8 strikethrough show_text=Tontin omistaja on poistanut tämän ryhmän. Paina poistaaksesi ryhmän oikeudet tontilta suggest_command=/untrust %1%)"
+  trust_list_tag: "[%1%](white show_text=%2%)"
+  trust_list_unregistered_tag: "[%1%](gray italic show_text=The tag has not been registered on the server\\n&8Click to remove from the claim
+    suggest_command=/untrust %1%)"
+  ban_list_header: "Tontin porttikiellot: [%1%](#a78bfa):\\n"
+  ban_list_claim: "Pelaajan [%1%](#a78bfa) tontti"
+  ban_list_child_claim: "Pelaajan [%1%](#a78bfa) alitontti"
+  ban_list_item: "[%1%](#a78bfa show_text=Banned by: &f%2%\\n&Click to unban suggest_command=/claimban unban %1%)"
+  days_since_last_login: "Viimeksi paikalla [%1%](#a78bfa) päivää sitten"
+  today_last_login: "Viimeksi paikalla [tänään](#a78bfa)]"
+  claim_blocks_updated: "Asetettiin pelaajalle [%1%](#a78bfa), [%2%](#a78bfa) tonttipalikkaa"
+  claim_blocks_gifted: "Lahjoitettiin pelaajalle [%1%](#a78bfa), [%2%](#a78bfa) tonttipalikkaa"
+  claim_blocks_gift_received: "Sait [%2%](#a78bfa) tonttipalikkaa pelaajalta [%1%](#a78bfa)"
+  claim_blocks_purchased: "Successfully purchased [%1%](#a78bfa) claim blocks for [%2%](#a78bfa) (New balance: %3%)"
+  #claim_block_balance_header: ""
+  #claim_block_balance_started: ""
+  #claim_block_balance_acquired: ""
+  #claim_block_balance_accrued: ""
+  #claim_block_balance_deducted: ""
+  claim_block_balance_spent: "[%1%](#a78bfa) Tonttipalikkaa käytetty"
+  claim_block_balance_available: "Sinulla on [%1%](#a78bfa) tonttipalikkaa"
+  child_claims_inherit: "Tavallisen tontin oikeudet siirtyvät taas tähän alitonttiin"
+  child_claims_do_not_inherit: "Tavallisen tontin oikeudet eivät enää siirry tähän alitonttiin"
+  child_claims_inherit_restricted: Oikeudet eivät siirry
+  child_claims_inherit_unrestricted: Oikeudet siirtyvät
+  claim_transferred: "Siirrettiin tontti pelaajalle [%2%](#a78bfa). Tonttipalikoiden määrää ei muutettu"
+  public_tag_description: Antaa oikeudet kaikille pelaajille
+  group_tag_description: Antaa oikeudet kaikille ryhmän %1% pelaajille
+  list_separator: "[, ](gray)"
+  not_applicable: N/A
+  none: "[(none)](#94a3b8)"
+  land_not_claimed: "Tämä palikka ei ole kenenkään tontilla"
+  land_claimed_by: "Tämä palikka on pelaajan [%1%](#a78bfa) tontilla"
+  nearby_claims: "Löydettiin [%1%](#a78bfa) lähellä olevaa tonttia"
+  no_nearby_claims: "Löydettiin [%1%](#a78bfa) lähellä olevaa tonttia"
+  user_claim_list_title: "Pelaajan [%2%](#a78bfa) tontit [(%3%)\\n%4% %1%\n](#94a3b8)"
+  admin_claim_list_title: "%1% Admintontit (%2%): %3%\\n"
+  claim_list_sort_options: "(%1%)"
+  claim_list_sort_option_separator: "/"
+  claim_list_sort_option: "[%1%](show_text=Lajitteluperuste: %1% run_command=/%2% %3% %4% %5%)"
+  claim_list_sort_option_selected: "[%1%](#ffffff underlined show_text=Lajitteluperuste: %1%)"
+  claim_list_sort_option_label_size: koko
+  claim_list_sort_option_label_world: maailma
+  claim_list_sort_option_label_trustees: oikeudelliset
+  claim_list_sort_option_label_children: alitontit
+  claim_list_sort_ascending: "[▲](show_text=Nouseva järjestys run_command=/%1% %2% descending %3%)"
+  claim_list_sort_descending: "[▼](show_text=Laskeva järjestys run_command=/%1% %2% ascending %3%)"
+  claim_list_item_separator: "  "
+  claim_list_blocks: "[%1% (%2%×%3%)](#ffffff show_text=Koko)"
+  claim_list_children: "[%1%](#a78bfa show_text=Alitontit)"
+  claim_list_trustees: "[%1%](#ffffff show_text=Oikeudelliset)"
+  position_overworld: "[%1% (%2%, %3%)](#a78bfa show_text=%5%)"
+  position_nether: "[%1% (%2%, %3%)](#a78bfa show_text=%5%)"
+  position_end: "[%1% (%2%, %3%)](#a78bfa show_text=%5%)"
+  position_custom: "[%1% (%2%, %3%)](#a78bfa show_text=%5%)"
+  position_teleport_tooltip: "Klikkaa teleportataksesi kohteeseen"
+  position_world_tooltip: Maailma
+  position_server_world_tooltip: The server/world and coordinates
+  list_item_divider: " [•](gray) "
+  list_footer: \n%1%[Sivu](#ffffff) [%2%](#a78bfa)/[%3%](#ffffff)%4%   %5%
+  list_previous_page_button: "[◀](white show_text=Edellinen sivu run_command=%2% %1%) "
+  list_next_page_button: " [▶](white show_text=Seuraava sivu run_command=%2% %1%)"
+  list_page_jumpers: (%1%)
+  list_page_jumper_button: "[%1%](show_text=Siirry sivulle %1% run_command=%2% %1%)"
+  list_page_jumper_current_page: "[%1%](#ffffff)"
+  list_page_jumper_separator: " "
+  list_page_jumper_group_separator: …
+  switched_claiming_mode: "Vaihdettiin tonttitilaan: [%1%](#a78bfa)"
+  claiming_mode_claims: tavallinen tonttitila
+  claiming_mode_admin_claims: admintonttitila
+  claiming_mode_child_claims: alitonttitila
+  ignoring_claims: "Tonttien ohitus käytössä"
+  ignoring_claims_reminder: "Tonttien ohitus käytössä.\\nKäytä [/ignoreclaims](#a78bfa show_text=Paina ehdottaaksesi run_command=/ignoreclaims) poistaaksesi tonttien ohituksen käytöstä"
+  respecting_claims: "Tonttien ohitus pois käytöstä"
+  claim_entered: "Saavuit pelaajan [%1%](#a78bfa) tontille"
+  claim_exited: "Poistuit pelaajan [%1%](#a78bfa) tontilta"
+  pet_owned_by: "Tämä lemmikki kuuluu pelaajalle [%1%](#a78bfa)"
+  pet_transferred: "Lemmikin omistaja vaihdettu pelaajalta [%1%](#a78bfa) pelaajalle [%2%](#a78bfa)"
+  sign_notify_on: "Kylttien moderointi-ilmoitukset ovat nyt käytössä"
+  sign_notify_off: "Kylttien moderointi-ilmoitukset ovat nyt pois käytöstä"
+  sign_write_notify: "[%1% at] %2%[:] %3%\\n[%4%]"
+  sign_notify_line_separator: " / "
+  sign_write_on_front: "%1% kirjoitti kyltin etupuolelle"
+  sign_write_on_back: "%1% kirjoitti kyltin takapuolelle"
+  sign_write_filtered: "\n⚠ Kyltin teksti sensuroitu - alkuperäinen viesti näkyvissä"
+  sign_filtered: "⚠ Kylttisi teksti sisälsi kiellettyjä sanoja ja sensuroitiin(#ef4444)"
+  death_drops_locked: "Pudottamasi tavarat on suojattu. Käytä komentoa [/unlockdrops](#a78bfa show_textPaina avataksesi tavaroiden lukituksen run_command=/unlockdrops) salliaksesi muiden pelaajien poimia tavarasi"
+  death_drops_unlocked: "Muut pelaajat voivat nyt poimia pudottamasi tavarat"
+  administrator_username: an administrator
+  up_to_date: "[HuskClaims](#facc15 bold) [| You are running the latest version of HuskClaims (v%1%)](#facc15)"
+  update_available: "[HuskClaims](#facc15 bold) [| A new version of HuskClaims is available: v%1% [(running: v%2%)]((#facc15)](#facc15)"
+  reload_complete: "[HuskClaims](#facc15 bold) [| Reloaded config and message files.](#facc15)\\n[⚠ Ensure config files are up-to-date on all servers!](#facc15)\\n[A restart is needed for config changes to take effect](#facc15 italic)"
+  system_status_header: "[HuskClaims](bold) [| System status report:]"
+  system_dump_confirm: "[HuskClaims](bold) [| Prepare a system dump? This
+    will include:]\n[• Your latest server logs and HuskClaims config files](gray)\\n[• Current plugin system status information](gray)\\n[• Information about your Java & Minecraft server environment](gray)\\n[• A list of other currently installed plugins](gray)\\n[To confirm, use:] [/huskclaims dump confirm](italic show_text=Click to prepare dump run_command=/huskclaims dump confirm)"
+  system_dump_started: "[HuskClaims](bold) [| Preparing system status
+    dump, please wait…]"
+  system_dump_ready: "[HuskClaims](bold) [| System status dump prepared!
+    Click to view:]"
+  available_importers: "[HuskClaims](bold) [| Available importers:] [%1%](white)"
+  command_list_header: "[HuskClaims](bold) [| Command List:]\\n"
+  command_list_row: "[%1%](italic show_text=%1%\\n&7%2%
+    suggest_command=%1%)   [%3%](gray show_text=&7%4% suggest_command=%1%)"
+  audit_log_header: "[HuskClaims](bold) [| Audit Logs for %1%:]\\n"
+  audit_log_row: "[%1%](gray)   [%2%]   [%3%](#ff304f)    [%4%]"
+  claim_flags_header: "[HuskClaims](bold) [| Flags for %1%'s claim:]\\n"
+  claim_flags_wilderness_header: "[HuskClaims](bold) [| Flags for the
+    wilderness of '%1%':]\\n"
+  claim_flag_enabled: "[%1%](show_text=Paina poistaaksesi käytöstä run_command=/claimflags set %1% false)"
+  claim_flag_disabled: "[%1%](#ff7e5e show_text=Paina ottaaksesi käyttöön run_command=/claimflags set %1% true)"
+  trapped_teleporting: "Teleportataan suojaan..."
+  untrust_command_description: Poista pelaajan oikeudet
+  trustlist_command_description: Tarkastele tontin oikeuksia
+  usergroup_command_description: Luo ja hallinnoi ryhmiä
+  unclaim_command_description: Poista tontti, jolla seisot
+  claimslist_command_description: Tarkastele tonttilistaa
+  adminclaimslist_command_description: Tarkastele admintonttilistaa 
+  extendclaim_command_description: Kasvata tontin kokoa suuntaan, jonne katsot
+  claimblocks_command_description: Tarkastele tonttipalikoiden määrää 
+  restrictclaim_command_description: Siirrä tavallisen tontin oikeuksia alitonttiin
+  claim_command_description: Luo tontin tai vaihtaa tavalliseen tonttitilaan
+  childclaim_command_description: Luo alitontin tai vaihtaa alitonttitilaan
+  adminclaim_command_description: Luo admintontin tai vaihtaa admintonttitilaan
+  huskclaims_command_description: View plugin information & reload configs
+  claimflags_command_description: Hallinnoi tontin parametreja
+  buyclaimblocks_command_description: Purchase additional claim blocks
+  ignoreclaims_command_description: Laita tonttien ohitus päälle/pois
+  signspy_command_description: Laita kylttien moderointi-ilmoitukset päälle/pois
+  unlockdrops_command_description: Avaa pudonneet tavarat kuoleman jälkeen
+  transferclaim_command_description: Siirtää tontin omistajuuden toiselle pelaajalle
+  unclaimall_command_description: Poistaa kaikki tonttisi
+  transferpet_command_description: Siirtää lemmikin omistajuuden toiselle pelaajalle
+  claimban_command_description: Antaa pelaajalle porttikiellon tontille
+  trapped_command_description: Teleporttaa ulos tontilta, jossa olet jumissa
