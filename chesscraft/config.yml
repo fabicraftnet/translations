@@ -1,0 +1,109 @@
+stockfish-engine: 16:AUTO
+database-settings:
+  type: H2
+  url: jdbc:mariadb://localhost:3306/chesscraft
+  username: username
+  password: password
+  connection-pool:
+    maximum-pool-size: 8
+    minimum-idle: 8
+    maximum-lifetime: 1800000
+    keepalive-time: 0
+    connection-timeout: 30000
+pieces:
+  mode: PLAYER_HEAD
+  white:
+    BISHOP: 4ddacb1907d3ef3f304210b4f9ab75bd4fc1c9f21b25350904d00cd949f19388
+    QUEEN: c33b3ce86d571690b19f5d6d7aa0a721eec70a77962730c771a0815d71503899
+    PAWN: 4b7aa4969ae3df8334958c212050be343854303767c29d1a1d11c4ac7b7b53d4
+    KNIGHT: 5a550c4f2626f47a9270bd82ee8ce70189ff2941900ac8934dcfe88f2d2181d2
+    KING: 209b3d23a7af275a56402123428186e52965ca9373336ddc112792b415aba0a0
+    ROOK: 7ca26c1c0e19b736ba22f7b31157af920fed61830bd20471b4a886ec971c6323
+  black:
+    BISHOP: cf9dc78ddc4d732f5e3ed634f74b3ed0b811ed6d52f38c13f2f6db3e99ac084f
+    QUEEN: a62cfaf38deaee3d08d965ce6dc580c8ccd75d3b14d1bfeb4e093726b6c7b1e2
+    PAWN: c108c58582bcf2166cd2c0858c73b0af5d1b081f9d628c1b076972c6eb6f0e30
+    KNIGHT: 8c5decd64c2324945e9214eed2297eddb626c436543fbd413930f12874f2b801
+    KING: 7ec2822c66ea3a523a8b3c6820580c8c44fdf373b5dc3f55f70028d6cf6d2e44
+    ROOK: 2817755e0a13d5460d183130a5fcdd2e5c38e7292bcd6ef5fdc990501812ac39
+default-displays:
+  - log
+  - status
+  - position-labels
+messages:
+  checkmate: <winner_color>♚</winner_color><#a78bfa><winner_name></#a78bfa> päihitti pelaajan <loser_color>♚</loser_color><#a78bfa><loser_name></#a78bfa> shakkimatilla!
+  stalemate: <black>♚</black><black_name> <green>ended in a stalemate with <white>♚</white></green><white_name><green>!
+  draw-by-repetition: <black>♚</black><black_name> <green>ended in a draw by repetition with <white>♚</white></green><white_name><green>!
+  draw-by-fifty-move-rule: <black>♚</black><black_name> <green>ended in a draw by the fifty move rule with <white>♚</white></green><white_name><green>!
+  forfeit: <loser_color>♚</loser_color><loser_name> <green>forfeited to <winner_color>♚</winner_color></green><winner_name><green>!
+  board-already-exists: <red>A board with the name <white><name></white> already exists!</red> <white>Use <gray><hover:show_text:'<green>Click to run'><click:run_command:'/chess delete_board <name>'>/chess delete_board <name></gray> to delete it first if you want to replace it.
+  board-created: <green>Successfully created board</green><gray>:</gray> <name>
+  board-deleted: <green>Successfully <red>deleted</red> board</green><gray>:</gray> <name>
+  no-such-board: Pelilautaa nimellä '<name>' ei ole olemassa
+  no-match-to-cancel: <red>No match to cancel at board '<name>'.
+  board-occupied: <red><name> niminen pelilauta on tällä hetkellä käytössä!
+  challenge-sent: Haaste lähetettiin! Pelaajalla <#a78bfa><opponent_name></#a78bfa>on <#a78bfa>30</#a78bfa> sekuntia aikaa hyväksyä.
+  challenge-received: |-
+    <green>Pelaaja </green><challenger_name><green> on haastanut sinut shakkiin! They chose to be <challenger_color><challenger_color_name></challenger_color>.
+    Time controls<gray>:</gray> <white><time_control></white>
+    Type <white><click:run_command:'/chess accept'><hover:show_text:'<green>Click to run'>/chess accept</white> to accept. Challenge expires in 30 seconds.
+  no-time-controls: None
+  resume-challenge-received: |-
+    <green>You have been challenged to resume your match with </green><challenger_color>♚</challenger_color><challenger_name><green>!
+    Time controls<gray>:</gray> <white><time_control></white>
+    Type <white><click:run_command:'/chess accept'><hover:show_text:'<green>Click to run'>/chess accept</white> to accept. Challenge expires in 30 seconds.
+  no-pending-challenge: <red>You do not have an incoming challenge!
+  challenge-denied: <opponent_name><red> hylkäsi haastesi.
+  challenge-denied-feedback: <green>Hylättiin pelaajan </green><challenger_name> <green>haaste.
+  already-in-game: <red>Olet jo aktiivisessa pelissä
+  opponent-already-in-game: <opponent_name><red> on jo pelissä
+  match-started: <green>Peli alkoi!
+  match-resumed: <green>Peli jatkuu!
+  must-be-in-match: <red>Sinun täytyy olla pelissä käyttääksesi tuota komentoa
+  next-promotion-set: <green>Your next pawn to reach the 1/8 rank will promote to <type>, instead of the default QUEEN.
+  cpu-thinking: <italic><cpu_color>♚</cpu_color><gray>PatuGPT mietiskelee...
+  made-move: <player_color>♚</player_color><player_name><gray>:</gray> <move>
+  not-in-this-game: <red>You are not a player in this match.
+  not-your-move: <red>Ei ole vuorosi
+  chess-engine-processing: <red>Chess engine is currently processing, please try again shortly.
+  not-your-piece: <red>Vastustajan pelinappula
+  invalid-move: <red>Virheellinen siirto
+  showing-legal-moves: Korostetaan lailliset siirrot<gray>:</gray> <on_off>
+  time-display: <opponent_color>♚</opponent_color><opponent_time> <gray>|</gray> <player_color>♚</player_color><player_time>
+  invalid-time-control: Invalid time control '<input>', expected format is '<time>[:<increment>]'
+  ran-out-of-time: <player_color>♚</player_color><player_name> ran out of time!
+  reset-board: <green>Successfully reset board '<name>'.
+  match-cancelled: <red>Match cancelled.
+  pause-proposed-sender: <opponent_color>♚</opponent_color><opponent_name> has been notified that you wish to pause the match.
+  pause-proposed-recipient: <hover:show_text:'Hyväksy painamalla'><click:run_command:'/chess accept_pause'><opponent_color>♚</opponent_color><opponent_name> has proposed a pause on the match. Use <white>/chess accept_pause</white> to accept.
+  paused-match: <green>Match has been paused.
+  no-pause-proposed: <red>Your match does not have a pause proposed. Use /chess pause_match to propose one.
+  opponent-offline: <red><opponent_name> ei ole paikalla
+  no-such-match: <red>There is no match recorded with the id <match_id>
+  no-paused-match: <red>There is no paused match with the id <match_id>
+  no-paused-matches: <red>No paused matches found
+  no-complete-matches: <red>No complete matches found
+  you-are-not-in-this-match: <red>You are not a player in that match
+  paused-match-info: <click:suggest_command:'/chess resume_match <match_id> '><white>♚</white><white_name> <i><gray>vs</i> <black>♚</black><black_name> <gray><i><time></gray> <export_button>
+  complete-match-info: <white>♚</white><white_name> <i><gray>vs</i> <black>♚</black><black_name><gray>:</gray> <result><rating_change> <gray><i><time></gray> <export_button>
+  export-button: <hover:show_text:'Click to export match in PGN format'><click:run_command:'/chess export_match <match_id>'><green>↓
+  cannot-export-incomplete: <red>You do not have permission to export incomplete matches
+  cannot-export-others: <red>You do not have permission to export matches that you are not a participant in
+  click-to-copy-pgn: <green>Click to copy exported PGN
+  leaderboard-header: <green><bold>ChesCraft server leaderboard
+  paused-matches-header: <green><bold>Paused matches for <name>
+  match-history-header: <green><bold>Otteluhistoria</green> <name> <gray>(<white><rating></white>)
+  click-for-previous-page: Click for previous page
+  click-for-next-page: Click for next page
+  page-out-of-range: <red>Page <page> is out of range! There are only <pages> pages
+  pagination-footer: <gray>Page <page><white>/</white><pages> <aqua><buttons>
+  non-player-must-provide-player: <red>Must specify the player.
+  timestamp: <month>/<day>/<year_short> <hour>:<minute><am:AM:PM>
+  result-win: <winner_color>♚</winner_color>Shakkimatti
+  result-out-of-time: <loser_color>♚</loser_color>Aika loppui
+  result-stalemate: Pattitilanne
+  result-draw-by-repetition: Tasapeli, toisto | Draw by repetition # Morrow mites tää
+  result-draw-by-fifty-move-rule: Tasapeli, 50 siirron sääntö
+  result-forfeit: <forfeit_color>♚</forfeit_color>Forfeit
+  "on": <green>Päällä
+  "off": <red>Pois päältä
