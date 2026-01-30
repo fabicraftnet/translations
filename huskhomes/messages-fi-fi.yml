@@ -35,8 +35,8 @@ locales:
   tpignore_toggle_button: "[[Ota käyttöön / poista käytöstä…]](#a78bfa show_text=Paina laittaaksesi teleporttauspyynnöt päälle / pois päältä run_command=/huskhomes:tpignore)"
   edit_home_menu_title: "Tarkastellaan kotisi tietoja, [%1%](#a78bfa):"
   edit_home_menu_title_other: "Tarkastellaan pelaajan [%1%](#a78bfa) kodin tietoja, [%2%](#a78bfa):"
-  edit_home_menu_metadata_private: '[%1%](show_text=Set Timestamp:\nWhen the home was set)   [%2%](show_text=Home ID:\n%3%)   [Yksityinen koti](show_text=Privacy:\nKoti on yksityinen)'
-  edit_home_menu_metadata_public: '[%1%](show_text=Set Timestamp:\nWhen the home was set)   [%2%](show_text=Home ID:\n%3%)   [Julkinen koti](show_text=Privacy:\nKuka tahansa voi teleportata kotiin)'
+  edit_home_menu_metadata_private: '[%1%](show_text=Set Timestamp:\nKoti luotu)   [%2%](show_text=Kodin ID:\n%3%)   [Yksityinen koti](show_text=Yksityisyys:\nKoti on yksityinen)'
+  edit_home_menu_metadata_public: '[%1%](show_text=Set Timestamp:\nKoti luotu)   [%2%](show_text=Kodin ID:\n%3%)   [Julkinen koti](show_text=Yksityisyys:\nKuka tahansa voi teleportata kotiin)'
   edit_home_menu_description: '[%1%](show_text=Kuvaus:\n%2%)\n'
   edit_home_menu_world: '[%1%](show_text=Maailma:\nMaailma, jossa koti sijaitsee)'
   edit_home_menu_world_server: '[%1%](show_text=Maailma:\nMaailma, jonne koti on asetettu) [%2%](how_text=Palvelin:\nPalvelin, jonne koti on asetettu)'
@@ -56,19 +56,19 @@ locales:
   edit_home_update_description_other: 'Vaihdettiin pelaajan [%1%](#a78bfa) kodin kuvausta: \n "%4%"'
   edit_home_update_name: "Uudelleennimettiin koti: [%2%](#a78bfa)"
   edit_home_update_name_other: "Uudelleennimettiin pelaajan [%1%](#a78bfa) koti: [%3%](#a78bfa)"
-  edit_warp_menu_title: "[Viewing details for the warp,](#00fb9a) [%1%](#00fb9a bold)[:](#00fb9a)"
+  edit_warp_menu_title: "[Tarkastellaan warpin tietoja,](#00fb9a) [%1%](#00fb9a)[:](#00fb9a)"
   edit_warp_menu_metadata: '[%1%](show_text=Set Timestamp:\nWarp luotu)   [%2%]( show_text=Warp ID:\n%3%)'
   edit_warp_menu_description: '[%1%]( show_text=Kuvaus:\n%2%)\n'
-  edit_warp_menu_world: '[%1%](show_text=World:\nThe world where the warp is set)'
+  edit_warp_menu_world: '[%1%](show_text=World:\nMaailma, johon warp on asetettu)'
   edit_warp_menu_world_server: '[%1%](show_text=World:\nThe world where the warp is set)   [%2%](show_text=Server:\nThe server where the warp is set)'
   edit_warp_menu_coordinates: '[[%1%](#a78bfa), [%2%](#a78bfa), [%3%](#a78bfa)](show_text=Koordinaatit:\nWarpin sijainti\nyaw: %4%, pitch: %5%)\n'
   edit_warp_menu_use_buttons: "[[Teleporttaa...]](#a78bfa show_text=Paina teleportataksesi warpille run_command=/huskhomes:warp %1%)"
   edit_warp_menu_manage_buttons: '[[Poista...]](#ef4444 show_text=Paina poistaaksesi warpin\nPoistoa ei voi peruuttaa suggest_command=/huskhomes:delwarp %1%)   [[Aseta…]](show_text=Paina asettaaksesi warpin sijaintiisi run_command=/huskhomes:editwarp %1% relocate)'
   edit_warp_menu_meta_edit_buttons: "[[Nimeä uudelleen...]](#a78bfa show_text=Paina ehdottaaksesi suggest_command=/huskhomes:editwarp %1% rename )   [[Kuvaus...]](#a78bfa show_text=Paina ehdottaaksesi suggest_command=/huskhomes:editwarp %1% description )"
   edit_warp_update_location: "Asetettiin warp [%1%] nykyiseen sijaintiin"
-  edit_warp_update_description: '[Successfully changed the description of the warp, %1%:](#00fb9a) \n[←](white) [Old:](#00fb9a) ["%2%"](gray)\n[→](white) [New:](#00fb9a) ["%3%" ](gray)'
-  edit_warp_update_name: "[Successfully renamed the warp: %1% →](#00fb9a) [%2%](#00fb9a bold)"
-  home_list_page_title: '[%1%''s Homes:](#00fb9a) [(%2%-%3% of](#00fb9a) [%4%](#00fb9a bold)[)](#00fb9a)\n'
+  edit_warp_update_description: '[Vaihdettiin warpin kuvausta %1%:](#00fb9a) \n[←](white) [Vanha:](#00fb9a) ["%2%"](gray)\n[→](white) [Uusi:](#00fb9a) ["%3%" ](gray)'
+  edit_warp_update_name: "[Uudelleennimettiin warp](#00fb9a)"
+  home_list_page_title: '[Pelaajan %1% kodit:](#00fb9a) [(%2%-%3% of](#00fb9a) [%4%](#00fb9a bold)[)](#00fb9a)\n'
   public_home_list_page_title: '[Julkiset kodit:](#00fb9a) [(%1%-%2% of](#00fb9a) [%3%](#00fb9a bold)[)](#00fb9a)\n'
   warp_list_page_title: 'Warpit: [(%1%-%2% of](#00fb9a) [%3%](#00fb9a bold)[)](#00fb9a)\n'
   command_list_title: 'HuskHomes [|](#00fb9a) Komennot\n'
@@ -79,7 +79,7 @@ locales:
   warp_list_item: '[[%1%]](show_text=%1%\n %3% run_command=/huskhomes:warp %2%)'
   command_list_item: '[/%1%](show_text=Paina ehdottaaksesi suggest_command=/%1%)   [%2%](show_text=/%1%\n%3%)'
   list_item_divider: " [•](gray) "
-  list_footer: \n%1%[Sivu](#00fb9a) [%2%](#00fb9a)/[%3%](#00fb9a)%4%   %5%
+  list_footer: \n%1%[Sivu](#00fb9a) [%2%](#00fb9a)/[%3%](#00fb9a)%4%   %5% # Korjaa tää
   list_previous_page_button: "[◀](white show_text=Edellinen sivu run_command=%2% %1%) "
   list_next_page_button: " [▶](white show_text=Seuraava sivu run_command=%2% %1%)"
   list_page_jumpers: (%1%)
@@ -90,7 +90,7 @@ locales:
   home_deleted: "Poistettiin koti"
   home_deleted_other: "Poistettiin pelaajan [%1%](#a78bfa) koti"
   warp_deleted: "Poistettiin warp [%1%](#a78bfa)"
-  set_home_used_free_slots: "[You have used all %1% of your free home slots. Setting additional homes will cost %2% each](gray)"
+  set_home_used_free_slots: "Olet käyttänyt kaikki kotisi"
   set_home_success: "Asetettiin koti nykyiseen sijaintiin"
   set_warp_success: "Asetettiin warp [%1%] nykyiseen sijaintiin"
   set_spawn_success: "Asetettiin spawn nykyiseen sijaintiin"
