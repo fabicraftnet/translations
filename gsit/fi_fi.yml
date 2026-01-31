@@ -1,0 +1,48 @@
+Plugin:
+  plugin-enabled: "[P]<green> Laajennus käynnistyi onnistuneesti."
+  plugin-link: "[P]<green> Yhdistettiin onnistuneesti<gold> %Link%<green> laajennukseen!"
+  plugin-update: "[P]<green> Uusi versio saatavilla:<gold> %NewVersion%<green>! Käytössä oleva versio:<gold> %Version%<green>! Lataa uusin versio täältä:<gold> %Path%"
+  plugin-data: "[P]<red> A connection to the data storage could not be established. Please check the server console!"
+  plugin-version: "[P]<red> Tätä laajennusta ei voi käyttää nykyisellä palvelimen versiolla! (<aqua>%Version%<red>)"
+  plugin-reload: "[P]<green> The plugin was successfully reloaded."
+  plugin-disabled: "[P]<green> Laajennus sammui onnistuneesti."
+  plugin-prefix: "<gray>[<gold>GSit<gray>]"
+
+Messages:
+  command-permission-error: "[P]<red> Sinulla ei ole oikeutta tähän komentoon!"
+  command-sender-error: "[P]<red> Vain pelaajat voivat käyttää tätä komentoa!"
+  command-version-error: "[P]<red> Outdated Server Version! (<aqua>%Version%<red>) Update the Server to use this Feature!"
+
+  command-gsit-toggle-on: "[P]<green> Istuminen klikkaamalla on nyt käytössä."
+  command-gsit-toggle-off: "[P]<green> Istuminen klikkaamalla on nyt pois käytöstä."
+  command-gsit-playertoggle-on: "[P]<green> Pelaajan päällä istuminen klikkaamalla on nyt käytössä."
+  command-gsit-playertoggle-off: "[P]<green> Pelaajan päällä istuminen klikkaamalla on nyt pois käytöstä."
+  command-gcrawl-toggle-on: "[P]<green> You have enabled double-sneak for crawl."
+  command-gcrawl-toggle-off: "[P]<green> You have disabled double-sneak for crawl."
+
+  action-sit-now-error: "[P]<red> Et voi istua juuri nyt!"
+  action-sit-world-error: "[P]<red> Tässä maailmassa ei voi istua!"
+  action-sit-location-error: "[P]<red> Tässä ei voi istua!"
+  action-sit-safe-error: "[P]<red> Tässä ei ole turvallista istua!"
+  action-sit-region-error: "[P]<red> Tällä alueella ei voi istua!"
+  action-sit-kick-error: "[P]<red> Joku istuu jo tässä!"
+  action-sit-error: "[P]<red> Due to an error you can't sit here!"
+  action-sit-info: "<green>Nouse painamalla<gold> <lang:key.sneak><green> -näppäintä."
+
+  action-playersit-info: "<green>Nouse painamalla<gold> <lang:key.sneak><green> -näppäintä."
+
+  action-pose-now-error: "[P]<red> Et voi käyttää tätä ominaisuutta juuri nyt!"
+  action-pose-world-error: "[P]<red> Tässä maailmassa ei voi käyttää tätä ominaisuutta!"
+  action-pose-location-error: "[P]<red> Tässä ei voi käyttää tätä ominaisuutta!"
+  action-pose-safe-error: "[P]<red> Tässä ei ole turvallista!"
+  action-pose-region-error: "[P]<red> Tällä alueella ei voi käyttää tätä ominaisuutta!"
+  action-pose-kick-error: "[P]<red> Tässä on jo joku!"
+  action-pose-error: "[P]<red> Due to an error you can't pose here!"
+  action-pose-info: "<green>Nouse painamalla<gold> <lang:key.sneak><green> -näppäintä."
+
+  action-crawl-now-error: "[P]<red> Et voi ryömiä juuri nyt!"
+  action-crawl-world-error: "[P]<red> Tässä maailmassa ei voi ryömiä!"
+  action-crawl-region-error: "[P]<red> Tällä alueella ei voi ryömiä!"
+  action-crawl-info: "<green>Nouse painamalla<gold> <lang:key.sneak><green> -näppäintä."
+
+  action-blocked-error: "[P]<red> Et voi käyttää tätä komentoa juuri nyt!"
