@@ -35,8 +35,8 @@ locales:
   tpignore_toggle_button: "[[Ota käyttöön / poista käytöstä…]](#a78bfa show_text=Paina laittaaksesi teleporttauspyynnöt päälle / pois päältä run_command=/huskhomes:tpignore)"
   edit_home_menu_title: "Tarkastellaan kotisi tietoja, [%1%](#a78bfa):"
   edit_home_menu_title_other: "Tarkastellaan pelaajan [%1%](#a78bfa) kodin tietoja, [%2%](#a78bfa):"
-  edit_home_menu_metadata_private: '[%1%](show_text=Set Timestamp:\nKoti luotu)   [%2%](show_text=Kodin ID:\n%3%)   [Yksityinen koti](show_text=Yksityisyys:\nKoti on yksityinen)'
-  edit_home_menu_metadata_public: '[%1%](show_text=Set Timestamp:\nKoti luotu)   [%2%](show_text=Kodin ID:\n%3%)   [Julkinen koti](show_text=Yksityisyys:\nKuka tahansa voi teleportata kotiin)'
+  edit_home_menu_metadata_private: '[%1%](show_text=Aika:\nKoti luotu)   [%2%](show_text=Kodin ID:\n%3%)   [Yksityinen koti](show_text=Yksityisyys:\nKoti on yksityinen)'
+  edit_home_menu_metadata_public: '[%1%](show_text=Aika:\nKoti luotu)   [%2%](show_text=Kodin ID:\n%3%)   [Julkinen koti](show_text=Yksityisyys:\nKuka tahansa voi teleportata kotiin)'
   edit_home_menu_description: '[%1%](show_text=Kuvaus:\n%2%)\n'
   edit_home_menu_world: '[%1%](show_text=Maailma:\nMaailma, jossa koti sijaitsee)'
   edit_home_menu_world_server: '[%1%](show_text=Maailma:\nMaailma, jonne koti on asetettu) [%2%](how_text=Palvelin:\nPalvelin, jonne koti on asetettu)'
@@ -57,7 +57,7 @@ locales:
   edit_home_update_name: "Uudelleennimettiin koti: [%2%](#a78bfa)"
   edit_home_update_name_other: "Uudelleennimettiin pelaajan [%1%](#a78bfa) koti: [%3%](#a78bfa)"
   edit_warp_menu_title: "[Tarkastellaan warpin tietoja,](#00fb9a) [%1%](#00fb9a)[:](#00fb9a)"
-  edit_warp_menu_metadata: '[%1%](show_text=Set Timestamp:\nWarp luotu)   [%2%]( show_text=Warp ID:\n%3%)'
+  edit_warp_menu_metadata: '[%1%](show_text=Aika:\nWarp luotu)   [%2%]( show_text=Warp ID:\n%3%)'
   edit_warp_menu_description: '[%1%]( show_text=Kuvaus:\n%2%)\n'
   edit_warp_menu_world: '[%1%](show_text=World:\nMaailma, johon warp on asetettu)'
   edit_warp_menu_world_server: '[%1%](show_text=World:\nThe world where the warp is set)   [%2%](show_text=Server:\nThe server where the warp is set)'
@@ -78,7 +78,7 @@ locales:
   home_is_private: "Yksityinen"
   warp_list_item: '[[%1%]](show_text=%1%\n %3% run_command=/huskhomes:warp %2%)'
   command_list_item: '[/%1%](show_text=Paina ehdottaaksesi suggest_command=/%1%)   [%2%](show_text=/%1%\n%3%)'
-  list_item_divider: " [•](gray) "
+  list_item_divider: " [•](#94a3b8) "
   list_footer: \n%1%[Sivu](#00fb9a) [%2%](#00fb9a)/[%3%](#00fb9a)%4%   %5% # Korjaa tää
   list_previous_page_button: "[◀](white show_text=Edellinen sivu run_command=%2% %1%) "
   list_next_page_button: " [▶](white show_text=Seuraava sivu run_command=%2% %1%)"
@@ -101,17 +101,17 @@ locales:
   delete_all_homes_success: "[Poistettiin onnistuneesti kaikki kodit]"
   delete_all_warps_success: "[Poistettiin kaikki warpit]"
   economy_transaction_complete: "[%1% has been deducted from your account. (%2%)](gray)"
-  economy_action_additional_home_slot: Bought an additional home slot
-  economy_action_make_home_public: Made a home public
-  economy_action_back_command: Used the /back command
-  economy_action_random_teleport: Used the /rtp command
-  economy_action_home_teleport: Teleported to a home
-  economy_action_public_home_teleport: Teleported to a public home
-  economy_action_warp_teleport: Teleported to a warp
-  economy_action_spawn_teleport: Teleported to spawn
+  economy_action_additional_home_slot: Bought an additional home slot # ??? Ei tuu käyttöön tho
+  economy_action_make_home_public: Tehtiin kodista julkinen
+  economy_action_back_command: Käytettiin komentoa /back
+  economy_action_random_teleport: Käytettiin komentoa /rtp
+  economy_action_home_teleport: Teleportattiin kotiin
+  economy_action_public_home_teleport: Teleportattiin julkiseen kotiin
+  economy_action_warp_teleport: Teleportattiin warppiin
+  economy_action_spawn_teleport: Teleportattiin spawnille
   economy_action_send_teleport_request: Teleporttauspyyntö lähetetty
   economy_action_accept_teleport_request: Teleporttauspyyntö hyväksytty
-  return_by_death_notification: "Palaa sinne jossa kuolit? [[Teleport…]](#00fb9a show_text=Paina teleportataksesi sijaintiin jossa kuolit run_command=/huskhomes:back)" # Tää ei kaiketi oo tulossa käyttöön
+  return_by_death_notification: "Palaa sinne jossa kuolit? [[Teleport…]](#00fb9a show_text=Paina teleportataksesi sijaintiin jossa kuolit run_command=/huskhomes:back)" # Ei oo tulossa käyttöön
   map_hook_public_homes_marker_set_name: Julkiset kodit
   map_hook_warps_marker_set_name: Warpit
   up_to_date: "[HuskHomes](#00fb9a) [|](#94a3b8) You are running the latest version of HuskHomes (v%1%)"
