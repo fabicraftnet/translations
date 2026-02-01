@@ -1,0 +1,586 @@
+#
+# Messages configuration
+#
+#
+# In most cases, the variables inside the default messages are those available
+# in that specific message. The exception to this is messages which are related
+# to a certain punishment.
+#
+# When message has an associated punishment, multiple variables are available:
+#
+# %ID% - punishment ID number
+# %TYPE% - punishment type, e.g. 'Ban'
+# %TYPE_VERB% - punishment type as a verb, e.g. 'Banned'
+# %VICTIM% - display name of the victim of the punishment
+# %VICTIM_ID% - identifier of victim, like the target player's UUID
+# %OPERATOR% - display name of the staff member who made the punishment
+# %OPERATOR_ID% - identifier of the operator, like the staff member's UUID
+# %UNOPERATOR% - staff member undoing the punishment. available only when the punishment is undone
+# %UNOPERATOR_ID% - identifier of staff member undoing the punishment, like the staff members' UUID
+# %REASON% - reason for the punishment
+# %SCOPE% - scope of the punishment
+# %DURATION% - original duration (how long the punishment was made for)
+# %START_DATE% - the date the punishment was created
+# %TIME_PASSED% - the time since the punishment was created
+# %TIME_PASSED_SIMPLE% - the time since the punishment was created, rounded to the biggest time unit possible (e.g. 2 months instead of 1 month 23 days)
+# %END_DATE% - the date the punishment will end, or formatting.permanent-display.absolute for permanent punishments
+# %TIME_REMAINING% - the time until the punishment ends, or formatting.permanent-display.relative for permanent punishments
+# %TIME_REMAINING_SIMPLE% - the time until the punishment ends, rounded to the biggest time unit possible (e.g. 10 days instead of 9 days 13 hours)
+# %HAS_EXPIRED% - Shows if a punishments duration has run out. Does not check if the punishment is revoked!
+# %TRACK% - the escalation track of the punishment, for example if you are using layouts
+# %TRACK_ID% - the ID of the escalation track
+# %TRACK_NAMESPACE% - the namespace of a track can be used by other plugins to implement their own layouts
+#
+# The following variables have limited availability:
+# %TARGET% - the original target argument of a command. For example, in '/ipban Player1', %TARGET% is Player1
+# %PAGE% - the number of the current page in a list
+# %NEXTPAGE% - the number of the next page
+# %LASTPAGE% - the number of the last page
+# %NEXTPAGE_KEY% - a code which if used with the command, shows the next page
+# %LASTPAGE_KEY% - a code which if used with the command, shows the last page
+# (%PREVIOUSPAGE% - a deprecated equivalent for %LASTPAGE%)
+#
+# Pagination can be absolute or relative depending on which variables you use. For example, the %NEXTPAGE_KEY%
+# and %LASTPAGE_KEY% variables provide special codes which, when used with the command, switch to the next page.
+# These are designed to be used with 'click events' so that staff can easily click to move between pages.
+# Please note that this feature is based on relative browsing of the page results, which means that a page represents
+# a "place" in the list and not really an absolute page number.
+#
+# Messages regarding /ban, /mute, /warn, /kick
+# Includes punishment layouts
+#
+#
+additions:
+  mutes:
+    conflicting: "<#ef4444>%TARGET%<#94a3b8> on jo mykistetty"
+    success:
+      notification: "Mykistettiin pelaaja <#ef4444>%VICTIM%<#ffffff> ajaksi <#4ade80>%DURATION%<#ffffff> syy: <#facc15>%REASON%"
+      message: "Mykistettiin pelaaja <#ef4444>%VICTIM%<#ffffff> ajaksi <#4ade80>%DURATION%<#ffffff> syy: <#facc15>%REASON%"
+
+    exempted: "<#ef4444>%TARGET%<#ffffff> ei voida mykistää"
+    layout:
+      - "<#ef4444>&lMykistetty"
+      - "Jäljellä: <#a78bfa>%TIME_REMAINING%"
+      - ""
+      - "<#facc15>Syy:"
+      - "<#94a3b8>%REASON%"
+      - ""
+      - "Voit hakea rangaistukseesi muutosta avaamalla tiketin FabiCraftin Discordissa komennolla <#a78bfa>/ticket"
+    usage: "<#ef4444>Käyttö: <#facc15>/mute <pelaaja> [aika] <syy>"
+    permission:
+      duration: "<#ef4444>You may not do this for <#facc15>%DURATION%"
+      both: "<#ef4444>Et voi tehdä tätä pelaajille tai IP-osotteille"
+      uuid: "<#ef4444>Et voi tehä tätä pelaajille"
+      ip-address: "<#ef4444>You may not do this to IP addresses"
+
+  bans:
+    conflicting: "<#ef4444>%TARGET% <#ffffff>on jo porttikielloilla"
+    success:
+      notification: "Annettiin pelaajalle <#ef4444>%VICTIM% <#ffffff>porttikielto ajaksi: &2%DURATION%<#ffffff> syy: <#facc15>%REASON%"
+      message: "Annettiin pelaajalle <#ef4444>%VICTIM% <#ffffff>porttikielto ajaksi: &2%DURATION%<#ffffff> syy: <#facc15>%REASON%"
+
+    exempted: "Pelaajalle: <#ef4444>%TARGET% <#ffffff>ei voida antaa porttikieltoa"
+    layout:
+      - "<#ef4444>&lPorttikielto"
+      - "Jäljellä: <#a78bfa>%TIME_REMAINING%"
+      - ""
+      - "<#facc15>Syy:"
+      - "%REASON%"
+      - ""
+      - "Voit hakea rangaistukseesi muutosta avaamalla tiketin FabiCraftin Discordissa komennolla <#a78bfa>/ticket"
+    usage: "<#ef4444>Käyttö: <#facc15>/ban <pelaaja> [aika] <syy>"
+    permission:
+      duration: "<#ef4444>Et voi tehdä tätä ajaksi: <#facc15>%DURATION%"
+      both: "<#ef4444>Et voi tehdä tätä pelaajille tai IP-osotteille"
+      uuid: "<#ef4444>Et voi tehä tätä pelaajille"
+      ip-address: "<#ef4444>Et voi tehdä tätä IP-osotteille"
+
+  kicks:
+    success:
+      notification: "Potkittiin <#ef4444>%VICTIM%<#ffffff> palvelimelta. Syy: <#facc15>%REASON%"
+      message: "Potkittiin <#ef4444>%VICTIM%<#ffffff> palvelimelta. Syy: <#facc15>%REASON%"
+
+    must-be-online: "<#ef4444>%TARGET%<#ffffff> pitää olla palvelimella"
+    exempted: "Pelaajaa <#ef4444>%TARGET%<#ffffff> ei voida potkia"
+    layout:
+      - "<#ef4444>&lSinut on potkittu palvelimelta"
+      - ""
+      - "<#facc15>Syy:"
+      - "%REASON%"
+    usage: "<#ef4444>Käyttö: <#facc15>/kick <pelaaja> <syy>"
+    permission:
+      both: "<#ef4444>Et voi tehdä tätä pelaajille tai IP-osotteille"
+      uuid: "<#ef4444>Et voi tehä tätä pelaajille"
+      ip-address: "<#ef4444>Et voi tehdä tätä IP-osotteille"
+
+  warns:
+    success:
+      notification: "Annettiin pelaajalle <#ef4444>%VICTIM%<#ffffff> varoitus syy: <#facc15>%REASON%"
+      message: "Annettiin pelaajalle <#ef4444>%VICTIM%<#ffffff> varoitus syy: <#facc15>%REASON%"
+
+    exempted: "Pelaajalle: <#ef4444>%TARGET%<#94a3b8> ei voi antaa varoitusta"
+    layout:
+      - "<#ef4444>&lSait varoituksen"
+      - "Jäljellä: <#a78bfa>%TIME_REMAINING%"
+      - ""
+      - "<#facc15>&lSyy"
+      - "%REASON%"
+    usage: "<#ef4444>Käyttö: <#facc15>/warn <pelaaja> [aika] <syy>"
+    permission:
+      duration: "<#ef4444>Et voi tehdä tätä ajaksi: <#facc15>%DURATION%"
+      both: "<#ef4444>Et voi tehdä tätä pelaajille tai IP-osotteille"
+      uuid: "<#ef4444>Et voi tehä tätä pelaajille"
+      ip-address: "<#ef4444>Et voi tehdä tätä IP-osotteille"
+
+  # Regards /unban, /unmute, /unwarn
+removals:
+  mutes:
+    success:
+      notification: "Poistettiin mykistys pelaajalta: <#ef4444>%VICTIM%"
+      message: "Poistettiin mykistys pelaajalta: <#ef4444>%VICTIM%"
+
+    not-found: "<#ef4444>%TARGET%<#94a3b8> ei ole mykistettynä"
+    usage: "<#ef4444>käyttö: /unmute <#facc15><pelaaja><#ef4444>"
+    permission:
+      both: "<#ef4444>Et voi tehdä tätä pelaajille tai IP-osotteille"
+      uuid: "<#ef4444>Et voi tehä tätä pelaajille"
+      ip-address: "<#ef4444>Et voi tehdä tätä IP-osotteille"
+
+  bans:
+    success:
+      notification: "Poistettiin porttikielto pelaajalta: <#ef4444>%VICTIM%"
+      message: "Poistettiin porttikielto pelaajalta: <#ef4444>%VICTIM%"
+
+    not-found: "<#ef4444>%TARGET%<#94a3b8> is not banned."
+    usage: "<#ef4444>Usage: /unban <#facc15><player><#ef4444>."
+    permission:
+      both: "<#ef4444>Et voi tehdä tätä pelaajille tai IP-osotteille."
+      uuid: "<#ef4444>Et voi tehä tätä pelaajille."
+      ip-address: "<#ef4444>Et voi tehdä tätä IP-osotteille."
+
+  warns:
+    not-a-number: "<#ef4444>%ID_ARG%<#94a3b8> ei ole numero."
+    success:
+      notification: "Poistettiin varoitus pelaajalta: <#ef4444>%VICTIM%"
+      message: "Poistettiin varoitus pelaajalta: <#ef4444>%VICTIM%."
+
+    not-found: "<#ef4444>%TARGET%<#94a3b8> ei ole warnia käyttäjältä: <#ef4444>%ID%<#94a3b8>"
+    usage: "<#ef4444>Usage: /unwarn <#facc15><pelaaja> <id><#ef4444>"
+    permission:
+      both: "<#ef4444>Et voi tehdä tätä pelaajille tai IP-osotteille"
+      uuid: "<#ef4444>Et voi tehä tätä pelaajille"
+      ip-address: "<#ef4444>Et voi tehdä tätä IP-osotteille"
+
+admin:
+  addons:
+    reload-addon:
+      does-not-exist: "<#ef4444>That addon does not exist."
+      success: "<#4ade80>Reloaded addon <#facc15>%ADDON%<#4ade80>."
+      usage: "<#ef4444>Usage: /libertybans addon reload <addon>. To reload all addons, /libertybans reload will suffice."
+      failed: "<#ef4444>An error occurred reloading addon configuration. Please check the server console."
+
+    listing:
+      message: "&b&lAddons Installed"
+      layout: "<#94a3b8>- %ADDON%"
+
+    install:
+      already-installed: "<#4ade80>Addon <#facc15>%ADDON%<#4ade80> is already installed or on the file system."
+      does-not-exist: "<#ef4444>Cannot find <#facc15>%ADDON%<#ef4444> among the standard addon packages. <#94a3b8>If you want to use an external or custom addon, please install the jar directly to plugins/LibertyBans/addons."
+      installed: "<#4ade80>Installed addon <#facc15>%ADDON%<#4ade80>. It will be loaded after the next server restart."
+      usage: "<#ef4444>Usage: /libertybans addon install <addon>"
+
+    usage: "<#ef4444>Usage: /libertybans addon <list|reload>"
+
+  ellipses: "<#4ade80>..."
+  reloaded: "<#4ade80>Reloaded"
+  reload-failed: "<#ef4444>An error occurred reloading the configuration. Please check the server console."
+  restarted: "<#4ade80>Restarted"
+  importing:
+    # To prevent mistakes, it is not allowed to import multiple times at once.
+    in-progress: "<#ef4444>There is already an import in progress."
+    failure: "<#ef4444>Import failed. View the server console for details."
+    started: "<#94a3b8>Import has started. View your server console for details and progress."
+    complete: "<#94a3b8>Import completed."
+    usage: "<#ef4444>Usage: /libertybans import <advancedban|litebans|vanilla|self>"
+
+  no-permission: "<#ef4444>Sorry, you cannot use this."
+
+  # Messages for alt-checks and alt account notifications
+  #
+  # Before configuring this section, it is necessary to look at the address-enforcement
+  # settings in the main config.yml and understand the different kinds of alt detection.
+  # There is normal and strict detection.
+alts:
+  formatting:
+    # In the alt-check layout, the username of the alt may be formatted depending upon whether it is banned
+    # For example, the usernames of banned alts may be colored red whereas alts not banned are green
+    # Variables: %USERNAME%
+    name-display:
+      banned: "<#ef4444>%USERNAME%"
+      muted: "<#facc15>%USERNAME%"
+      not-punished: "%USERNAME%"
+
+      # The description for an alt account detected by strict detection.
+    strict:
+      "<#facc15>Mahdollinen"
+      # How a single detected alt should be displayed
+      # In addition to header/footer variables, the following are provided:
+      # %DETECTION_KIND% - how the account was detected. Will be replaced by the normal or strict options.
+      # %ADDRESS% - the address in question which led to the detection
+      # %RELEVANT_USER% - the username of the other account, formatted according to the name-display option
+      # %RELEVANT_USERID% - the uuid of the other account
+      # %DATE_RECORDED% - the date the alt account was recorded
+    layout:
+      "%RELEVANT_USER% <#94a3b8>(%ADDRESS%) %DATE_RECORDED% - %DETECTION_KIND%"
+      # The description for an alt account detected by normal detection.
+    normal: "<#ef4444>Todennäköinen"
+
+  auto-show:
+    # Whether to sort by oldest detections first
+    oldest-first:
+      true
+      # After this many alts, they will stop being shown.
+    limit:
+      4
+      # The separator between list entries
+    separator:
+      ", "
+      # The message to display atop the alt check. Set to an empty string to disable
+    header:
+      "<#ef4444>%TARGET%<#ffffff> saattaa olla alt-käyttäjä"
+      # The message following the alt-check. Set to an empty string to disable. %TARGET% available.
+    footer: []
+
+    # Regarding the /alts command
+  command:
+    none-found:
+      "<#94a3b8>Ei alt-käyttäjiä löydetty"
+      # Amount of alts to display per page
+    per-page:
+      10
+      # Whether to sort by oldest detections first
+    oldest-first:
+      true
+      # The separator between list entries
+    separator: []
+      # The message to display atop the alt check. Set to an empty string to disable.
+      # Available variables:
+      # %TARGET% - the target user
+      # %PAGE% - the current page number
+      # %NEXTPAGE% - the next page number
+      # %NEXTPAGE_KEY% - a code which if used with the command, shows the next page
+      # %LASTPAGE% - the last page number
+      # %LASTPAGE_KEY% - a code which if used with the command, shows the last page
+    header: "<#94a3b8>Alt-käyttäjä raportti pelaajalta: <#ef4444>%TARGET%"
+    permission:
+      "<#ef4444>Et voi tarkastella Alt-käyttäjiä"
+      # How to format the footer. This is sent after every page.
+      # Available variables are the same as for the header.
+    footer: "<#94a3b8><Seuraava sivu>||ttp:Click for next page||cmd:/libertybans alts %TARGET% %NEXTPAGE_KEY%"
+    usage: "<#ef4444>käyttö: /alts <#facc15><pelaaja><#ef4444>"
+
+  # Configuration for the /accounthistory command
+account-history:
+  # Regards /accounthistory list
+  listing:
+    none-found:
+      "<#94a3b8>No recorded accounts found"
+      # Amount of accounts to display per page
+    per-page:
+      10
+      # The separator between list entries
+    separator:
+      ""
+      # How a single recorded account should be displayed
+      # Available variables, in addition to header variables:
+      # %USERNAME% - the username the player connected with
+      # %ADDRESS% - the address the player connected with
+      # %DATE_RECORDED% - the date the join was recorded
+      # %DATE_RECORDED_RAW% - the raw timestamp the join was recorded
+    layout:
+      "%USERNAME% <#94a3b8>(on %ADDRESS%) at %DATE_RECORDED% (%DATE_RECORDED_RAW%)||ttp:<#94a3b8>Click to delete this stored account||cmd:/accounthistory delete %TARGET% %DATE_RECORDED_RAW%"
+      # The message to display before the account listing. Set to an empty string to disable
+      # Available variables:
+      # %TARGET% - the target user
+      # %PAGE% - the current page number
+      # %NEXTPAGE% - the next page number
+      # %NEXTPAGE_KEY% - a code which if used with the command, shows the next page
+      # %LASTPAGE% - the last page number
+      # %LASTPAGE_KEY% - a code which if used with the command, shows the last page
+    header: "<#94a3b8>Known accounts report for <#ef4444>%TARGET%<#94a3b8> follows."
+    permission:
+      "<#ef4444>You may not list recorded accounts."
+      # How to format the footer. This is sent after every page.
+      # Available variables are the same as for the header.
+    footer: "<#94a3b8><Next Page>||ttp:Click for next page||cmd:/libertybans accounthistory %TARGET% %NEXTPAGE_KEY%"
+    usage: "<#ef4444>Usage: /accounthistory list <user|ip>"
+
+    # Pertains to /accounthistory delete <user> <timestamp>
+  delete:
+    no-such-account: "<#ef4444>%TARGET% has no recorded account for the specified timestamp."
+    permission: "<#ef4444>Et voi poistaa tallennettuja käyttäjiä."
+    success: "<#94a3b8>Successfully deleted the recorded account of <#facc15>%TARGET%"
+    usage:
+      - "<#ef4444>Usage: /accounthistory delete <user> <timestamp>.<#ffffff>"
+      - "<#94a3b8>The timestamp is in unix seconds and is usually obtained from /accounthistory list"
+
+  usage: "<#ef4444>Usage: /accounthistory <delete|list>"
+
+  # Specific formatting options
+formatting:
+  # There are 2 ways to make permanent punishments. The first is to not specify a time (/ban <player> <reason>).
+  # The second is to specify a permanent amount of time (/ban <player> perm <reason>).
+  # When typing commands, what time arguments will be counted as permanent?
+  permanent-arguments:
+    - "perm"
+    - "permanent"
+    - "ikuinen"
+    - "permanently"
+    # When using /blame, how should the console be specified?
+  console-arguments:
+    - "konsoli"
+    # How should 'permanent' be displayed as a length of time?
+  permanent-display:
+    # What do you call a permanent duration?
+    duration:
+      "Loputon"
+      # When does a permanent punishment end?
+    absolute:
+      "Loputon"
+      # How do you describe the time remaining in a permanent punishment?
+    relative: "Ikuinen"
+
+    # When there is no more time remaining in a punishment (the punishment has expired),
+    # this becomes the value of the %TIME_REMAINING% variable
+  no-time-remaining-display:
+    "N/A"
+    # How should the %HAS_EXPIRED% variable be displayed?
+  punishment-expired-display:
+    # How do you describe a punishment which is not expired?
+    not-expired:
+      "Voimassa"
+      # How do you describe an expired punishment?
+    expired: "Vanhentunut"
+
+    # Controls how the %TRACK%, %TRACK_ID%, and %TRACK_NAMESPACE% variables are displayed
+  track-display:
+    # How do you describe the lack of an escalation track?
+    # The value will be displayed for the %TRACK% variable
+    no-track:
+      "No track"
+      # How do you describe the lack of an escalation track with respect to its ID?
+      # The value will be displayed for the %TRACK_ID% variable
+    no-track-id:
+      "No track ID"
+      # How do you describe the lack of an escalation track with respect to its namespace?
+      # The value will be displayed for the %TRACK_NAMESPACE% variable
+    no-track-namespace:
+      "(none)"
+      # You may wish to override the track display names. Normally the track ID is displayed,
+      # which is lowercase and stored in the database. If you want a different name to be displayed
+      # for the track, write it here.
+      #
+      # This option affects the %TRACK% variable but not the %TRACK_ID% variable.
+    track-display-names:
+      spam: "Spamming"
+      hacking: "Hacking"
+
+    # How should the console be displayed?
+  console-display:
+    "Konsoli"
+    # How should punishment types be displayed?
+  punishment-type-display:
+    WARN: "Varoitus"
+    MUTE: "Mykistys"
+    BAN: "Porttikielto"
+    KICK: "Potku"
+
+    # How should punishment types be displayed as a verb? Used for the %TYPE_VERB% variable.
+  punishment-type-verb-display:
+    WARN: "Varoitettu"
+    MUTE: "Mykistetty"
+    BAN: "Porttikielto"
+    KICK: "Potkittu"
+
+    # How should the global scope be displayed?
+  global-scope-display:
+    "All servers"
+    # Controls how victims are displayed
+  victim-display:
+    # In rare cases, you may have punishments for a user whose name is unknown. This can happen because
+    # users are punished by UUID, but on some configurations it is not possible to lookup player names.
+    # When this occurs, the following text is used instead of the player name.
+    player-name-unknown:
+      "-Tuntematon-"
+      # Whether to censor IP addresses for players without the libertybans.admin.viewips permission
+    censor-ip-addresses:
+      true
+      # The substitute text when an IP address cannot be viewed because the user lacks permission
+    censored-ip-address: "<IP-osoite>"
+
+    # Most users will not need this section. It's mainly a fancy.
+    # If you want to change how IDs are displayed and parsed, modify that behavior here.
+  id-display:
+    # Some users want their IDs to be displayed 'randomly' or at least pseudorandomly.
+    # Change this option to add pseudorandom ID scrambling. Available values:
+    # - NONE : no change (default)
+    # - BITFIDDLE : a pseudorandom approach that simply moves around bits (recommended to use with base 36)
+    # - CIPHER : Uses block cipher encryption. Looks very random
+    #
+    # All of these algorithms are reversible. That means, no matter what you configure, these IDs can
+    # be transparently used across the whole plugin. For example, using /unwarn <player> <ID> will work
+    # but only if you enter a scrambled ID.
+    #
+    # Note that if you run multiple instances, you must configure both this setting and 'number-of-algorithm-runs'
+    # to be the same value. If you don't, the plugin will still work, but using IDs will be a maddening hell.
+    scrambling-algorithm:
+      "NONE"
+      # The number of times to run the algorithm in 'scrambling-algorithm'.
+    number-of-algorithm-runs:
+      2
+      # If using a base greater than 10, this controls whether letters are capitalized.
+    capitalize-letters-in-display:
+      false
+      # What base of number system should be used? For example:
+      # 2 - binary, 10 - regular, 16, hexadecimal
+      # Max value is 36, which will use all the letters of the alphabet plus 10 numerals (26 + 10 = 36).
+    base: 10
+
+misc:
+  unknown-error:
+    "<#ef4444>Tuntematon virhe."
+    # Only applicable if synchronous enforcement strategy is DENY in the main config
+  sync-chat-denial-message:
+    "<#ef4444>Synchronous chat denied. <#94a3b8>Please try again."
+    # Concerns formatting of relative times and durations
+  time:
+    # Times are formatted to seconds accuracy, but you may not want to display seconds
+    # for most times. However, for very small durations, you need to display a value in seconds.
+    # If you are using SECONDS in the above section, this value is meaningless.
+    fallback-seconds: "%VALUE% sekuntia"
+    grammar:
+      # If enabled, places commas after each time fragment, except the last one
+      comma:
+        true
+        # What should come before the last fragment? Set to empty text to disable
+      and: "ja "
+
+    fragments:
+      WEEKS: "%VALUE% viikkoa"
+      YEARS: "%VALUE% vuotta"
+      MONTHS: "%VALUE% kuukautta"
+      HOURS: "%VALUE% tuntia"
+      DAYS: "%VALUE% päivää"
+      MINUTES: "%VALUE% minuuttia"
+
+all:
+  # When issuing commands, if the specified player or IP was not found, what should the error message be?
+  not-found:
+    player-or-address: "<#ef4444>%TARGET%<#94a3b8> ei löydetty online tai offline pelaajista tai ei ole validi IP-osoite."
+    uuid: "<#ef4444>%TARGET%<#94a3b8> ei ole validi uuid."
+    player: "<#ef4444>%TARGET%<#94a3b8> ei löydetty online tai offline pelaajista."
+
+    # If a player types /libertybans but does not have the permission 'libertybans.commands', this is the denial message
+  base-permission-message: "<#ef4444>Sinulla ei ole oikeutta tähän."
+  prefix:
+    # The prefix to use
+    value: []
+      # If enabled, all messages will be prefixed
+    enable: false
+
+  usage:
+    "<#ef4444>Tuntematon alikomento. Näytetään käyttöohje:"
+    # This section is only relevant if using the server scopes feature
+  scopes:
+    no-permission-for-default: "<#ef4444>You may not use this command without specifying a scope."
+    invalid: "<#ef4444>Invalid scope specified: <#facc15>%SCOPE_ARG%<#ef4444>."
+    no-permission: "<#ef4444>You may not use scope <#facc15>%SCOPE%<#ef4444>."
+
+  # Used for /banlist, /mutelist, /history, /warns, /blame
+lists:
+  ban-list:
+    perPage: 10
+    noPages: "<#94a3b8>Aktiivisia porttikieltoja ei ole."
+    maxPages: "<#94a3b8>sivua <#facc15>%PAGE%<#94a3b8> ei ole olemassa."
+    permission:
+      command: "<#94a3b8>Sinulla ei ole oikeutta tarkastella porttikieltoja."
+
+    layout:
+      header:
+        - "<#94a3b8>[<#facc15>ID<#94a3b8>] <#facc15>Subject<#ffffff>"
+        - "<#94a3b8>Operator &8/ <#94a3b8>Reason &8/ <#94a3b8>Time Remaining"
+      body:
+        - "<#94a3b8>[<#facc15>%ID%<#94a3b8>] <#facc15>%VICTIM%<#ffffff>"
+        - "<#94a3b8>%OPERATOR% &8/ <#94a3b8>%REASON% &8/ <#94a3b8>%TIME_REMAINING%"
+      footer: "<#94a3b8>Page <#facc15>%PAGE%<#94a3b8>.||ttp:Click for next page||cmd:/libertybans banlist %NEXTPAGE%"
+
+    usage: "<#ef4444>Usage: /banlist <#facc15>[page]"
+
+  mute-list:
+    perPage: 10
+    noPages: "<#94a3b8>There are no active mutes."
+    maxPages: "<#94a3b8>Page <#facc15>%PAGE%<#94a3b8> does not exist."
+    permission:
+      command: "<#94a3b8>You may not view the mutelist."
+
+    layout:
+      header:
+        - "<#94a3b8>[<#facc15>ID<#94a3b8>] <#facc15>Subject<#ffffff>"
+        - "<#94a3b8>Operator &8/ <#94a3b8>Reason &8/ <#94a3b8>Time Remaining"
+      body:
+        - "<#94a3b8>[<#facc15>%ID%<#94a3b8>] <#facc15>%VICTIM%<#ffffff>"
+        - "<#94a3b8>%OPERATOR% &8/ <#94a3b8>%REASON% &8/ %TIME_REMAINING%"
+      footer: "<#94a3b8>Page <#facc15>%PAGE%<#94a3b8>.||ttp:Click for next page||cmd:/libertybans mutelist %NEXTPAGE%"
+
+    usage: "<#ef4444>Usage: /mutelist <#facc15>[page]"
+
+  warns:
+    perPage: 10
+    noPages: "pelaajalla <#ef4444>%TARGET%<#94a3b8> ei ole varoituksia."
+    maxPages: "<#ef4444>Sivu <#facc15>%PAGE%<#94a3b8> ei ole olemassa."
+    permission:
+      command: "<#ef4444>Sinulla ei ole lupaa tarkastella varoituksia."
+
+    layout:
+      header: "<#94a3b8>[<#facc15>ID<#94a3b8>] Moderaattori &8/ <#94a3b8>Syy &8/ <#94a3b8>Aikaa jäljellä"
+      body: "<#94a3b8>[<#facc15>%ID%<#94a3b8>] %OPERATOR% &8/ <#94a3b8>%REASON% &8/ <#94a3b8>%TIME_REMAINING%"
+      footer: "<#94a3b8>Page <#facc15>%PAGE%<#94a3b8>.||ttp:Click for next page||cmd:/libertybans warns %TARGET% %NEXTPAGE%"
+
+    usage: "<#ef4444>Käyttö: /warns <#facc15><player> [page]"
+
+  blame:
+    perPage: 10
+    noPages: "<#ef4444>%TARGET%<#94a3b8> Ei ole (vielä) rankaissut yhtään pelaajaa."
+    maxPages: "<#94a3b8>Sivua <#facc15>%PAGE%<#94a3b8> ei ole olemassa."
+    permission:
+      command: "<#94a3b8>Sinulla ei ole oikeutta käyttää syytöksiä >:(."
+
+    layout:
+      header:
+        - "<#94a3b8>[<#facc15>ID<#94a3b8>] <#facc15>Subject &8/ <#94a3b8>Punishment Type<#ffffff>"
+        - "<#94a3b8>Reason &8/ <#94a3b8>Date Enacted"
+      body:
+        - "<#94a3b8>[<#facc15>%ID%<#94a3b8>] <#facc15>%VICTIM% &8 / <#94a3b8>%TYPE%<#ffffff>"
+        - "<#94a3b8>%REASON% &8/ <#94a3b8>%START_DATE%"
+      footer: "<#94a3b8>Page <#facc15>%PAGE%<#94a3b8>.||ttp:Click for next page||cmd:/libertybans warns %TARGET% %NEXTPAGE%"
+
+    usage: "<#ef4444>Usage: /blame <#facc15><player> [page]"
+
+  history:
+    perPage: 10
+    noPages: "Pelaajalla <#ef4444>%TARGET% <#ffffff>ei ole historiaa."
+    maxPages: "<#94a3b8>Sivua <#facc15>%PAGE%<#94a3b8> ei ole olemassa."
+    permission:
+      command: "<#94a3b8>Sinulla ei ole oikeutta tarkastella historiaa."
+
+    layout:
+      header:
+        - "<#4ade80>Pelaajan %TARGET% rangaistushistoria<#ffffff>"
+        - "<#ef4444>Rangaistus &8/<#ffffff> kesto &8/<#ffffff> voimassa? &8/ <#94a3b8>ID<#ffffff>"
+        - "Rangaistuksen antaja &8/ <#facc15>syy &8/ <#94a3b8>päiväys"
+      body:
+        - "<#ef4444>%TYPE% &8/ <#ffffff>%DURATION% &8/<#ffffff> %HAS_EXPIRED% &8/ <#94a3b8>%ID%<#ffffff>"
+        - "%OPERATOR% &8/ <#facc15>%REASON% &8/ <#94a3b8>%START_DATE%"
+      footer: "<#94a3b8>Sivu <#facc15>%PAGE%<#94a3b8>.||ttp:Paina siirtyäksesi seuraavalle sivulle||cmd:/libertybans history %TARGET% %NEXTPAGE%"
+
+    usage: "<#ef4444>Käyttö: /history <#facc15><player> [page]"
