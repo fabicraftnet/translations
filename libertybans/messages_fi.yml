@@ -54,8 +54,8 @@ additions:
   mutes:
     conflicting: "<#ef4444>%TARGET% <#ffffff>on jo mykistetty"
     success:
-      notification: "Mykistettiin pelaaja <#ef4444>%VICTIM% <#ffffff>ajaksi <#ef4444>%DURATION%<#ffffff>. Syy: <#ef4444>%REASON%"
-      message: "Mykistettiin pelaaja <#ef4444>%VICTIM% <#ffffff>ajaksi <#ef4444>%DURATION%<#ffffff>. Syy: <#ef4444>%REASON%"
+      notification: "Mykistettiin pelaaja <#ef4444>%VICTIM% <#ffffff>ajaksi <#ef4444>%DURATION%<#ffffff>. Syy: <#facc15>%REASON%"
+      message: "Mykistettiin pelaaja <#ef4444>%VICTIM% <#ffffff>ajaksi <#ef4444>%DURATION%<#ffffff>. Syy: <#facc15>%REASON%"
 
     exempted: "<#ef4444>%TARGET% <#ffffff>ei voida mykistää"
     layout:
