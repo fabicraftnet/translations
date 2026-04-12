@@ -56,7 +56,7 @@ locales:
   group_deleted: "[Poistettiin ryhmä [%1%](#ffffff)](#4ade80)\\nJäsenet menettävät pääsyn kaikkiin tontteihin, missä oikeudet on annettu ryhmälle"
   world_not_claimable: "[Tonttien luominen ei ole sallittua tässä maailmassa](#ef4444)"
   region_outside_world_limits: "[Et voi luoda tonttia maailman rajojen ulkopuolelle](#ef4444)"
-  land_already_claimed: "[Tämä palikka on pelaajan [%1%](#a78bfa) tontilla](#ef4444)"
+  land_already_claimed: "[Tämä palikka on pelaajan [%1%](#facc15) tontilla](#ef4444)"
   land_selection_overlaps: "[Valinta menee päällekkäin [%1%](##facc15) tontin kanssa](#ef4444)"
   land_selection_overlaps_child: "[Valinta menee päällekkäin [%1%](##facc15) muun alitontin kanssa](#ef4444)"
   land_already_child_claim: "[Tällä alueella on jo alitontti](#ef4444)"
