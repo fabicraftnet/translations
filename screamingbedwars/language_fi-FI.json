@@ -15,19 +15,19 @@
     },
     "status": {
       "disabled": {
-        "status": "<red>Game",
-        "players": "<red>disabled"
+        "status": "<red>Peli",
+        "players": "<red>pois käytöstä"
       },
       "rebuilding": {
-        "status": "<gold>Rebuilding",
-        "players": "<gold>arena"
+        "status": "<gold>Uudelleenrakentaa",
+        "players": "<gold>karttaa"
       },
       "running": {
-        "status": "<green>Running",
+        "status": "<green>Käynnissä",
         "players": "<red><players><dark_gray>/<red><maxplayers>"
       },
       "waiting": {
-        "status": "<gold>Waiting",
+        "status": "<gold>Odotetaan",
         "players": "<green><players><dark_gray>/<green><maxplayers>"
       }
     }
@@ -37,14 +37,14 @@
     "player_does_not_exist": "<red>Player is not found!",
     "not_found": "<red>Statistics for this player are not found!",
     "header": "<green>Statistics of <red><player><green>:",
-    "kills": "<gray>Kills: <green><kills>",
-    "deaths": "<gray>Deaths: <yellow><deaths>",
+    "kills": "<gray>Tapot: <green><kills>",
+    "deaths": "<gray>Kuolemat: <yellow><deaths>",
     "kd": "<gray>K/D: <green><kd>",
-    "wins": "<gray>Wins: <green><wins>",
-    "loses": "<gray>Loses: <red><loses>",
-    "games": "<gray>Played games: <aqua><games>",
-    "beds": "<gray>Destroyed beds: <green><beds>",
-    "score": "<gray>Total score: <green><score>"
+    "wins": "<gray>Voitot: <green><wins>",
+    "loses": "<gray>Häviöt: <red><loses>",
+    "games": "<gray>Pelatut pelit: <aqua><games>",
+    "beds": "<gray>Tuhotut punkat: <green><beds>",
+    "score": "<gray>Pisteet: <green><score>"
   },
   "in_game": {
     "errors": {
@@ -65,45 +65,45 @@
     "target_block": {
       "destroyed": {
         "any": "Target block of <team><reset> is destroyed!",
-        "any_certain_popular_server": "<red><bold>TARGET BLOCK DESTROYED!",
+        "any_certain_popular_server": "",
         "bed": "Tiimin <team><reset> punkka tuhottiin!",
-        "bed_certain_popular_server": "<red><bold>BED DESTROYED!",
+        "bed_certain_popular_server": "",
         "door": "Tiimin <team><reset> ovi tuhottiin!",
-        "door_certain_popular_server": "<red><bold>DOOR DESTROYED!",
+        "door_certain_popular_server": "",
         "anchor": "Tiimin <team><reset> uudelleensyntymisankkuri tuhottiin!",
-        "anchor_certain_popular_server": "<red><bold>ANCHOR DESTROYED!",
-        "cake": "Cake of <team><reset> has been eaten!",
-        "cake_certain_popular_server": "<red><bold>CAKE EATEN!",
-        "killable": "You are now able to kill all members of <team>!",
-        "subtitle": "You can now kill the team members!",
-        "subtitle_victim": "You will no longer respawn!",
+        "anchor_certain_popular_server": "",
+        "cake": "Tiimin <team><reset> kakku syötiin!",
+        "cake_certain_popular_server": "",
+        "killable": "Voit nyt tappaa kaikkia tiimin <team> jäseniä!",
+        "subtitle": "Voit nyt tappaa tiimikavereita!",
+        "subtitle_victim": "Et enää synny uudelleen",
         "death_mode": "<dark_purple><bold>Death mode!",
-        "all_beds": "All beds have been destroyed!",
-        "all_anchors": "All anchors have been destroyed!",
+        "all_beds": "Kaikki punkat on tuhottu!",
+        "all_anchors": "Kaikki ankkurit on tuhottu!",
         "all_target_blocks": "All target blocks have been destroyed!",
-        "all_cakes": "All cakes have been eaten!"
+        "all_cakes": "Kaikki kakut on syöty!"
       },
       "hologram": {
         "protect": {
-          "any": "<teamcolor><bold>Protect your target block!",
-          "bed": "<teamcolor><bold>Protect your bed!",
-          "door": "<teamcolor><bold>Protect your door!",
-          "anchor": "<teamcolor><bold>Protect your anchor!",
-          "cake": "<teamcolor><bold>Protect your cake!"
+          "any": "<teamcolor>Protect your target block!",
+          "bed": "<teamcolor>Suojaa punkkasi!",
+          "door": "<teamcolor>Suojaa ovesi!",
+          "anchor": "<teamcolor>Suojaa ankkurisi!",
+          "cake": "<teamcolor>Suojaa kakkusi!"
         },
         "destroyed": {
-          "any": "<gray><bold>Target block is destroyed.",
-          "bed": "<gray><bold>Punkka tuhottu",
-          "door": "<gray><bold>Ovi tuhottu",
-          "anchor": "<gray><bold>Ankkuri tuhottu",
-          "cake": "<gray><bold>Kakku syöty"
+          "any": "<gray>Target block is destroyed.",
+          "bed": "<gray>Punkka tuhottu",
+          "door": "<gray>Ovi tuhottu",
+          "anchor": "<gray>Ankkuri tuhottu",
+          "cake": "<gray>Kakku syöty"
         },
         "destroy": {
-          "any": "<teamcolor><bold>Destroy this target block!",
-          "bed": "<teamcolor><bold>Destroy this bed!",
-          "door": "<teamcolor><bold>Destroy this door!",
-          "anchor": "<teamcolor><bold>Destroy this anchor!",
-          "cake": "<teamcolor><bold>Eat this cake!"
+          "any": "<teamcolor>Destroy this target block!",
+          "bed": "<teamcolor>Tuhoa punkka!",
+          "door": "<teamcolor>Tuhoa ovi!",
+          "anchor": "<teamcolor>Tuhoa ankkuri!",
+          "cake": "<teamcolor>Syö kakku!"
         }
       }
     },
@@ -112,16 +112,16 @@
       "title_cancel": "<red>Tiimi on kuollut :("
     },
     "spawner": {
-      "countdown": "<yellow><seconds> <aqua>seconds",
+      "countdown": "<yellow><seconds> <aqua>sekuntia",
       "countdown_custom": "<yellow><value> <aqua><unit>",
-      "every_second": "<aqua>every second",
-      "full": "<red><bold>Spawner is depleted",
-      "full_certain_popular_server": "<red><bold>Spawner is full!",
+      "every_second": "<aqua>joka sekunti",
+      "full": "<red><bold>Generaattori on tyhjä",
+      "full_certain_popular_server": "<red><bold>Generaattori on täynnä",
       "not_enough_level": "<red>Spawner can't work! You need to upgrade by <levels> levels.",
-      "reached_maximum_level": "<red>Spawner has reached its maximum level!",
+      "reached_maximum_level": "<red>Generaattori on saavuttanut maksimitasonsa",
       "tier": "<yellow>Taso <red><tier>",
-      "countdown_certain_popular_server": "<yellow>Spawns in <red><seconds> <yellow>seconds",
-      "countdown_custom_certain_popular_server": "<yellow>Spawns in <red><value> <yellow><unit>"
+      "countdown_certain_popular_server": "<yellow><seconds> <aqua>sekuntia",
+      "countdown_custom_certain_popular_server": "<yellow><value> <aqua><unit>"
     },
     "resources": {
       "bronze": "Bronze",
@@ -139,33 +139,33 @@
       "price": "Hinta:",
       "amount": "Määrä:",
       "buy_success": "<green>Ostit <gray><item><green>",
-      "buy_failed": "<red>Lack of material to buy <gray><item><red>! Needed <gray><material><red>!",
-      "upgrade_success": "<green><name> has successfully upgraded <spawner> to level <level>!",
+      "buy_failed": "<red>Tarvitset <gray><material> ostaaksesi <gray><item>!",
+      "upgrade_success": "<green><name> päivitti generaattorin <spawner> tasolle <level>!",
       "upgrade_translate": "päivitys"
     },
     "trap": {
       "blind_trap_triggered": {
         "message": "<yellow>You have been blinded by %team% team!",
-        "title": "<red>Trap Triggered!",
-        "subtitle": "<yellow>Someone has entered your base!"
+        "title": "<red>Ansa laukaistu!",
+        "subtitle": ""
       },
       "miner_trap_triggered": {
         "message": "<yellow>You have been slowed by %team% team!",
-        "title": "<red>Trap Triggered!",
-        "subtitle": "<yellow>Someone has entered your base!"
+        "title": "<red>Ansa laukaistu!",
+        "subtitle": ""
       },
       "custom_trap_triggered": {
         "message": "<yellow>You have affected by <trap> from <team> team!",
-        "title": "<red><trap> Triggered!",
-        "subtitle": "<yellow>Someone has entered your base and fired <trap>!"
+        "title": "<red><trap> laukaistu!",
+        "subtitle": ""
       }
     },
     "team_selection": {
       "inventory_name": "Valitse tiimi - <arena>",
       "selected": "<green>Selected team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
       "already_selected": "<green>You are already in team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
-      "full": "<red>Team <team><red> is full!",
-      "full_no_change": "<red>Team <team><red> is full, You stay in <oldteam><red>!",
+      "full": "<team><red> tiimi on täynnä!",
+      "full_no_change": "<team><red> tiimi on täynnä. Pysyit tiimissä <oldteam>!",
       "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
       "select_item_lore": "<white>---------------------",
       "select_item_lore_full": "<white>Tiimi on täynnä",
@@ -174,15 +174,15 @@
     "lobby_items": {
       "compass_selector_team": "<green>Valitse tiimi",
       "leave_from_game_item": "<red>Poistu pelistä",
-      "start_game_item": "<dark_green>Aloita pele"
+      "start_game_item": "<dark_green>Aloita peli"
     },
     "bossbar": {
-      "waiting": "<red>Peli aikaa pian!",
-      "running": "<green>Peli alkoi! Lykkyä tykö!"
+      "waiting": "<red>Peli alkaa pian",
+      "running": "<green>Peli alkoi!"
     },
     "end": {
-      "you_won": "<green>Tiimisi voitti!",
-      "you_lost": "<red>Tiimisi hävisi!",
+      "you_won": "<green>Voitit pelin!",
+      "you_lost": "<red>Hävisit pelin",
       "game_ended_too_early": "<red>Peli päättyy liian aikaisin. Kukaan ei voita",
       "team_win": "<green>Tiimi <reset><team><green> voitti pelin ajassa <gray><time>",
       "game_end": "<red>Peli päättyi"
@@ -212,7 +212,7 @@
       "cheat_failed": "<red>Cheat failed for unknown reason."
     },
     "scoreboard": {
-      "you": "<gray>YOU",
+      "you": "<gray>Sinä",
       "state": {
         "waiting": "<white>Waiting...",
         "countdown": "<white>Starting in <green><countdown>s"
@@ -229,7 +229,7 @@
         "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
         "                             <white><bold>Punkkasota</bold>",
         "",
-        "    <yellow><bold>Suojaa oma punkkasi ja tuhoa vihollisten punkat.</bold>",
+        "    <yellow><bold>Suojaa oma punkkasi ja tuhoa vihollisten punkat</bold>",
         "     <yellow><bold>Upgrade yourself and your team by collecting</bold>",
         "<yellow><bold><resources></bold>",
         "            <yellow><bold>to access powerful upgrades.</bold>",
@@ -239,14 +239,14 @@
       ],
       "game_over_statistics": [
         "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
-        "                             <yellow><bold>Bed Wars</bold>",
+        "                             <yellow><bold>Punkkasota</bold>",
         "",
         "                             <team_color><win_team>",
         "                             <winners>",
         "",
-        "    <yellow><bold>1st<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
-        "    <gold><bold>2nd<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
-        "    <red><bold>3rd<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+        "    <yellow><bold>1.<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+        "    <gold><bold>2.<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+        "    <red><bold>3.<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
         "",
         "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
         ""
@@ -264,7 +264,7 @@
     "game_start_subtitle": "",
     "economy_deposited": "<green>Added <gray><coins> <currency><green> to your balance!",
     "economy_missing_coins": "<red>You need <yellow><coins> <currency><red> to enter this game!",
-    "kicking_in": "<red>Poistutaan areenalta: <gray><time>"
+    "kicking_in": "<red>Poistutaan kartasta: <gray><time>"
   },
   "help": {
     "title": "Screaming BedWars <version> - Help",
@@ -272,12 +272,12 @@
       "command": "Komento",
       "description": "Kuvaus",
       "no_description": "Ei kuvausta",
-      "arguments": "Arguments",
-      "optional": "Optional",
-      "showing_results_for_query": "Showing search results for query",
+      "arguments": "Argumentit",
+      "optional": "Valinnainen",
+      "showing_results_for_query": "Näytetään hakutulokset",
       "no_results_for_query": "Ei hakutuloksia",
-      "available_commands": "Available Commands",
-      "click_to_show_help": "Click to show help for this command",
+      "available_commands": "Käytettävissä olevat komennot",
+      "click_to_show_help": "Klikkaa nähdäksesi komennon ohjeet",
       "page_out_of_range": "Virhe: Sivua <page> ei löydy. Sivun on oltava väliltä [1, <max_pages>]",
       "click_for_next_page": "Klikkaa siirtyäksesi seuraavalle sivulle",
       "click_for_previous_page": "Klikkaa siirtyäksesi edelliselle sivulle"
