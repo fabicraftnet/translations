@@ -1,16 +1,16 @@
 {
-  "unknown_command": "<red>Unknown command! Try using <dark_red>/bw help <red>for help!",
-  "unknown_usage": "<red>Invalid arguments! Try using <dark_red>/bw help <red>for help!",
-  "no_permissions": "<red>You don't have enough permission to do that!",
+  "unknown_command": "<red>Tuntematon komento, <dark_red>/bw help <red>",
+  "unknown_usage": "<red>Virheellinen argumentti! Try using <dark_red>/bw help <red>for help!",
+  "no_permissions": "<red>Sinulla ei ole oikeutta tehdä tuota",
   "safe_reload": "<green>Waiting until all games are stopped or 60 seconds before reloading the plugin.",
   "safe_reload_failed_to_stop_game": "<red>Some games were not stopped in time, the arena may have been damaged!",
-  "list_header": "<green>Available arenas:",
-  "success": "<green>Command was successful!",
+  "list_header": "<green>Kartat:",
+  "success": "<green>Komento onnistui",
   "sign": {
     "admin": {
-      "created": "<green>Sign was successfully created!",
+      "created": "<green>Luotiin onnistuneesti kyltti",
       "cannot_create": "<red>Sign couldn't be created! Please check the name of the arena!",
-      "cannot_destroy": "<red>You don't have permissions to destroy this sign!",
+      "cannot_destroy": "<red>Sinulla ei ole oikeutta hajottaa tätä kylttiä",
       "unknown_game": "<red>The game that is written on the sign doesnt exist! Please contact an admin!"
     },
     "status": {
@@ -33,10 +33,10 @@
     }
   },
   "statistics": {
-    "disabled": "<red>Player statistics are disabled on this server!",
-    "player_does_not_exist": "<red>Player is not found!",
-    "not_found": "<red>Statistics for this player are not found!",
-    "header": "<green>Statistics of <red><player><green>:",
+    "disabled": "<red>Pelaajatilastot eivät ole käytössä tällä palvelimella",
+    "player_does_not_exist": "<red>Pelaajaa ei löydetty",
+    "not_found": "<red>Pelaajan tilastoja ei löydetty",
+    "header": "<green>Pelaajan <red><player><green> tilastot:",
     "kills": "<gray>Tapot: <green><kills>",
     "deaths": "<gray>Kuolemat: <yellow><deaths>",
     "kd": "<gray>K/D: <green><kd>",
@@ -48,23 +48,23 @@
   },
   "in_game": {
     "errors": {
-      "game_already_running": "<red>Game <gray><arena> <red>is already running! You can't join a running game!",
-      "game_is_full": "<red>Game <gray><arena> <red>is full! Please wait for game end!",
-      "game_not_found": "<red>Game not found!",
-      "you_are_not_in_game": "<red>You're not in a game!",
-      "game_is_rebuilding": "<red>Game <gray><arena><red> is rebuilding! Please wait...",
-      "already_in_game": "<red>You are already in some game.",
-      "not_in_any_game_yet": "<red>You haven't been in any game yet.",
-      "command_is_not_allowed": "<red>This command is blocked while the game is running!",
-      "vip_not_enough_players": "<red>Not enough players in arena!",
-      "vip_game_is_full": "<red>Game <gray><arena> <red>is full of VIP players. Please wait for game end!",
-      "game_is_gone": "<red>Looks like the game you were in is no longer in this world.",
-      "game_kicked_by_vip": "<red>You were kicked by VIP player!",
-      "there_is_no_empty_game": "<red>There's no game in waiting state. All games are already running!"
+      "game_already_running": "<red>Peli <gray><arena> <red>on käynnissä! Et voi liittyä käynnissä olevaan peliin",
+      "game_is_full": "<red>Peli <gray><arena> <red>on täynnä! Odota pelin päättymistä",
+      "game_not_found": "<red>Peliä ei löydetty",
+      "you_are_not_in_game": "<red>Et ole pelissä",
+      "game_is_rebuilding": "<red>Peli <gray><arena><red> uudelleenrakentuu! Odota...",
+      "already_in_game": "<red>Olet jo pelissä",
+      "not_in_any_game_yet": "<red>Et ole vielä osallistunut peliin",
+      "command_is_not_allowed": "<red>Komento estetty pelin ollessa käynnissä",
+      "vip_not_enough_players": "<red>Ei tarpeeksi pelaajia",
+      "vip_game_is_full": "<red>Peli <gray><arena> <red>on täynnä VIP pelaajia. Odota pelin päättymistä",
+      "game_is_gone": "<red>Peli, jossa olit, ei ole enää olemassa",
+      "game_kicked_by_vip": "<red>VIP pelaaja potki sinut",
+      "there_is_no_empty_game": "<red>Yhtään peliä ei ole odotustilassa. Kaikki pelit ovat käynnissä"
     },
     "target_block": {
       "destroyed": {
-        "any": "Target block of <team><reset> is destroyed!",
+        "any": "Kohdepalikka <team><reset> tuhottiin!",
         "any_certain_popular_server": "",
         "bed": "Tiimin <team><reset> punkka tuhottiin!",
         "bed_certain_popular_server": "",
@@ -80,26 +80,26 @@
         "death_mode": "<dark_purple><bold>Death mode!",
         "all_beds": "Kaikki punkat on tuhottu!",
         "all_anchors": "Kaikki ankkurit on tuhottu!",
-        "all_target_blocks": "All target blocks have been destroyed!",
+        "all_target_blocks": "Kaikki kohdepalikat on tuhottu",
         "all_cakes": "Kaikki kakut on syöty!"
       },
       "hologram": {
         "protect": {
-          "any": "<teamcolor>Protect your target block!",
+          "any": "<teamcolor>Suojaa kohdepalikkasi!",
           "bed": "<teamcolor>Suojaa punkkasi!",
           "door": "<teamcolor>Suojaa ovesi!",
           "anchor": "<teamcolor>Suojaa ankkurisi!",
           "cake": "<teamcolor>Suojaa kakkusi!"
         },
         "destroyed": {
-          "any": "<gray>Target block is destroyed.",
+          "any": "<gray>Kohdepalikka tuhottu",
           "bed": "<gray>Punkka tuhottu",
           "door": "<gray>Ovi tuhottu",
           "anchor": "<gray>Ankkuri tuhottu",
           "cake": "<gray>Kakku syöty"
         },
         "destroy": {
-          "any": "<teamcolor>Destroy this target block!",
+          "any": "<teamcolor>Tuhoa kohdepalikka!",
           "bed": "<teamcolor>Tuhoa punkka!",
           "door": "<teamcolor>Tuhoa ovi!",
           "anchor": "<teamcolor>Tuhoa ankkuri!",
@@ -117,7 +117,7 @@
       "every_second": "<aqua>joka sekunti",
       "full": "<red><bold>Generaattori on tyhjä",
       "full_certain_popular_server": "<red><bold>Generaattori on täynnä",
-      "not_enough_level": "<red>Spawner can't work! You need to upgrade by <levels> levels.",
+      "not_enough_level": "<red>Spawner rikki! Spawner täytyy päivittää tasolle <levels>",
       "reached_maximum_level": "<red>Generaattori on saavuttanut maksimitasonsa",
       "tier": "<yellow>Taso <red><tier>",
       "countdown_certain_popular_server": "<yellow><seconds> <aqua>sekuntia",
@@ -145,12 +145,12 @@
     },
     "trap": {
       "blind_trap_triggered": {
-        "message": "<yellow>You have been blinded by %team% team!",
+        "message": "<yellow>%team% sokaisi sinut",
         "title": "<red>Ansa laukaistu!",
         "subtitle": ""
       },
       "miner_trap_triggered": {
-        "message": "<yellow>You have been slowed by %team% team!",
+        "message": "<yellow>%team% hidasti sinua",
         "title": "<red>Ansa laukaistu!",
         "subtitle": ""
       },
@@ -162,7 +162,7 @@
     },
     "team_selection": {
       "inventory_name": "Valitse tiimi - <arena>",
-      "selected": "<green>Selected team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+      "selected": "<green>Valittu tiimi: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
       "already_selected": "<green>You are already in team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
       "full": "<team><red> tiimi on täynnä!",
       "full_no_change": "<team><red> tiimi on täynnä. Pysyit tiimissä <oldteam>!",
@@ -188,8 +188,8 @@
       "game_end": "<red>Peli päättyi"
     },
     "respawn_protection": {
-      "remaining": "<red>Respawn protection will be gone in <white><time> <green>seconds!",
-      "end": "<red>Respawn protection is gone!"
+      "remaining": "<red>Uudelleensyntymissuoja päättyy <white><time> <green>sekunnissa",
+      "end": "<red>Uudelleensyntymissuoja päättynyt"
     },
     "cheat": {
       "please_provide_valid_cheat_type": "<red>Provided cheat type is not valid or is missing!",
@@ -214,7 +214,7 @@
     "scoreboard": {
       "you": "<gray>Sinä",
       "state": {
-        "waiting": "<white>Waiting...",
+        "waiting": "<white>Odotetaan...",
         "countdown": "<white>Starting in <green><countdown>s"
       },
       "mode": {
@@ -254,16 +254,16 @@
     },
     "record": {
       "no": "<aqua>This is the first time this game is played. What about setting a new record?",
-      "current": "<aqua>The current record of this game is <gray><time><aqua> achieved by <gray><team-members><aqua>!"
+      "current": "<aqua>Tämän hetkinen ennätys: <gray><team-members> <aqua>ajassa <gray><time>"
     },
-    "join": "<name> <green>joined the game!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
-    "leave": "<name> <red>poistui pelistä!",
+    "join": "<name> <green>liittyi peliin<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+    "leave": "<name> <red>poistui pelistä",
     "player_self_killed": "<red><victim> <red>kuoli!",
     "player_killed": "<red> <killer> <red>tappoi pelaajan <victim><red>!",
     "game_start_title": "<green>Peli alkoi!",
     "game_start_subtitle": "",
-    "economy_deposited": "<green>Added <gray><coins> <currency><green> to your balance!",
-    "economy_missing_coins": "<red>You need <yellow><coins> <currency><red> to enter this game!",
+    "economy_deposited": "<green>Lisättiin <gray><coins> <currency><green> tilillesi",
+    "economy_missing_coins": "<red>Tarvitset <yellow><coins> <currency><red> liittyäksesi peliin",
     "kicking_in": "<red>Poistutaan kartasta: <gray><time>"
   },
   "help": {
@@ -355,7 +355,7 @@
     "bw_gamesinv": "/bw gamesinv \\<inventory> - <green>Opens the specific games inventory"
   },
   "games_inventory": {
-    "could_not_find_game": "<red>Could not find a game!",
+    "could_not_find_game": "<red>Peliä ei löydetty!",
     "unknown_inventory": "<red>Unknown games inventory <gray><type><red>!"
   },
   "update": {
@@ -628,9 +628,9 @@
   },
   "specials": {
     "trap": {
-      "caught": "<red>You got caught in trap of team <white><team><red>!",
-      "caught_team": "<white><player><red> got caught in your team's trap!",
-      "built": "<green>You've built a trap! Now wait for someone to get caught in it!"
+      "caught": "<red>Lankesit tiimin <white><team><red> ansaan!",
+      "caught_team": "<white><player><red> on jäänyt tiimisi ansaan",
+      "built": "<green>Rakensit ansan"
     },
     "warp_powder": {
       "multiuse": "<red>Another WarpPowder is already actived!",
@@ -638,14 +638,14 @@
       "started": "<green>WarpPowder was started! Please don't move for <gray><time><green> seconds!"
     },
     "tracker": {
-      "no_target_found": "<red>No target found!",
-      "target_found": "<white><target> <green>has been found <white><distance> <geen>blocks away!"
+      "no_target_found": "<red>Kohdetta ei näkyvissä",
+      "target_found": "<white><target> <green>löytyi <white><distance> <green>palikan päässä"
     },
     "rescue_platform": {
-      "not_in_air": "<red>For using this, you need to be in the air.",
-      "destroy": "<red>Platform will be destroyed in <white><time> <red>seconds.",
-      "created_unbreakable": "<green>Unbreakable Platform was created!",
-      "created": "<green>Platform is created and will be destroyed in <white><time> <green>seconds."
+      "not_in_air": "<red>Sinun pitää olla ilmassa käyttääksesi tätä",
+      "destroy": "<red>Alusta tuhoutuu <white><time> <red>sekunnin päästä",
+      "created_unbreakable": "<green>Tuhoutumaton alusta luotiin",
+      "created": "<green>Alusta luotiin ja se tuhoutuu <white><time> <green>sekunnin päästä"
     },
     "protection_wall": {
       "not_usable_here": "<red>There is no space left for creating Protection Wall.",
@@ -654,7 +654,7 @@
       "created": "<green>Protection Wall is created and will be destroyed in <white><time> <green>seconds."
     },
     "tntsheep": {
-      "no_target_found": "<red>No target found!"
+      "no_target_found": "<red>Kohdetta ei näkyvissä"
     },
     "arrow_blocker": {
       "started": "<green>Arrow blocker has been activated for <white><time><green> seconds!",
@@ -665,17 +665,17 @@
       "created": "<green>Golem has been spawned."
     },
     "team_chest": {
-      "name": "<green><bold>Team chest",
-      "not_yours": "<yellow>This team chest isn't yours!",
-      "placed": "<green>New team chest was placed!",
-      "broken": "<red>Your team chest was broken!"
+      "name": "<green><bold>Tiimiarkku",
+      "not_yours": "<yellow>Tämä tiimiarkku ei ole sinun",
+      "placed": "<green>Uusi tiimiarkku luotiin",
+      "broken": "<red>Tiimiarkku hajotettiin"
     },
-    "item_delay": "<red>You need to wait <time> seconds before using this item again!"
+    "item_delay": "<red>Odota <time> sekuntia ennen kuin voit käyttää tavaraa uudelleen"
   },
   "leaderboard": {
     "no_scores": "<gray>There are no scores yet!",
     "holo_added": "<green>Leaderboard hologram was added to your position!",
-    "header": "<gold>BedWars Leaderboard - Top <number> players",
+    "header": "<gold>BedWars Tulostaulukko - Top <number> pelaajaa",
     "line": "<bold><order>.</bold> <gray><player> - <green><score>"
   },
   "party": {
@@ -707,13 +707,13 @@
     "failure": "<red>Something went wrong while migrating the configuration! See the console for details."
   },
   "unit": {
-    "tick": "tick",
-    "ticks": "ticks",
-    "second": "second",
-    "seconds": "seconds",
-    "minute": "minute",
-    "minutes": "minutes",
-    "hour": "hour",
-    "hours": "hours"
+    "tick": "tikki",
+    "ticks": "tikkiä",
+    "second": "sekunti",
+    "seconds": "sekuntia",
+    "minute": "minuutti",
+    "minutes": "minuuttia",
+    "hour": "tunti",
+    "hours": "tuntia"
   }
 }
