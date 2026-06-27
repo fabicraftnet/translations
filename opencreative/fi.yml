@@ -143,6 +143,22 @@ commands:
     found: "%prefix%&fPlayer &6%player%&f is currently playing in the world: \n&f\
       \ %planetName%\n &f\n&a &a [Click to join]&f\n &f"
     offline: '%prefix%&cThe player is not currently playing in any worlds.'
+filters:
+  hover-text: |-
+    &fRule: &7%rule%
+    &fText: &6%match%
+  sign-violation:
+    player: '%prefix%&cWarning: Your sign text violated one of the server rules.'
+    staff: '%prefix%&7Filtered sign text from %player%. &3[?]'
+  chat-violation:
+    player: '%prefix%&cWarning: Your chat message violated one of the server rules.'
+    staff: '%prefix%&7Filtered chat message from %player%. &3[?]'
+  book-violation:
+    player: '%prefix%&cWarning: Your book text violated one of the server rules.'
+    staff: '%prefix%&7Filtered book text from %player%. &3[?]'
+  anvil-violation:
+    player: '%prefix%&cWarning: The new item name violated one of the server rules.'
+    staff: '%prefix%&7Filtered new item name from %player%. &3[?]'
 modules:
   help: |-
     %prefix%Module is prepared coding blocks lines, made by players, that add some features in your world. They can be inserted in developers world. To browse modules use &6/module&f command.
@@ -333,7 +349,51 @@ help:
 creative:
   reloading: '%prefix%Reloading configuration and localization files, please wait...'
   reloaded: '%prefix%Plugin has been &6successfully&f reloaded!'
-  loaded-worlds-list: '%prefix%List of loaded worlds, total %amount%: &6'
+  set-spawn: '%prefix%Set &6new spawn location&f in lobby: &6%x% &6%y% &6%z% &6%yaw%
+    %pitch%'
+  fireworks: '%prefix%Launching fireworks &6%amount% times&f every &6%cooldown% seconds&f!
+    :)'
+  updated-icons: '%prefix%World and module icons &6updated&f :)'
+  all-worlds-amount: '%prefix%Amount of all created worlds on server: &6%amount%'
+  loaded-worlds:
+    no-worlds: '%prefix%No worlds loaded..'
+    list: '%prefix%Total &6%amount% worlds loaded&f (%build% gameplay, %dev% coding).'
+    world: '&6 %id% &7- &6%name% &7- Online: %online% &7- Created &6%creation-time%'
+    world-dev: '&3 %id% &7- &7Coding world %id%'
+  player-worlds:
+    no-worlds: '%prefix%Player &6%player%&f has no worlds..'
+    list: '%prefix%Player &6%player% &fhas %amount% worlds.'
+    world: '&6 %id% &7- &6%name% &7- Online: %online% &7- Created &6%creation-time%'
+  groups:
+    set-limit: |-
+      %prefix%New limit &6%type%&f has been set for group &6%group%&f: &6%value%&f.
+      &7World limits can be modified by modifiers: limit + (modifier * player count).
+    set-modifier: '%prefix%New limit modifier &6%type%&f has been set for group &6%group%&f:
+      &6%value%'
+    removed: '%prefix%Group &6%group%&f has now been &cremoved&f..'
+    not-found: '%prefix%&cGroup %group% does not exist O_o'
+    wrong-limit: '%prefix%&cLimit %limit% does not exist O_o'
+    info:
+      beginning: '%prefix%&fInformation about group &6%group%&f:'
+      cooldowns: |-
+        &fUsage cooldowns:
+         &7Commands &f- &6%generic% seconds
+         &7World chat &f- &6%chat% seconds
+         &7Creative chat &f- &6%creative-chat% seconds
+         &7World advertisement &f- &6%advertisement% seconds
+         &7Code line duplication &f- &6%duplication% seconds
+         &7Module operations &f- &6%modules% seconds
+      limits:
+        list: '&fLimits:'
+        limit: '&7 %type% &f- &c&n%limit%&f * &e%modifier%'
+      ending: |-
+        &fAdvertisement cost: &6%advertisement-cost%
+        &fLike reward: &6%like-reward%
+        &fCan use AI: &6%prompter%
+        &fWorld count: &6%worlds%
+        &fModule count: &6%modules%
+        &fWorld size: &6%size%
+          &7Group %group%
   locale:
     changed: '%prefix%&fChanged language to &6Finnish&f!'
     not-found: '%prefix%&cNot found localization file for this language '
@@ -407,9 +467,27 @@ creative:
     enabled: '%prefix%&fDebug mode is &6enabled&f, some experimental features will
       be able and console will get additional logs.'
     disabled: '%prefix%&fDebug mode is &6disabled&f, goodbye experiments!'
+  spy:
+    enabled: '%prefix%&fYou can &6now see&f messages from players in other worlds.
+      Get ready for having too many messages!'
+    already-enabled: '%prefix%&cYou are already spying on chats from other worlds.'
+    disabled: '%prefix%&fYou have &6disabled&f seeing messages from players in other
+      worlds.'
+    already-disabled: '%prefix%&cYou are already not spying on chats from other worlds.'
   sounds:
     set: '%prefix%&fChanged sound theme to &6%theme%&f, have a good listening!'
-    not-found: '%prefix%&cNot found this sound theme in configuration '
+    not-found: '%prefix%&cNot found this sound theme in configuration O_o'
+  items:
+    changed: '%prefix%&fYou have set the item in kit &6%kit%&f that will appear in
+      slot &6%slot%&f.'
+    given: '%prefix%&fYou received the system item &6%item%&f.'
+    received-from-kit: '%prefix%&fYou received the item from kit &6%kit%&f in slot
+      &6%slot%&f.'
+    received-kit: '%prefix%&fYou have received the item kit &6%kit%&f.'
+    wrong-kit: '%prefix%&cItem kit %kit% not found O_o'
+    reset-kit: '%prefix%&fYou have reset the items kit &6%kit%&f, now players will
+      get &6default items&f :)'
+    empty-slot: '%prefix%&cSlot %slot% in kit %kit% does not contain an item.'
   experiments:
     enabled: |-
       %prefix%&fYou have &6enabled &fexperiment &6%name% &7(%description%)&f, now its features will be available to you 
@@ -428,74 +506,12 @@ creative:
       status:
         enabled: '&a●'
         disabled: '&7○'
-  set-spawn: '%prefix%Set &6new spawn location&f in lobby: &6%x% &6%y% &6%z% &6%yaw%
-    %pitch%'
-  fireworks: '%prefix%Launching fireworks &6%amount% times&f every &6%cooldown% seconds&f!
-    '
-  updated-icons: '%prefix%World and module icons &6updated&f '
-  all-worlds-amount: '%prefix%Amount of all created worlds on server: &6%amount%'
-  loaded-worlds:
-    no-worlds: '%prefix%No worlds loaded..'
-    list: '%prefix%Total &6%amount% worlds loaded&f (%build% gameplay, %dev% coding).'
-    world: '&6 %id% &7- &6%name% &7- Online: %online% &7- Created &6%creation-time%'
-    world-dev: '&3 %id% &7- &7Coding world %id%'
-  player-worlds:
-    no-worlds: '%prefix%Player &6%player%&f has no worlds..'
-    list: '%prefix%Player &6%player% &fhas %amount% worlds.'
-    world: '&6 %id% &7- &6%name% &7- Online: %online% &7- Created &6%creation-time%'
-  groups:
-    set-limit: |-
-      %prefix%New limit &6%type%&f has been set for group &6%group%&f: &6%value%&f.
-      &7World limits can be modified by modifiers: limit + (modifier * player count).
-    set-modifier: '%prefix%New limit modifier &6%type%&f has been set for group &6%group%&f:
-      &6%value%'
-    removed: '%prefix%Ryhmä &6%group% &cpoistettu'
-    not-found: '%prefix%&cRyhmää %group% ei ole olemassa'
-    wrong-limit: '%prefix%&cRajaa %limit% ei ole olemassa'
-    info:
-      beginning: '%prefix%&fInformation about group &6%group%&f:'
-      cooldowns: |-
-        &fUsage cooldowns:
-         &7Commands &f- &6%generic% sekuntia
-         &7World chat &f- &6%chat% sekuntia
-         &7Creative chat &f- &6%creative-chat% sekuntia
-         &7World advertisement &f- &6%advertisement% sekuntia
-         &7Code line duplication &f- &6%duplication% sekuntia
-         &7Module operations &f- &6%modules% sekuntia
-      limits:
-        list: '&fLimits:'
-        limit: '&7 %type% &f- &c&n%limit%&f * &e%modifier%'
-      ending: |-
-        &fAdvertisement cost: &6%advertisement-cost%
-        &fLike reward: &6%like-reward%
-        &fCan use AI: &6%prompter%
-        &fWorld count: &6%worlds%
-        &fModule count: &6%modules%
-        &fWorld size: &6%size%
-          &7Group %group%
-  spy:
-    enabled: '%prefix%&fYou can &6now see&f messages from players in other worlds.
-      Get ready for having too many messages!'
-    already-enabled: '%prefix%&cYou are already spying on chats from other worlds.'
-    disabled: '%prefix%&fYou have &6disabled&f seeing messages from players in other
-      worlds.'
-    already-disabled: '%prefix%&cYou are already not spying on chats from other worlds.'
-  items:
-    changed: '%prefix%&fYou have set the item in kit &6%kit%&f that will appear in
-      slot &6%slot%&f.'
-    given: '%prefix%&fYou received the system item &6%item%&f.'
-    received-from-kit: '%prefix%&fYou received the item from kit &6%kit%&f in slot
-      &6%slot%&f.'
-    received-kit: '%prefix%&fYou have received the item kit &6%kit%&f.'
-    wrong-kit: '%prefix%&cItem kit %kit% not found '
-    reset-kit: '%prefix%&fYou have reset the items kit &6%kit%&f, now players will
-      get &6default items&f '
-    empty-slot: '%prefix%&cSlot %slot% in kit %kit% does not contain an item.'
 not-owner: '%prefix%&cYou are not the owner of this world.'
 not-developer: '%prefix%&cYou are not the developer of this world.'
 not-builder: '%prefix%&cYou are not the builder of this world.'
 only-in-world: '%prefix%&cThis can only be used in the world.'
 only-in-dev-world: '%prefix%&cThis can only be used in the world for developers (/dev).'
+only-in-lobby: '%prefix%&cThis can only be used in the lobby (/spawn).'
 not-for-lobby: '%prefix%&cCreate your own world to do it!'
 no-money: '%prefix%&cIt seems you don''t have enough coins! You need at least %money%
   coins!'
@@ -506,9 +522,9 @@ blacklisted-in-planet: '%prefix%You cannot visit this world because you are &6bl
 no-player-found: '%prefix%&cThis player was not found.'
 same-player: '%prefix%&cYou cannot specify yourself.'
 same-world: '%prefix%&cYou are already playing in this world.'
-player-error: '&6 Worlds &8| &fA player error occurred. Please report this to the
-  developer: &6%error%'
-planet-error: '&6 Worlds &8| &fAn error occurred in the world: &6%error%'
+player-error: '%prefix%&fA player error occurred. Please report this to the developer:
+  &6%error%'
+planet-error: '%prefix%&fAn error occurred in the world: &6%error%'
 chat-no-near-players: |-
   &c Seems like there's no players in world.. Maybe you can try to use global chat?
    &cAdd ! in the begin of message, or use /cc command.
@@ -541,10 +557,10 @@ coding-error:
     it with variable action Substring text. '
   collectionwithcollectionexception: Tried to store a list as element of list. Use
     Merge Lists action instead.
-  toomanyopenedmenusexception: Opened too many menus for %player%. Please add cooldown
-    between opening menus.
   toomanyrepeatsexception: Too many repeats at once! Please add control action Wait
     to the end of repeat before closing piston.
+  nottrustedlinkexception: Site %link% is not trusted by server. Please contact server
+    admins.
   illegalargumentexception: An incorrect value was found in the chest. You might have
     specified a negative number, or a variable returned an incorrect value, or something
     couldn't be retrieved from the value. Check the chest's contents!
@@ -557,6 +573,11 @@ coding-error:
   operations-limit: The code line was called multiple times in a row and reached the
     limit of %limit% calls. It seems there's a line that calls itself repeatedly.
     Find it and fix it. This line's execution has been stopped.
+  errors-limit: Coding encountered too many errors in short time, please fix them.
+  actions-limit: Coding encountered too many actions in short time, please reduce
+    them.
+  targets-changes-limit: Too many entities (%limit%) was added or removed in targets
+    list with Select Target action. Reduce amount of selection or remove the mobs.
   unknown: 'Oops... It seems this is an unknown error, details: '
   unknown-block-detected: |-
     &f
@@ -568,13 +589,8 @@ coding-error:
   temp-var-not-exists: The temporary value %variable% for this event was not found
     because the event is not compatible with this value. Replace the event with a
     more suitable one.
-  nottrustedlinkexception: Site %link% is not trusted by server. Please contact server
-    admins.
-  errors-limit: Coding encountered too many errors in short time, please fix them.
-  actions-limit: Coding encountered too many actions in short time, please reduce
-    them.
-  targets-changes-limit: Too many entities (%limit%) was added or removed in targets
-    list with Select Target action. Reduce amount of selection or remove the mobs.
+  toomanyopenedmenusexception: Opened too many menus for %player%. Please add cooldown
+    between opening menus.
 coding-debug:
   condition:
     returned-true: '&fCondition %type%&f executed, &aTrue&f.'
@@ -592,17 +608,13 @@ coding-debug:
   variable:
     set: '&fNew value for %variable%&f: &7%value%'
     created: '&fVariable %variable%&f created: &7%value%'
-  log: '&8 [&6&8] &f%log%'
+  log: '&8 [&6⌘&8] &f%log%'
   event-message: '&7 Event Call &8| &7Event %type%&f occurred, finding the trigger...'
   variable-found: '&7           %name% &a=&7 %value%'
   variable-not-found: '&7           %name% &cdefault&7: %value%'
   executor-message: '&7 &7%type%&7 &8(%x% %y% %z%)'
   action-message: '&7 | %type%&7 &8(%x% %y% %z%)'
   action-hover: '&7Type %type% &7Argument &6%name%&7 Value: &6%value%'
-  condition-message-true: '&7 Condition &8| &7%type%&7 (%x% %y% %z%) returned &aYES&7:
-    Executing actions...'
-  condition-message-false: '&7 Condition &8| &7%type%&7 (%x% %y% %z%) returned &cNO&7:
-    Executing otherwise...'
   parsing-code: '&fChecking code blocks, please wait...'
   parsed-code: '&fAll code blocks were checked in &6%time% seconds&f.'
   saving-code: '&f&nSaving the code&f...'
@@ -822,7 +834,7 @@ world:
       world''s mode to &6Build&f.'
   dev-mode:
     connecting:
-      title: '&eConnecting... '
+      title: '&eConnecting... ⌘'
       subtitle: '&fEntering developer mode...'
       error: "%prefix%&cFailed to connect to development world %id% :(\n \n&c Was\
         \ loaded before: %wasloaded%\n&c Currently loaded: %loaded%\n&c Phase: %phase%\n\
@@ -1225,9 +1237,8 @@ items:
       location:
         name: '&fLocation'
         lore:
-        - '&7Place an item here'
-        - '&7with paper containing a location.'
-        - '&eDefault player location'
+        - '&7Place an item here with'
+        - '&7paper containing a location.'
       var-parameter:
         lore:
         - '&7This variable should store'
@@ -2006,13 +2017,13 @@ items:
     events:
       cancellable: '&c⌀ Can be cancelled'
       function:
-        name: '&9Funktio'
+        name: '&9Function'
       method:
-        name: '&aTapa'
+        name: '&aMethod'
       cycle:
         name: '&bCycle'
       player-join:
-        name: '&bPelaaja liittyy maailmaan'
+        name: '&bPlayer joins the world'
         lore:
         - '&7When a player enters the game,'
         - '&7this event is triggered.'
@@ -2026,14 +2037,14 @@ items:
         - ' '
         - '&eClick to set event.'
       player-death:
-        name: '&cPelaaja kuoli'
+        name: '&cPlayer died'
         lore:
         - '&7When a player dies from something,'
         - '&7this event will be triggered.'
         - ' '
         - '&eClick to set event.'
       player-respawn:
-        name: '&cPelaaja uudelleensyntyy kuoleman jälkeen'
+        name: '&cPlayer respawned after death'
         lore:
         - '&7This event is triggered when a player dies'
         - '&7and presses the respawn button.'
@@ -2990,10 +3001,10 @@ items:
         - '&7becomes angry at the nearest mob.'
         - ' '
         - '&eClick to set the event.'
-      entity-air-changed:
+      player-air-changed:
         name: '&bOxygen Level Changed'
         lore:
-        - '&7This occurs when a mob'
+        - '&7This occurs when a player'
         - '&7starts losing oxygen underwater'
         - '&7or regains it when surfacing.'
         - ' '
@@ -3752,7 +3763,7 @@ items:
         - '&7Set mob inventory items.'
         - ''
         - '&fIn the chest:'
-        - '&c Item(s) &7- Items for inventory.'
+        - '&c Items &7- Items for inventory.'
         - ''
         - '&eClick to set action.'
       player-set-item-in-slot:
@@ -4576,13 +4587,8 @@ items:
       entity-clear-potion-effects:
         name: '&fClear Potion Effects'
         lore:
-        - '&7If the chest is empty, all effects'
-        - '&7will be removed from the entity.'
-        - '&7Otherwise, only the selected effects'
-        - '&7will be removed.'
-        - ' '
-        - '&fIn the chest:'
-        - '&d Potion(s) &7- Effects to remove'
+        - '&7All effects will be removed'
+        - '&7from the entity.'
         - ' '
         - '&eClick to set the action.'
       entity-give-potion-effects:
@@ -4592,7 +4598,7 @@ items:
         - '&7the potions in the chest.'
         - ' '
         - '&fIn the chest:'
-        - '&d Potion(s) &7- Effects to apply'
+        - '&d Potions &7- Effects to apply'
         - ' '
         - '&eClick to set the action.'
       entity-remove-potion-effects:
@@ -4602,7 +4608,7 @@ items:
         - '&7from the entity.'
         - ' '
         - '&fIn the chest:'
-        - '&d Potion(s) &7- Effects to remove'
+        - '&d Potions &7- Effects to remove'
         - ' '
         - '&eClick to set the action.'
       entity-set-fall-distance:
@@ -4829,6 +4835,7 @@ items:
         - ' '
         - '&fIn the chest:'
         - '&f Location &7- Target destination'
+        - '&a Number &7- Launch power'
         - ' '
         - '&eClick to set the action.'
       entity-teleport:
@@ -5629,6 +5636,9 @@ items:
         - '&7inventory. To restore, use the'
         - '&7action &2Load inventory&7.'
         - ' '
+        - '&fIn the chest:'
+        - '&a Number &7- Inventory number'
+        - ' '
         - '&eClick to set action.'
         placeholders:
           number:
@@ -5646,6 +5656,9 @@ items:
         - '&7the player. If no saved data,'
         - '&7the player''s inventory will be'
         - '&7cleared.'
+        - ' '
+        - '&fIn the chest:'
+        - '&a Number &7- Inventory number'
         - ' '
         - '&eClick to set action.'
         placeholders:
@@ -7125,7 +7138,7 @@ items:
         - '&7which shows the game credits.'
         - ' '
         - '&eClick to set the action.'
-
+      
       player-kick:
         name: '&cKick Player from World'
         lore:
@@ -7137,7 +7150,7 @@ items:
         - '&7world owner.'
         - ''
         - '&eClick to set the action.'
-
+      
       player-show-elder-guardian:
         name: '&6Show Elder Guardian Effect'
         lore:
@@ -7164,7 +7177,7 @@ items:
             choices:
               'true': Quiet, no sound
               'false': With sound
-
+      
       player-show-demo-screen:
         name: '&6Show Demo Screen'
         lore:
@@ -7173,7 +7186,7 @@ items:
         - '&7enters a world.'
         - ' '
         - '&eClick to set the action.'
-
+      
       player-set-item-cooldown:
         name: '&eSet Item Cooldown'
         lore:
@@ -8988,6 +9001,34 @@ items:
               magenta: Magenta
               pink: Pink
               brown: Brown
+      entity-set-display-teleport-duration:
+        name: '&3Display Teleport Duration'
+        lore:
+        - '&7Changes the duration of the'
+        - '&7display entity''s teleport. Higher'
+        - '&7values make the teleport smoother.'
+        - ''
+        - '&fIn the chest:'
+        - '&a Number &7- Duration'
+        - '&3 Parameter &7- Add or set'
+        - ' '
+        - '&eClick to set the action.'
+        arguments:
+          add:
+            name: '&fSet or Add'
+            lore:
+            - '&7If Add is selected, your value'
+            - '&7will be added to the current'
+            - '&7value of the display entity.'
+            - ' '
+            - '&eClick to change.'
+            - ' '
+            - '&fOptions:'
+            - '%1%'
+            - '%2%'
+            choices:
+              'false': Set
+              'true': Add
       entity-set-display-text:
         name: '&6Set Display Text'
         lore:
@@ -11972,6 +12013,87 @@ items:
         - '&b Vector &7- Plain normal vector'
         - ''
         - '&eClick to set an action.'
+      world-get-block-state:
+        name: '&bGet Block State'
+        lore:
+        - '&7Gets the blocks state'
+        - '&7at the specified locations.'
+        - ''
+        - '&fIn the chest:'
+        - '&e Variable &7- To store the results'
+        - '&f Location &7- Block location'
+        - ''
+        - '&eClick to set the action.'
+      world-set-block-state:
+        name: '&3Set Block State'
+        lore:
+        - '&7Sets the blocks state'
+        - '&7at the specified locations.'
+        - ''
+        - '&fIn the chest:'
+        - '&f Location &7- Block location'
+        - '&6 Text &7- Block state'
+        - ''
+        - '&eClick to set the action.'
+        arguments:
+          water:
+            name: '&9Waterlogging'
+            lore:
+            - '&7If yes, the slab will be'
+            - '&7in water and it will be more'
+            - '&7resistant to explosions.'
+            - ''
+            - '&fOptions:'
+            - '%1%'
+            - '%2%'
+            choices:
+              'true': Yes, keep it waterlogged
+              'false': No, remove the water
+      player-set-skin:
+        name: '&6Set Skin'
+        lore:
+        - '&7Changes player skin using'
+        - '&7a player head.'
+        - ''
+        - '&fIn the chest:'
+        - '&c Item &7- Player head'
+        - ''
+        - '&eClick to set action.'
+      player-set-cape:
+        name: '&6Set Cape'
+        lore:
+        - '&7Changes player cape using'
+        - '&7an official cape texture hash.'
+        - '&7Ie. the last part of a texture url'
+        - '&7''textures.minecraft.net/texture/&n&e[HASH]&r&f'''
+        - ''
+        - '&fIn the chest:'
+        - '&6 Text &7- Texture hash'
+        - ''
+        - '&7 The hash must correspond to a'
+        - '&7 texture that is on Mojangs servers.'
+        - ''
+        - '&eClick to set action.'
+      entity-set-display-item:
+        name: '&6Set Display Item'
+        lore:
+        - '&7Sets a new item for the'
+        - '&7item display entity.'
+        - ''
+        - '&fIn the chest:'
+        - '&c Item &7- New item'
+        - ' '
+        - '&eClick to set the action.'
+      entity-set-display-block-state:
+        name: '&aSet Block Display State'
+        lore:
+        - '&7Sets the block state of the'
+        - '&7block inside a block display.'
+        - ''
+        - '&fIn the chest:'
+        - '&6 Text &7- Block state'
+        - ' '
+        - '&eClick to set the action.'
     conditions:
       if-world-entity-exists:
         name: '&dEntity exists'
@@ -14550,9 +14672,16 @@ items:
         - '&7 and the location'
         - ' '
         - '&eClick to set condition.'
+      if-entity-is-display:
+        name: '&6Is a display entity'
+        lore:
+        - '&7Checks if the entity'
+        - '&7is a display entity.'
+        - ' '
+        - '&eClick to set the condition.'
 menus:
   player-control:
-    title: '&1 Control: %name%'
+    title: '&1☻ Control: %name%'
     items:
       player:
         name: ' '
@@ -14562,7 +14691,7 @@ menus:
         - '&7 %status%'
         - ''
         online: '&a☺ &nPlaying in this world&r&a!'
-        offline: '&c &nCurrently not in the world&r&c.'
+        offline: '&c☹ &nCurrently not in the world&r&c.'
         banned: '&4✘ &nBanned from the world&r&4.'
       dev:
         name: ' '
@@ -14572,7 +14701,7 @@ menus:
           not-trusted: Can code if the owner is in the world
           trusted: Can always code
         lore:
-        - '&d  World Development'
+        - '&d ⌘ World Development'
         - '&7 Access to developer mode /dev'
         - ' '
         - '&7 Did you hire a cool coder'
@@ -14630,7 +14759,7 @@ menus:
       unban:
         name: ' '
         lore:
-        - '&a  Unban player'
+        - '&a ☻ Unban player'
         - '&7 Let him join the world'
         - ' '
         - '&7 If you forgave a player who was'
@@ -14725,7 +14854,7 @@ menus:
         - '&7  the list of players.'
         - ''
   players-browser:
-    title: '&1 Player Management'
+    title: '&1☻ Player Management'
     items:
       player:
         online:
@@ -14734,7 +14863,7 @@ menus:
           - '&7 Player &f%name%'
           - '&a ☺ Playing in this world!'
           - ''
-          - '&d &7 %dev%'
+          - '&d ⌘&7 %dev%'
           - '&c ⛏&7 %build%'
           - '&b 🛡&7 %white-list%'
           - '&f ⚡&7 %flight%'
@@ -14748,9 +14877,9 @@ menus:
           name: ' '
           lore:
           - '&7 Player &f%name%'
-          - '&c  &nCurrently not in the world&r&c.'
+          - '&c ☹ &nCurrently not in the world&r&c.'
           - ''
-          - '&d &7 %dev%'
+          - '&d ⌘&7 %dev%'
           - '&c ⛏&7 %build%'
           - '&b 🛡&7 %white-list%'
           - ''
@@ -14777,8 +14906,8 @@ menus:
           'false': '&7Not in whitelist'
           'true': '&7Can join &fanytime'
         flight:
-          offline: '&cUnavailable'
-          'false': '&cDisabled'
+          offline: '&cCannot fly'
+          'false': '&cCannot fly'
           'true': '&aCan fly'
       kick-all:
         name: ' '
@@ -14803,7 +14932,7 @@ menus:
           banned: Banned
           offline: Offline
         lore:
-        - '&3  Player type'
+        - '&3 ☻ Player type'
         - ''
         - '&e  Click to change'
         - '&e  current player type.'
@@ -14847,7 +14976,7 @@ menus:
         - '&7You are alone in this world...'
         - '&7Maybe you should advertise it?'
   entities-browser:
-    title: '&4 Olentojen hallinta'
+    title: '&4🍖 Olentojen hallinta'
     removed: '%prefix%&f%player% poisti olennon &6%name%&f (%x%,%y%,%z%)'
     removed-all: '%prefix%&f%player% poisti &6%count%&f olentoa'
     items:
@@ -16513,6 +16642,25 @@ menus:
           - '&7 Gets the item currently'
           - '&7 held by the cursor during'
           - '&7 an inventory click.'
+          - ''
+          - '&eClick to set.'
+        fishing-state:
+          name: '&3Fishing State'
+          lore:
+          - '&7Type: &6Text'
+          - ''
+          - '&7 Gets the fishing state'
+          - '&7 when interacting with a fishing rod.'
+          - ''
+          - '&f Examples:'
+          - '&6  fishing&7 - Casting the fishing rod'
+          - '&6  caught_fish&7 - Caught a fish'
+          - '&6  caught_entity&7 - Caught an item or a mob'
+          - '&6  failed_attempt&7 - Fish escaped the hook'
+          - '&6  in_ground&7 - Bobber hit the ground'
+          - '&6  reel_in&7 - Reeled in with nothing caught'
+          - '&6  bite&7 - Something bit the hook'
+          - '&6  lured&7 - Faster bite due to enchantment'
           - ''
           - '&eClick to set.'
         click-type:
@@ -18733,7 +18881,7 @@ blocks:
   player_set_bee_stingers_in_body: Number of stingers
   player_discover_recipe: Unlock recipe
   player_undiscover_recipe: Lock recipe
-
+  
   world_play_mode: '&aPlay mode'
   world_variable_transfer: Value receive
   world_web_response: Web response
@@ -18774,7 +18922,7 @@ blocks:
   world_block_target_hit: Target Hit
   world_block_sponge_absorbed: Sponge Absorbed Water
   world_block_bell_rung: Bell Rung
-
+  
   entity_set_adult: Into adult
   entity_set_baby: Into baby
   entity_set_ai: AI
@@ -18810,31 +18958,31 @@ blocks:
   entity_combusted_by_entity: Fire by entity
   entity_regained_health: Regained health
   entity_hanging_break: Hanging break
-
+  
   entity_piglin_bartered: Piglin Bartered
   entity_interacted_block: Block interaction
   entity_turtle_lays_egg: Turtle Laid Eggs
   entity_firework_exploded: Firework Exploded
-
+  
   entity_dropped_item: Item Dropped
   entity_picked_up_item: Item Picked Up
   entity_item_merged: Items Merged
   entity_item_despawned: Items Despawned
   entity_damaged_item: Damaged item
-
+  
   entity_entered_block: Entered block
   entity_jumped: Jumped
   entity_horse_jumped: Horse Jumped
   entity_enderman_escaped: Enderman Escaped
-
+  
   entity_died: '&4Entity Died'
   entity_shot_bow: Shot with bow
   entity_witch_thrown_potion: Witch Threw Potion
   entity_witch_consumed_potion: Witch Drank Potion
   entity_loaded_crossbow: Loaded crossbow
-
+  
   entity_spawned: Entity spawned
-
+  
   # Actions
   player_kick: Kick from world
   player_launch_vertical: Launch vertic.
@@ -18930,7 +19078,7 @@ blocks:
   player_set_visual_fire: Visual Fire
   player_show_particle: Spawn particle
   
-
+  
   entity_remove: '&cRemove'
   entity_set_team: Set team
   entity_unset_team: Unset team
@@ -19081,6 +19229,8 @@ blocks:
   var_module_number: '&7|Number module|'
   var_round_number: Round number
   var_create_list: '&aCreate list'
+  var_get_block_type: Block type
+  var_get_block_facing: Block face
   var_get_list_size: List size
   var_add_to_list: Add to list
   var_set_in_list: Set in list
@@ -19092,6 +19242,7 @@ blocks:
   var_calculate_from_list: '&3Calcul. from list'
   var_increase_number: Increase number
   var_modify_location: Modify location
+  var_modify_vector: Modify vector
   var_get_location_x: '&cX koordinaatti'
   var_get_location_y: '&aY koordinaatti'
   var_get_location_z: '&9Z koordinaatti'
@@ -19152,6 +19303,8 @@ blocks:
   var_dot_vector: Dot vectors
   var_midpoint_vector: Midpoint vector
   var_distance_vector: Distance vectors
+  var_get_vector_all: Get. Vect. all
+  player_set_spectator_target: Look at enti.
   var_get_vector_x: X of vector
   var_get_vector_y: Y of vector
   var_get_vector_z: Z of vector
@@ -19295,7 +19448,7 @@ blocks:
   world_get_sign_line: Get Sign Line
   if_var_item_equals: Item Equals
   if_var_location_in_area: In Region
-
+  
   if_world_is_in_debug_mode: Debug Mode
   if_world_is_public: Public Entry
   if_world_cycle_is_running: Cycle Running
@@ -19317,7 +19470,7 @@ blocks:
   if_world_block_is_valid_tool: Tool Mineable
   if_world_is_player_in: Player Online
   if_world_entity_exists: Entity Exists
-
+  
   if_entity_name_equals: Name equals
   if_entity_is_player: Is Player
   if_entity_is_mob: Is Mob
@@ -19379,6 +19532,11 @@ blocks:
   if_var_list_value_at_last_equals: Last equals
   if_var_list_value_at_index_equals: At index equals
   var_move_location_by_vector: Move loc by vec
+  entity_set_display_item: Display Item
+  entity_set_display_block_state: Display Block State
+  world_get_block_state: Get state
+  world_set_block_state: Set state
+  if_entity_is_display: Is Display
 time:
   ago: ago
   days: d
