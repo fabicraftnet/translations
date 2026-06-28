@@ -18383,11 +18383,11 @@ menus:
         choices:
           'true': Kyllä
           'false': Ei
-        name: '&eGeneroi rakennelmia?'
+        name: '&eGeneroi rakennelmia'
         lore:
-        - '&7Rakennelmiin kuuluvat mm. kylät,
+        - '&7Rakennelmiin kuuluvat mm. kylät,'
         - '&7nether portaalit ja pyramidit'
-        - ' '
+        - ''
         - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
