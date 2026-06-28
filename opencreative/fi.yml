@@ -31,7 +31,7 @@ no-perms: '%prefix%&cInsufficient permissions!'
 disabled: '&cTämä ominaisuus on poissa käytöstä'
 too-few-args: '&cEi tarpeeksi argumentteja'
 cooldown: '%prefix%&cOdota %cooldown% sekuntia ennen kuin käytät komentoa uudelleen'
-maintenance: '%prefix%&cOops, it seems there''s a maintenance break: this action is
+maintenance: '%prefix%&cHupsis, Oops, palvelin on§ huoltokatkolla: this action is
   unavailable as maintenance is underway. Please wait until the maintenance is over!'
 not-found-player: '&c Pelaaja ei ole paikalla'
 only-players: '&c This command can be used only as player.'
@@ -41,8 +41,8 @@ only-debug: '&c This experimental feature cannot be accessed, because debug mode
   and they can corrupt your worlds!'
 commands:
   join:
-    help: '%prefix%&fTo connect to the world with ID, use: &6/join ID'
-    connecting: '%prefix%Yhdistetään pelaajaa &6%player%&f maailmaan %id%...'
+    help: '%prefix%&fYhdistääksesi maailmaan ID:llä, käytä: &6/join ID'
+    connecting: '%prefix%Yhdistetään maailmaan %id%...'
     failed: '%prefix%&cYhteyden muodostaminen maailmaan epäonnistui'
   join-to:
     help: '%prefix%&fYhdistääksesi maailmaan, jossa on pelaaja, käytä: &6/jointo Username'
@@ -57,19 +57,19 @@ commands:
     given-player: '%prefix%Annoit &6%material%&f x%amount% pelaajalle &6%player%&f.'
     wrong-amount: '%prefix%&cTuntematon luku'
   game-mode:
-    wrong: '%prefix%&Tuntematon pelitila'
+    wrong: '%prefix%&Tuntematon pelimuoto'
     changed:
       creative: '%prefix%Pelitilaksesi on vaihdettu &6luovuustila'
       survival: '%prefix%Pelitilaksesi on vaihdettu &selviytymistila'
       spectator: '%prefix%Pelitilaksesi on vaihdettu &6katsojatila'
       adventure: '%prefix%Pelitilaksesi on vaihdettu &6seikkailutila'
     changed-player:
-      creative: '%prefix%Asetettiin pelaajan &6%player%&f pelitilaksi &6luovuustila'
-      survival: '%prefix%Asetettiin pelaajan &6%player%&f pelitilaksi &6selviytymistila'
-      spectator: '%prefix%Asetettiin pelaajan &6%player%&f pelitilaksi &6katsojatila'
-      adventure: '%prefix%Asetettiin pelaajan &6%player%&f pelitilaksi &6seikkailutila'
+      creative: '%prefix%Asetettiin pelaajan &6%player%&f pelimuodoksi &6luovuustila'
+      survival: '%prefix%Asetettiin pelaajan &6%player%&f pelimuodoksi &6selviytymistila'
+      spectator: '%prefix%Asetettiin pelaajan &6%player%&f pelimuodoksi &6katsojatila'
+      adventure: '%prefix%Asetettiin pelaajan &6%player%&f pelimuodoksi &6seikkailutila'
     help: |-
-      %prefix%Muuta pelitilaa
+      %prefix%Muuta pelimuotoa
        &6/gamemode creative &7- Vaihtaa luovuustilaan
        &6/gamemode Username creative &7- Vaihtaa toisen pelaajan luovuustilaan
   time:
@@ -114,8 +114,8 @@ commands:
     lines-limit: '%prefix%&cKuvauksen riviraja %limit% täyttyi'
     text-limit: '%prefix%&cMerkkiraja %limit% täyttyi'
     not-number: '%prefix%&c%argument% ei ole numero'
-    glowing: '%prefix%Item &dwill now glow&f like an enchanted item.'
-    no-glowing: '%prefix%Item &cwill no longer glow&f like an enchanted item.'
+    glowing: '%prefix%Tavarasi hehkuu nyt kuin lumottu tavara'
+    no-glowing: '%prefix%Tavarasi ei enää hehku kuin lumottu tavara'
     not-enchantment: '%prefix%&cLumousta %enchantment% ei ole olemassa'
     enchanted: '%prefix%Lumottiin tavara lumouksella &d%enchantment% &ftasolle %level%'
     removed-enchant: '%prefix%Poistettiin lumous &c%enchantment%&f tavarasta'
@@ -197,9 +197,9 @@ profiles:
   #experimental feature. dont translate right now
   default-description: '&7I create awesome worlds!'
   genders:
-    male: '&3Male ♂'
-    female: '&dFemale ♀'
-    non-binary: '&eNon-binary 🜬'
+    male: '&3Male'
+    female: '&dFemale'
+    non-binary: '&eNon-binary'
     unknown: '&7Not specified'
 environment:
   help: |-
@@ -533,7 +533,7 @@ coding-error:
     \ it seems there was a problem executing &f%event% &7-> &f%action% &7(%x%,%y%,%z%)\n\
     \ \n&f Information: &6%error%\n \n &c &m                                     \
     \               \n&f"
-  message-event-critical: "\n &4 &m          &4 ☠ CRITICAL ERROR &m          \n&f\n\
+  message-event-critical: "\n &4 &m          &4 CRITICAL ERROR &m          \n&f\n\
     \ &cATTENTION! &fThe world has been put into build mode because a serious issue\
     \ occurred during the execution of the code &f%event% &7(%x%,%y%,%z%)...\n \n\
     &f Information: &6%error%\n \n &4 &m                                         \
@@ -655,17 +655,15 @@ coding-warning:
 lobby:
   title: ''
   subtitle: ''
-  message: "\n <b><gradient:#a78bfa:#ddd6fe>FabiCraft</gradient></b>\n
-    <b><u>Creative</u></b><color:#94a3b8>+</color> <color:#64748b>[BETA]</color>\n
-    <white>\n<gold>  <white>Seikkaile <gold>maailmoja<white>!\n
-    <light_purple> ❤ <white>Create your own world and <light_purple>invite\
-    \ <white>your friends!\n <yellow><white> Have fun and <yellow>create <white>whatever\
-    \ you want!\n<white>"
+  message: "\n<b><gradient:#a78bfa:#ddd6fe>FabiCraft</gradient></b>
+    \n<b><u>Creative</u></b><color:#94a3b8>+</color> <color:#64748b>[BETA]</color>
+    \n
+    \n<white>Kuin Roblox, mutta Minecraftissa!
+    \n<white>Aloita luomalla oma maailma tai selaa muiden tekemiä maailmoja"
 creating-world:
-  not-enough-played: '%prefix%&fYou need to play &6%time%&f in other worlds before
-    creating a new world.'
+  not-enough-played: '%prefix%&fSinun täytyy pelata &6%time%&f ennen kuin voit luoda uuden maailman'
   title: '&eLuodaan uutta maailmaa'
-  subtitle: '&fOdota hetki...'
+  subtitle: '&fOdota...'
   default-world-name: '&7Pelaajan %player% maailma'
   default-world-description: '&7Oma pikku maailmani'
   welcome-title: '&aMorjens'
@@ -687,7 +685,7 @@ settings:
     error: |-
       %prefix%The world name does not meet one of the requirements:
       &f- The name must be at least %min% characters long and no more than %max%.
-    changed: '%prefix%You have set a new &6name&f for the world: %name%'
+    changed: '%prefix%Olet asettanut uuden nimen maailmalle: %name%'
   world-id:
     title: '&fID'
     subtitle: '&fSyötä ID chattiin'
@@ -14687,7 +14685,7 @@ menus:
         - '&e Paina muuttaaksesi.'
         - ''
       build:
-        name: '&c⛏ Rakentaminen'
+        name: '&c Rakentaminen'
         choices:
           none: Ei voi rakentaa
           not-trusted: Voi rakentaa kun olet paikalla
@@ -14752,7 +14750,7 @@ menus:
         - '&e Paina poistaaksesi.'
         - ''
       transfer-ownership:
-        name: '&d🌊 Siirrä maailma pelaajalle'
+        name: '&dSiirrä maailma pelaajalle'
         lore:
         - '&7 Asettaa pelaajan maailman uudeksi omistajaksi.'
         - ''
@@ -14778,7 +14776,7 @@ menus:
           - '&a ☺ Pelaaja on maailmassasi!'
           - ''
           - '&d ⌘&7 %dev%'
-          - '&c ⛏&7 %build%'
+          - '&c &7 %build%'
           - '&b 🛡&7 %white-list%'
           - '&f ⚡&7 %flight%'
           - ''
@@ -14793,7 +14791,7 @@ menus:
           - '&c ☹ &nEi paikalla&r&c.'
           - ''
           - '&d ⌘&7 %dev%'
-          - '&c ⛏&7 %build%'
+          - '&c &7 %build%'
           - '&b 🛡&7 %white-list%'
           - ''
           - '&e Vasenklikkaa &7- Muuttaaaksesi asetuksia'
@@ -15061,82 +15059,61 @@ menus:
         - '&7  about join will not appear.'
         - ''
         - '&e Paina yhdistääksesi'
-        - ''
   world-access:
     title: '&0%name%'
     items:
       advertisement:
-        name: '&b Mainosta maailmaa'
+        name: '&bMainosta maailmaa'
         lore:
+        - '&7Lähetä kutsu kaikille creativen'
+        - '&7pelaajille liittyä maailmaasi'
         - ' '
-        - '&7  Lähetä kutsu kaikille creativen'
-        - '&7  pelaajille liittyä maailmaasi.'
-        - ' '
-        - '&e Paina mainostaaksesi.'
-        - ''
+        - '&ePaina mainostaaksesi'
       play-mode:
-        name: ' '
+        name: '&bPelailutila'
         lore:
-        - '&b Pelailutila'
-        - '&7 Pelit käyntiin!'
-        - ' '
-        - '&7  Pelaajat pääsevät seikkailemaan luomaasi maailmaa'
+        - '&7Pelit käyntiin!'
+        - '&7Pelaajat pääsevät seikkailemaan maailmaan'
         - ' '
         - '&e Paina vaihtaaksesi tilaa'
-        - ''
       build-mode:
-        name: ' '
+        name: '&cRakennustila'
         lore:
-        - '&c Rakennustila'
-        - '&7 Rakennetaan maailma...'
-        - ' '
-        - '&7  Pelaajat voivat tarkastella sinua, kun rakennat maailmaa'
+        - '&7Pelaajat voivat tarkastella sinua,'
+        - 'kun rakennat maailmaa'
         - ' '
         - '&e Paina vaihtaaksesi tilaa'
-        - ''
       delete:
-        name: ' '
+        name: '&4Poista tämä maailma'
         lore:
-        - '&4 Poista tämä maailma'
-        - '&c Tätä toimintoa ei voi peruuttaa'
+        - '&cTätä toimintoa ei voi peruuttaa'
         - ' '
-        - '&7  This will erase a world''s'
-        - '&7  data, map, variables and'
-        - '&7  even your code..'
+        - '&7Tämä toiminto poistaa maailmasi ja siihen liittyvät tiedot'
         - ' '
         - '&c Paina poistaaksesi'
-        - ''
       connect:
-        name: ' '
-        lore:
-        - '&d ⏵ &nYhdistä maailmaasi&d...'
-        - ''
+        name: '&dYhdistä maailmaan...'
+        lore: ''
       opened:
-        name: ' '
+        name: '&aJulkinen pääsy'
         lore:
-        - '&a Julkinen pääsy'
-        - '&7 Kaikki voivat liittyä maailmaasi'
+        - '&7Kaikki voivat liittyä maailmaasi'
         - ''
-        - '&e Paina sulkeaksesi maailma.'
-        - ''
+        - '&ePaina sulkeaksesi maailma'
       closed:
-        name: ' '
+        name: '&cRajoitettu pääsy'
         lore:
-        - '&c Rajoitettu pääsy'
-        - '&7 Vain sinä voit liittyä tähän maailmaan'
+        - '&7Vain sinä voit liittyä tähän maailmaan'
         - ''
-        - '&e &nPaina avataksesi maailma'
-        - ''
+        - '&ePaina avataksesi maailma'
   confirmation:
     items:
       confirm:
         name: '&aHyväksy'
-        lore:
-        - ''
+        lore: ''
       cancel:
         name: '&cHylkää'
-        lore:
-        - ''
+        lore: ''
       request-money:
         name: '&eBuy &e%name%&e for %price% ?'
         lore:
@@ -15153,12 +15130,12 @@ menus:
         name: '&cPoista maailma'
         lore:
         - ''
-        - '&7Olet poistamassa maailmaa,'
+        - '&7Olet poistamassa maailmaa'
         - '&7Sitä ei ole mahdollista palauttaa'
         - ''
         - '&7Oletko varma? Paina &aHyväksy'
       delete-module:
-        name: '&cOlet poistamassa moduulia.'
+        name: '&cOlet poistamassa moduulia'
         lore:
         - ''
         - '&7Kukaan ei enään pysty lataamaan sitä '
@@ -15423,13 +15400,11 @@ menus:
         - '&7Nobody has created any worlds yet... How'
         - '&7about you &dcreate&7 the first one?'
       recommended:
-        name: '&e Suositellut maailmat'
+        name: '&eSuositellut maailmat'
         lore:
         - ''
         - ''
-        - '&7  Click to view'
-        - '&7  worlds that many'
-        - '&7  server players liked.'
+        - '&7Paina tutustuaksesi suositeltuihin maailmoihin'
         - ''
       category:
         name: ' '
@@ -15464,26 +15439,20 @@ menus:
         - '%9%'
         - ''
       sort:
-        name: ' '
+        name: '&bLajittele maailmat'
         choices:
           online: Eniten pelaajia
           likes: Paras maine
           last: Uusimmat
         lore:
-        - '&b  Lajittele maailmat'
+        - '&7Suosituissa maailmoissa paljon pelaajia'
+        - '&7Paremmilla maailmoilla on hyvä maine'
         - ''
-        - '&7  Suosituissa maailmoissa on paljon pelaajia'
-        - '&7  Hyvillä maailmoilla on hyvä maine'
-        - '&7  Voit auttaa uusia maailmoja kasvamaan.'
+        - '&ePaina vaihtaaksesi lajittelujärjestystä'
         - ''
-        - '&e  Paina vaihtaaksesi'
-        - '&e  lajittelujärjestystä'
-        - ''
-        - '&f  Vaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
-        - ''
       search:
         name: '&bHae maailmoja'
         lore:
@@ -15634,7 +15603,7 @@ menus:
           - '&7 Koodialustoja: %amount%/%limit%'
           - ''
         create-platform:
-          name: '&b☀ &lLuo koodialusta'
+          name: '&lLuo koodialusta'
           lore:
           - ''
           - '&7 Luo uuden tason jonka päälle voi'
@@ -15645,7 +15614,7 @@ menus:
           - '&e Paina luodaksesi.'
           - ''
         debug:
-          name: '&e⛏ Debugaustila'
+          name: '&eDebuggaustila'
           choices:
             disabled: Ei päällä
             all: Näytä KAIKKI koodi info
@@ -15760,8 +15729,8 @@ menus:
         selected: '&d☒ Selected Target'
         all-players: '&b All Players'
         random-player: '&6Random Player'
-        killer: '&c🗡 Killer'
-        victim: '&4☠ Victim'
+        killer: '&cKiller'
+        victim: '&4Victim'
         all-entities: '&6All Entities'
         random-target: '&5Random Target'
         last-spawned: '&aLast Spawned Entity'
@@ -17585,7 +17554,7 @@ menus:
         - '&2 ⏵ &nCPaina asentaaksesi&2...'
         - ''
       delete:
-        name: '&4 ☠ Poista moduuli'
+        name: '&4Poista moduuli'
         lore:
         - '&c This action is irreversible!'
         - ' '
@@ -17623,7 +17592,7 @@ menus:
       worlds:
         name: ' '
         lore:
-        - '&a 🌊 Created worlds'
+        - '&a Created worlds'
         - ''
         - '&7  Click to show'
         - '&7  worlds that were created'
@@ -17632,7 +17601,7 @@ menus:
       modules:
         name: ' '
         lore:
-        - '&6 🪓 Created modules'
+        - '&6 Created modules'
         - ''
         - '&7  Click to show'
         - '&7  modules that were created'
@@ -17641,7 +17610,7 @@ menus:
       favorite-worlds:
         name: ' '
         lore:
-        - '&d ❤ Favorite worlds'
+        - '&d Favorite worlds'
         - ''
         - '&7  Click to show'
         - '&7  this player''s favorite worlds.'
@@ -17649,20 +17618,20 @@ menus:
       statistics:
         name: ' '
         lore:
-        - '&a 🌊 &fWorlds: &a%worlds%'
-        - '&6 🪓 &fModules: &6%modules%'
+        - '&a &fWorlds: &a%worlds%'
+        - '&6 &fModules: &6%modules%'
         - ''
-        - '&e ⌚ &fPlaytime: &e%playtime%'
-        - '&2 🎣 &fVisited: &2%visits% worlds'
+        - '&e &fPlaytime: &e%playtime%'
+        - '&2 &fVisited: &2%visits% worlds'
         - ''
       social-links:
         name: ' '
         unknown: Not specified
         lore:
-        - '&9 ✉ &fDiscord: &9%discord%'
-        - '&b ✉ &fTelegram: &b%telegram%'
-        - '&3 ✉ &fX (Twitter): &3%twitter%'
-        - '&c ✉ &fYouTube: &c%youtube%'
+        - '&9 &fDiscord: &9%discord%'
+        - '&b &fTelegram: &b%telegram%'
+        - '&3 &fX (Twitter): &3%twitter%'
+        - '&c &fYouTube: &c%youtube%'
         - ''
   profile-settings:
     #experimental feature. dont translate right now
@@ -17681,7 +17650,7 @@ menus:
       change-description:
         name: ' '
         lore:
-        - '&6 ✂ About me'
+        - '&6 About me'
         - '&7 Short phrases about you.'
         - ''
         - '&7 Tell players who you are,'
@@ -17698,7 +17667,7 @@ menus:
       change-social-discord:
         name: ' '
         lore:
-        - '&9 ✉ Discord tag'
+        - '&9 Discord tag'
         - '&7 Your social networks.'
         - ''
         - '&7 You can add a tag'
@@ -17710,7 +17679,7 @@ menus:
       change-social-telegram:
         name: ' '
         lore:
-        - '&b ✉ Telegram username'
+        - '&b Telegram username'
         - '&7 Your social networks.'
         - ''
         - '&7 You can add a username'
@@ -17722,7 +17691,7 @@ menus:
       change-social-twitter:
         name: ' '
         lore:
-        - '&3 ✉ X (Twitter) username'
+        - '&3 X (Twitter) username'
         - '&7 Your social networks.'
         - ''
         - '&7 You can add a username'
@@ -17734,7 +17703,7 @@ menus:
       change-social-youtube:
         name: ' '
         lore:
-        - '&c ✉ YouTube channel'
+        - '&c YouTube channel'
         - '&7 Your social networks.'
         - ''
         - '&7 You can add a tag'
@@ -17763,7 +17732,7 @@ menus:
         - '%4%'
         - ''
   own-modules:
-    title: '&2☄ Omat moduulit'
+    title: '&2Omat moduulit'
     items:
       previous-page:
         name: ' '
@@ -17788,7 +17757,7 @@ menus:
       tutorial:
         name: ' '
         lore:
-        - '&a 🌊 Näin luot moduulin!'
+        - '&a Näin luot moduulin'
         - ''
         - '&7  Ohjelmointi tilassa(/dev) valitse koodirivit jotka'
         - '&7  haluat pakata moduuliin manipulator työkalulla.'
@@ -17825,33 +17794,31 @@ menus:
         lore:
         - ' &6← &eEdellinen #%page%'
         - ''
-        - '&7  Paina nähdäksesi edelliset maailmat.'
+        - '&7  Paina nähdäksesi edelliset maailmat'
         - ''
       next-page:
         name: ' '
         lore:
-        - '&e Next... #%page% &6→'
+        - '&e Seuraava... #%page% &6→'
         - ''
         - '&7  Paina nähdäksesi seuraavat maailmat'
         - ''
       no-worlds:
-        name: '&c&oEi maailmoja!'
+        name: '&c&oEi maailmoja'
         lore:
-        - '&7Luo ensimmäinen maailmasi!'
+        - '&7Luo ensimmäinen maailmasi'
       limit:
-        name: '&c&oMaailmojen raja saavutettu!'
+        name: '&oMaailmojen raja saavutettu!'
         lore:
         - '&7Maksimi maailmojen määrä on %limit%.'
       create-world:
-        name: '&lLuo maailma'
+        name: 'Luo maailma'
         lore:
-        - ''
-        - '&7Henkilökohtainen tilasi kokeilla luovuuden ja unelmien rajoja'
-        - '&7palikoiden ja koodin avulla yksin tai yhdessä'
+        - '&7Henkilökohtainen tila kokeilla luovuutesi rajoja'
+        - '&7palikoiden ja koodin avulla, yksin tai yhdessä muiden kanssa'
       recommended:
-        name: '&e Suositellut maailmat'
+        name: 'Suositellut maailmat'
         lore:
-        - ''
         - '&7Paina tutustuaksesi suositeltuihin maailmoihin'
       world:
         name: '&f%planetName%'
@@ -17904,14 +17871,14 @@ menus:
         - '&e Paina muuttaaksesi kuvausta.'
         - ''
       entities-control:
-        name: '&c🍖 Olentojen hallinta'
+        name: '&cOlentojen hallinta'
         lore:
         - '&7 Näe ja karsi maailman olentoja.'
         - ' '
         - '&e Paina avataksesi.'
         - ''
       change-category:
-        name: '&e🗡 Maailman kategoria'
+        name: '&eMaailman kategoria'
         lore:
         - '&7 Genre johon maailma luokitellaan.'
         - ' '
@@ -17920,7 +17887,7 @@ menus:
         - '&e Paina asettaaksesi.'
         - ' '
       planet-flags:
-        name: '&6 ⇄ Maailman asetukset'
+        name: '&6Maailman asetukset'
         lore:
         - '&7 Säädä maailmaa ja aseta sääntöjä.'
         - ' '
@@ -17944,7 +17911,7 @@ menus:
         - '&e Paina muuttaaksesi ID:tä.'
         - ''
       change-spawn:
-        name: '&3 ⭘ Spawn sijainti'
+        name: '&3Spawn sijainti'
         lore:
         - '&7 Liittyvien pelaajien sijainti ja'
         - '&7 uudelleensyntymis-sijainti.'
@@ -17968,31 +17935,29 @@ menus:
         - '%1%'
         - '%2%'
         - ' '
-        - '&e Click to open'
-        - '&e or close the world.'
-        - ' '
+        - '&e Paina avataksesi tai sulkeaksesi maailma'
       advertisement:
         name: '&b Mainosta maailmaa'
         lore:
         - ' '
-        - '&7  Lähetä kutsu kaikille creativen'
-        - '&7  pelaajille liittyä maailmaasi.'
+        - '&7Lähetä kutsu kaikille creativen'
+        - '&7pelaajille liittyä maailmaasi.'
         - ' '
-        - '&e Paina mainostaaksesi.'
+        - '&ePaina mainostaaksesi'
         - ''
       play-mode:
         name: '&bPelailutila'
         lore:
-        - '&7 Pistää koodin pyörimään ja'
-        - '&7 pistää pelaajat pelitilaan.'
+        - '&7Pistää koodin pyörimään ja'
+        - '&7laittaa pelaajat pelimuotoon.'
         - ' '
-        - '&e Paina vaihtaaksesi tilaa.'
+        - '&ePaina vaihtaaksesi tilaa.'
         - ''
       build-mode:
-        name: '&c⛏ Rakennustila'
+        name: '&cRakennustila'
         lore:
         - '&7 Pysäytää maailman ja'
-        - '&7 pistää rakentajat luovaan.'
+        - '&7 laittaa rakentajat luovaan pelimuotoon.'
         - ' '
         - '&7 Muut pääsevät katsomaan kun rakennat!'
         - ' '
@@ -18022,7 +17987,7 @@ menus:
           '2': Ilta
           '3': Yö
           '4': Vaihtuva
-        name: '&e☀ Vaihda päivänaikaa'
+        name: '&eVaihda päivänaikaa'
         lore:
         - ' '
         - '&7 Valaistus luo tuonnelman!'
@@ -18039,53 +18004,46 @@ menus:
         choices:
           'true': Tallenna pelitilan muutokset
           'false': Tallenna vain rakennustilan muutokset
-        name: '&c 🪣 Automaattiset tallennukset'
+        name: 'Automaattiset tallennukset'
         lore:
-        - '&7 Määrittää pysyykö muutokset maailmassa'
+        - '&7Määrittää pysyykö muutokset maailmassa'
         - ''
-        - '&f Vaihtoehdot:'
+        - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
         - ''
-        - '&c Paina muuttaaksesi.'
-        - ''
+        - '&cPaina muuttaaksesi'
   world-settings-categories:
     title: Valitse kategoria (TÄHÄN NE ELON KEKSIMÄT NIMET)
     items:
       sandbox:
-        name: '&e Sandbox'
+        name: '&eHiekkalaatikko'
         lore:
-        - '&7 Freedom of choices.'
+        - '&7Tyhjä kanvas, pelaaja luo hupinsa ihan itse'
         - ' '
-        - '&7 In these worlds players'
-        - '&7 create fun by themselves,'
-        - '&7 like building something.'
-        - ' '
-        - '&e Paina valitaksesi.'
-        - ''
+        - '&ePaina valitaksesi'
       adventure:
         name: ' '
         lore:
-        - '&9 Adventure'
-        - '&7 World for completing a map.'
+        - '&9Seikkailu'
+        - '&7Rakenna pelattavia karttoja'
         - ' '
-        - '&7 Player always has a goal,'
+        - '&7Aseta tavoite ja selvitä tiesi maaliin'
         - '&7 that needs to be finished'
         - '&7 while playing the game.'
         - ' '
-        - '&e Paina valitaksesi.'
-        - ''
+        - '&e Paina valitaksesi'
       strategy:
         name: ' '
         lore:
-        - '&2 Strategy'
+        - '&2Strategia'
         - '&7 You should more think.'
         - ' '
         - '&7 In these worlds combats are'
         - '&7 happening more often, and you'
         - '&7 have to come up with strategy.'
         - ' '
-        - '&e Paina valitaksesi.'
+        - '&e Paina valitaksesi'
         - ''
       arcade:
         name: ' '
@@ -18293,7 +18251,7 @@ menus:
           '2': Mobit eivät pudota esineitään
         name: '&aMobien pudotukset'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
@@ -18304,7 +18262,7 @@ menus:
           '2': Vahinko ei paraannu
         name: '&dElämän palautuminen'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
@@ -18315,7 +18273,7 @@ menus:
           '2': Tavarat pysyvät pelaajalla
         name: '&6Kuolintavarat'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
@@ -18326,7 +18284,7 @@ menus:
           '2': Palikat eivät muutu itsestään
         name: '&bPalikoiden muuttuminen'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
@@ -18337,7 +18295,7 @@ menus:
           '2': Piilota /like ilmoitukset
         name: '&aIlmoita maailman tykkäyksistä'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
@@ -18348,7 +18306,7 @@ menus:
           '2': Piilota kuolinviesit
         name: '&cKuolinviestit'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
@@ -18359,7 +18317,7 @@ menus:
           '2': Estä palikoiden räjähtäminen
         name: '&cPalikoiden vahingoittuminen'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
@@ -18370,7 +18328,7 @@ menus:
           '2': Tuli ei leviä
         name: '&eTulen leviäminen'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
@@ -18381,115 +18339,88 @@ menus:
           '2': Piilota paikannuspalkki
         name: '&7Paikannuspalkki'
         lore:
-        - '&ePaina muuttaaksesi.'
+        - '&ePaina muuttaaksesi'
         - ''
         - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
   world-creation:
-    title: '&2☺ Customize Your New World...'
+    title: '&2Muokkaa uutta maailmaasi...'
     turned-on: '&a  ⏺ &n'
     turned-off: '&7  ○ '
     items:
       type:
         choices:
-          flat: Flat, for building
-          empty: Empty world
-          water: Ocean, for swimming
-          survival: Normal, for survival
-          large_biomes: Large biomes
-        name: '&aLandscape Type'
+          flat: Tasamaa
+          empty: Tyhjyys
+          water: Meri
+          survival: Survival
+          large_biomes: Suuret biomit
+        name: '&aMaailman tyyppi'
         lore:
-        - ' '
-        - '&7A flat world is ideal for building,'
-        - '&7the ocean for fishing, and plains'
-        - '&7with large biomes for survival.'
-        - ''
-        - '&ePaina muuttaaksesi.'
-        - ''
         - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
         - '%4%'
         - '%5%'
+        - ''
+        - '&ePaina muuttaaksesi'
       environment:
         choices:
-          normal: Normal Earth-like World
-          nether: Nether Environment
-          the_end: The End Dimension
-        name: '&bEnvironment'
+          normal: Tavallinen maailma
+          nether: Netherympäristö
+          the_end: End-ympäristö
+        name: '&bYmpäristö'
         lore:
-        - ' '
-        - '&7In a normal environment, there''s a'
-        - '&7regular sky, in the Nether everything'
-        - '&7is red with no water, and in the End,'
-        - '&7everything is mysterious!'
-        - ''
-        - '&ePaina muuttaaksesi.'
-        - ''
         - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
+        - ''
+        - '&ePaina muuttaaksesi'
       generate-structures:
         choices:
-          'true': Generate structures
-          'false': No structures, please
-        name: '&eGenerate Structures?'
+          'true': Kyllä
+          'false': Ei
+        name: '&eGeneroi rakennelmia?'
         lore:
+        - '&7Rakennelmiin kuuluvat mm. kylät,
+        - '&7nether portaalit ja pyramidit'
         - ' '
-        - '&7Structures include villages,'
-        - '&7Nether portals, pillager outposts,'
-        - '&7and desert pyramids.'
-        - ''
-        - '&ePaina muuttaaksesi.'
-        - ''
         - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
-      create:
-        name: ' '
-        lore:
-        - '&a ✔ Create World'
-        - '&f All set? Let''s go!'
         - ''
-        - '&eClick to create your world...'
-        - ''
+        - '&ePaina muuttaaksesi'
       biome:
         choices:
-          all: Various
-          snowy: Snowy
-          jungle: Jungle
-          desert: Desert
-          soul: Soul Sand Valley
-          warped: Warped Forest
-          crimson: Crimson Forest
-          basalt: Basalt Deltas
-          city: End City
-          islands: Islands
-        name: '&aBiome'
+          all: Useita
+          snowy: Luminen
+          jungle: Viidakko
+          desert: Aavikko
+          soul: Sieluhiekkalaakso
+          warped: Warped metsä
+          crimson: Crimson metsä
+          basalt: Basalttisuistot
+          city: End kaupunki
+          islands: Saaret
+        name: '&aBiomi'
         lore:
-        - ' '
-        - '&7Let the world have various'
-        - '&7biomes, or just one.'
-        - ''
-        - '&ePaina muuttaaksesi.'
-        - ''
         - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
         - '%4%'
         - '%5%'
+        - ''
+        - '&ePaina muuttaaksesi'
       create:
-        name: ' '
+        name: 'Luo maailma'
         lore:
-        - '&a ✔ Create World'
-        - '&f All set? Let''s go!'
+        - '&fKaikki valmiina? Sit mennää!'
         - ''
-        - '&eClick to create your world...'
-        - ''
+        - '&ePaina luodaksesi'
 deaths:
   title: '&cDied!'
   subtitle: '&7You %death%...'
