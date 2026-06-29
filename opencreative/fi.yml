@@ -176,13 +176,13 @@ modules:
   default-description: '&7My cool module!'
   info: |-
     %prefix%&fModule Information: &6%moduleName%
-     &f Kuvaus: &6%moduleDescription%&r
-     &f Omistaja: &6%moduleOwner%
-     &f ID: &6%moduleID%
-     &f Luotu: &6%moduleCreationTime%
-     &f Lataukset: &6%moduleDownloads%
-     &f Maine: &6%moduleReputation%
-     &f Käyttö: &6%moduleSharing%
+     &fKuvaus: &6%moduleDescription%&r
+     &fOmistaja: &6%moduleOwner%
+     &fID: &6%moduleID%
+     &fLuotu: &6%moduleCreationTime%
+     &fLataukset: &6%moduleDownloads%
+     &fTykkäykset: &6%moduleReputation%
+     &fKäyttö: &6%moduleSharing%
   rating:
     not-installed: '%prefix%&cAsenna moduuli maailmaan, jotta voit arvioida sen'
     liked: '%prefix%Tykkäsit moduulia '
@@ -720,7 +720,7 @@ settings:
     enabled: '%prefix%Maailma avattiin'
     disabled: '%prefix%Maailma suljettiin'
   world-category:
-    changed: '%prefix%Maailman kategoriaksi asetettiin &6%category%&f.'
+    changed: '%prefix%Maailman kategoriaksi asetettiin &6%category%&f'
   autosave:
     enabled: '%prefix%&fAutomaattinen tallennus päällä'
     disabled: '%prefix%&cAutomaattinen tallennus sammutettu'
@@ -1056,7 +1056,7 @@ advertisement:
   message: "%prefix%&6Kutsu:\n&f &7%player% &fkutsuu pelaajia maailmaansa: \n\
     &f %world%&r\n &f\n&a &a &n[Liity maailmaan]&f\n &f"
   hover: "&f%planetName%\n&8Luonut %planetOwner%\n \n&a  &7Pelaajia: &a%planetOnline%\n\
-    &e &7 Maine: &f%planetReputation%\n&3 ⚐&7 Kategoria: &f%planetCategory%\n \n\
+    &e &7 Tykkäykset: &f%planetReputation%\n&3 ⚐&7 Kategoria: &f%planetCategory%\n \n\
     &aPaina liittyäksesi"
   no-money: '%prefix%&cYou need to have %money% more coins to advertise this world.'
   cooldown: '%prefix%Odota &6%cooldown% sekunttia&f ennen kuin voit mainostaa uudelleen.'
@@ -15059,7 +15059,7 @@ menus:
         name: '&cRakennustila'
         lore:
         - '&7Pelaajat voivat tarkastella sinua,'
-        - 'kun rakennat maailmaa'
+        - '&7kun rakennat maailmaa'
         - ' '
         - '&ePaina vaihtaaksesi tilaa'
       delete:
@@ -15069,10 +15069,11 @@ menus:
         - ' '
         - '&7Tämä toiminto poistaa maailmasi ja siihen liittyvät tiedot'
         - ' '
-        - '&c Paina poistaaksesi'
+        - '&cPaina poistaaksesi'
       connect:
         name: '&dYhdistä maailmaan...'
-        lore: ''
+        lore:
+        - '&ePaina yhdistääksesi'
       opened:
         name: '&aJulkinen pääsy'
         lore:
@@ -15407,12 +15408,9 @@ menus:
         name: '&bLajittele maailmat'
         choices:
           online: Eniten pelaajia
-          likes: Paras maine
+          likes: Eniten tykkäyksiä 
           last: Uusimmat
         lore:
-        - '&7Suosituissa maailmoissa paljon pelaajia'
-        - '&7Paremmilla maailmoilla on hyvä maine'
-        - ''
         - '&ePaina vaihtaaksesi lajittelujärjestystä'
         - ''
         - '%1%'
@@ -15446,7 +15444,7 @@ menus:
         - '&7 %planetDescription%'
         - ''
         - '&a &7 Pelaajia: &a%planetOnline%'
-        - '&e &7 Maine: &f%planetReputation%'
+        - '&e &7 Tykkäykset: &f%planetReputation%'
         - '&3 &7 Kategoria: &f%planetCategory%'
         - ''
         - '&2 ⏵ &aLiity maailmaan'
@@ -17439,7 +17437,7 @@ menus:
         lore:
         - '&7Mun moduulit on kadoksissa D:'
       own-modules:
-        name: '&a 🧪 Omat moduulit '
+        name: '&a Omat moduulit '
         lore: ''
       module:
         name: '&f%moduleName%'
@@ -17448,7 +17446,7 @@ menus:
         - ' '
         - '&7 %moduleDescription%'
         - ' '
-        - '&e  &7Maine: &a%moduleReputation%'
+        - '&e  &7Tykkäykset: &a%moduleReputation%'
         - '&6  &7Lataukset: &a%moduleDownloads%'
         - ' '
         - '&2 ⏵ &nPaina ladataksesi'
@@ -17726,7 +17724,7 @@ menus:
         - ' '
         - '&7 %moduleDescription%'
         - ' '
-        - '&e  &7Maine: &a%moduleReputation%'
+        - '&e  &7Tykkäykset: &a%moduleReputation%'
         - '&6  &7Lataukset: &a%moduleDownloads%'
         - ' '
         - '&5 &7Luotu: &d%moduleCreationTime%'
@@ -17776,7 +17774,7 @@ menus:
         - ' '
         - '&a &7Pelaajia: &a%planetOnline%'
         - '&3 &7Kategoria: &f%planetCategory%'
-        - '&e &7Maine: &a%planetReputation%'
+        - '&e &7Tykkäykset: &a%planetReputation%'
         - '&6 &7Vierailut: &a%planetUniques%'
         - ' '
         - '&2 &7Viimeksi pelattu: &a%planetLastTime%'
@@ -17784,7 +17782,6 @@ menus:
         - ' '
         - '&2 ⏵ &aLiity maailmaan'
         - '&8ID: %planetCustomID%'
-        - ' '
   world-settings:
     title: '&1Maailman asetukset'
     turned-on: '&a ● &n'
@@ -17793,80 +17790,70 @@ menus:
       world:
         name: '&f%planetName%'
         lore:
-        - '&8Luonut &7%planetOwner%'
+        - '&7Rakentaja &#a78bfa%planetOwner%'
         - ''
-        - '&7 %planetDescription%'
+        - '&7%planetDescription%'
         - ''
-        - '&a &7Pelaajia: &a%planetOnline%'
-        - '&e &7 Maine: &f%planetReputation%'
-        - '&3 &7 Kategoria: &f%planetCategory%'
+        - '&a&7Pelaajia: &a%planetOnline%'
+        - '&e&7Tykkäykset: &f%planetReputation%'
+        - '&3&7Kategoria: &f%planetCategory%'
         - ''
-        - '&aVedä tavara, jonka haluat maailmasi ikoniksi'
+        - '&aVoit muuttaa maailmasi ikonia vaihtamalla tämän tavaran'
         - '&8ID: %planetCustomID%'
-        - ''
       change-name:
         name: '&eMaailman nimi'
         lore:
-        - '&7 Mikä sinun maailmasi nimesi on?'
-        - ' '
-        - '&e Paina nimetäksesi maailma.'
+        - '&7Jokainen ansaitsee olla nimetty!'
         - ''
+        - '&ePaina nimetäksesi maailma'
       change-description:
-        name: '&6✂ Maailman kuvaus'
+        name: '&6Maailman kuvaus'
         lore:
-        - '&7 Kuvaa maailmasi ihmeitä!'
+        - '&7Kuvaile maailmasi ihmeitä!'
         - ' '
-        - '&e Paina muuttaaksesi kuvausta.'
-        - ''
+        - '&ePaina muuttaaksesi kuvausta'
       entities-control:
         name: '&cOlentojen hallinta'
         lore:
         - '&7Näe ja karsi maailman olentoja'
         - ' '
         - '&ePaina avataksesi'
-        - ''
       change-category:
         name: '&eMaailman kategoria'
         lore:
-        - '&7 Genre johon maailma luokitellaan.'
-        - ' '
+        - '&7 Genre johon maailma luokitellaan'
         - '&7 Auttaa pelaajia löytämään maailmasi'
         - ' '
-        - '&e Paina asettaaksesi.'
-        - ' '
+        - '&e Paina asettaaksesi'
       planet-flags:
         name: '&6Maailman asetukset'
         lore:
         - '&7 Säädä maailmaa ja aseta sääntöjä.'
         - ' '
-        - '&e Paina hallitaksesi.'
-        - ''
+        - '&e Paina hallitaksesi'
       planet-players:
-        name: '&6 Pelaajien hallinta'
+        name: '&6Pelaajien hallinta'
         lore:
-        - '&7 Aseta pelaajien oikeuksia.'
+        - '&7Aseta pelaajien oikeuksia'
         - ' '
-        - '&e Paina hallitaksesi.'
-        - ''
+        - '&ePaina hallitaksesi'
       change-id:
-        name: '&c Maailman ID'
+        name: '&cMaailman ID'
         lore:
-        - '&7 Lyhyt uniikki tunniste.'
-        - ' '
-        - '&7 ID:tä käytetään liittymiskomennossa:'
+        - '&7Lyhyt uniikki tunniste'
+        - ''
+        - '&7Käytetään liittymiskomennossa:'
         - '&7 &c/join ID'
         - ''
-        - '&e Paina muuttaaksesi ID:tä.'
-        - ''
+        - '&e Paina muuttaaksesi ID:tä'
       change-spawn:
         name: '&3Spawn sijainti'
         lore:
-        - '&7 Liittyvien pelaajien sijainti ja'
-        - '&7 uudelleensyntymis-sijainti.'
-        - ' '
-        - '&e Vasenklikkaa &7- Aseta Spawn sijainti'
-        - '&e Oikeaklikkaa &7- Teleportaa Spawnille'
+        - '&7Liittyvien pelaajien sijainti ja'
+        - '&7uudelleensyntymis-sijainti'
         - ''
+        - '&eVasenklikkaa &7- Aseta spawnin sijainti'
+        - '&eOikeaklikkaa &7- Teleportaa Spawnille'
       change-sharing:
         name: '&aPääsy'
         choices:
@@ -17875,13 +17862,13 @@ menus:
         lore:
         - '&7Onko maailma valmis pelaamista varten?'
         - ' '
-        - '&7 Sulje maailma muilta pelaajilta'
+        - '&7Sulje maailma muilta pelaajilta'
         - ' '
-        - '&f Vaihtoehdot:'
+        - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
         - ' '
-        - '&e Paina avataksesi tai sulkeaksesi maailma'
+        - '&ePaina avataksesi tai sulkeaksesi maailma'
       advertisement:
         name: '&bMainosta maailmaa'
         lore:
@@ -17890,15 +17877,13 @@ menus:
         - '&7pelaajille liittyä maailmaasi.'
         - ' '
         - '&ePaina mainostaaksesi'
-        - ''
       play-mode:
         name: '&bPelailutila'
         lore:
         - '&7Pistää koodin pyörimään ja'
         - '&7laittaa pelaajat pelimuotoon.'
-        - ' '
-        - '&ePaina vaihtaaksesi tilaa.'
         - ''
+        - '&ePaina vaihtaaksesi tilaa'
       build-mode:
         name: '&cRakennustila'
         lore:
@@ -17908,12 +17893,11 @@ menus:
         - '&7 Muut pääsevät katsomaan kun rakennat!'
         - ' '
         - '&e Paina vaihtaaksesi tilaa.'
-        - ''
       dev-mode:
         name: '&eOhjelmointitila'
         lore:
         - '&7Vie ohjelmointimaailmaan, jossa'
-        - '&7kaikki taika tapahtuu! '
+        - '&7kaikki taika tapahtuu!'
         - ''
         - '&7 Ohjelmointi on englanniksi'
         - ' '
@@ -17921,29 +17905,26 @@ menus:
       environment:
         name: '&dKoodiympäristö'
         lore:
-        - '&7 Muokkaa ohjelmointimaailmaa ja'
-        - '&7 tarkkaile teknisiä tietoja'
+        - '&7Muokkaa ohjelmointimaailmaa ja'
+        - '&7tarkkaile teknisiä tietoja'
         - ' '
-        - '&e Paina hallitaksesi'
+        - '&ePaina hallitaksesi'
       time:
         choices:
           '1': Päivä
           '2': Ilta
           '3': Yö
           '4': Vaihtuva
-        name: '&eVaihda päivänaikaa'
+        name: '&eVaihda aikaa'
         lore:
-        - ' '
-        - '&7 Valaistus luo tuonnelman!'
+        - '&7Valaistus luo tunnelman!'
         - ''
-        - '&f Vaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
         - '%4%'
         - ''
-        - '&e Paina vaihtaaksesi päivänaikaa'
-        - ''
+        - '&ePaina vaihtaaksesi aikaa'
       autosave:
         choices:
           'true': Tallenna pelitilan muutokset
@@ -17952,13 +17933,12 @@ menus:
         lore:
         - '&7Määrittää pysyykö muutokset maailmassa'
         - ''
-        - '&fVaihtoehdot:'
         - '%1%'
         - '%2%'
         - ''
         - '&cPaina muuttaaksesi'
   world-settings-categories:
-    title: Valitse kategoria (TÄHÄN NE ELON KEKSIMÄT NIMET)
+    title: Valitse kategoria
     items:
       sandbox:
         name: '&eHiekkalaatikko'
@@ -17988,19 +17968,16 @@ menus:
         - '&7 have to come up with strategy.'
         - ' '
         - '&e Paina valitaksesi'
-        - ''
       arcade:
-        name: ' '
+        name: 'Peliluola'
         lore:
-        - '&b Arcade'
         - '&7 Fun games for everyone.'
         - ' '
         - '&7 Compete together with friends,'
         - '&7 do easy tasks and have fun'
         - '&7 from these games.'
         - ' '
-        - '&e Paina valitaksesi.'
-        - ''
+        - '&e Paina valitaksesi'
       roleplay:
         name: ' '
         lore:
