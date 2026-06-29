@@ -17302,15 +17302,6 @@ menus:
           - '&7 entities from &dSelection&7 target.'
           - ''
           - '&eClick to set.'
-        fishing-state:
-          name: '&3Fishing State'
-          lore:
-          - '&7Type: &6Text'
-          - ''
-          - '&7 Gets the fishing state'
-          - '&7 when interacting with a fishing rod.'
-          - ''
-          - '&eClick to set.'
     variables:
       title: '&0Values'
       items:
