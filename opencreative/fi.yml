@@ -1071,16 +1071,12 @@ items:
     games:
       name: '&aKaikki maailmat'
       lore:
-      - ''
       - '&7Valitse maailma ja käy piipahtamassa'
-      - ''
     own:
       name: '&bOmat maailmat'
       lore:
-      - ''
       - '&7Luomasi maailmat löydät täältä'
-      - ''
-      - '&eJos ei maailmaa löydy on aika tehdä sellainen!'
+      - '&7Jos ei maailmaa löydy on aika tehdä sellainen!'
     changelogs:
       name: '&dPäivitykset'
       lore:
@@ -1988,7 +1984,7 @@ items:
           - ' '
           - '&eValitse kategoria painamalla'
         events:
-      cancellable: '&c⌀ Can be cancelled'
+      cancellable: '&cCan be cancelled'
       function:
         name: '&9Function'
       method:
@@ -2001,7 +1997,7 @@ items:
         - '&7When a player enters the game,'
         - '&7this event is triggered.'
         - ' '
-        - '&ePaina asettaaksesi event.'
+        - '&ePaina asettaaksesi event'
       player-quit:
         name: '&cPlayer leaves the world'
         lore:
@@ -2042,7 +2038,7 @@ items:
         - '&a Price of purchase'
         - '&6 Save purchase or not'
         - ' '
-        - '&ePaina asettaaksesi event.'
+        - '&ePaina asettaaksesi event'
       player-bed-enter:
         name: '&cPlayer entered the bed'
         lore:
@@ -2054,7 +2050,7 @@ items:
         - '&2 Block location'
         - '&e Result of bed enter'
         - ' '
-        - '&ePaina asettaaksesi event.'
+        - '&ePaina asettaaksesi event'
       player-bed-leave:
         name: '&cPlayer left the bed'
         lore:
@@ -15062,10 +15058,12 @@ menus:
     items:
       confirm:
         name: '&aHyväksy'
-        lore: ''
+        lore:
+        - ' '
       cancel:
         name: '&cHylkää'
-        lore: ''
+        lore:
+        - ' '
       request-money:
         name: '&eBuy &e%name%&e for %price% ?'
         lore:
@@ -15236,8 +15234,7 @@ menus:
     items:
       all-worlds:
         name: '&eNäytä kaikki maailmat'
-        lore:
-        - ''
+        lore: ' '
       sandbox:
         title: '&5Hiekkalaatikot'
         name: ' '
@@ -15247,7 +15244,6 @@ menus:
         - '&7Luo ja rakenna mitä tahansa'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
-        - ''
       adventure:
         title: '&5Seikkailu'
         name: ' '
@@ -15257,7 +15253,6 @@ menus:
         - '&7Juokse, pompi, tutki!'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
-        - ''
       strategy:
         title: '&5Strategia'
         name: ' '
@@ -15267,7 +15262,6 @@ menus:
         - '&7Mieti ennen kuin liikut...'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
-        - ''
       arcade:
         title: '&5Peliluola'
         name: ' '
@@ -15277,7 +15271,6 @@ menus:
         - '&7Hulvattomia pelejä kaikille!'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
-        - ''
       roleplay:
         title: '&5Roolipeli'
         name: ' '
@@ -15298,7 +15291,6 @@ menus:
         - '&7and characters.'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
-        - ''
       experiment:
         title: '&5 Kokeellinen'
         name: ' '
@@ -15307,7 +15299,6 @@ menus:
         - '&7Testaa jotain aivan uudenlaista...'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
-        - ''
       simulator:
         title: '&5Simulaattori'
         name: ' '
@@ -15317,7 +15308,6 @@ menus:
         - '&7Ole lentäjä...tai vaikka hamsteri'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
-        - ''
   all-worlds:
     title: '&3⌂ Player Worlds'
     title-pages: '&3⌂ Player Worlds (%page% of %pages%)'
@@ -15335,7 +15325,7 @@ menus:
         lore:
         - ''
       no-worlds:
-        name: '&c&oEi maailmoja'
+        name: '&cEi maailmoja'
         lore:
         - '&7Nobody has created any worlds yet... How'
         - '&7about you &dcreate&7 the first one?'
@@ -15344,7 +15334,7 @@ menus:
         lore:
         - '&7Paina tutustuaksesi'
       category:
-        name: ' '
+        name: '&e Valitse kategoria'
         choices:
           all: Kaikki maailmat
           sandbox: Hiekkalaatikko
@@ -15356,15 +15346,12 @@ menus:
           experiment: Kokeellinen
           simulator: Simulaattorit
         lore:
-        - '&e Valitse kategoria'
+        - '&7Löydä kiinnostava maailma'
+        - '&7kategorian mukaan'
         - ''
-        - '&7  Löydä kiinnostava maailma'
-        - '&7  kategorian mukaan'
+        - '&ePaina vaihtaaksesi'
+        - '&enykyinen kategoria'
         - ''
-        - '&e  Paina vaihtaaksesi'
-        - '&e  nykyinen kategoria'
-        - ''
-        - '&f Kategoriat:'
         - '%1%'
         - '%2%'
         - '%3%'
@@ -15400,7 +15387,7 @@ menus:
         owner: maailman luoja
         title: '&fEnter in chat'
         subtitle: '&6%search%&f to search'
-        usage: '%prefix%Enter &6%search%&f in chat to search for a world.'
+        usage: '%prefix%Syötä &6%search%&f chattiin etsiäksesi maailmaa'
         not-found: '%prefix%Maailmaa ei löytynyt'
       own-worlds:
         name: '&aOmat maailmat'
