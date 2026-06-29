@@ -906,14 +906,14 @@ world:
     limit: '%prefix%&cYou reached maximum amount of favorite worlds (%limit%)! To
       add new favorite worlds remove old ones.'
   categories:
-    sandbox: '&e&lHIEKKALAATIKKO' #MITKÄ NÄÄ OLIKAAN
-    adventure: '&9&lSEIKKAILU'
-    strategy: '&a&lSTRATEGIA'
-    arcade: '&b&lPELILUOLA'
-    roleplay: '&d&lROOLIPELI'
-    story: '&6&lTARINAPELI'
-    experiment: '&c&lKOKEELLINEN'
-    simulator: '&c&lSIMULAATTORI'
+    sandbox: '&e&lHiekkalaatikko'
+    adventure: '&9&lSeikkailu'
+    strategy: '&a&lStrategia'
+    arcade: '&b&lPeliluola'
+    roleplay: '&d&lRoolipeli'
+    story: '&6&lTarinapeli'
+    experiment: '&c&lKokeellinen'
+    simulator: '&c&lSimulaattori'
   sharing:
     public: '&a&lPUBLIC'
     private: '&c&lPRIVATE'
@@ -1054,7 +1054,7 @@ creative-chat:
     message.'
 advertisement:
   message: "%prefix%&6Kutsu:\n&f &7%player% &fkutsuu pelaajia maailmaansa: \n\
-    &f %world%&r\n &f\n&#a78bfa[Liity maailmaan]&f\n &f"
+    &f %world%&r\n &f\n&x&a&7&8&b&f&a[Liity maailmaan]&f\n &f"
   hover: "&f%planetName%\n&8Luonut %planetOwner%\n \n&7Pelaajia: &a%planetOnline%\n\
     &7Tykkäykset: &f%planetReputation%\n&7Kategoria: &f%planetCategory%\n \n\
     &aPaina liittyäksesi"
@@ -17735,7 +17735,7 @@ menus:
       world:
         name: '&f%planetName%'
         lore:
-        - '&7Rakentaja <color:#a78bfa>%planetOwner%</color>'
+        - '&7Rakentaja &x&a&7&8&b&f&a%planetOwner%'
         - ''
         - '&7%planetDescription%'
         - ''
