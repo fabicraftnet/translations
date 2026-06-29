@@ -1055,8 +1055,8 @@ creative-chat:
 advertisement:
   message: "%prefix%&6Kutsu:\n&f &7%player% &fkutsuu pelaajia maailmaansa: \n\
     &f %world%&r\n &f\n&a &a &n[Liity maailmaan]&f\n &f"
-  hover: "&f%planetName%\n&8Luonut %planetOwner%\n \n&a  &7Pelaajia: &a%planetOnline%\n\
-    &e &7 Tykkäykset: &f%planetReputation%\n&3 ⚐&7 Kategoria: &f%planetCategory%\n \n\
+  hover: "&f%planetName%\n&8Luonut %planetOwner%\n \n&7Pelaajia: &a%planetOnline%\n\
+    &7Tykkäykset: &f%planetReputation%\n&7Kategoria: &f%planetCategory%\n \n\
     &aPaina liittyäksesi"
   no-money: '%prefix%&cYou need to have %money% more coins to advertise this world.'
   cooldown: '%prefix%Odota &6%cooldown% sekunttia&f ennen kuin voit mainostaa uudelleen.'
@@ -1080,14 +1080,12 @@ items:
       - ''
       - '&7Luomasi maailmat löydät täältä'
       - ''
-      - '&eJos ei maailmaa löydy, aika tehdä sellainen!'
-      - ''
+      - '&eJos ei maailmaa löydy on aika tehdä sellainen!'
     changelogs:
       name: '&dPäivitykset'
       lore:
       - ''
       - '&7Lue uusimmat juorut pluginin päivityksistä'
-      - ''
       pages:
       - ""
   developer:
@@ -15277,10 +15275,10 @@ menus:
         - '&ePaina katsoaksesi maailmoja'
         - ''
       adventure:
-        title: '&5Seikkailut'
+        title: '&5Seikkailu'
         name: ' '
         lore:
-        - '&9Seikkailut'
+        - '&9Seikkailu'
         - ' '
         - '&7Juokse, pompi, tutki!'
         - ' '
@@ -15290,7 +15288,7 @@ menus:
         title: '&5Strategia'
         name: ' '
         lore:
-        - '&2 Strategia'
+        - '&2Strategia'
         - ' '
         - '&7Mieti ennen kuin liikut...'
         - ' '
@@ -15302,8 +15300,7 @@ menus:
         lore:
         - '&b Peliluola'
         - ' '
-        - '&7Fun worlds with'
-        - '&7unique mechanics.'
+        - '&7Hulvattomia pelejä kaikille!'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
         - ''
@@ -15313,11 +15310,10 @@ menus:
         lore:
         - '&d Roolipeli'
         - ' '
-        - '&7Chat, characters,'
-        - '&7interactions.'
+        - '&7Luo oma hahmosi ja'
+        - '&7roolipelaa muiden pelaajien kanssa'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
-        - ''
       story:
         title: '&5Tarina'
         name: ' '
@@ -15551,14 +15547,12 @@ menus:
         create-platform:
           name: '&lLuo koodialusta'
           lore:
-          - ''
           - '&7 Luo uuden tason jonka päälle voi'
           - '&7 rakentaa koodipalikoilla.'
           - ''
           - '&7 Koodialustoja: %amount%/%limit%'
           - ''
           - '&e Paina luodaksesi'
-          - ''
         debug:
           name: '&eDebuggaustila'
           choices:
@@ -15572,12 +15566,10 @@ menus:
           - '&7 Näyttää koodi infoa'
           - '&7 keskustelukentässä.'
           - ' '
-          - '&f  Vaihtoehdot:'
           - '%1%'
           - '%2%'
           - ' '
           - '&e Paina muuttaaksesi'
-          - ''
         time:
           name: '&eKoodimaailman päivänaika'
           choices:
@@ -15588,70 +15580,60 @@ menus:
           lore:
           - '&7 Ohjelmoijat ovat yön olentoja...'
           - ' '
-          - '&f  Vaihtoehdot:'
           - '%1%'
           - '%2%'
           - '%3%'
           - '%4%'
           - ' '
-          - '&e Paina muuttaaksesi.'
-          - ''
+          - '&e Paina muuttaaksesi'
         clear-variables:
           name: '&cNollaa muuttujat'
           lore:
           - '&7 Poistaa kaikki maailman muuttujat!'
           - ' '
-          - '&4 Paina poistaaksesi muuttujat.'
-          - ''
+          - '&4 Paina poistaaksesi muuttujat'
         variables-list:
           name: '&6Näytä muuttujat'
           lore:
           - '&7 Näyttää listan muuttujia.'
           - ' '
-          - '&e Paina näyttääksesi.'
-          - ''
+          - '&e Paina näyttääksesi'
         variables-size:
           name: '&eNäytä muuttujien määrä'
           lore:
-          - '&7 Näyttää muuttujien lukumäärän.'
+          - '&7 Näyttää muuttujien lukumäärän'
           - ''
-          - '&e Paina näyttääksesi.'
-          - ''
+          - '&e Paina näyttääksesi'
         containers:
           name: '&6Koodiympäristön säiliöt'
           choices:
             chest: Arkut
             barrel: Tynnyrit
           lore:
-          - '&7 Muuttaa säiliöiden ulkoasua.'
+          - '&7Muuttaa säiliöiden ulkoasua'
           - ' '
-          - '&f  Vaihtoehdot:'
           - '%1%'
           - '%2%'
           - ' '
-          - '&e Paina muuttaaksesi.'
-          - ''
+          - '&ePaina muuttaaksesi'
         event-material:
           name: '&fAseta tapahtuma väri'
           lore:
-          - '&7 Muuttaa tapahtumaruudun värin.'
+          - '&7 Muuttaa tapahtumaruudun värin'
           - ''
-          - '&e Paina valitaksesi.'
-          - ''
+          - '&e Paina valitaksesi'
         action-material:
           name: '&fAseta toiminto väri'
           lore:
-          - '&7 Muuttaa toimintoruudun värin.'
+          - '&7 Muuttaa toimintoruudun värin'
           - ''
-          - '&e Paina valitaksesi.'
-          - ''
+          - '&e Paina valitaksesi'
         floor-material:
           name: '&fAseta lattian väri'
           lore:
-          - '&7 Muuttaa koodiympäristön lattian värin.'
+          - '&7 Muuttaa koodiympäristön lattian värin'
           - ''
-          - '&e Paina valitaksesi.'
-          - ''
+          - '&e Paina valitaksesi'
         info:
           name: '&5Kooditiedot'
           lore:
@@ -15666,7 +15648,6 @@ menus:
           - '&7 Call limit: &f%executor-calls-limit%'
           - '&8 World ID: %planetID%'
           - '&8 Version: %version%'
-          - ''
     selection:
       title: Select a Target for Action
       title-values: Select a Target for Game Value
@@ -15694,8 +15675,7 @@ menus:
           - '&7  In some executors,'
           - '&7  it can select all players.'
           - ''
-          - '&e Click to select.'
-          - ''
+          - '&e Click to select'
         selected:
           name: ' '
           lore:
@@ -15709,7 +15689,7 @@ menus:
           - '&7  If no action was used,'
           - '&7  it will select the default target.'
           - ''
-          - '&e Click to select.'
+          - '&e Click to select'
           - ''
         all-players:
           name: ' '
@@ -15720,7 +15700,7 @@ menus:
           - '&7  If there are no players'
           - '&7  in the game world, the block will not work.'
           - ''
-          - '&e Click to select.'
+          - '&e Click to select'
           - ''
         last-spawned:
           name: ' '
@@ -15731,7 +15711,7 @@ menus:
           - '&7  It must have &cworld action&7,'
           - '&c  that created entity before.'
           - ''
-          - '&e Click to select.'
+          - '&e Click to select'
           - ''
         random-player:
           name: ' '
@@ -15742,7 +15722,7 @@ menus:
           - '&7  Chooses a completely random'
           - '&7  player currently in the world.'
           - ''
-          - '&e Click to select.'
+          - '&e Click to select'
           - ''
         killer:
           name: ' '
@@ -15753,7 +15733,7 @@ menus:
           - '&7  Could be a shooter if'
           - '&7  the event involves projectiles.'
           - ''
-          - '&e Click to select.'
+          - '&e Click to select'
           - ''
         victim:
           name: ' '
@@ -15764,7 +15744,7 @@ menus:
           - '&7  Could also be the deceased if'
           - '&7  the event is related to killing.'
           - ''
-          - '&e Click to select.'
+          - '&e Click to select'
           - ''
         all-entities:
           name: ' '
@@ -15778,7 +15758,7 @@ menus:
           - ''
           - '&7  Everything in the world except players.'
           - ''
-          - '&e Click to select.'
+          - '&e Click to select'
           - ''
         random-target:
           name: ' '
@@ -15789,7 +15769,7 @@ menus:
           - '&7  This will choose a random'
           - '&7  entity from the selected target.'
           - ''
-          - '&e Click to select.'
+          - '&e Click to select'
           - ''
     particles-list:
       title: Select a Particle
@@ -15805,10 +15785,10 @@ menus:
         next-page:
           name: ' '
           lore:
-          - '&e Next... &6→'
+          - '&eSeuraava... &6→'
           - ''
           - '&7  Click to view'
-          - '&7  more particles.'
+          - '&7  more particles'
           - ''
     potions-list:
       title: Select a Potion to Set
@@ -17938,97 +17918,53 @@ menus:
         - ' '
         - '&ePaina valitaksesi'
       adventure:
-        name: ' '
+        name: '&9Seikkailu'
         lore:
-        - '&9Seikkailu'
-        - '&7Rakenna pelattavia karttoja'
-        - ' '
-        - '&7Aseta tavoite ja selvitä tiesi maaliin'
-        - '&7 that needs to be finished'
-        - '&7 while playing the game.'
+        - '&7Rakenna pelattavia karttoja, jossa pelaaja voi'
+        - '&7juosta, pomppia ja tutkia paikkoja'
         - ' '
         - '&e Paina valitaksesi'
       strategy:
-        name: ' '
+        name: '&2Strategia'
         lore:
-        - '&2Strategia'
-        - '&7 You should more think.'
-        - ' '
-        - '&7 In these worlds combats are'
-        - '&7 happening more often, and you'
-        - '&7 have to come up with strategy.'
+        - '&7Mieti ennen kuin liikut...'
         - ' '
         - '&e Paina valitaksesi'
       arcade:
         name: 'Peliluola'
         lore:
-        - '&7 Fun games for everyone.'
-        - ' '
-        - '&7 Compete together with friends,'
-        - '&7 do easy tasks and have fun'
-        - '&7 from these games.'
+        - '&7Rakenna hulvattomia minipelejä kaikille!'
         - ' '
         - '&e Paina valitaksesi'
       roleplay:
-        name: ' '
+        name: '&dRoolipeli'
         lore:
-        - '&d Role-Play'
-        - '&7 Every player has role.'
+        - '&7Luo oma hahmosi ja'
+        - '&7roolipelaa muiden pelaajien kanssa'
         - ' '
-        - '&7 In these worlds players will'
-        - '&7 create a story by themselves, '
-        - '&7 because they play their roles.'
-        - ' '
-        - '&e Paina valitaksesi.'
-        - ''
+        - '&e Paina valitaksesi'
       story:
-        name: ' '
+        name: '&6 Tarinapeli'
         lore:
-        - '&6 Tarinapeli'
-        - '&7 Maailma, jossa juoni'
-        - ' '
-        - '&7 Maailmat kertovat tarinaa'
-        - '&7 hahmoista ja niillä on'
-        - '&7 usein lopetus.'
-        - ' '
-        - '&f Esimerkki:'
-        - '&7 &e Lilliputit'
-        - '&7 &6 Tulevaisuus'
-        - '&7 &7 Historia'
+        - '&7Maailmat kertovat tarinaa,'
+        - '&7jonka sinä saat itse kirjoittaa'
         - ' '
         - '&e Valitse painamalla'
-        - ''
       experiment:
-        name: ' '
+        name: '&cKokeellinen'
         lore:
-        - '&c Experiment'
-        - '&7 World for testing features.'
+        - '&7Testaa jotain aivan uudenlaista...'
         - ' '
-        - '&7 Maybe you created a new'
-        - '&7 features, that should be'
-        - '&7 tested with players.'
-        - ' '
-        - '&e Paina valitaksesi.'
-        - ''
+        - '&e Paina valitaksesi'
       simulator:
-        name: ' '
+        name: '&cSimulaattori'
         lore:
-        - '&c Simulator'
-        - '&7 Something from real life.'
-        - ' '
-        - '&7 Let player be small, or big..'
-        - '&7 Maybe he can morph into..'
-        - '&7 some animal?'
+        - '&7Ole lentäjä...tai vaikka hamsteri'
         - ' '
         - '&e Valitse painamalla'
-        - ''
       back:
-        name: ' '
+        name: ' &6← &eEdellinen'
         lore:
-        - ' &6← &eEdellinen'
-        - ''
-        - '&7  Paina palataksesi'
-        - '&7  Maailman asetuksiin.'
         - ''
   world-settings-flags:
     turned-on: '&a ● '
@@ -18036,13 +17972,10 @@ menus:
     title: Maailman asetukset
     items:
       back:
-        name: ' '
+        name: '&6← &eEdellinen...'
         lore:
-        - ' &6← &eEdellinen...'
         - ''
-        - '&7  Paina palataksesi'
-        - '&7  Maailman asetuksiin.'
-        - ''
+
       world-borders:
         choices:
           '1': Näytä sininen raja
