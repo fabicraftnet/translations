@@ -1053,7 +1053,7 @@ creative-chat:
   cooldown: '%cc-prefix%&fPlease wait &6%cooldown% seconds&f before sending another
     message.'
 advertisement:
-  message: "%prefix%&6Kutsu:\n&f &7%player% &fkutsuu pelaajia maailmaansa: \n\
+  message: "%prefix%&6Kutsu:\n&f&7%player% &fkutsuu pelaajia maailmaansa: \n\
     &f %world%&r\n &f\n&x&a&7&8&b&f&a[Liity maailmaan]&f\n &f"
   hover: "&f%planetName%\n&8Luonut %planetOwner%\n \n&7Pelaajia: &a%planetOnline%\n\
     &7Tykkäykset: &f%planetReputation%\n&7Kategoria: &f%planetCategory%\n \n\
@@ -17766,16 +17766,16 @@ menus:
       change-category:
         name: '&eMaailman kategoria'
         lore:
-        - '&7 Genre johon maailma luokitellaan'
-        - '&7 Auttaa pelaajia löytämään maailmasi'
+        - '&7Genre johon maailma luokitellaan'
+        - '&7Auttaa pelaajia löytämään maailmasi'
         - ' '
-        - '&e Paina asettaaksesi'
+        - '&ePaina asettaaksesi'
       planet-flags:
         name: '&6Maailman asetukset'
         lore:
-        - '&7 Säädä maailmaa ja aseta sääntöjä.'
+        - '&7Säädä maailmaa ja aseta sääntöjä'
         - ' '
-        - '&e Paina hallitaksesi'
+        - '&ePaina hallitaksesi'
       planet-players:
         name: '&6Pelaajien hallinta'
         lore:
@@ -17790,7 +17790,7 @@ menus:
         - '&7Käytetään liittymiskomennossa:'
         - '&7 &c/join ID'
         - ''
-        - '&e Paina muuttaaksesi ID:tä'
+        - '&ePaina muuttaaksesi ID:tä'
       change-spawn:
         name: '&3Spawn sijainti'
         lore:
@@ -17806,9 +17806,7 @@ menus:
           private: Pelaajat eivät voi liittyä
         lore:
         - '&7Onko maailma valmis pelaamista varten?'
-        - ' '
         - '&7Sulje maailma muilta pelaajilta'
-        - ' '
         - ' '
         - '%1%'
         - '%2%'
@@ -17826,25 +17824,25 @@ menus:
         name: '&bPelailutila'
         lore:
         - '&7Pistää koodin pyörimään ja'
-        - '&7laittaa pelaajat pelimuotoon.'
+        - '&7laittaa pelaajat pelimuotoon'
         - ''
         - '&ePaina vaihtaaksesi tilaa'
       build-mode:
         name: '&cRakennustila'
         lore:
-        - '&7 Pysäytää maailman ja'
-        - '&7 laittaa rakentajat luovaan pelimuotoon.'
+        - '&7Pysäyttää maailman ja'
+        - '&7laittaa rakentajat luovaan pelimuotoon.'
         - ' '
-        - '&7 Muut pääsevät katsomaan kun rakennat!'
+        - '&7Muut pääsevät katsomaan kun rakennat!'
         - ' '
-        - '&e Paina vaihtaaksesi tilaa.'
+        - '&ePaina vaihtaaksesi tilaa'
       dev-mode:
         name: '&eOhjelmointitila'
         lore:
         - '&7Vie ohjelmointimaailmaan, jossa'
         - '&7kaikki taika tapahtuu!'
         - ''
-        - '&7 Ohjelmointi on englanniksi'
+        - '&7Ohjelmointi on englanniksi'
         - ' '
         - '&ePaina vaihtaaksesi tilaa'
       environment:
