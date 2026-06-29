@@ -17735,7 +17735,7 @@ menus:
       world:
         name: '&f%planetName%'
         lore:
-        - '&7Rakentaja &#a78bfa%planetOwner%'
+        - '&7Rakentaja <color:#a78bfa>%planetOwner%</color>'
         - ''
         - '&7%planetDescription%'
         - ''
