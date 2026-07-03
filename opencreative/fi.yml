@@ -14645,14 +14645,12 @@ menus:
         lore:
         - '&7 Oikeudet ohjelmointitilassa.'
         - ' '
-        - '&f Vaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
         - '%4%'
         - ''
         - '&e Paina  muuttaaksesi'
-        - ''
       build:
         name: '&c Rakentaminen'
         choices:
@@ -14662,98 +14660,88 @@ menus:
         lore:
         - '&7 Oikeudet rakennustilassa.'
         - ''
-        - '&f Vaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
         - ''
         - '&e Paina  muuttaaksesi'
-        - ''
       flight:
-        name: '&f⚡ Lentäminen'
+        name: '&fLentäminen'
         choices:
           'false': Ei voi lentää
           'true': Voi lentää
         lore:
-        - '&7 Lentämisoikeudet.'
+        - '&7 Lentämisoikeudet'
         - ''
-        - '&f Vaihtoehdot:'
         - '%1%'
         - '%2%'
         - ''
         - '&e Paina  muuttaaksesi'
-        - ''
       unban:
         name: '&a☻ Peruuta esto'
         lore:
-        - '&7 Päästä pelaaja takaisin maailmaan.'
+        - '&7 Päästä pelaaja takaisin maailmaan'
         - ''
-        - '&e Paina puruuttaksesi esto.'
-        - ''
+        - '&e Paina puruuttaksesi esto'
       kick:
         name: '&3⌀ Potki'
         lore:
-        - '&7 Potkii pelaajan pois maailmasta.'
+        - '&7 Potkii pelaajan pois maailmasta'
         - ''
         - '&e Paina potkiaksesi'
         - ''
       ban:
         name: '&c✘ Estä'
         lore:
-        - '&7 Estää pelaajan pääsyn maailmaan.'
+        - '&7 Estää pelaajan pääsyn maailmaan'
         - ''
         - '&e Paina estääksesi'
         - ''
       whitelist:
         name: '&bLisää pääsylistoille'
         lore:
-        - '&7 Sallii pääsyn kun maailma on suljettu.'
+        - '&7 Sallii pääsyn, kun maailma on suljettu'
         - ' '
         - '&e Paina lisätäksesi'
         - ''
       whitelist-remove:
         name: '&cPoista pääsylistoilta'
         lore:
-        - '&7 Sallii pääsyn kun maailma on suljettu.'
+        - '&7 Estää pääsyn, kun maailma on suljettu'
         - ''
         - '&e Paina poistaaksesi'
         - ''
       transfer-ownership:
         name: '&dSiirrä maailma pelaajalle'
         lore:
-        - '&7 Asettaa pelaajan maailman uudeksi omistajaksi'
+        - '&7Asettaa pelaajan maailman uudeksi omistajaksi'
         - ''
-        - '&c Et voi perua tätä!'
+        - '&cEt voi perua tätä!'
         - ''
-        - '&e Paina vaihtaaksesi omistajaa.'
+        - '&ePaina vaihtaaksesi omistajaa'
         - ''
       back:
         name: '&6← &eEdellinen...'
         lore:
-        - ''
-        - ''
-        - '&7  Click to open'
-        - '&7  the list of players'
-        - ''
+        - '&7Paina avataksesi pelaajalista'
   players-browser:
     title: '&1Pelaajien hallinta'
     items:
       player:
         online:
-          name: '&7Player &f%name%'
+          name: '&7Pelaaja &f%name%'
           lore:
-          - '&a Pelaaja on maailmassasi'
+          - '&aPelaaja on maailmassasi'
           - ''
           - '&d%dev%'
           - '&c%build%'
           - '&b%white-list%'
-          - '&f %flight%'
+          - '&f%flight%'
           - ''
-          - '&e Vasenklikkaa &7- Muuttaaaksesi asetuksia'
+          - '&eVasenklikkaa &7- Muuta asetuksia'
           - ''
-          - '&3 Oikeaklikkaa &7- Teleporttaa pelaajan luokse'
-          - '&3 OIkeaklikkaa + SHIFT &7- Teleporttaa luoksesi'
-          - ''
+          - '&3Oikeaklikkaa &7- Teleporttaa pelaajan luokse'
+          - '&3Oikeaklikkaa + SHIFT &7- Teleporttaa luoksesi'
         offline:
           name: '&7Pelaaja &f%name%'
           lore:
@@ -14763,15 +14751,14 @@ menus:
           - '&7%build%'
           - '&7%white-list%'
           - ''
-          - '&e Vasenklikkaa &7- Muuttaaaksesi asetuksia'
+          - '&eVasenklikkaa &7- Muuta asetuksia'
           - ''
         banned:
           name: '&7Pelaaja &f%name%'
           lore:
-          - '&4&nEstetty&r&4.'
+          - '&4&nEstetty&r&4'
           - ''
-          - '&eVasenklikkaa &7- Peruuttaaksesi eston'
-          - ''
+          - '&eVasenklikkaa &7- Peruuta esto'
         dev:
           none: '&7Ei voi ohjelmoida'
           guest: '&7Pääsee ohjelmointimaailmaan'
@@ -14789,10 +14776,10 @@ menus:
           'false': '&cEi voi lentää'
           'true': '&aVoi lentää'
       kick-all:
-        name: ' &3⌀ Potki kaikki pelaajat'
+        name: ' &3Potki kaikki pelaajat'
         lore:
         - ''
-        - '&e  Paina potkiaksesi'
+        - '&ePaina potkiaksesi'
         - ''
       type:
         name: '&3Pelaaja suodattimet'
@@ -14805,11 +14792,8 @@ menus:
           banned: Estetyt
           offline: Poissa olevat
         lore:
+        - '&ePaina vaihtaaksesi näkyvät pelaajat'
         - ''
-        - '&e  Paina vaihtaaksesi'
-        - '&e  näkyvät pelaajat.'
-        - ''
-        - '&f  Vaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
@@ -14817,51 +14801,37 @@ menus:
         - '%5%'
         - '%6%'
         - '%7%'
-        - ''
       back:
-        name: ' '
+        name: '&6← &eEdellinen...'
         lore:
-        - ' &6← &eEdellinen...'
-        - ''
-        - '&7  Paina palataksesi'
-        - '&7  Maailman asetuksiin'
-        - ''
+        - '&7Paina palataksesi maailman asetuksiin'
       previous-page:
-        name: ' '
+        name: '&6← &eEdellinen... #%page%'
         lore:
-        - ' &6← &eEdellinen... #%page%'
-        - ''
-        - '&7  Click to show'
-        - '&7  previous players'
-        - ''
+        - '&7Paina siirtyäksesi edelliselle sivulle'
       next-page:
-        name: ' '
+        name: '&eSeuraava... #%page% &6→'
         lore:
-        - '&e Seuraava... #%page% &6→'
-        - ''
-        - '&7  Click to show'
-        - '&7  next players'
-        - ''
+        - '&7Paina siirtyäksesi seuraavalle sivulle'
       no-players:
         name: '&c&oEi pelaajia!'
         lore:
-        - '&7Heiman yksinäistä...'
+        - '&7Hieman yksinäistä...'
   entities-browser:
     title: '&4Olentojen hallinta'
     removed: '%prefix%&f%player% poisti olennon &6%name%&f (%x%,%y%,%z%)'
     removed-all: '%prefix%&f%player% poisti &6%count%&f olentoa'
     items:
       entity:
-        name: '&7 Nimi: &e%name%'
+        name: '&7Nimi: &e%name%'
         lore:
-        - '&7 Tyyppi: &f%type%'
-        - '&7 Sijainti: &f%x% %y% %z%'
+        - '&7Tyyppi: &f%type%'
+        - '&7Sijainti: &f%x% %y% %z%'
         - ''
-        - '&e vasenklikkaa &7- Teleporttaa olennon luokse'
-        - '&e oikeaklikkaa &7- Teleporttaa olento luoksesi'
+        - '&eVasenklikkaa &7- Teleporttaa olennon luokse'
+        - '&eOikeaklikkaa &7- Teleporttaa olento luoksesi'
         - ''
-        - '&c vasenklikkaa + SHIFT &7- Poista olento'
-        - ''
+        - '&cVasenklikkaa + SHIFT &7- Poista olento'
       type:
         name: '&3Suodattimet'
         choices:
@@ -15079,7 +15049,6 @@ menus:
       delete-world:
         name: '&cPoista maailma'
         lore:
-        - ''
         - '&7Olet poistamassa maailmaa'
         - '&7Sitä ei ole mahdollista palauttaa'
         - ''
@@ -15087,10 +15056,8 @@ menus:
       delete-module:
         name: '&cOlet poistamassa moduulia'
         lore:
-        - ''
         - '&7Kukaan ei enään pysty lataamaan sitä '
-        - '&7ja sitä ei voi palauttaa'
-        - ''
+        - '&7eikä sitä voi palauttaa'
     delete-world: '&4Poista %name%?'
     delete-module: '&4Poista %name%?'
     request-money: '&8Buy &0%name%&8?'
@@ -15147,7 +15114,7 @@ menus:
         - '&7 &nunstable&7 and it''s not recommended'
         - '&7 to enable, if you''re not developer.'
         - ''
-        - '&e Click to enable debug mode.'
+        - '&e Click to enable debug mode'
         - ''
       debug-disable:
         name: ' '
@@ -15234,7 +15201,8 @@ menus:
     items:
       all-worlds:
         name: '&eNäytä kaikki maailmat'
-        lore: ' '
+        lore:
+        - ' '
       sandbox:
         title: '&5Hiekkalaatikot'
         name: ' '
@@ -15250,7 +15218,7 @@ menus:
         lore:
         - '&9Seikkailu'
         - ' '
-        - '&7Juokse, pompi, tutki!'
+        - '&7Juokse, hyppele, tutki!'
         - ' '
         - '&ePaina katsoaksesi maailmoja'
       strategy:
@@ -15309,8 +15277,8 @@ menus:
         - ' '
         - '&ePaina katsoaksesi maailmoja'
   all-worlds:
-    title: '&3⌂ Player Worlds'
-    title-pages: '&3⌂ Player Worlds (%page% of %pages%)'
+    title: '&3Pelaajien maailmat'
+    title-pages: '&3⌂ Pelaajien maailmat (%page%/%pages%)'
     chosen: '&a⏺ &n'
     not-chosen: '&7○ '
     turned-on: '&a  ⏺ &n'
@@ -15327,14 +15295,13 @@ menus:
       no-worlds:
         name: '&cEi maailmoja'
         lore:
-        - '&7Nobody has created any worlds yet... How'
-        - '&7about you &dcreate&7 the first one?'
+        - '&7Kukaan ei ole luonut maailmoja'
       recommended:
         name: '&eSuositellut maailmat'
         lore:
         - '&7Paina tutustuaksesi'
       category:
-        name: '&e Valitse kategoria'
+        name: '&eValitse kategoria'
         choices:
           all: Kaikki maailmat
           sandbox: Hiekkalaatikko
@@ -17603,12 +17570,10 @@ menus:
         - '&e  Click to change'
         - '&e  your profile gender.'
         - ''
-        - '&f Vaihtoehdot:'
         - '%1%'
         - '%2%'
         - '%3%'
         - '%4%'
-        - ''
   own-modules:
     title: '&2Omat moduulit'
     items:
