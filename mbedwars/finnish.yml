@@ -18,14 +18,14 @@ info_specialthanks: Special thanks
 info_website: Verkkosivu
 info_version: Versio
 info_newestversion: Uusin versio
-page: Page
+page: Sivu
 help: Help
-team: Team
+team: Tiimi
 none: none
-unknown_page: '&cUnknown page &4{page}'
-unknown_argument: '&cUnknown argument &4{arg}'
-unknown_block: '&cUnknown block &4{block}'
-unknown_place: '&cUnknown place &4{place}'
+unknown_page: '&cTuntematon sivu &4{page}'
+unknown_argument: '&cTuntematon argumentti &4{arg}'
+unknown_block: '&cTuntematon palikka &4{block}'
+unknown_place: '&cTuntematon paikka &4{place}'
 unknown_spawner: '&cUnknown spawner &4{spawner}'
 version_new: '&aA new version has been found! &2{version}'
 version_nonew: '&cNo new version has been found!'
@@ -35,7 +35,7 @@ no_permissions: '&cYou don''t have the correct permissions!'
 no_permissions_specific: '&cMake sure that you either have the &4{perm} &cpermission
   or OP'
 onlyas_player: '&cThis only works as a player!'
-not_ingame: '&cYou''re not in a round!'
+not_ingame: '<#ef4444>Et ole pelissä'
 not_ingame_player: '&4{player} &cis not in a round!'
 not_supported: '&cThis is not supported for your Version! Please update to version
   &4{version} &cor higher'
@@ -61,35 +61,34 @@ saved_bed: '&aSaved bed for the team {colorcode}{color} &ain the arena &2{arena}
 bed_notinside_arena: '&cFailed to add the bed since there''s no arena at that location.
   Use "/bw arena setcorners" or "/bw arena setworld" to realign it'
 exists_arena: '&cThe arena &4{arena} &calready exists!'
-spawner_bronze: bronze
-spawner_iron: iron
-spawner_iron_plural: Iron
-spawner_gold: gold
-spawner_gold_plural: Gold
-spawner_diamond: Diamond
-spawner_diamond_plural: Diamonds
-spawner_emerald: Emerald
-spawner_emerald_plural: Emeralds
+spawner_iron: Rauta
+spawner_iron_plural: Rautaa
+spawner_gold: Kulta
+spawner_gold_plural: Kultaa
+spawner_diamond: Timantti
+spawner_diamond_plural: Timanttia
+spawner_amethyst: Ametisti
+spawner_amethyst_plural: Ametistia
 added_spawner: '&aSpawner &2{spawnertype} &ahas been successfully added to &2{arena}!'
 specialblock_added: '&aAdded a special block of type &2{type}'
 specialblock_alreadyadded: '&cThere''s already a block of type &4{type}&c. Break it
   to remove it'
 specialblock_removed: '&6Removed special block of type &e{type}'
 removed_spawners: '&2{number} &aspawners have been removed from {arena}!'
-start_round: '&aRound is starting now.'
-stop_round: '&aRound has been stopped.'
+start_round: '&aPeli alkaa'
+stop_round: '&aPeli pysäytetty'
 kicked_player: '&aSuccessfully kicked &2{player} &afrom &2{arena}'
 kicked_player_toplayer: '&cYou were kicked from this round!'
 list_arenas: '&eAll arenas: &6'
 list_arenas_local: '&eLocal arenas: &6'
 list_arenas_remote: '&cRemote arenas: &6'
 only_betamember: '&cYou are now allowed to join while bedwars is in the beta!'
-notavailable_color: '&cUnknown color &4{color}'
+notavailable_color: '&cTuntematon väri &4{color}'
 joinmessage_stopped: '&cThis arena is currently stopped!'
 joinmessage_reseting: '&cThis arena is currently resetting itself!'
-joinmessage_full: '&cThis arena is currently full!'
-joinmessage_running: '&cThis arena is already running!'
-joinmessage_alreadyinside: '&cYou are already inside the arena!'
+joinmessage_full: '&cPeli täynnä'
+joinmessage_running: '&cPeli on jo käynnissä'
+joinmessage_alreadyinside: '&cOlet jo pelissä'
 joinmessage: '{player} <#4ade80>liittyi peliin'
 leavemessage: '{player} <#ef4444>poistui pelistä'
 notfound_player: '&4{player} &chas not been found!'
@@ -99,27 +98,26 @@ notfound_arena_validpicker: '&cThere''s no arena matching the picker: &4{picker}
 notfound_author: '&cThere''s no author named &4{author}&c!'
 get_bed: '&aYou''ve got the bed of {colorcode}{color}'
 getallbeds: '&aAll beds of the arena &2{arena}&a were given to you'
-countdown_start: '&6The countdown is starting now!'
-countdown_stop: '&6The countdown has been stopped!'
-countdown_counting: '&6This round is starting in &e{number} &6seconds!'
+countdown_start: '<#4ade80>Peli alkaa pian!'
+countdown_stop: '<#ef4444>Pelin aloitus peruttiin'
+countdown_counting: '&6Peli alkaa &e{number} &6sekunnin kuluttua'
 countdown_changed: '&6The countdown has been changed to &e{number} &6seconds!'
 countdown_voting_counting: '&6The arena voting ends in &e{number} &6seconds!'
-toofew_materials: '&cYou''ve got too few materials to buy this!'
-no_inventory_space: '&cYour inventory is already full!'
+toofew_materials: '&#ef4444Sinulla ei ole tarpeeksi materiaaleja'
+no_inventory_space: '&#ef4444Ei tilaa tavaraluettelossa'
 tooless_players: '&cInsufficient amount of players in this round!'
 needmore_players_than: '&cYou need more players than &4{amount}&c!'
-win_money: '&6You''ve won &e{number}&6$!'
-player_notingameanymore: '&4{player} &cis not ingame anymore!'
-player_notfound: '&4{player} &chas not been found!'
+win_money: '&6You''ve won &e{number}&6$!' # Unused
+player_notingameanymore: '<#ef4444><#facc15>{player}</#facc15> ei ole enää pelissä'
+player_notfound: '<#ef4444>Pelaajaa <#facc15>{player}</#facc15> ei löydetty'
 player_cheating: '&6{player} &ehas been kicked for cheating!'
 player_loosing: '&6{player} &ehas lost this round!'
-players: Players
-team_won: '&eThe {colorcode}{color} &eteam has won this round!'
+players: Pelaajat
+team_won: '{colorcode}{color}&e tiimi voitti pelin!'
 team_notaddedyet: '&cThe {teamcolor}{team} &cteam has not been added yet to the arena
   &4{arena}&c!'
-changeteam_full: '&7The {colorcode}{color} &7team is already full!'
-changeteam_alreadyinside: '&7You are already a member of the {colorcode}{color}&7
-  team!'
+changeteam_full: '{colorcode}{color}&7 tiimi täynnä'
+changeteam_alreadyinside: '&7Olet jo tiimissä {colorcode}{color}'
 changeteam_changed: '&7You are now playing in the {colorcode}{color} &7team'
 changeteam_none: '&7You left your team and will be assigned to a random one'
 changed_postitions: '&aThe positions have been successfully changed!'
@@ -136,13 +134,13 @@ insidearena_gamedonelocation:
   when you leave the match'
 stats_info_entry: '&7{name}: &b{value}'
 stat_default_rank: Rank
-stat_default_win_streak: Current win streak
-stat_default_top_win_streak: Top win streak
-stat_default_won: Won
-stat_default_lost: Lost
+stat_default_win_streak: Nykyinen voittoputki
+stat_default_top_win_streak: Korkein voittoputki
+stat_default_won: Voitot
+stat_default_lost: Häviöt
 stat_default_wl: W/L
-stat_default_roundsplayed: Rounds played
-stat_default_kills: Kills
+stat_default_roundsplayed: Pelejä pelattu
+stat_default_kills: Tapot
 stat_default_kill_streak: Current kill streak
 stat_default_top_kill_streak: Top kill streak
 stat_default_finalkills: Final kills
@@ -150,27 +148,27 @@ stat_default_deaths: Deaths
 stat_default_finaldeaths: Final Deaths
 stat_default_kd: K/D
 stat_default_final_kd: Final K/D
-stat_default_bedsdestroyed: Beds destroyed
+stat_default_bedsdestroyed: Punkkia tuhottu
 stat_default_bedslost: Beds lost
-stat_default_playtime: Time played
+stat_default_playtime: Aikaa pelattu
 destroyed_bed_title: ''
-destroyed_bed_subtitle: '{teamcolor}{team}&f''s bed has been destroyed by &7{player}&f!'
-destroyed_bed_subtitle_playerless: '{teamcolor}{team}&f''s bed has been destroyed!'
+destroyed_bed_subtitle: ''
+destroyed_bed_subtitle_playerless: ''
 destroyed_bed_own_title: ''
-destroyed_bed_own_subtitle: '&fYour bed has been destroyed by &7{player}&f!'
-destroyed_bed_chat: '%Prefix% %Destroyed_Bed_SubTitle%'
+destroyed_bed_own_subtitle: '&#ef4444{player} tuhosi punkkasi'
+destroyed_bed_chat: '&#ef4444{player} tuhosi tiimin {teamcolor}{team}&#ef4444 punkan'
 destroyed_bed_chat_left: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as
   they left the game.'
 destroyed_bed_chat_leftignoredrejoin: '%Prefix% {teamcolor}{team}&f''s bed has been
   destroyed as they left and didn''t rejoin in time.'
-number_notone: '&4{number} &cis not a number!'
+number_notone: '&4{number} &cei ole numero'
 stats_by: Stats by {player}
-gui_achievements_title: '&6Achievements'
-gui_selectteam_title: '&6Select team'
-gui_spectator_teleporter: '&eTeleport'
-gui_votearena_title: '&6Vote for an arena'
-gui_votearena_votes: '&b{number} &3votes'
-spectator_teleporter_deadplayer: '&cYou may not teleport to a dead player!'
+gui_achievements_title: '&6Saavutukset'
+gui_selectteam_title: '&6Valitse tiimi'
+gui_spectator_teleporter: '&eTeleporttaa'
+gui_votearena_title: '&6Äänestä karttaa'
+gui_votearena_votes: '&b{number} &3ääntä'
+spectator_teleporter_deadplayer: '&cEt voi teleportata kuolleeseen pelaajaan'
 spectator_teleporter_onlymembers: '&cYou may only teleport to your team members right
   now'
 enabled_arena: '&2{arena} &ais now &2enabled!'
@@ -222,8 +220,8 @@ disabled: Poissa käytöstä
 notallowed_beddestroy: '&cYou''re not allowed to destroy your own bed!'
 notallowed_selectcolor: '&cYou''re not allowed to select the color {colorcode}{color}&c!'
 lobby_item_achievements: 'Saavutukset'
-lobby_item_forcestart: '<#facc15>Pakota pelin aloitus'
-lobby_item_leave: '<#ef4444>Poistu pelistä'
+lobby_item_forcestart: '&#facc15Pakota pelin aloitus' # Items don't support MiniMessage yet :(
+lobby_item_leave: '&#ef4444Poistu pelistä' # Items don't support MiniMessage yet :(
 lobby_item_leave_use: 'Sinut teleportataan takaisin aulaan {time} sekuntin kuluttua'
 lobby_item_leave_cancel: '<#ef4444>Teleportti peruttiin'
 lobby_item_selectteam: 'Valitse tiimi'
@@ -233,9 +231,9 @@ lobby_printmapinfo_buildby: 'Rakentaja(t)'
 spectator_item_teleporter: 'Teleporttaa pelaajaan'
 spectator_item_changespeed: 'Vaihda nopeutta'
 spectator_item_leave: '<#ef444>Poistu pelistä'
-spectator_item_nextround: '&6Change Arena'
+spectator_item_nextround: '&6Vaihda karttaa'
 arrow_damage: '{targetcolor}{target} &eis now at &c{health} &ehealth'
-trap: '&eSomeone walked over your trap!'
+trap: '&eAnsa laukaistu!'
 magicmilk_use: '&eTraps will not be able to detect your for {time} seconds!'
 teleporter: '&eTeleporting you in a few seconds...'
 teleporter_failed: '&cTeleportation has been stopped!'
@@ -276,13 +274,13 @@ spectator_join: '&6You''re now a spectator!'
 spectator_leave: '&6You''re not a spectator anymore.'
 spectator_howtoquit: '&eLeave this round using the command &6/bw leave'
 recalculatestats_done: '&aDone after &2{time} seconds&a.'
-endlobby_counting: '&6Teleporting you in &e{number} seconds &6to the lobby'
-endlobby_bigtitle_win: '&6Victory!'
+endlobby_counting: '&6Teleportataan aulaan &e{number} &6sekunnin kuluttua'
+endlobby_bigtitle_win: '&6Voitto!'
 endlobby_smalltitle_win: '&7Your team won this round!'
-endlobby_bigtitle_lose: '&cDefeat'
-endlobby_smalltitle_lose: '{teamcolor}&l{team} &fwon this round!'
+endlobby_bigtitle_lose: '&cHäviö'
+endlobby_smalltitle_lose: '{teamcolor}&l{team} &ftiimi voitti pelin'
 endlobby_bigtitle_nobody: ''
-endlobby_smalltitle_nobody: '&c&nNobody &fwon this round.'
+endlobby_smalltitle_nobody: '&cKukaan ei voittanut peliä'
 arenavoting_noavailablearenas: '&cThere''s no arena left. Sorry!'
 arenavoting_arenasupdated: '&6The arenas in the arena voting has been updated.'
 arenavoting_recount_noarenatovote: '&cResetting the countdown: There''s no arena to
@@ -330,14 +328,14 @@ backup_restore_success: '&aSuccessfully restored the backup &2{name}&a after &2{
 backup_restore_ask:
 - '&6Are you really sure that you want to restore the backup &e{name}&6?'
 - '&6If so, then please write the same command within the next 10 seconds'
-scoreboard_bedstate_alive: '&aAlive'
-scoreboard_bedstate_destroyed: '&cDestroyed'
-death_spectate_respawnin_bigtitle: '&cYOU DIED!'
-death_spectate_respawnin_smalltitle: '&6Respawn in &e{time} &6seconds'
-spectator_changearena_noneavailable: '&cNo free arena is available!'
+scoreboard_bedstate_alive: '&aElossa'
+scoreboard_bedstate_destroyed: '&cTuhottu'
+death_spectate_respawnin_bigtitle: '&cKuolit'
+death_spectate_respawnin_smalltitle: '&6Synnyt uudelleen &e{time} &6sekunnin kuluttua'
+spectator_changearena_noneavailable: '<#ef4444>Kaikki kartat on täynnä'
 spectatoradd_failed_missinglocation: '&cFailed to add you as a spectator, as there
   are no available points to teleport you at.'
-saveblocks_fail_players: '&4Failed to save the blocks: &cThere are players in the
+saveblocks_fail_players: '<#ef4444>Palikoiden tallentaminen epäonnistui: &cThere are players in the
   world.'
 createarena_fail_mainworld: '&cIt is not possible to create an arena with the type
   world in your main world!'
@@ -351,34 +349,29 @@ saveblocks_fail_unknown: '&4Failed to save the blocks: &cA weird error of the ty
   {type} has occurred'
 regeneration_fail_savingblocks: '&4Failed to start regeneration: &cIt''s currently
   saving blocks.'
-deathmessage_killed_1: '{teamcolor}{player} &7has been killed by &8{killerteamcolor}{killer}
-  &cwith &4❤{heartpercent}%'
-deathmessage_killed_2: '{teamcolor}{player} &7lost a fight against  &8{killerteamcolor}{killer}
-  &cwith &4❤{heartpercent}%'
-deathmessage_killed_3: '{teamcolor}{player} &7was slain by &8{killerteamcolor}{killer}
-  &cwith &4❤{heartpercent}%'
-deathmessage_void_1: '{teamcolor}{player} &7fell out of the world'
-deathmessage_void_2: '{teamcolor}{player} &7fell down a bridge and is still falling'
-deathmessage_explosion_1: '{teamcolor}{player} &7exploded in dozents of pieces'
-deathmessage_explosion_2: '{teamcolor}{player} &7blew up'
-deathmessage_fall_1: '{teamcolor}{player} &7broke all of his legs'
-deathmessage_fall_2: '{teamcolor}{player} &7fell down from a high place'
-deathmessage_fire_1: '{teamcolor}{player} &7was burned to death'
-deathmessage_fire_2: '{teamcolor}{player} &7was burned alive'
-deathmessage_default_1: '{teamcolor}{player} &7died'
+deathmessage_killed_1: '{killerteamcolor}{killer}<white> tappoi pelaajan {teamcolor}{player}'
+deathmessage_killed_2: '{teamcolor}{player}<white> hävisi taistelun pelaajaa {killerteamcolor}{killer}<white> vastaan'
+deathmessage_killed_3: '{teamcolor}{player}<white> kompastui pelaajan {killerteamcolor}{killer} aseeseen'
+deathmessage_void_1: '{teamcolor}{player}<white> putosi kuolemaan'
+deathmessage_void_2: '{teamcolor}{player}<white> astui harhaan ja putosi sillalta'
+deathmessage_explosion_1: '{teamcolor}{player}<white> räjähti atomeiksi'
+deathmessage_explosion_2: '{teamcolor}{player}<white> poksahti'
+deathmessage_fall_1: '{teamcolor}{player}<white> mursi molemmat jalkansa'
+deathmessage_fall_2: '{teamcolor}{player}<white> putosi korkealta'
+deathmessage_fire_1: '{teamcolor}{player}<white> poltettiin elävältä'
+deathmessage_fire_2: '{teamcolor}{player}<white> paloi poroksi'
+deathmessage_default_1: '{teamcolor}{player}<white> kuoli'
 spectator: Spectator
-itemshop: Item Shop
-motd_loading: Loading...
-toggle_display_spawner_enable: '&eSpawners of the arena &6{arena} &eare now being
-  displayed for everyone. Repeat the command to disable it'
-toggle_display_spawner_disable: '&eSpawners of the arena &6{arena} &ewon''t be displayed
-  anymore'
-teamchest_title: '{team}''s Team Chest'
-playerprivateinventory_title: Ender Chest
-placeholderapi_stats_loading: Loading...
+itemshop: Kauppa
+motd_loading: Ladataan...
+toggle_display_spawner_enable: '&eSpawners of the arena &6{arena} &eare now being displayed for everyone. Repeat the command to disable it'
+toggle_display_spawner_disable: '&eSpawners of the arena &6{arena} &ewon''t be displayed anymore'
+teamchest_title: '{team} arkku'
+playerprivateinventory_title: <lang:container.enderchest>
+placeholderapi_stats_loading: Ladataan...
 tnt_destroybed_name: TNT
-timer_ending_soon: '&eThe game will end {minutes} minutes'
-timer_ending: '&eMatch is ending in {seconds} seconds'
+timer_ending_soon: '&ePeli päättyy {minutes} minuutin kuluttua'
+timer_ending: '&ePeli päättyy {seconds} sekunnin kuluttua'
 command_blocked: '&cYou may not execute this command while playing Bedwars'
 cancel: Cancel
 apply: Apply
@@ -515,10 +508,10 @@ achievement_get_title: New achievement!
 ###########################
 ## Setup GUI
 ###########################
-setupgui_nextpage: Next page
-setupgui_prevpage: Previous page
-setupgui_goback: Go back
-setupgui_yousure: Are you sure?
+setupgui_nextpage: Seuraava sivu
+setupgui_prevpage: Edellinen sivu
+setupgui_goback: Takaisin
+setupgui_yousure: Oletko varma?
 setupgui_noarenascreated: No arena has been created as of now
 setupgui_mainbutton_modify: Modify created arenas
 setupgui_mainbutton_create: Create a new arena
@@ -680,16 +673,16 @@ setuptool_spawnpoint_preview:
 ###########################
 ## Shop Layouts
 ###########################
-shop_d_hypixel_available: '&8Available'
-shop_d_hypixel_clicktobrowse: '&eClick to browse!'
-shop_d_hypixel_items: '&8Items'
-shop_d_hypixel_clicktopurchase: '&eClick to purchase!'
-shop_d_hypixel_maxed: '&aMAXED!'
-shop_d_hypixel_unlocked: '&aUNLOCKED'
-shop_d_hypixel_cost: '&7Cost: &f{color}{amount} {type}'
-shop_d_hypixel_goback: '&aGo Back'
-shop_d_hypixel_tooexpensive: '&cYou don''t have enough {type}!'
-shop_d_hivemc_clicktoview: '&b{icon} Click to view &l{item}'
+shop_d_hypixel_available: '&8Saatavilla'
+shop_d_hypixel_clicktobrowse: '&ePaina selataksesi'
+shop_d_hypixel_items: '&8Tavarat'
+shop_d_hypixel_clicktopurchase: '&ePaina ostaaksesi'
+shop_d_hypixel_maxed: '&aMaksimi'
+shop_d_hypixel_unlocked: '&aAvattu'
+shop_d_hypixel_cost: '&7Hinta: &f{color}{amount} {type}'
+shop_d_hypixel_goback: '&#ef4444Takaisin'
+shop_d_hypixel_tooexpensive: '&#ef4444Sinulla ei ole tarpeeksi materiaaleja' #Items don't support MiniMessage yet :(
+shop_d_hivemc_clicktoview: '&b{icon} Click to view &l{item}' # No need to translate yet
 shop_d_hivemc_goback: '&c&lGo back'
 shop_d_hivemc_returntomenu: '&7Return to menu'
 shop_d_hivemc_clicktogoback: '&b{icon} Click to go back'
@@ -723,15 +716,15 @@ shop_d_hypixelv2_quickbuy_remove_item: '&bSneak click to remove from Quick Buy'
 ## Achievements
 ###########################
 achievements_name_ragequit: Rage quit
-achievements_name_winround: Winner
-achievements_name_loseround: Loser
-achievements_name_ownbeddestroyed: Traitor!
+achievements_name_winround: Voittaja
+achievements_name_loseround: Häviäjä
+achievements_name_ownbeddestroyed: Petturi!
 achievements_name_bestbow: OP Bow
-achievements_name_userescueplatform: That was close!
+achievements_name_userescueplatform: Läheltä piti
 achievements_name_useendepearl: Enderman
-achievements_name_useminishop: Shopping Mama
-achievements_name_killsomeonewithbow: Katniss
-achievements_name_winin3minutes: Already over?!
+achievements_name_useminishop: Nettishoppailija
+achievements_name_killsomeonewithbow: Simo Häyhä
+achievements_name_winin3minutes: Sairaan nopee
 achievements_name_killsomeonewithhalfaheart: Lucky strike
 achievements_name_win100rounds: Champion
 achievements_name_usebridge: Bridge constructor
@@ -742,20 +735,20 @@ achievements_name_usetntsheep: Boom, boom, baby!
 achievements_name_usetracker: I am going to find you. And kill you.
 achievements_name_placetrap: Mine
 achievements_name_runovertrap: IT'S A TRAP!
-achievements_name_spend200resources: Wealthy
+achievements_name_spend200resources: Varakas
 achievements_name_rankingintop3: E-Sports player
 achievements_name_goodkd: Professional player
 achievements_name_highplaytime: '#NoLife'
 achievements_name_writeggatend: GG
 achievements_name_winwithoutbed: Can't Touch This
 achievements_name_die10secsafterbeddestruction: You didn't!
-achievements_name_optaineveryachievement: Addicted
+achievements_name_optaineveryachievement: Addiktio
 achievements_name_usefireball: Pew pew!
 achievements_name_useinvispotion: Ghost Walker
-achievements_text_ragequit: Leave a running round
-achievements_text_winround: Win at least one round
-achievements_text_loseround: Lose one round
-achievements_text_ownbeddestroyed: Destroy your own bed
+achievements_text_ragequit: Poistu käynnissä olevasta pelistä
+achievements_text_winround: Voita vähintään yksi peli
+achievements_text_loseround: Häviä yksi peli
+achievements_text_ownbeddestroyed: Tuhoa oma punkkasi
 achievements_text_bestbow: Buy the best bow
 achievements_text_userescueplatform: Use a rescue platform
 achievements_text_useendepearl: Use an enderpearl
@@ -763,7 +756,7 @@ achievements_text_useminishop: Use a minishop
 achievements_text_killsomeonewithbow: Kill someone with a bow
 achievements_text_winin3minutes: Win a round in 3 minutes
 achievements_text_killsomeonewithhalfaheart: Kill an enemy with half a heart
-achievements_text_win100rounds: Win 100 rounds
+achievements_text_win100rounds: Voita 100 peliä
 achievements_text_usebridge: Use the bridge-item
 achievements_text_useguarddog: Summon a guard dog
 achievements_text_effectmagnetshoes: Use magnet shoes to defend against knockback
@@ -775,14 +768,13 @@ achievements_text_runovertrap: Trigger a trap by running over it
 achievements_text_spend200resources: Spend 200 or more resources in the shop
 achievements_text_rankingintop3: Rank in the top 3
 achievements_text_goodkd: Have a K/D that's 5.0 or higher
-achievements_text_highplaytime: Play for at least 5 hours
-achievements_text_writeggatend: Write 'GG' at the end of a game
-achievements_text_winwithoutbed: Win with your bed destroyed
-achievements_text_die10secsafterbeddestruction: Die 10 seconds after your bed has
-  been destroyed
-achievements_text_optaineveryachievement: Obtain every achievement
-achievements_text_useinvispotion: Drink an invisibility potion
-achievements_text_usefireball: Use a fireball
+achievements_text_highplaytime: Pelaa vähintään 5 tuntia
+achievements_text_writeggatend: Kirjoita 'GG' pelin loputtua
+achievements_text_winwithoutbed: Voita peli oma punkka tuhottuna
+achievements_text_die10secsafterbeddestruction: Kuole 10 sekuntia sen jälkeen, kun tiimisi punkka on tuhottu
+achievements_text_optaineveryachievement: Avaa kaikki saavutukset
+achievements_text_useinvispotion: Juo näkymättömyysjuoma
+achievements_text_usefireball: Käytä tulipalloa
 
 
 ###########################
@@ -791,28 +783,23 @@ achievements_text_usefireball: Use a fireball
 shop_buygroup_buy_lowertier: '&cYou already have a higher tier item'
 shop_player_not_in_running_arena: '&cYou''re not in a running arena!'
 shop_price: 'Price: &7{number} {spawnercolor}{spawnertype}'
-shop_page_block: Block
-shop_page_food: Food
-shop_page_armor: Armor
-shop_page_sword: Sword
-shop_page_bow: Bow
-shop_page_pickaxe: Pickaxe
-shop_page_potion: Potion
-shop_page_special: Special
-shop_page_extra: Extra
+shop_page_block: Palikat
+shop_page_armor: Armorit
+shop_page_weapon: Aseet
+shop_page_pickaxe: Hakut
+shop_page_potion: Slurpsis
+shop_page_special: Jännät ja hämärät
+shop_page_extra: Sekalaiset
 shop_item_hardenedclay: Hardened Clay
 shop_item_endstone: Endstone
-shop_item_chest: Chest
-shop_item_enderchest: Enderchest
-shop_item_ladder: Ladder
+shop_item_chest: Arkku
+shop_item_enderchest: Enderarkku
+shop_item_ladder: Tikkaat
 shop_item_web: Web
-shop_item_apple: Apple
-shop_item_grilledpork: Grilled pork
-shop_item_cake: Cake
-shop_item_goldenapple: Golden apple
-shop_item_leatherhelmet: Leather helmet
-shop_item_leatherleggings: Leather leggings
-shop_item_leatherboots: Leather boots
+shop_item_goldenapple: Kultainen omena
+shop_item_leatherhelmet: Nahkalakki
+shop_item_leatherleggings: Nahkapöksyt
+shop_item_leatherboots: Nahkasaappaat
 shop_item_chainmailchestplatelvl1: Chainmail chestplate &7LVL 1
 shop_item_chainmailchestplatelvl2: Chainmail chestplate &7LVL 2
 shop_item_chainmailchestplatelvl3: Chainmail chestplate &7LVL 3
