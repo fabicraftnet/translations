@@ -24,7 +24,7 @@ help: Apua
 team: Tiimi
 none: none
 unknown_page: '<#ef4444>Tuntematon sivu <#facc15>{page}'
-unknown_argument: '<#ef4444>Tuntematon argumentti <#facc15>{arg}'
+unknown_argument: '&#ef4444Tuntematon argumentti &#facc15{arg}' # This for some reason doesn't support MiniMessage
 unknown_block: '<#ef4444>Tuntematon palikka <#facc15>{block}'
 unknown_place: '<#ef4444>Tuntematon paikka <#facc15>{place}'
 unknown_spawner: '<#ef4444>Unknown spawner <#facc15>{spawner}'
@@ -55,7 +55,7 @@ color_gray: harmaa
 color_brown: ruskea
 color_black: musta
 missing_worldeditpoints: '&cMissing worldedit points!'
-saved_arena: '<#a78bfa>{arena}</#a78bfa> on tallennettu'
+saved_arena: '&#a78bfa{arena}&f on tallennettu' # This for some reason doesn't support MiniMessage
 saved_bed: '&aSaved bed for the team {colorcode}{color} &ain the arena &2{arena}'
 bed_notinside_arena: '&cFailed to add the bed since there''s no arena at that location. Use "/bw arena setcorners" or "/bw arena setworld" to realign it'
 exists_arena: '&cThe arena &4{arena} &calready exists!'
@@ -76,7 +76,7 @@ start_round: '&aPeli alkaa'
 stop_round: '&aPeli pysäytetty'
 kicked_player: '&aSuccessfully kicked &2{player} &afrom &2{arena}'
 kicked_player_toplayer: '&cYou were kicked from this round!'
-list_arenas: '&eAll arenas: &6'
+list_arenas: '&eKaikki kartat: &6'
 list_arenas_local: '&eLocal arenas: &6'
 list_arenas_remote: '&cRemote arenas: &6'
 only_betamember: '&cYou are now allowed to join while bedwars is in the beta!'
@@ -201,7 +201,7 @@ spawned_dealer: '&2Dealer &ahas been successfully spawned!'
 spawned_upgradedealer: '&2Upgrade Dealer &ahas been successfully spawned!'
 notlooking_atsign: '&cYou''re not looking at a sign!'
 notlooking_atplayerhead: '&cYou''re not looking at a player head!'
-sign_lobby: '&eLobby'
+sign_lobby: '&eAula'
 sign_running: '&6Running'
 sign_stopped: '&cStopped'
 sign_reseting: '&aResetting'
@@ -292,7 +292,7 @@ ranking_unranked: Unranked
 wait_allarenasloaded: '&cWait until every arena has been successfully loaded!'
 please_savearena: '&6Make sure to save your arena with: &e/bw arena saveblocks <arena name>'
 getsetuptool: '&aGave you the &2setup tool'
-onetimepurchase: '&cYou are allowed to buy this only once!'
+onetimepurchase: '&cVoit ostaa tämän vain kerran'
 arenasgui_title: 'Kaikki kartat'
 arena_collidingarena:
 - '&cPlease change the location of your arena.'
@@ -311,7 +311,7 @@ scoreboard_bedstate_alive: '&aElossa'
 scoreboard_bedstate_destroyed: '&cTuhottu'
 death_spectate_respawnin_bigtitle: '&cKuolit'
 death_spectate_respawnin_smalltitle: '&6Synnyt uudelleen &e{time} &6sekunnin kuluttua'
-spectator_changearena_noneavailable: '<#ef4444>Kaikki kartat on täynnä'
+spectator_changearena_noneavailable: '<#ef4444>Kaikki kartat täynnä'
 spectatoradd_failed_missinglocation: '&cFailed to add you as a spectator, as there are no available points to teleport you at.'
 saveblocks_fail_players: '<#ef4444>Palikoiden tallentaminen epäonnistui: &cThere are players in the world.'
 createarena_fail_mainworld: '&cIt is not possible to create an arena with the type world in your main world!'
@@ -735,27 +735,27 @@ shop_page_tool: Työkalut
 shop_page_potion: Slurpsis
 shop_page_special: Jännät ja hämärät
 shop_page_extra: Sekalaiset
-shop_item_hardenedclay: Hardened Clay
-shop_item_endstone: Endstone
+shop_item_wool: Villa
+shop_item_oak_planks: Tammilankku
+shop_item_end_stone: End-kivi
 shop_item_chest: Arkku
-shop_item_enderchest: Enderarkku
 shop_item_ladder: Tikkaat
-shop_item_web: Web
+shop_item_podzol: Podsoli
 shop_item_goldenapple: Kultainen omena
 shop_item_leatherhelmet: Nahkalakki
 shop_item_leatherleggings: Nahkapöksyt
 shop_item_leatherboots: Nahkasaappaat
-shop_item_chainmailchestplatelvl1: Chainmail chestplate &7LVL 1
-shop_item_chainmailchestplatelvl2: Chainmail chestplate &7LVL 2
-shop_item_chainmailchestplatelvl3: Chainmail chestplate &7LVL 3
-shop_item_knockbackstick: Knockback stick
+shop_item_chainmailchestplatelvl1: Rautapaita I
+shop_item_chainmailchestplatelvl2: Rautapaita II
+shop_item_chainmailchestplatelvl3: Rautapaita III
+shop_item_knockbackstick: Tökkivä tikku
 shop_item_swordlvl1: Miekka I
 shop_item_swordlvl2: Miekka II
 shop_item_swordlvl3: Miekka III
 shop_item_bowlvl1: Jousi I
 shop_item_bowlvl2: Jousi II
 shop_item_bowlvl3: Jousi III
-shop_item_arrow: Arrow
+shop_item_arrow: Nuoli
 shop_item_wooden_pickaxe: Puuhakku
 shop_item_copper_pickaxe: Kuparihakku
 shop_item_iron_pickaxe: Rautahakku
@@ -769,17 +769,17 @@ shop_item_potionstrength: Potion of Strength
 shop_item_enderpearl: Enderpearl
 shop_item_teleporter: Teleporter
 shop_item_minishop: Minishop
-shop_item_rescueplatform: Rescue platform
-shop_item_tntsheep: TNT sheep
-shop_item_magnetshoes: Magnet Shoes
-shop_item_trap: Trap
-shop_item_bridge: Bridge
-shop_item_guarddog: Guard Dog
+shop_item_rescueplatform: Pelastusalusta
+shop_item_tntsheep: TNT lammas
+shop_item_magnetshoes: Magneettikengät
+shop_item_trap: Ansa
+shop_item_bridge: Silta
+shop_item_guarddog: Vahtikoira
 shop_item_tracker: Tracker
-shop_item_fishingrod: Fishing Rod
-shop_item_snowball: Snowball
-shop_item_fireball: Fireball
-shop_item_magicmilk: Magic Milk
+shop_item_fishingrod: Onki
+shop_item_snowball: Lumipallo
+shop_item_fireball: Tulipallo
+shop_item_magicmilk: Taikamaito
 shop_item_tnt: TNT
 
 
@@ -789,13 +789,13 @@ shop_item_tnt: TNT
 upgradeshop: Upgrade Shop
 upgradeshop_buy_upgrade_broadcast: '&e{player} upgraded &6{upgrade}&e to &6LVL {newlvl}'
 upgradeshop_buy_trap_broadcast: '&e{player} purchased &6{upgrade}'
-upgradeshop_toofew_materials: '&cYou don''t have enough materials to buy this!'
+upgradeshop_toofew_materials: '&cSinulla ei ole tarpeeksi materiaaleja'
 upgradeshop_max_upgrade: '&cYou have already purchased this upgrade'
-upgradeshop_buystate_purchasable: '&eClick to purchase!'
-upgradeshop_buystate_not_purchasable: '&cYou don''t have enough {price-type}&c!'
-upgradeshop_buystate_maximum: '&aUNLOCKED'
+upgradeshop_buystate_purchasable: '&ePaina ostaaksesip'
+upgradeshop_buystate_not_purchasable: '&cSinulla ei ole tarpeeksi timantteja'
+upgradeshop_buystate_maximum: '&aAVATTU'
 upgradeshop_queuedtrap_icon:
-- '&aTrap #{queue-level}: {trap-name}'
+- '&aAnsa #{queue-level}: {trap-name}'
 - '&7This trap will trigger'
 - '&7immediately after an'
 - '&7intruder enters your base'
