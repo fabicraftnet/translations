@@ -786,7 +786,7 @@ shop_price: 'Price: &7{number} {spawnercolor}{spawnertype}'
 shop_page_block: Palikat
 shop_page_armor: Armorit
 shop_page_weapon: Aseet
-shop_page_pickaxe: Hakut
+shop_page_tool: Työkalut
 shop_page_potion: Slurpsis
 shop_page_special: Jännät ja hämärät
 shop_page_extra: Sekalaiset
@@ -804,16 +804,19 @@ shop_item_chainmailchestplatelvl1: Chainmail chestplate &7LVL 1
 shop_item_chainmailchestplatelvl2: Chainmail chestplate &7LVL 2
 shop_item_chainmailchestplatelvl3: Chainmail chestplate &7LVL 3
 shop_item_knockbackstick: Knockback stick
-shop_item_swordlvl1: Sword &7LVL 1
-shop_item_swordlvl2: Sword &7LVL 2
-shop_item_swordlvl3: Sword &7LVL 3
-shop_item_bowlvl1: Bow &7LVL 1
-shop_item_bowlvl2: Bow &7LVL 2
-shop_item_bowlvl3: Bow &7LVL 3
+shop_item_swordlvl1: Miekka I
+shop_item_swordlvl2: Miekka II
+shop_item_swordlvl3: Miekka III
+shop_item_bowlvl1: Jousi I
+shop_item_bowlvl2: Jousi II
+shop_item_bowlvl3: Jousi III
 shop_item_arrow: Arrow
-shop_item_pickaxelvl1: Pickaxe &7LVL 1
-shop_item_pickaxelvl2: Pickaxe &7LVL 2
-shop_item_pickaxelvl3: Pickaxe &7LVL 3
+shop_item_wooden_pickaxe: Puuhakku
+shop_item_copper_pickaxe: Kuparihakku
+shop_item_iron_pickaxe: Rautahakku
+shop_item_wooden_axe: Puukirves
+shop_item_copper_axe: Kuparikirves
+shop_item_iron_axe: Rautakirves
 shop_item_potionswiftness: Potion of Swiftness
 shop_item_potionregeneration: Potion of Regeneration
 shop_item_potionhealing: Potion of Healing
