@@ -8,37 +8,36 @@
 ## Miscellaneous
 ###########################
 prefix: ''
-configurations_reload_start: '&aConfigurations are now reloading!'
-configurations_reload_end: '&aConfigurations were reloaded after &2{time} seconds'
-configurations_reload_alreadyloading: '&cConfigurations are currently already reloading!'
-configurations_reload_confirm: '&6Are you sure? &eThere are active matches that will
-  be interrupted. Repeat the command to confirm'
-info_madeby: Made by
-info_specialthanks: Special thanks
+configurations_reload_start: 'Uudelleenladataan konfiguraatioita'
+configurations_reload_end: '<#4ade80>Konfiguraatioiden lataus onnistui <#94a3b8>({time} sekuntia)'
+configurations_reload_alreadyloading: '<#ef444>Konfiguraatioiden lataus on jo käynnissä'
+configurations_reload_confirm:
+- '<#facc15>Oletko varma? Kaikki käynnissä olevat pelit pysäytetään'
+- 'Kirjoita komento uudelleen suorittaaksesi'
+info_madeby: 'Rakentaja(t)'
+info_specialthanks: Erityiskiitokset
 info_website: Verkkosivu
 info_version: Versio
 info_newestversion: Uusin versio
 page: Sivu
-help: Help
+help: Apua
 team: Tiimi
 none: none
-unknown_page: '&cTuntematon sivu &4{page}'
-unknown_argument: '&cTuntematon argumentti &4{arg}'
-unknown_block: '&cTuntematon palikka &4{block}'
-unknown_place: '&cTuntematon paikka &4{place}'
-unknown_spawner: '&cUnknown spawner &4{spawner}'
-version_new: '&aA new version has been found! &2{version}'
-version_nonew: '&cNo new version has been found!'
-error_occurred: '&cAn error occurred!'
-error_occurred_syntax: '&cA syntax error occurred: &6{message}'
-no_permissions: '&cYou don''t have the correct permissions!'
-no_permissions_specific: '&cMake sure that you either have the &4{perm} &cpermission
-  or OP'
-onlyas_player: '&cThis only works as a player!'
+unknown_page: '<#ef4444>Tuntematon sivu <#facc15>{page}'
+unknown_argument: '<#ef4444>Tuntematon argumentti <#facc15>{arg}'
+unknown_block: '<#ef4444>Tuntematon palikka <#facc15>{block}'
+unknown_place: '<#ef4444>Tuntematon paikka <#facc15>{place}'
+unknown_spawner: '<#ef4444>Unknown spawner <#facc15>{spawner}'
+version_new: 'Uusi versio <#a78bfa>{version}</#a78bfa> on saatavilla'
+version_nonew: 'Uusin versio on jo käytössä'
+error_occurred: '<#ef4444>Tapahtui virhe'
+error_occurred_syntax: '<#ef4444>Virhe syntaksissa: <#facc15>{message}'
+no_permissions: '<#ef4444>Sinulla ei ole oikeutta tuohon'
+no_permissions_specific: '<#ef4444>Varmista, että sinulla on <#facc15>{perm}</#facc15> oikeus tai OP'
+onlyas_player: '<#ef4444>Vain pelaajat voivat käyttää tätä'
 not_ingame: '<#ef4444>Et ole pelissä'
-not_ingame_player: '&4{player} &cis not in a round!'
-not_supported: '&cThis is not supported for your Version! Please update to version
-  &4{version} &cor higher'
+not_ingame_player: '<#facc15>{player}<#ef4444> ei ole pelissä'
+not_supported: '&cThis is not supported for your Version! Please update to version &4{version} &cor higher'
 color_yellow: keltainen
 color_orange: oranssi
 color_red: punainen
@@ -56,10 +55,9 @@ color_gray: harmaa
 color_brown: ruskea
 color_black: musta
 missing_worldeditpoints: '&cMissing worldedit points!'
-saved_arena: '&aArena &2{arena}&a has been saved!'
+saved_arena: '<#a78bfa>{arena}</#a78bfa> on tallennettu'
 saved_bed: '&aSaved bed for the team {colorcode}{color} &ain the arena &2{arena}'
-bed_notinside_arena: '&cFailed to add the bed since there''s no arena at that location.
-  Use "/bw arena setcorners" or "/bw arena setworld" to realign it'
+bed_notinside_arena: '&cFailed to add the bed since there''s no arena at that location. Use "/bw arena setcorners" or "/bw arena setworld" to realign it'
 exists_arena: '&cThe arena &4{arena} &calready exists!'
 spawner_iron: Rauta
 spawner_iron_plural: Rautaa
@@ -71,8 +69,7 @@ spawner_amethyst: Ametisti
 spawner_amethyst_plural: Ametistia
 added_spawner: '&aSpawner &2{spawnertype} &ahas been successfully added to &2{arena}!'
 specialblock_added: '&aAdded a special block of type &2{type}'
-specialblock_alreadyadded: '&cThere''s already a block of type &4{type}&c. Break it
-  to remove it'
+specialblock_alreadyadded: '&cThere''s already a block of type &4{type}&c. Break it to remove it'
 specialblock_removed: '&6Removed special block of type &e{type}'
 removed_spawners: '&2{number} &aspawners have been removed from {arena}!'
 start_round: '&aPeli alkaa'
@@ -83,12 +80,12 @@ list_arenas: '&eAll arenas: &6'
 list_arenas_local: '&eLocal arenas: &6'
 list_arenas_remote: '&cRemote arenas: &6'
 only_betamember: '&cYou are now allowed to join while bedwars is in the beta!'
-notavailable_color: '&cTuntematon väri &4{color}'
-joinmessage_stopped: '&cThis arena is currently stopped!'
-joinmessage_reseting: '&cThis arena is currently resetting itself!'
-joinmessage_full: '&cPeli täynnä'
-joinmessage_running: '&cPeli on jo käynnissä'
-joinmessage_alreadyinside: '&cOlet jo pelissä'
+notavailable_color: '<#ef4444>Tuntematon väri <#facc15>{color}'
+joinmessage_stopped: '<#ef4444>Kartta ei ole käytössä'
+joinmessage_reseting: '<#ef4444>Kartta on nollautumassa'
+joinmessage_full: '<#ef4444>Peli täynnä'
+joinmessage_running: '<#ef4444>Peli on jo käynnissä'
+joinmessage_alreadyinside: '<#ef4444>Olet jo pelissä'
 joinmessage: '{player} <#4ade80>liittyi peliin'
 leavemessage: '{player} <#ef4444>poistui pelistä'
 notfound_player: '&4{player} &chas not been found!'
@@ -113,9 +110,8 @@ player_notfound: '<#ef4444>Pelaajaa <#facc15>{player}</#facc15> ei löydetty'
 player_cheating: '&6{player} &ehas been kicked for cheating!'
 player_loosing: '&6{player} &ehas lost this round!'
 players: Pelaajat
-team_won: '{colorcode}{color}&e tiimi voitti pelin!'
-team_notaddedyet: '&cThe {teamcolor}{team} &cteam has not been added yet to the arena
-  &4{arena}&c!'
+team_won: '{colorcode}{color}<white> tiimi voitti pelin!'
+team_notaddedyet: '&cThe {teamcolor}{team} &cteam has not been added yet to the arena &4{arena}&c!'
 changeteam_full: '{colorcode}{color}&7 tiimi täynnä'
 changeteam_alreadyinside: '&7Olet jo tiimissä {colorcode}{color}'
 changeteam_changed: '&7You are now playing in the {colorcode}{color} &7team'
@@ -144,12 +140,12 @@ stat_default_kills: Tapot
 stat_default_kill_streak: Current kill streak
 stat_default_top_kill_streak: Top kill streak
 stat_default_finalkills: Final kills
-stat_default_deaths: Deaths
+stat_default_deaths: Kuolemat
 stat_default_finaldeaths: Final Deaths
 stat_default_kd: K/D
 stat_default_final_kd: Final K/D
 stat_default_bedsdestroyed: Punkkia tuhottu
-stat_default_bedslost: Beds lost
+stat_default_bedslost: Punkkia menetetty
 stat_default_playtime: Aikaa pelattu
 destroyed_bed_title: ''
 destroyed_bed_subtitle: ''
@@ -157,24 +153,20 @@ destroyed_bed_subtitle_playerless: ''
 destroyed_bed_own_title: ''
 destroyed_bed_own_subtitle: '&#ef4444{player} tuhosi punkkasi'
 destroyed_bed_chat: '&#ef4444{player} tuhosi tiimin {teamcolor}{team}&#ef4444 punkan'
-destroyed_bed_chat_left: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as
-  they left the game.'
-destroyed_bed_chat_leftignoredrejoin: '%Prefix% {teamcolor}{team}&f''s bed has been
-  destroyed as they left and didn''t rejoin in time.'
+destroyed_bed_chat_left: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as they left the game.'
+destroyed_bed_chat_leftignoredrejoin: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as they left and didn''t rejoin in time.'
 number_notone: '&4{number} &cei ole numero'
 stats_by: Stats by {player}
-gui_achievements_title: '&6Saavutukset'
-gui_selectteam_title: '&6Valitse tiimi'
-gui_spectator_teleporter: '&eTeleporttaa'
-gui_votearena_title: '&6Äänestä karttaa'
+gui_achievements_title: 'Saavutukset'
+gui_selectteam_title: 'Valitse tiimi'
+gui_spectator_teleporter: 'Teleporttaa'
+gui_votearena_title: 'Äänestä karttaa'
 gui_votearena_votes: '&b{number} &3ääntä'
-spectator_teleporter_deadplayer: '&cEt voi teleportata kuolleeseen pelaajaan'
-spectator_teleporter_onlymembers: '&cYou may only teleport to your team members right
-  now'
+spectator_teleporter_deadplayer: '<#ef4444>Et voi teleportata kuolleeseen pelaajaan'
+spectator_teleporter_onlymembers: '<#ef4444>You may only teleport to your team members right now'
 enabled_arena: '&2{arena} &ais now &2enabled!'
 disabled_arena: '&2{arena} &ais now &4disabled!'
-disabling_gracefully_arena: '&eDisabling running match within &6{arena} &egracefully,
-  it may take a short moment...'
+disabling_gracefully_arena: '&eDisabling running match within &6{arena} &egracefully, it may take a short moment...'
 create_arena: '&2{arena} &ahas been successfully created!'
 remove_arena: '&2{arena} &ahas been successfully removed!'
 usage: '&6Usage: &e{usage}'
@@ -186,14 +178,12 @@ nonewupdate: There is currently no update for this resource!
 arena_hastobestopped:
 - '&cThe arena &4{arena}&c has to be stopped!'
 - '&6You may use the following command: &e{command}'
-arena_joinissue_worlddoesntexists: '&cThe arena &4{arena}&c has an issue: The world
-  doesn''t exist!'
+arena_joinissue_worlddoesntexists: '&cThe arena &4{arena}&c has an issue: The world doesn''t exist!'
 fixproblemsbeforeenabled: '&cPlease fix these problems before enabling'
 use_trueorfalse: '&cUse <true/false>!'
 reseting_now: '&2{arena} &ais now being regenerated!'
 reseting_start_failed: '&cFailed to start regeneration of the arena &4{arena}'
-reseting_start_failed_alreadyrunning: '&cFailed to start the regeneration process
-  of the arena &4{arena}&c as already an other one is running'
+reseting_start_failed_alreadyrunning: '&cFailed to start the regeneration process of the arena &4{arena}&c as already an other one is running'
 locateplayer_notinarena: '&4{player} &cis online, but is not inside an arena.'
 locateplayer_inarena:
 - '&3======= &b{player} &3======='
@@ -240,9 +230,9 @@ teleporter_failed: '&cTeleportation has been stopped!'
 bridge_notenoughmaterials: '&cYou need more materials of &4{material}&c!'
 give_spawner: '&aGave &2{amount}&a of &2{spawner}&a to &2{target}'
 teleport_success: '&aYou were successfully teleported to the arena &2{arena}'
-lobby_waiting: 'Odotetaan <#a78bfa>{amount}</#a78bfa> pelaajaa...'
-lobby_enough: '&6There''re enough players in this round!'
-alreadyinside_arena: '&cYou''re already inside an arena!'
+lobby_waiting: 'Odotetaan &#a78bfa{amount}&f pelaajaa...' # First 5 times the message is sent to actionbar, which doesn't support MiniMessage
+lobby_enough: '<#4ade80>Pelaajia on tarpeeksi pelin aloitukseen'
+alreadyinside_arena: '<#ef4444>Olet jo pelissä'
 noarenaforparty: '&cThere isn''t enough space available for all your party members'
 requires_worldedit: '&4WorldEdit &cis required for that!'
 crashmessage_missingbed: Missing bed locations
@@ -251,45 +241,38 @@ crashmessage_missinglobbylocation: Missing lobby location
 crashmessage_missinggamedonelocation: Missing hub-position
 crashmessage_missinggameworld: Game world hasn't been set
 crashmessage_missingcorners: Corners haven't been set
-crashmessage_uppercorneroutofbounds: Upper corner is greater than the worlds's max
-  height
+crashmessage_uppercorneroutofbounds: Upper corner is greater than the worlds's max height
 crashmessage_lowercorneroutofbounds: Lower corner is less than the worlds's min height
-crashmessage_worldtypearenainmainworld: The arena's regeneration type is WORLD, and
-  the arena's world is the server's main world
+crashmessage_worldtypearenainmainworld: The arena's regeneration type is WORLD, and the arena's world is the server's main world
 crashmessage_notloadedgameworld: Game world isn't loaded
 crashmessage_matchareacolliding: Match area collides with other arenas
 crashmessage_gamedonelocationinterfering: Your hub-position is within the match area
-regeneration_done: '&aThe arena &2{arena} &ahas been successfully regenerated after
-  &2{time} seconds&a!'
-regeneration_stopped: '&cThe regeneration of &4{arena}&c has been cancelled after
-  &4{time} seconds'
+regeneration_done: '&aThe arena &2{arena} &ahas been successfully regenerated after &2{time} seconds&a!'
+regeneration_stopped: '&cThe regeneration of &4{arena}&c has been cancelled after &4{time} seconds'
 regeneration_fail: '&cRegeneration of &4{arena}&c has failed: &4{error}'
 worldedit_changed: '&aChanged the position {id} to &2x{x} y{y} z{z}'
 getpositionaxe: '&aGave you the &2position axe'
 tracker_trackedplayer: '&aThis compass is now looking at the nearest tracked enemy.'
 tracker_reusedelay: '&cWait &4{time} seconds&c until you can use a tracker again!'
-tracker_failed_onlyone: '&4Failed to track nearest enemy: &cYou are the only player
-  in this round!'
+tracker_failed_onlyone: '&4Failed to track nearest enemy: &cYou are the only player in this round!'
 spectator_join: '&6You''re now a spectator!'
 spectator_leave: '&6You''re not a spectator anymore.'
 spectator_howtoquit: '&eLeave this round using the command &6/bw leave'
 recalculatestats_done: '&aDone after &2{time} seconds&a.'
-endlobby_counting: '&6Teleportataan aulaan &e{number} &6sekunnin kuluttua'
-endlobby_bigtitle_win: '&6Voitto!'
-endlobby_smalltitle_win: '&7Your team won this round!'
-endlobby_bigtitle_lose: '&cHäviö'
-endlobby_smalltitle_lose: '{teamcolor}&l{team} &ftiimi voitti pelin'
-endlobby_bigtitle_nobody: ''
-endlobby_smalltitle_nobody: '&cKukaan ei voittanut peliä'
-arenavoting_noavailablearenas: '&cThere''s no arena left. Sorry!'
+endlobby_counting: 'Teleportataan <#a78bfa>{number}</#a78bfa> sekunnin kuluttua'
+endlobby_bigtitle_win: '&#4ade80Voitto!' # Titles don't support MiniMessage yet :(
+endlobby_smalltitle_win: 'Ihan hyvin pelattu :D'
+endlobby_bigtitle_lose: '&#ef4444Häviö' # Titles don't support MiniMessage yet :(
+endlobby_smalltitle_lose: '{teamcolor}{team}&f tiimi voitti pelin'
+endlobby_bigtitle_nobody: '&#facc15Tasapeli'
+endlobby_smalltitle_nobody: 'Kukaan ei voittanut peliä'
+arenavoting_noavailablearenas: '<#ef4444>Kaikki kartat ovat täynnä'
 arenavoting_arenasupdated: '&6The arenas in the arena voting has been updated.'
-arenavoting_recount_noarenatovote: '&cResetting the countdown: There''s no arena to
-  vote for!'
+arenavoting_recount_noarenatovote: '&cResetting the countdown: There''s no arena to vote for!'
 arenavoting_end: '&6The following arena won the voting: &e{arena}'
-arenavoting_recount_toofewplayers: '&cNeed &4{number}&c more players to play on this
-  arena!'
+arenavoting_recount_toofewplayers: '&cNeed &4{number}&c more players to play on this arena!'
 arenavoting_minplayers: Min. players
-forcestart_already: '&cGame is already starting!'
+forcestart_already: '<#ef4444>Peli alkaa aivan tuota pikaa'
 scoreboard_arenaname: Kartta
 scoreboard_arenamode: Pelimuoto
 scoreboard_players: Pelaajia
@@ -303,13 +286,11 @@ itemspawner_hologram_title: '{spawner} &fspawning in &7{time} &fseconds!'
 maxplayers: Max. players
 lobby_countdowntitle_goodluck: '&6Good Luck!'
 minishop_title: '{title}&7 disappears in &8{time}seconds'
-arenatype_notsupported: '&cThis is not supported for the type &4{type}&c of the arena
-  &4{name}'
+arenatype_notsupported: '&cThis is not supported for the type &4{type}&c of the arena &4{name}'
 arena_autosavedblocks: '&eBlocks inside the arena were automatically saved!'
 ranking_unranked: Unranked
 wait_allarenasloaded: '&cWait until every arena has been successfully loaded!'
-please_savearena: '&6Make sure to save your arena with: &e/bw arena saveblocks <arena
-  name>'
+please_savearena: '&6Make sure to save your arena with: &e/bw arena saveblocks <arena name>'
 getsetuptool: '&aGave you the &2setup tool'
 onetimepurchase: '&cYou are allowed to buy this only once!'
 arenasgui_title: 'Kaikki kartat'
@@ -318,13 +299,11 @@ arena_collidingarena:
 - '&cIt''s intersecting with the arena: &4{arena}'
 - '&6To change the location use the following command: &e{command}'
 backup_list: '&6Backup Files'
-backup_create_success: '&aCreated a backup with the name &2{name}&a after &2{time}
-  &aseconds'
+backup_create_success: '&aCreated a backup with the name &2{name}&a after &2{time} &aseconds'
 backup_create_exists: '&cThere''s already a backup with the name &4{name}'
 backup_delete_success: '&aDeleted a backup with the name &2{name}'
 backup_unknown: '&cUnknown backup &4{name}'
-backup_restore_success: '&aSuccessfully restored the backup &2{name}&a after &2{time}&a
-  seconds'
+backup_restore_success: '&aSuccessfully restored the backup &2{name}&a after &2{time}&a seconds'
 backup_restore_ask:
 - '&6Are you really sure that you want to restore the backup &e{name}&6?'
 - '&6If so, then please write the same command within the next 10 seconds'
@@ -333,22 +312,14 @@ scoreboard_bedstate_destroyed: '&cTuhottu'
 death_spectate_respawnin_bigtitle: '&cKuolit'
 death_spectate_respawnin_smalltitle: '&6Synnyt uudelleen &e{time} &6sekunnin kuluttua'
 spectator_changearena_noneavailable: '<#ef4444>Kaikki kartat on täynnä'
-spectatoradd_failed_missinglocation: '&cFailed to add you as a spectator, as there
-  are no available points to teleport you at.'
-saveblocks_fail_players: '<#ef4444>Palikoiden tallentaminen epäonnistui: &cThere are players in the
-  world.'
-createarena_fail_mainworld: '&cIt is not possible to create an arena with the type
-  world in your main world!'
-saveblocks_start: '&6Started blocks saving operation for the arena &e{arena}&6. Estimated
-  time: &e{time}'
-saveblocks_fail_alreadyrunning: '&4Failed to save the blocks: &cOperation is already
-  running.'
-saveblocks_fail_notstopped: '&4Failed to save the blocks: &cIt''s not stopped. (Stop
-  it with /bw arena setenabled {arena} false)'
-saveblocks_fail_unknown: '&4Failed to save the blocks: &cA weird error of the type
-  {type} has occurred'
-regeneration_fail_savingblocks: '&4Failed to start regeneration: &cIt''s currently
-  saving blocks.'
+spectatoradd_failed_missinglocation: '&cFailed to add you as a spectator, as there are no available points to teleport you at.'
+saveblocks_fail_players: '<#ef4444>Palikoiden tallentaminen epäonnistui: &cThere are players in the world.'
+createarena_fail_mainworld: '&cIt is not possible to create an arena with the type world in your main world!'
+saveblocks_start: '&6Started blocks saving operation for the arena &e{arena}&6. Estimated time: &e{time}'
+saveblocks_fail_alreadyrunning: '&4Failed to save the blocks: &cOperation is already running.'
+saveblocks_fail_notstopped: '&4Failed to save the blocks: &cIt''s not stopped. (Stop it with /bw arena setenabled {arena} false)'
+saveblocks_fail_unknown: '&4Failed to save the blocks: &cA weird error of the type {type} has occurred'
+regeneration_fail_savingblocks: '&4Failed to start regeneration: &cIt''s currently saving blocks.'
 deathmessage_killed_1: '{killerteamcolor}{killer}<white> tappoi pelaajan {teamcolor}{player}'
 deathmessage_killed_2: '{teamcolor}{player}<white> hävisi taistelun pelaajaa {killerteamcolor}{killer}<white> vastaan'
 deathmessage_killed_3: '{teamcolor}{player}<white> kompastui pelaajan {killerteamcolor}{killer} aseeseen'
@@ -361,7 +332,8 @@ deathmessage_fall_2: '{teamcolor}{player}<white> putosi korkealta'
 deathmessage_fire_1: '{teamcolor}{player}<white> poltettiin elävältä'
 deathmessage_fire_2: '{teamcolor}{player}<white> paloi poroksi'
 deathmessage_default_1: '{teamcolor}{player}<white> kuoli'
-spectator: Spectator
+deathmessage_default_2: '{teamcolor}{player}<white> jäi työkyvyttömyyseläkkeelle'
+spectator: Katsoja
 itemshop: Kauppa
 motd_loading: Ladataan...
 toggle_display_spawner_enable: '&eSpawners of the arena &6{arena} &eare now being displayed for everyone. Repeat the command to disable it'
@@ -373,10 +345,10 @@ tnt_destroybed_name: TNT
 timer_ending_soon: '&ePeli päättyy {minutes} minuutin kuluttua'
 timer_ending: '&ePeli päättyy {seconds} sekunnin kuluttua'
 command_blocked: '&cYou may not execute this command while playing Bedwars'
-cancel: Cancel
-apply: Apply
-authors: Authors
-nobody: Nobody
+cancel: Peruuta
+apply: Hyväksy
+authors: Rakentajat
+nobody: Ei kukaan
 customname_isenabled: Custom name is enabled
 customname: Custom name
 displayingname: Displaying name
@@ -389,8 +361,7 @@ teamspawn_notyet: '&cThe spawn point of &4{team}&c hasn''t been set yet for &4{a
 holo_add: '&aAdded a hologram at &2{coord}'
 holo_list: '&6Holograms in {world}: &e{holos}'
 holo_remove: '&aRemoved the hologram at &2{coord}'
-holo_removenotfound: '&cThere''s no hologram at the given coordinates in the world
-  &4{world}'
+holo_removenotfound: '&cThere''s no hologram at the given coordinates in the world &4{world}'
 holo_removeall: '&aRemoved &2{amount}&a holograms in world &2{world}'
 unknown_world: '&cThere''s no world with the name &4{world}'
 addon_load_not: '&cThe given file is not an addon'
@@ -400,8 +371,7 @@ addon_load: '&aLoaded addon &2{addon}'
 addon_unload_notfound: '&cThere''s no addon with the name &4{addon}'
 addon_unload_notaddon: '&4{plugin}&c is a plugin, but not an addon'
 addon_unload: '&aUnloaded addon &2{addon}'
-item_error_missinghandlerorcommand: '&4Please report this error to an admin: &cThe
-  item {item} is missing an handler or a command. Nothing is happening on use.'
+item_error_missinghandlerorcommand: '&4Please report this error to an admin: &cThe item {item} is missing an handler or a command. Nothing is happening on use.'
 arenasgui_list: ArenasGUI Layouts
 arenasgui_by: By
 arenasgui_openfor: '&eOpened arenasgui layout &6{layout}&e for &6{player}'
@@ -409,33 +379,22 @@ unknown_layout: '&cUnknown layout &4{layout}'
 migration_start: '&eStarted migration of &6{origin}&e...'
 migration_success: '&aSuccessfully migrated &2{origin}&a in &2{time}'
 migration_failure: '&cFailed to migrate &4{origin}&c after {time}: &4{error}'
-migration_failure_alreadyrunning: '&cA migration process with the same origin is already
-  running'
-playerdeath_cause_elimination: Elimination
+migration_failure_alreadyrunning: '&cA migration process with the same origin is already running'
+playerdeath_cause_elimination: Eliminaatio
 rejoin_trying: '&eWe''re checking the previously played match...'
-rejoin_alreadytrying: '&cYou''re already trying to rejoin your lastly played match!
-  Please wait a bit'
+rejoin_alreadytrying: '&cYou''re already trying to rejoin your lastly played match! Please wait a bit'
 rejoin_failed_notactive: '&6You''re too late, the match isn''t running anymore'
-rejoin_failed_teamdead: '&6You can''t rejoin the active match as your team has been
-  eliminated'
+rejoin_failed_teamdead: '&6You can''t rejoin the active match as your team has been eliminated'
 rejoin_failed_unknown: '&6We tried to let you in, but we may not due to internal rules'
 rejoin_success: '&aThe match is still running! We''re now re-adding you to the match...'
-rejoin_success_global: '&6{player} &ehas rejoined the {teamcolor}{team}&e''s team
-  and is now a part of the match'
-hubpos_inactive_bungee: '&6Hub Positions &eare not active as you''re solving it via
-  BungeeCord'
-arenaconvert_onlyspecifctypes: '&cYou may only change the regeneration type of the
-  arena &4{arena}&c to &4{types}'
-arenaconvert_done: '&aChanged the regeneration type of &2{arena}&a from {prev} to
-  &2{new}'
-arenaproblem_savingblocks: '&cThe arena is currently saving its blocks. Try it again
-  in a few seconds'
-teamchat_enabled_hint: '&eYour team members are the only ones who are going to see
-  your message. Begin it with "&6&l{tag}&e" to write globally'
-teamchat_disabled_solo_hint: '&eYour message will be visible for all players (even
-  without a prefix) as you are playing solo'
-remotearena_unsupportedoperation: '&cYou may not perform the given operation to remote
-  arenas'
+rejoin_success_global: '&6{player} &ehas rejoined the {teamcolor}{team}&e''s team and is now a part of the match'
+hubpos_inactive_bungee: '&6Hub Positions &eare not active as you''re solving it via BungeeCord'
+arenaconvert_onlyspecifctypes: '&cYou may only change the regeneration type of the arena &4{arena}&c to &4{types}'
+arenaconvert_done: '&aChanged the regeneration type of &2{arena}&a from {prev} to &2{new}'
+arenaproblem_savingblocks: '&cThe arena is currently saving its blocks. Try it again in a few seconds'
+teamchat_enabled_hint: '&eYour team members are the only ones who are going to see your message. Begin it with "&6&l{tag}&e" to write globally'
+teamchat_disabled_solo_hint: '&eYour message will be visible for all players (even without a prefix) as you are playing solo'
+remotearena_unsupportedoperation: '&cYou may not perform the given operation to remote arenas'
 connecting_server: '&eYou are about to connect with the server'
 remoteteleport_fail: '&cIt it is not possible to teleport to the server'
 tphubfail_nohub: '&cWe failed to teleport you to the hub as no server is available'
@@ -446,8 +405,7 @@ join_fail: '&cWe failed adding you to the arena (Reason: {reason})'
 erroraction_arenacloned: '&cYou may not perform that for cloned arenas'
 arenabulk_performingaction: '&eThe action is being executed for &6{amount} arenas'
 invalidatecache_alreadyempty: '&eThe player-data-cache is already empty'
-invalidatecache: '&eFollowing locally cached info has been cleared: &6{stats} stats&e,
-  &6{achievements} achievements&e and &6{properties} properties'
+invalidatecache: '&eFollowing locally cached info has been cleared: &6{stats} stats&e, &6{achievements} achievements&e and &6{properties} properties'
 playerdata_info_fetchtime: Fetch time
 playerdata_info_earnedachievements: Earned achievements
 playerdata_info_stats: Stats
@@ -456,49 +414,37 @@ playerdata_info_properties: Properties
 playerdata_notfound: '&cWe couldn''t find any data for &4{target}'
 playerdata_stats_resetallplayer_warning:
 - '&4!!!WARNING!!!'
-- '&cAre you really sure you want to reset &4ALL stats&c for &4&lALL&c players who
-  have EVER played? If so, then please write the same command within the next {sec}
-  seconds. &nYou might want to create a backup.'
+- '&cAre you really sure you want to reset &4ALL stats&c for &4&lALL&c players who have EVER played?'
+- If so, then please write the same command within the next {sec} seconds. &nYou might want to create a backup.'
 playerdata_stats_resetplayer_warning:
 - '&4!!!WARNING!!!'
-- Are you really sure you want to reset &4ALL stats&c for the player &4&l{player}&c.
-  If so, then please write the same command within the next {sec} seconds.
-playerdata_stats_resetplayer_complete: '&aThe stats for {player} have successfully
-  been reset!'
-playerdata_stats_resetallplayer_complete: '&aThe stats of all players on the server/network
-  have been reset after {time}!'
-playerdata_stats_modify_complete: '&aSuccessfully updated ''{stat}'' to ''{new-val}''
-  for {player}. The player may need to re-log for rankings to update'
-playerdata_stats_modify_fail: '&cWe were unable to update the stat ''{stat}'' for
-  {player}!'
+- Are you really sure you want to reset &4ALL stats&c for the player &4&l{player}&c?
+-  If so, then please write the same command within the next {sec} seconds.
+playerdata_stats_resetplayer_complete: '&aThe stats for {player} have successfully been reset!'
+playerdata_stats_resetallplayer_complete: '&aThe stats of all players on the server/network have been reset after {time}!'
+playerdata_stats_modify_complete: '&aSuccessfully updated ''{stat}'' to ''{new-val}'' for {player}. The player may need to re-log for rankings to update'
+playerdata_stats_modify_fail: '&cWe were unable to update the stat ''{stat}'' for {player}!'
 playerdata_stats_notfound: '&cUnable to find a stats set called ''{stat}'''
 identifyarena_none: '&cThere is no arena at the given position'
 identifyarena_found: '&eFound arena &6{arena}'
 initsetup_welcome:
 - '&6Welcome welcome!'
-- '&eTo make the setup of &lMarcely''s Bedwars &eas easy as possible, we offer you
-  the opportunity to set it up via a web interface (using your browser).'
-- '&eNote that this is only for the initial setup. You can always configure anything
-  later on.'
+- '&eTo make the setup of &lMarcely''s Bedwars &eas easy as possible, we offer you the opportunity to set it up via a web interface (using your browser).'
+- '&eNote that this is only for the initial setup. You can always configure anything later on.'
 initsetup_web: I want to use the fancy web interface (Click or type command {cmd})
-initsetup_simple: I would rather just configure everything myself (Click or type command
-  {cmd})
+initsetup_simple: I would rather just configure everything myself (Click or type command {cmd})
 initsetup_connecting: '&ePlease wait a little bit, we are preparing it for you.'
 initsetup_connection_failure:
 - '&cSorry, but we could not connect to our service. A firewall may be blocking it.'
-- '&cPlease type the &4/mbedwars &ccommand and try again or skip the whole process
-  if it keeps failing.'
+- '&cPlease type the &4/mbedwars &ccommand and try again or skip the whole process if it keeps failing.'
 initsetup_ready: '&eVisit this URL to start the setup process: &6{url}'
 initsetup_finish: '&eEverything is ready, have fun! Visit &6{url} &efor further help'
 click: '*Click*'
 members: Members
 no_members: No members
-antiabuse_statsnotcounted: '&cCertain stats weren''t counted as we detected potential
-  abuse. Please play fair!'
-party_changearena_leaderonly: '&cOnly the leader of your party may move to the next
-  match, as long as he is online'
-party_changearena_stillplaying: '&cSome of your party members are still participating
-  in this match. Please wait until they finished'
+antiabuse_statsnotcounted: '&cCertain stats weren''t counted as we detected potential abuse. Please play fair!'
+party_changearena_leaderonly: '&cOnly the leader of your party may move to the next match, as long as he is online'
+party_changearena_stillplaying: '&cSome of your party members are still participating in this match. Please wait until they finished'
 player_trigger_upgradetrap_bigtitle: '&cTRAP TRIGGERED!'
 player_trigger_upgradetrap_smalltitle: '&fYour trap has been set off!'
 player_trigger_upgradetrap_chat: '&cSomeone has triggered one of your team''s traps!'
@@ -547,8 +493,7 @@ setupgui_category_weather:
 setupgui_category_time:
 - Time
 - 'Active: {time}'
-setupgui_config_affect: '&cYou have &4{config} &cenabled in config.yml, whereby &4{toggle}
-  &cgets ignored'
+setupgui_config_affect: '&cYou have &4{config} &cenabled in config.yml, whereby &4{toggle} &cgets ignored'
 setupgui_button_enable: Enable
 setupgui_button_disable: Disable
 setupgui_button_regenerate: Regenerate all blocks
