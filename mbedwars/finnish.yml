@@ -846,6 +846,8 @@ upgradeshop_name_enemytrap: Tavallinen ansa
 upgradeshop_description_enemytrap: Sokeuttaa ja hidastaa ansan laukaisijaa
 upgradeshop_trapremove_lore: '&ePoista painamalla hiiren oikeaa korvaa &8(Ei hyvitystä)'
 upgradeshop_trapremove: '&ePoistettu &6{trap} &ejonosta'
+upgradeshop_levels_tier: 'Taso'
+upgradeshop_cost: 'Hinta'
 
 
 ###########################
