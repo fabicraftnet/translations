@@ -223,11 +223,11 @@ spectator_item_changespeed: '&fVaihda nopeutta'
 spectator_item_leave: '&#ef4444Poistu pelistä' # Items don't support MiniMessage yet :(
 spectator_item_nextround: '&6Vaihda karttaa'
 arrow_damage: '{targetcolor}{target} &eis now at &c{health} &ehealth'
-trap: '&eAnsa laukaistu!'
+trap: '&eAnsa laukaistu'
 magicmilk_use: '&eTraps will not be able to detect your for {time} seconds!'
 teleporter: '&eTeleporting you in a few seconds...'
 teleporter_failed: '&cTeleportation has been stopped!'
-bridge_notenoughmaterials: '&cYou need more materials of &4{material}&c!'
+bridge_notenoughmaterials: '&cTarvitset lisää materiaalia &4{material}'
 give_spawner: '&aGave &2{amount}&a of &2{spawner}&a to &2{target}'
 teleport_success: '&aTeleportattiin karttaan &2{arena}'
 lobby_waiting: 'Odotetaan &#a78bfa{amount}&f pelaajaa...' # First 5 times the message is sent to actionbar, which doesn't support MiniMessage
@@ -255,9 +255,9 @@ getpositionaxe: '&aGave you the &2position axe'
 tracker_trackedplayer: '&aThis compass is now looking at the nearest tracked enemy.'
 tracker_reusedelay: '&cWait &4{time} seconds&c until you can use a tracker again!'
 tracker_failed_onlyone: '&4Failed to track nearest enemy: &cYou are the only player in this round!'
-spectator_join: '&6You''re now a spectator!'
-spectator_leave: '&6You''re not a spectator anymore.'
-spectator_howtoquit: '&eLeave this round using the command &6/bw leave'
+spectator_join: '&6Olet nyt katsoja'
+spectator_leave: '&6Et ole enää katsoja'
+spectator_howtoquit: '&ePoistu pelistä komennolla &6/bw leave'
 recalculatestats_done: '&aDone after &2{time} seconds&a.'
 endlobby_counting: 'Teleportataan <#a78bfa>{number}</#a78bfa> sekunnin kuluttua'
 endlobby_bigtitle_win: '&#4ade80Voitto!' # Titles don't support MiniMessage yet :(
@@ -671,47 +671,47 @@ achievements_name_useminishop: Nettishoppailija
 achievements_name_killsomeonewithbow: Simo Häyhä
 achievements_name_winin3minutes: Sairaan nopee
 achievements_name_killsomeonewithhalfaheart: Lucky strike
-achievements_name_win100rounds: Champion
-achievements_name_usebridge: Bridge constructor
-achievements_name_useguarddog: Police guard
-achievements_name_effectmagnetshoes: Magnetic force
-achievements_name_useteleporter: Beam me up, scotty!
-achievements_name_usetntsheep: Boom, boom, baby!
-achievements_name_usetracker: I am going to find you. And kill you.
+achievements_name_win100rounds: Mestari
+achievements_name_usebridge: Sillanrakentaja
+achievements_name_useguarddog: Poliisikoira
+achievements_name_effectmagnetshoes: Magneettikenttä
+achievements_name_useteleporter: Äkkiä kotiin!
+achievements_name_usetntsheep: Kaboom
+achievements_name_usetracker: Mää nään sut
 achievements_name_placetrap: Mine
-achievements_name_runovertrap: IT'S A TRAP!
+achievements_name_runovertrap: SE ON ANSA!
 achievements_name_spend200resources: Varakas
-achievements_name_rankingintop3: E-Sports player
-achievements_name_goodkd: Professional player
-achievements_name_highplaytime: '#NoLife'
+achievements_name_rankingintop3: Kilpapelaaja
+achievements_name_goodkd: Ammattilainen
+achievements_name_highplaytime: Ulkoilma, paras ilma
 achievements_name_writeggatend: GG
-achievements_name_winwithoutbed: Can't Touch This
-achievements_name_die10secsafterbeddestruction: You didn't!
+achievements_name_winwithoutbed: Koskematon
+achievements_name_die10secsafterbeddestruction: Elä viitti
 achievements_name_optaineveryachievement: Addiktio
-achievements_name_usefireball: Pew pew!
-achievements_name_useinvispotion: Ghost Walker
+achievements_name_usefireball: Piu piu!
+achievements_name_useinvispotion: Hiljainen hiihtäjä
 achievements_text_ragequit: Poistu käynnissä olevasta pelistä
 achievements_text_winround: Voita vähintään yksi peli
 achievements_text_loseround: Häviä yksi peli
-achievements_text_ownbeddestroyed: Tuhoa oma punkkasi
-achievements_text_bestbow: Buy the best bow
-achievements_text_userescueplatform: Use a rescue platform
-achievements_text_useendepearl: Use an enderpearl
-achievements_text_useminishop: Use a minishop
-achievements_text_killsomeonewithbow: Kill someone with a bow
-achievements_text_winin3minutes: Win a round in 3 minutes
-achievements_text_killsomeonewithhalfaheart: Kill an enemy with half a heart
+achievements_text_ownbeddestroyed: Yritit tuhota oman punkkasi
+achievements_text_bestbow: Osta pelin paras jousi
+achievements_text_userescueplatform: Käytä pelastusalusta
+achievements_text_useendepearl: Käytä ender-helmeä
+achievements_text_useminishop: Käytä pikaputiikkia
+achievements_text_killsomeonewithbow: Tapa vihollinen jousella
+achievements_text_winin3minutes: Voita peli 3 minuutissa
+achievements_text_killsomeonewithhalfaheart: Tapa vastustaja, kun sinulla on vain puolikas sydän
 achievements_text_win100rounds: Voita 100 peliä
-achievements_text_usebridge: Use the bridge-item
-achievements_text_useguarddog: Summon a guard dog
-achievements_text_effectmagnetshoes: Use magnet shoes to defend against knockback
-achievements_text_useteleporter: Use the teleporter item
-achievements_text_usetntsheep: Summon a TNT Sheep
-achievements_text_usetracker: Use the tracker
-achievements_text_placetrap: Place a trap
-achievements_text_runovertrap: Trigger a trap by running over it
-achievements_text_spend200resources: Spend 200 or more resources in the shop
-achievements_text_rankingintop3: Rank in the top 3
+achievements_text_usebridge: Käytä silta
+achievements_text_useguarddog: Adoptoi vahtikoira
+achievements_text_effectmagnetshoes: Käytä magneettikenkiä tökkivää tikkua vastaan
+achievements_text_useteleporter: Käytä teleportteria
+achievements_text_usetntsheep: Lähetä TNT lammas seikkailulle
+achievements_text_usetracker: Käytä paikanninta
+achievements_text_placetrap: Käytä ansa
+achievements_text_runovertrap: Laukaise ansa
+achievements_text_spend200resources: Käytä yli 200 materiaalia kauppaan
+achievements_text_rankingintop3: Sijoitu 3 parhaan joukkoon
 achievements_text_goodkd: Have a K/D that's 5.0 or higher
 achievements_text_highplaytime: Pelaa vähintään 5 tuntia
 achievements_text_writeggatend: Kirjoita 'GG' pelin loputtua
@@ -734,7 +734,7 @@ shop_page_weapon: Aseet
 shop_page_tool: Työkalut
 shop_page_potion: Slurpsis
 shop_page_special: Jännät ja hämärät
-shop_page_extra: Sekalaiset
+shop_page_extra: Apuvälineet
 shop_item_wool: Villa
 shop_item_oak_planks: Tammilankku
 shop_item_end_stone: End-kivi
@@ -742,30 +742,26 @@ shop_item_chest: Arkku
 shop_item_ladder: Tikkaat
 shop_item_podzol: Podsoli
 shop_item_goldenapple: Kultainen omena
-shop_item_leatherhelmet: Nahkalakki
 shop_item_leatherleggings: Nahkapöksyt
 shop_item_leatherboots: Nahkasaappaat
-shop_item_chainmailchestplatelvl1: Rautapaita I
-shop_item_chainmailchestplatelvl2: Rautapaita II
-shop_item_chainmailchestplatelvl3: Rautapaita III
-shop_item_knockbackstick: Tökkivä tikku
-shop_item_swordlvl1: Miekka I
-shop_item_swordlvl2: Miekka II
-shop_item_swordlvl3: Miekka III
-shop_item_bowlvl1: Jousi I
-shop_item_bowlvl2: Jousi II
-shop_item_bowlvl3: Jousi III
+shop_item_chainmail_leggings: Rengashousut
+shop_item_chainmail_boots: Rengaskengät
+shop_item_iron_chestplate: Rautapaita
+shop_item_knockback_stick: Tökkivä tikku
+shop_item_stone_sword: Kivimiekka
+shop_item_iron_sword: Rautamiekka
+shop_item_bow_lvl1: Perusjousi
+shop_item_bow_lvl3: Vahva jousi
 shop_item_arrow: Nuoli
 shop_item_wooden_pickaxe: Puuhakku
-shop_item_copper_pickaxe: Kuparihakku
 shop_item_iron_pickaxe: Rautahakku
 shop_item_wooden_axe: Puukirves
-shop_item_copper_axe: Kuparikirves
 shop_item_iron_axe: Rautakirves
-shop_item_potionswiftness: Nopeuden taikajuoma
-shop_item_potionregeneration: Elpymisen taikajuoma
-shop_item_potionhealing: Parantava taikajuoma
-shop_item_potionstrength: Vahvuuden taikajuoma
+shop_item_potion_swiftness: Nopeuden taikajuoma
+shop_item_potion_regeneration: Elpymisen taikajuoma
+shop_item_potion_healing: Parantava taikajuoma
+shop_item_potion_strength: Vahvuuden taikajuoma
+shop_item_potion_invisibility: Näkymättömyyden taikajuoma
 shop_item_enderpearl: Ender-helmi
 shop_item_teleporter: Teleportteri
 shop_item_minishop: Pikaputiikki
