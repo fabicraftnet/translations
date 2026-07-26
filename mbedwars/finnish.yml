@@ -13,7 +13,7 @@ configurations_reload_end: '<#4ade80>Konfiguraatioiden lataus onnistui <#94a3b8>
 configurations_reload_alreadyloading: '<#ef444>Konfiguraatioiden lataus on jo käynnissä'
 configurations_reload_confirm:
 - '<#facc15>Oletko varma? Kaikki käynnissä olevat pelit pysäytetään'
-- 'Kirjoita komento uudelleen suorittaaksesi'
+- 'Suorita kirjoittamalla komento uudelleen'
 info_madeby: 'Rakentaja(t)'
 info_specialthanks: Erityiskiitokset
 info_website: Verkkosivu
@@ -54,11 +54,11 @@ color_lightgray: vaaleanharmaa
 color_gray: harmaa
 color_brown: ruskea
 color_black: musta
-missing_worldeditpoints: '&cMissing worldedit points!'
+missing_worldeditpoints: '<#ef4444>Missing worldedit points!'
 saved_arena: '&#a78bfa{arena}&f on tallennettu' # This for some reason doesn't support MiniMessage
 saved_bed: '&aSaved bed for the team {colorcode}{color} &ain the arena &2{arena}'
 bed_notinside_arena: '&cFailed to add the bed since there''s no arena at that location. Use "/bw arena setcorners" or "/bw arena setworld" to realign it'
-exists_arena: '&cThe arena &4{arena} &calready exists!'
+exists_arena: '<#ef4444>Kartta nimella <#facc15>{arena}</#facc15> on jo olemassa'
 spawner_iron: Rauta
 spawner_iron_plural: Rautaa
 spawner_gold: Kulta
@@ -76,7 +76,7 @@ start_round: '&aPeli alkaa'
 stop_round: '&aPeli pysäytetty'
 kicked_player: '&aPotkittiin pelaaja &2{player} &akartasta &2{arena}'
 kicked_player_toplayer: '&cSinut potkittiin pelistä'
-list_arenas: '&eKaikki kartat: &6'
+list_arenas: 'Kaikki kartat: '
 list_arenas_local: '&eLocal arenas: &6'
 list_arenas_remote: '&cRemote arenas: &6'
 only_betamember: '&cYou are now allowed to join while bedwars is in the beta!'
@@ -88,8 +88,8 @@ joinmessage_running: '<#ef4444>Peli on jo käynnissä'
 joinmessage_alreadyinside: '<#ef4444>Olet jo pelissä'
 joinmessage: '{player} <#4ade80>liittyi peliin'
 leavemessage: '{player} <#ef4444>poistui pelistä'
-notfound_player: '&4{player} &cei löytynyt'
-notfound_arena: '&cKarttaa nimellä &4{arena}&c ei löytynyt'
+notfound_player: '<#ef4444>Pelaajaa <#facc15>{player}</#facc15> ei löytynyt'
+notfound_arena: '<#ef4444>Karttaa nimellä <#facc15>{arena}</#facc15> ei löytynyt'
 notfound_arena_loading: '&6(Kartta latautuu)'
 notfound_arena_validpicker: '&cThere''s no arena matching the picker: &4{picker}'
 notfound_author: '&cThere''s no author named &4{author}&c!'
@@ -128,7 +128,7 @@ insidearena_gamedonelocation:
 - '&cThe hub position is inside the arena &4{arena}&c!'
 - '&cPlace it somewhere else - namely where you are supposed to get teleported to
   when you leave the match'
-stats_info_entry: '&7{name}: &b{value}'
+stats_info_entry: '{name} <#a78bfa>{value}'
 stat_default_rank: Taso
 stat_default_win_streak: Nykyinen voittoputki
 stat_default_top_win_streak: Korkein voittoputki
@@ -137,13 +137,13 @@ stat_default_lost: Häviöt
 stat_default_wl: W/L
 stat_default_roundsplayed: Pelejä pelattu
 stat_default_kills: Tapot
-stat_default_kill_streak: Current kill streak
-stat_default_top_kill_streak: Top kill streak
-stat_default_finalkills: Final kills
+stat_default_kill_streak: Nykyinen tappoputki
+stat_default_top_kill_streak: Suurin tappoputki
+stat_default_finalkills: Lopulliset tapot
 stat_default_deaths: Kuolemat
-stat_default_finaldeaths: Final Deaths
+stat_default_finaldeaths: Lopulliset kuolemat
 stat_default_kd: K/D
-stat_default_final_kd: Final K/D
+stat_default_final_kd: Lopullinen K/D
 stat_default_bedsdestroyed: Punkkia tuhottu
 stat_default_bedslost: Punkkia menetetty
 stat_default_playtime: Aikaa pelattu
@@ -151,21 +151,21 @@ destroyed_bed_title: ''
 destroyed_bed_subtitle: ''
 destroyed_bed_subtitle_playerless: ''
 destroyed_bed_own_title: ''
-destroyed_bed_own_subtitle: '&#ef4444{player} tuhosi punkkasi'
-destroyed_bed_chat: '&#ef4444{player} tuhosi tiimin {teamcolor}{team}&#ef4444 punkan'
+destroyed_bed_own_subtitle: '&#ef4444{player} tuhosi punkkasi' # Titles don't support MiniMessage yet :(
+destroyed_bed_chat: '<#ef4444>{player} tuhosi tiimin {teamcolor}{team}<#ef4444> punkan'
 destroyed_bed_chat_left: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as they left the game.'
 destroyed_bed_chat_leftignoredrejoin: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as they left and didn''t rejoin in time.'
-number_notone: '&4{number} &cei ole numero'
+number_notone: '<#facc15>{number}<#ef4444> ei ole numero'
 stats_by: Pelaajan {player} tilastot
 gui_achievements_title: 'Saavutukset'
 gui_selectteam_title: 'Valitse tiimi'
 gui_spectator_teleporter: 'Teleporttaa'
 gui_votearena_title: 'Äänestä karttaa'
-gui_votearena_votes: '&b{number} &3ääntä'
+gui_votearena_votes: '{number} ääntä'
 spectator_teleporter_deadplayer: '<#ef4444>Et voi teleportata kuolleeseen pelaajaan'
 spectator_teleporter_onlymembers: '<#ef4444>You may only teleport to your team members right now'
-enabled_arena: '&2{arena} käytössä'
-disabled_arena: '&2{arena}&4 poistettu käytöstä'
+enabled_arena: '{arena}<#4ade80> käytössä'
+disabled_arena: '{arena}<#ef4444> poistettu käytöstä'
 disabling_gracefully_arena: '&eDisabling running match within &6{arena} &egracefully, it may take a short moment...'
 create_arena: '&2{arena} &ahas been successfully created!'
 remove_arena: '&2{arena} &ahas been successfully removed!'
@@ -188,10 +188,10 @@ locateplayer_notinarena: '&4{player} &cis online, but is not inside an arena.'
 locateplayer_inarena:
 - '&3======= &b{player} &3======='
 - '&2Palvelin: &a{server}'
-- '&2Aktiivisyys: &a{activity}'
+- '&2Aktiiviuus: &a{activity}'
 - '&2Kartta: &a{arena}'
 - '&2Kartan tila: &a{arena-status} ({arena-players}/{arena-max-players})'
-locateplayer_click_to_spectate: '&e&lPaina tarkkaillaksesi pelaajaa {player}'
+locateplayer_click_to_spectate: '&e&lTarkastele painamalla pelaajaa {player}'
 notsameworld_arena: '&cYou are not in the world of &4{arena} &c(&4{world}&c)!'
 problem_arena_world: '&cThere is a problem with the world of the arena &4{arena}&c!'
 fixproblemwith: '&eFix this problem with: &6'
@@ -208,8 +208,8 @@ sign_reseting: '&aNollataan'
 enabled: Käytössä
 disabled: Poissa käytöstä
 notallowed_beddestroy: '<#facc15>Et voi tuhota omaa punkkaasi'
-notallowed_selectcolor: '&cEt voi valita väriä {colorcode}{color}'
-lobby_item_achievements: 'Saavutukset'
+notallowed_selectcolor: '<ef4444>Et voi valita väriä {colorcode}{color}'
+lobby_item_achievements: Saavutukset
 lobby_item_forcestart: '&#facc15Pakota pelin aloitus' # Items don't support MiniMessage yet :(
 lobby_item_leave: '&#ef4444Poistu pelistä' # Items don't support MiniMessage yet :(
 lobby_item_leave_use: 'Sinut teleportataan takaisin aulaan {time} sekuntin kuluttua'
@@ -222,15 +222,15 @@ spectator_item_teleporter: '&fTeleporttaa pelaajaan'
 spectator_item_changespeed: '&fVaihda nopeutta'
 spectator_item_leave: '&#ef4444Poistu pelistä' # Items don't support MiniMessage yet :(
 spectator_item_nextround: '&6Vaihda karttaa'
-arrow_damage: '{targetcolor}{target} &eis now at &c{health} &ehealth'
-trap: '&eAnsa laukaistu'
-magicmilk_use: '&eTraps will not be able to detect your for {time} seconds!'
-teleporter: '&eTeleporting you in a few seconds...'
-teleporter_failed: '&cTeleportation has been stopped!'
-bridge_notenoughmaterials: '&cTarvitset lisää materiaalia &4{material}'
+arrow_damage: ''
+trap: '<#facc15>Ansa laukaistu'
+magicmilk_use: '&eTraps will not be able to detect your for {time} seconds!' # Not in use
+teleporter: 'Teleportataan...'
+teleporter_failed: '<#ef4444>Teleporttaus keskeytetty'
+bridge_notenoughmaterials: '<#ef4444>Tarvitset lisää materiaalia <#facc15>{material}'
 give_spawner: '&aGave &2{amount}&a of &2{spawner}&a to &2{target}'
-teleport_success: '&aTeleportattiin karttaan &2{arena}'
-lobby_waiting: 'Odotetaan &#a78bfa{amount}&f pelaajaa...' # First 5 times the message is sent to actionbar, which doesn't support MiniMessage
+teleport_success: '<#4ade80>Teleportattiin karttaan</#4ade80> {arena}'
+lobby_waiting: 'Odotetaan <#a78bfa>{amount}</#a78bfa> pelaajaa...'
 lobby_enough: '<#4ade80>Pelaajia on tarpeeksi pelin aloitukseen'
 alreadyinside_arena: '<#ef4444>Olet jo pelissä'
 noarenaforparty: '&cThere isn''t enough space available for all your party members'
@@ -252,12 +252,12 @@ regeneration_stopped: '&cThe regeneration of &4{arena}&c has been cancelled afte
 regeneration_fail: '&cRegeneration of &4{arena}&c has failed: &4{error}'
 worldedit_changed: '&aChanged the position {id} to &2x{x} y{y} z{z}'
 getpositionaxe: '&aGave you the &2position axe'
-tracker_trackedplayer: '&aThis compass is now looking at the nearest tracked enemy.'
-tracker_reusedelay: '&cWait &4{time} seconds&c until you can use a tracker again!'
-tracker_failed_onlyone: '&4Failed to track nearest enemy: &cYou are the only player in this round!'
-spectator_join: '&6Olet nyt katsoja'
-spectator_leave: '&6Et ole enää katsoja'
-spectator_howtoquit: '&ePoistu pelistä komennolla &6/bw leave'
+tracker_trackedplayer: '&fKompassi osoittaa lähimpään viholliseen'
+tracker_reusedelay: '&#ef4444Odota &#facc15{time}&#ef4444 sekuntia, ennen kuin voit käyttää paikanninta uudelleen'
+tracker_failed_onlyone: '&#ef4444Olet ainoa pelaaja, paikanninta ei voi käyttää'
+spectator_join: 'Olet nyt katsoja'
+spectator_leave: 'Et ole enää katsoja'
+spectator_howtoquit: '&fPoistu pelistä komennolla &#a78bfa/bw leave'
 recalculatestats_done: '&aDone after &2{time} seconds&a.'
 endlobby_counting: 'Teleportataan <#a78bfa>{number}</#a78bfa> sekunnin kuluttua'
 endlobby_bigtitle_win: '&#4ade80Voitto!' # Titles don't support MiniMessage yet :(
@@ -271,7 +271,7 @@ arenavoting_arenasupdated: '&6The arenas in the arena voting has been updated.'
 arenavoting_recount_noarenatovote: '&cResetting the countdown: There''s no arena to vote for!'
 arenavoting_end: '&6The following arena won the voting: &e{arena}'
 arenavoting_recount_toofewplayers: '&cNeed &4{number}&c more players to play on this arena!'
-arenavoting_minplayers: Min. pelaajamäärä
+arenavoting_minplayers: Minimi pelaajamäärä
 forcestart_already: '<#ef4444>Peli alkaa aivan tuota pikaa'
 scoreboard_arenaname: Kartta
 scoreboard_arenamode: Pelimuoto
@@ -281,10 +281,10 @@ scoreboard_stats: Tilastot
 scoreboard_yourteam: Oma tiimi
 scoreboard_teams: Tiimit
 bed_onlydestroyablewith_tnt: '&cYou can only destroy this bed with tnt!'
-itemspawner_hologram_title: '{spawner} &fspawning in &7{time} &fseconds!'
-maxplayers: Max. pelaajamäärä
-lobby_countdowntitle_goodluck: '&6Tsemppiä!'
-minishop_title: '{title}&7 disappears in &8{time}seconds'
+itemspawner_hologram_title: '{spawner} &7{time} &fsekuntia'
+maxplayers: Maksimi pelaajamäärä
+lobby_countdowntitle_goodluck: 'Tsemppiä!'
+minishop_title: '{title} &#94a3b8({time}sekuntia)'
 arenatype_notsupported: '&cThis is not supported for the type &4{type}&c of the arena &4{name}'
 arena_autosavedblocks: '&eBlocks inside the arena were automatically saved!'
 ranking_unranked: Unranked
@@ -341,12 +341,12 @@ teamchest_title: '{team} arkku'
 playerprivateinventory_title: <lang:container.enderchest>
 placeholderapi_stats_loading: Ladataan...
 tnt_destroybed_name: TNT
-timer_ending_soon: '&ePeli päättyy {minutes} minuutin kuluttua'
-timer_ending: '&ePeli päättyy {seconds} sekunnin kuluttua'
-command_blocked: '&cEt voi käyttää tätä komentoa pelissä'
+timer_ending_soon: '&#facc15Peli päättyy {minutes} minuutin kuluttua'
+timer_ending: '&#facc15Peli päättyy {seconds} sekunnin kuluttua'
+command_blocked: '&#ef4444Et voi käyttää tätä komentoa pelissä'
 cancel: Peruuta
 apply: Hyväksy
-authors: Rakentajat
+authors: Rakentaja(t)
 nobody: Ei kukaan
 customname_isenabled: Custom name is enabled
 customname: Custom name
@@ -397,8 +397,8 @@ remotearena_unsupportedoperation: '&cYou may not perform the given operation to 
 connecting_server: '&eYou are about to connect with the server'
 remoteteleport_fail: '&cIt it is not possible to teleport to the server'
 tphubfail_nohub: '&cWe failed to teleport you to the hub as no server is available'
-try_again_shortly: '&ePlease try again shortly'
-server_full: '&cThe server is full'
+try_again_shortly: '&eYritä uudelleen hetken kuluttua'
+server_full: '&cPalvelin on täynnä'
 spectate_fail: '&cWe failed to add you as an spectator (Reason: {reason})'
 join_fail: '&cWe failed adding you to the arena (Reason: {reason})'
 erroraction_arenacloned: '&cYou may not perform that for cloned arenas'
@@ -438,16 +438,16 @@ initsetup_connection_failure:
 - '&cPlease type the &4/mbedwars &ccommand and try again or skip the whole process if it keeps failing.'
 initsetup_ready: '&eVisit this URL to start the setup process: &6{url}'
 initsetup_finish: '&eEverything is ready, have fun! Visit &6{url} &efor further help'
-click: '*Paina*'
-members: Jäsenet
-no_members: Ei jäseniä
+click: 'Paina'
+members: '&#94a3b8Jäsenet'
+no_members: '&#94a3b8Ei pelaajia'
 antiabuse_statsnotcounted: '&cCertain stats weren''t counted as we detected potential abuse. Please play fair!'
 party_changearena_leaderonly: '&cOnly the leader of your party may move to the next match, as long as he is online'
 party_changearena_stillplaying: '&cSome of your party members are still participating in this match. Please wait until they finished'
 player_trigger_upgradetrap_bigtitle: '&cAnsa laukaistu!'
 player_trigger_upgradetrap_smalltitle: ''
 player_trigger_upgradetrap_chat: '&cAnsa laukaistu!'
-achievement_get_title: Saavutus avattu!
+achievement_get_title: Saavutus avattu
 
 
 ###########################
@@ -617,13 +617,13 @@ setuptool_spawnpoint_preview:
 ###########################
 ## Shop Layouts
 ###########################
-shop_d_hypixel_available: '&8Saatavilla'
-shop_d_hypixel_clicktobrowse: '&eSelaa painamalla'
-shop_d_hypixel_items: '&8Tavarat'
-shop_d_hypixel_clicktopurchase: '&eOsta painamalla'
+shop_d_hypixel_clicktobrowse: '&#a78bfaSelaa painamalla'
+shop_d_hypixel_clicktopurchase: '&#4ade80Osta painamalla'
+shop_d_hypixel_available: ''
+shop_d_hypixel_items: ''
 shop_d_hypixel_maxed: '&aMaksimi'
 shop_d_hypixel_unlocked: '&aAvattu'
-shop_d_hypixel_cost: '&7Hinta: &f{color}{amount} {type}'
+shop_d_hypixel_cost: '&f{color}{amount} {type}'
 shop_d_hypixel_goback: '&#ef4444Takaisin'
 shop_d_hypixel_tooexpensive: '&#ef4444Sinulla ei ole tarpeeksi materiaaleja' #Items don't support MiniMessage yet :(
 shop_d_hivemc_clicktoview: '&b{icon} Click to view &l{item}' # No need to translate yet
@@ -660,8 +660,8 @@ shop_d_hypixelv2_quickbuy_remove_item: '&bSneak click to remove from Quick Buy'
 ## Achievements
 ###########################
 achievements_name_ragequit: Rage quit
-achievements_name_winround: Voittaja
-achievements_name_loseround: Häviäjä
+achievements_name_winround: W moment
+achievements_name_loseround: L moment
 achievements_name_ownbeddestroyed: Petturi!
 achievements_name_bestbow: OP Bow
 achievements_name_userescueplatform: Läheltä piti
@@ -669,9 +669,9 @@ achievements_name_useendepearl: Enderman
 achievements_name_useminishop: Nettishoppailija
 achievements_name_killsomeonewithbow: Simo Häyhä
 achievements_name_winin3minutes: Sairaan nopee
-achievements_name_killsomeonewithhalfaheart: Lucky strike
+achievements_name_killsomeonewithhalfaheart: Hiuskarvan varassa
 achievements_name_win100rounds: Mestari
-achievements_name_usebridge: Sillanrakentaja
+achievements_name_usebridge: Insinööri
 achievements_name_useguarddog: Poliisikoira
 achievements_name_effectmagnetshoes: Magneettikenttä
 achievements_name_useteleporter: Äkkiä kotiin!
@@ -699,9 +699,9 @@ achievements_text_useendepearl: Käytä ender-helmeä
 achievements_text_useminishop: Käytä pikaputiikkia
 achievements_text_killsomeonewithbow: Tapa vihollinen jousella
 achievements_text_winin3minutes: Voita peli 3 minuutissa
-achievements_text_killsomeonewithhalfaheart: Tapa vastustaja, kun sinulla on vain puolikas sydän
+achievements_text_killsomeonewithhalfaheart: Tapa vastustaja, kun sinulla on jäljellä vain puolikas sydän
 achievements_text_win100rounds: Voita 100 peliä
-achievements_text_usebridge: Käytä silta
+achievements_text_usebridge: Rakenna automaattisilta
 achievements_text_useguarddog: Adoptoi vahtikoira
 achievements_text_effectmagnetshoes: Käytä magneettikenkiä tökkivää tikkua vastaan
 achievements_text_useteleporter: Käytä teleportteria
@@ -768,7 +768,7 @@ shop_item_rescueplatform: Pelastusalusta
 shop_item_tntsheep: TNT lammas
 shop_item_magnetshoes: Magneettikengät
 shop_item_trap: Ansa
-shop_item_bridge: Silta
+shop_item_bridge: Automaattisilta
 shop_item_guarddog: Vahtikoira
 shop_item_tracker: Paikannin
 shop_item_fishingrod: Onki
@@ -785,32 +785,23 @@ upgradeshop: Tiimipäivitykset
 upgradeshop_buy_upgrade_broadcast: '&e{player} päivitti &6{upgrade} &6tasolle {newlvl}'
 upgradeshop_buy_trap_broadcast: '&e{player} osti &6{upgrade}'
 upgradeshop_toofew_materials: '&cSinulla ei ole tarpeeksi materiaaleja'
-upgradeshop_max_upgrade: '&cOlet jo ostanut tämän päivityksen'
-upgradeshop_buystate_purchasable: '&eOsta painamalla'
-upgradeshop_buystate_not_purchasable: '&cSinulla ei ole tarpeeksi timantteja'
-upgradeshop_buystate_maximum: '&aAVATTU'
+upgradeshop_max_upgrade: '&#ef4444Olet jo ostanut tämän päivityksen'
+upgradeshop_buystate_purchasable: '&#4ade80Osta painamalla'
+upgradeshop_buystate_not_purchasable: '&#ef4444Sinulla ei ole tarpeeksi materiaaleja'
+upgradeshop_buystate_maximum: '&#4ade80Avattu'
 upgradeshop_queuedtrap_icon:
 - '&aAnsa #{queue-level}: {trap-name}'
-- '&7Ansa laukeaa heti,'
-- '&7kun tunkeilija'
+- '&7Ansa laukeaa heti, kun tunkeilija'
 - '&7saapuu saarellesi'
-- ' '
-- '&7Mikäli tunkeilija'
-- '&7käyttää taikamaitoa,'
-- '&7ansa ei laukea'
 upgradeshop_unqueuedtrap_icon:
-- '&cTrap #{queue-level}: Ei ansaa'
-- '&7Ansan ostaminen laittaa sen jonoon.'
-- '&7Ansan hinta voi vaihdella'
-- '&7riippuen jonossa olevien'
-- '&7ansojen lukumäärästä'
+- '&cAnsa #{queue-level}: Ei ansaa'
+- '&7Ansan ostaminen laittaa sen jonoon'
 upgradeshop_hypixel_separator:
 - '&8⬆ &7Ostettavissa'
 - '&8⬇ &7Ansajono'
 upgradeshop_hypixel_traps_menu_button:
 - '&eOsta ansa'
-- '&7Ostetut ansat näet'
-- '&7alhaalla jonossa'
+- '&7Ostetut ansat näet alhaalla jonossa'
 - ' '
 - '&ePäivitykset'
 upgradeshop_hypixel_back_button:
@@ -819,30 +810,30 @@ upgradeshop_hypixel_back_button:
 - '&7päivityksiä ja ansajonoa'
 - ' '
 - '&ePalaa painamalla'
-upgradeshop_name_protection: Vähemmän kipua
-upgradeshop_description_protection: Lisää armor suojausta
-upgradeshop_name_featherfall: Höyhenenkevyt
-upgradeshop_description_featherfall: Vähentää putoamisvahinkoa
-upgradeshop_name_haste: Kiire
-upgradeshop_description_haste: Kaikki tiimiläiset saavat pysyvän kiire-efektin
-upgradeshop_name_healrange: Parantamo
-upgradeshop_description_healrange: Parantava ominaisuus omalla saarella
-upgradeshop_name_sworddamage: Terävyys
-upgradeshop_description_sworddamage: Lisää miekan aiheuttamaa vahinkoa
-upgradeshop_name_spawnermultiplier: Generaattorikerroin
-upgradeshop_description_spawnermultiplier: Nopeuttaa oman saaresi generaattoreiden tuotantoa
-upgradeshop_name_enemyalarmtrap: Hälytysansa
-upgradeshop_description_enemyalarmtrap: Poistaa näkymättömyyden tunkeutujalta
-upgradeshop_name_counteroffensivetrap: Vastahyökkäyksen ansa
-upgradeshop_description_counteroffensivetrap: Antaa tiimille Nopeus II ja Hyppytehostus II 15 sekunnin ajaksi
-upgradeshop_name_enemyminingfatigue: Työuupumus
-upgradeshop_description_enemyminingfatigue: Vähentää muiden tiimien kaivamisnopeutta tiimisi saarella
-upgradeshop_name_enemytrap: Tavallinen ansa
-upgradeshop_description_enemytrap: Sokeuttaa ja hidastaa ansan laukaisijaa
-upgradeshop_trapremove_lore: '&ePoista painamalla hiiren oikeaa korvaa &8(Ei hyvitystä)'
-upgradeshop_trapremove: '&ePoistettu &6{trap} &ejonosta'
-upgradeshop_levels_tier: 'Taso'
-upgradeshop_cost: 'Hinta'
+upgradeshop_name_protection: '&fVähemmän kipua'
+upgradeshop_description_protection: '&#94a3b8 Lisää armor suojausta'
+upgradeshop_name_featherfall: '&fHöyhenenkevyt'
+upgradeshop_description_featherfall: '&#94a3b8Vähentää putoamisvahinkoa'
+upgradeshop_name_haste: '&fKiire'
+upgradeshop_description_haste: '&#94a3b8Kaikki tiimiläiset saavat pysyvän kiire-efektin'
+upgradeshop_name_healrange: '&fParantamo'
+upgradeshop_description_healrange: '&#94a3b8Parantava ominaisuus omalla saarella'
+upgradeshop_name_sworddamage: '&fTerävyys'
+upgradeshop_description_sworddamage: '&#94a3b8Lisää miekan aiheuttamaa vahinkoa'
+upgradeshop_name_spawnermultiplier: '&fGeneraattorikerroin'
+upgradeshop_description_spawnermultiplier: '&#94a3b8Nopeuttaa oman saaresi generaattoreiden tuotantoa'
+upgradeshop_name_enemyalarmtrap: '&fHälytysansa'
+upgradeshop_description_enemyalarmtrap: '&#94a3b8Poistaa näkymättömyyden tunkeutujalta'
+upgradeshop_name_counteroffensivetrap: '&fVastahyökkäyksen ansa'
+upgradeshop_description_counteroffensivetrap: '&#94a3b8Antaa tiimille Nopeus II ja Hyppytehostus II 15 sekunnin ajaksi'
+upgradeshop_name_enemyminingfatigue: '&fTyöuupumus'
+upgradeshop_description_enemyminingfatigue: '&#94a3b8Vähentää muiden tiimien kaivamisnopeutta tiimisi saarella'
+upgradeshop_name_enemytrap: '&fTavallinen ansa'
+upgradeshop_description_enemytrap: '&#94a3b8Sokeuttaa ja hidastaa ansan laukaisijaa'
+upgradeshop_trapremove_lore: '&#ef4444Poista painamalla hiiren oikeaa korvaa &#94a3b8(Ei hyvitystä)'
+upgradeshop_trapremove: '&f{trap} &#4ade80poistettiin jonosta'
+upgradeshop_levels_tier: '&#94a3b8Taso'
+upgradeshop_cost: '&#94a3b8Hinta'
 
 
 ###########################
