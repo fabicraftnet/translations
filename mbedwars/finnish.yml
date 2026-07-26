@@ -81,7 +81,7 @@ list_arenas_local: '&eLocal arenas: &6'
 list_arenas_remote: '&cRemote arenas: &6'
 only_betamember: '&cYou are now allowed to join while bedwars is in the beta!'
 notavailable_color: '<#ef4444>Tuntematon väri <#facc15>{color}'
-joinmessage_stopped: '<#ef4444>Kartta ei ole käytössä'
+joinmessage_stopped: '&#ef4444Kartta ei ole käytössä' # Does not support MiniMessages yet :(
 joinmessage_reseting: '<#ef4444>Kartta on nollautumassa'
 joinmessage_full: '<#ef4444>Peli täynnä'
 joinmessage_running: '<#ef4444>Peli on jo käynnissä'
@@ -95,10 +95,10 @@ notfound_arena_validpicker: '&cThere''s no arena matching the picker: &4{picker}
 notfound_author: '&cThere''s no author named &4{author}&c!'
 get_bed: '&aYou''ve got the bed of {colorcode}{color}'
 getallbeds: '&aAll beds of the arena &2{arena}&a were given to you'
-countdown_start: '<#4ade80>Peli alkaa pian!'
+countdown_start: '<#facc15>Peli alkaa pian!'
 countdown_stop: '<#ef4444>Pelin aloitus peruttiin'
-countdown_counting: '&6Peli alkaa &e{number} &6sekunnin kuluttua'
-countdown_changed: '&6Lähtölaskenta vaihdettu &e{number} &6sekuntiin'
+countdown_counting: '<white>Peli alkaa <#a78bfa>{number} <white>sekunnin kuluttua'
+countdown_changed: '<#facc15>Pelin aloitus pakotettu'
 countdown_voting_counting: '&6The arena voting ends in &e{number} &6seconds!'
 toofew_materials: '&#ef4444Sinulla ei ole tarpeeksi materiaaleja'
 no_inventory_space: '&#ef4444Ei tilaa tavaraluettelossa'
@@ -156,7 +156,7 @@ destroyed_bed_chat: '&#ef4444{player} tuhosi tiimin {teamcolor}{team}&#ef4444 pu
 destroyed_bed_chat_left: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as they left the game.'
 destroyed_bed_chat_leftignoredrejoin: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as they left and didn''t rejoin in time.'
 number_notone: '&4{number} &cei ole numero'
-stats_by: Stats by {player}
+stats_by: Pelaajan {player} tilastot
 gui_achievements_title: 'Saavutukset'
 gui_selectteam_title: 'Valitse tiimi'
 gui_spectator_teleporter: 'Teleporttaa'
@@ -201,7 +201,7 @@ spawned_dealer: '&2Dealer &ahas been successfully spawned!'
 spawned_upgradedealer: '&2Upgrade Dealer &ahas been successfully spawned!'
 notlooking_atsign: '&cYou''re not looking at a sign!'
 notlooking_atplayerhead: '&cYou''re not looking at a player head!'
-sign_lobby: '&eAula'
+sign_lobby: '&eOdottaa pelaajia'
 sign_running: '&6Käynnissä'
 sign_stopped: '&cPysäytetty'
 sign_reseting: '&aNollataan'
@@ -278,8 +278,7 @@ scoreboard_arenamode: Pelimuoto
 scoreboard_players: Pelaajia
 scoreboard_arena: Kartta
 scoreboard_stats: Tilastot
-scoreboard_gamestats: Game Stats
-scoreboard_yourteam: Sinun tiimi
+scoreboard_yourteam: Oma tiimi
 scoreboard_teams: Tiimit
 bed_onlydestroyablewith_tnt: '&cYou can only destroy this bed with tnt!'
 itemspawner_hologram_title: '{spawner} &fspawning in &7{time} &fseconds!'
@@ -820,18 +819,18 @@ upgradeshop_hypixel_back_button:
 - '&7päivityksiä ja ansajonoa'
 - ' '
 - '&ePalaa painamalla'
-upgradeshop_name_protection: Armor suojaus # There's a little bit of Finglish here, fix coming later
+upgradeshop_name_protection: Vähemmän kipua
 upgradeshop_description_protection: Lisää armor suojausta
 upgradeshop_name_featherfall: Höyhenenkevyt
 upgradeshop_description_featherfall: Vähentää putoamisvahinkoa
-upgradeshop_name_haste: Kiire # WTF is this, check out later
+upgradeshop_name_haste: Kiire
 upgradeshop_description_haste: Kaikki tiimiläiset saavat pysyvän kiire-efektin
 upgradeshop_name_healrange: Parantamo
 upgradeshop_description_healrange: Parantava ominaisuus omalla saarella
 upgradeshop_name_sworddamage: Terävyys
 upgradeshop_description_sworddamage: Lisää miekan aiheuttamaa vahinkoa
-upgradeshop_name_spawnermultiplier: Spawner Multiplier # Waiting mode
-upgradeshop_description_spawnermultiplier: Increases the spawn rate in your base
+upgradeshop_name_spawnermultiplier: Generaattorikerroin
+upgradeshop_description_spawnermultiplier: Nopeuttaa oman saaresi generaattoreiden tuotantoa
 upgradeshop_name_enemyalarmtrap: Hälytysansa
 upgradeshop_description_enemyalarmtrap: Poistaa näkymättömyyden tunkeutujalta
 upgradeshop_name_counteroffensivetrap: Vastahyökkäyksen ansa
