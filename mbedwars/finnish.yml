@@ -617,6 +617,8 @@ setuptool_spawnpoint_preview:
 ###########################
 ## Shop Layouts
 ###########################
+shop_fabicraft_clicktobuy: '<#4ade80>Osta painamalla'
+shop_fabicraft_missingmaterials: '<#ef4444>Sinulla ei ole tarpeeksi materiaaleja'
 shop_d_hypixel_clicktobrowse: '&#a78bfaSelaa painamalla'
 shop_d_hypixel_clicktopurchase: '&#4ade80Osta painamalla'
 shop_d_hypixel_available: ''
