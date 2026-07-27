@@ -27,159 +27,158 @@
 # McChicken Team, initzero, Nagibator6000Lol
 #
 
-no-perms: '%prefix%&cInsufficient permissions!'
+no-perms: '&cInsufficient permissions!'
 disabled: '&cTämä ominaisuus on poissa käytöstä'
 too-few-args: '&cEi tarpeeksi argumentteja'
-cooldown: '%prefix%&cOdota %cooldown% sekuntia ennen kuin käytät komentoa uudelleen'
-maintenance: '%prefix%&cHupsis, Oops, palvelin on§ huoltokatkolla: this action is
-  unavailable as maintenance is underway. Please wait until the maintenance is over!'
-not-found-player: '&c Pelaaja ei ole paikalla'
-only-players: '&c This command can be used only as player.'
-only-alive: '%prefix%&cThis cannot be accessed by dead players, you need to respawn!'
-only-debug: '&c This experimental feature cannot be accessed, because debug mode of
+cooldown: '&cOdota %cooldown% sekuntia ennen kuin käytät komentoa uudelleen'
+maintenance: '&cPalvelin on huoltokatkolla!'
+not-found-player: '&cPelaaja ei ole paikalla'
+only-players: '&cThis command can be used only as player.'
+only-alive: '&cThis cannot be accessed by dead players, you need to respawn!'
+only-debug: '&cThis experimental feature cannot be accessed, because debug mode of
   OpenCreative+ is not activated. Caution: Some experimental features aren''t stable
   and they can corrupt your worlds!'
 commands:
   join:
-    help: '%prefix%&fYhdistääksesi maailmaan ID:llä, käytä: &6/join ID'
-    connecting: '%prefix%Yhdistetään maailmaan %id%...'
-    failed: '%prefix%&cYhteyden muodostaminen maailmaan epäonnistui'
+    help: '&fYhdistääksesi maailmaan ID:llä, käytä: &6/join ID'
+    connecting: 'Yhdistetään maailmaan %id%...'
+    failed: '&cYhteyden muodostaminen maailmaan epäonnistui'
   join-to:
-    help: '%prefix%&fYhdistääksesi maailmaan, jossa on pelaaja, käytä: &6/jointo Username'
+    help: '&fYhdistääksesi maailmaan, jossa on pelaaja, käytä: &6/jointo Username'
   give:
     help: |-
-      %prefix%To give an item to yourself or a player in your world, use:
+      Anna tavara itsellesi tai toiselle pelaajalle:
        &6/give ID &7- Anna tavara itsellesi
        &6/give Username ID &7- Anna tavara toiselle pelaajalle
        &6/give Username ID Amount &7- Anna tietty määrä tavaraa toiselle pelaajalle
-    wrong: '%prefix%&cTavaraa ei ole olemassa'
-    given: '%prefix%Vastaanotit &6%material%&f x%amount%.'
-    given-player: '%prefix%Annoit &6%material%&f x%amount% pelaajalle &6%player%&f.'
-    wrong-amount: '%prefix%&cTuntematon luku'
+    wrong: '&cTavaraa ei ole olemassa'
+    given: 'Vastaanotit &6%material%&f x%amount%'
+    given-player: 'Annoit &6%material%&f x%amount% pelaajalle &6%player%'
+    wrong-amount: '&x&e&f&4&4&4&4Tuntematon luku'
   game-mode:
-    wrong: '%prefix%&Tuntematon pelimuoto'
+    wrong: '&Tuntematon pelimuoto'
     changed:
-      creative: '%prefix%Pelitilaksesi on vaihdettu &6luovuustila'
-      survival: '%prefix%Pelitilaksesi on vaihdettu &selviytymistila'
-      spectator: '%prefix%Pelitilaksesi on vaihdettu &6katsojatila'
-      adventure: '%prefix%Pelitilaksesi on vaihdettu &6seikkailutila'
+      creative: 'Pelimuodoksi vaihdettu &x&a&7&8&b&f&aluovuustila'
+      survival: 'Pelimuodoksi vaihdettu &x&a&7&8&b&f&aselviytymistila'
+      spectator: 'Pelimuodoksi vaihdettu &x&a&7&8&b&f&akatsojatila'
+      adventure: 'Pelimuodoksi vaihdettu &x&a&7&8&b&f&aseikkailutila'
     changed-player:
-      creative: '%prefix%Asetettiin pelaajan &6%player%&f pelimuodoksi &6luovuustila'
-      survival: '%prefix%Asetettiin pelaajan &6%player%&f pelimuodoksi &6selviytymistila'
-      spectator: '%prefix%Asetettiin pelaajan &6%player%&f pelimuodoksi &6katsojatila'
-      adventure: '%prefix%Asetettiin pelaajan &6%player%&f pelimuodoksi &6seikkailutila'
+      creative: 'Asetettiin pelaajan &x&a&7&8&b&f&a%player%&f pelimuodoksi &x&a&7&8&b&f&aluovuustila'
+      survival: 'Asetettiin pelaajan &x&a&7&8&b&f&a%player%&f pelimuodoksi &x&a&7&8&b&f&aselviytymistila'
+      spectator: 'Asetettiin pelaajan &x&a&7&8&b&f&a%player%&f pelimuodoksi &x&a&7&8&b&f&akatsojatila'
+      adventure: 'Asetettiin pelaajan &x&a&7&8&b&f&a%player%&f pelimuodoksi &x&a&7&8&b&f&aseikkailutila'
     help: |-
-      %prefix%Muuta pelimuotoa
-       &6/gamemode creative &7- Vaihtaa luovuustilaan
-       &6/gamemode Username creative &7- Vaihtaa toisen pelaajan luovuustilaan
+      Muuta pelimuotoa
+       /gamemode creative &x&9&4&a&3&b&8 Vaihtaa luovuustilaan
+       /gamemode username creative &x&9&4&a&3&b&8 Vaihtaa toisen pelaajan luovuustilaan
   time:
     help: |-
-      %prefix%Muuta aikaa
-       &6/time set 0 &7- Asettaa päivän
-       &6/time set 12500 &7- Asettaa illan
-       &6/time set 15000 &7- Asettaa yön
-       &6/time add 1000 &7- Skips 1000 ticks
-    changed: '%prefix%Maailman ajaksi asetettu &6%time%'
+      Muuta aikaa
+      &f/time set 0 &x&9&4&a&3&b&8 Asettaa päivän
+      &f/time set 12500 &x&9&4&a&3&b&8 Asettaa illan
+      &f/time set 15000 &x&9&4&a&3&b&8 Asettaa yön
+      &f/time add 1000 &x&9&4&a&3&b&8 Skips 1000 ticks
+    changed: 'Maailman ajaksi asetettu &x&a&7&8&b&f&a%time%'
   weather:
     help: |-
-      %prefix%Muuta säätilaa
-       &6/weather sun &7- Asettaa aurinkoisen sään
-       &6/weather rain &7- Asettaa sateen
-       &6/weather thunder &7- Asettaa ukkosmyrskyn
+      Muuta säätilaa
+      &f/weather sun &x&9&4&a&3&b&8 Asettaa aurinkoisen sään
+      &f/weather rain &x&9&4&a&3&b&8 Asettaa sateen
+      &f/weather thunder &x&9&4&a&3&b&8 Asettaa ukkosmyrskyn
     changed:
-      sun: '%prefix%Sääksi asetettu &6aurinkoinen&f'
-      rain: '%prefix%Sääksi asetettu &6sateinen&f, hirviöt eivät pala'
-      thunder: '%prefix%Sääksi asetettu &6ukkonen&f, varo ukkosta!'
+      sun: 'Sääksi asetettu &x&a&7&8&b&f&aaurinkoinen'
+      rain: 'Sääksi asetettu &x&a&7&8&b&f&asateinen&f, hirviöt eivät pala'
+      thunder: 'Sääksi asetettu &x&a&7&8&b&f&aukkonen&f, varo ukkosta!'
   teleport:
     help: |-
-      %prefix%Teleporttaaminen
-       &6/teleport X Y Z YAW PITCH &7- Teleporttaa koordinaatteihin
-       &6/teleport Username &7- Teleporttaa pelaajaan
-       &6/teleport FirstPlayer SecondPlayer &7- Teleporttaa pelaaja toisen pelaajan luo
-    teleported: '%prefix%Teleporttasit pelaajan &6%player%&f luokse'
-    teleported-player: '%prefix%Teleporttasit pelaajan &6%first%&f pelaajaan &6%second%&f'
-    teleported-coords: '%prefix%Teleporttasit koordinaatteihin: &6%x% %y% %z% %yaw%
+      Teleporttaaminen
+      &f/teleport X Y Z YAW PITCH &x&9&4&a&3&b&8 Teleporttaa koordinaatteihin
+      &f/teleport username &x&9&4&a&3&b&8 Teleporttaa pelaajaan
+      &f/teleport firstplayer secondplayer &x&9&4&a&3&b&8 Teleporttaa pelaaja toisen pelaajan luo
+    teleported: 'Teleporttasit pelaajan &x&a&7&8&b&f&a%player%&f luokse'
+    teleported-player: 'Teleporttasit pelaajan &x&a&7&8&b&f&a%first%&f pelaajaan &x&a&7&8&b&f&a%second%'
+    teleported-coords: 'Teleporttasit koordinaatteihin: &x&a&7&8&b&f&a%x% %y% %z% %yaw%
       %pitch%'
-    out-of-borders: '%prefix%&cEt voi telepSortata maailman rajan ulkopuolelle'
+    out-of-borders: '&x&e&f&4&4&4&4Et voi teleportata maailman rajan ulkopuolelle'
   edit:
     help: |-
-      %prefix%Muokkaa tavaran nimeä ja kuvausta
-        &6/edit name New Name &7- Nimeä tavara uudelleen
-        &6/edit lore 1 Description Line &7- Muokkaa tietyn rivin kuvausta
-        &6/edit addlore Description Line&7- Lisää uusi kuvaus
-        &6/edit clear &7- Nollaa tavaran nimi ja kuvaus"
-    renamed: '%prefix%Uudelleennimettiin tavara: %name%'
-    set-lore: '%prefix%Asetettiin rivi %number%: %lore%'
-    cleared: '%prefix%Tavaran nimi ja kuvaus nollattiin'
-    item: '%prefix%&cPidä tavaraa kädessäsi'
-    lines-limit: '%prefix%&cKuvauksen riviraja %limit% täyttyi'
-    text-limit: '%prefix%&cMerkkiraja %limit% täyttyi'
-    not-number: '%prefix%&c%argument% ei ole numero'
-    glowing: '%prefix%Tavarasi hehkuu nyt kuin lumottu tavara'
-    no-glowing: '%prefix%Tavarasi ei enää hehku kuin lumottu tavara'
-    not-enchantment: '%prefix%&cLumousta %enchantment% ei ole olemassa'
-    enchanted: '%prefix%Lumottiin tavara lumouksella &d%enchantment% &ftasolle %level%'
-    removed-enchant: '%prefix%Poistettiin lumous &c%enchantment%&f tavarasta'
-    unenchanted: '%prefix%Kaikki lumoukset tavarasta &cpoistettiin'
-    too-big-level: '%prefix%&cEnchantment level is too high, maximum: %limit%'
+      Muokkaa tavaran nimeä ja kuvausta
+      &f/edit name newname &x&9&4&a&3&b&8 Nimeä tavara uudelleen
+      &f/edit lore 1 descriptionline &x&9&4&a&3&b&8 Muokkaa tietyn rivin kuvausta
+      &f/edit addlore descriptionline &x&9&4&a&3&b&8 Lisää uusi kuvaus
+      &f/edit clear &x&9&4&a&3&b&8 Nollaa tavaran nimi ja kuvaus"
+    renamed: 'Tavaran uusi nimi: %name%'
+    set-lore: 'Asetettiin rivi %number%: %lore%'
+    cleared: 'Tavaran nimi ja kuvaus nollattiin'
+    item: '&x&e&f&4&4&4&4Pidä tavaraa kädessäsi'
+    lines-limit: '&x&e&f&4&4&4&4Kuvauksen riviraja %limit% täyttyi'
+    text-limit: '&x&e&f&4&4&4&4Merkkiraja %limit% täyttyi'
+    not-number: '&x&e&f&4&4&4&4%argument% ei ole numero'
+    glowing: 'Tavarasi hehkuu nyt kuin lumottu tavara'
+    no-glowing: 'Tavarasi ei enää hehku kuin lumottu tavara'
+    not-enchantment: '&x&e&f&4&4&4&4Lumousta %enchantment% ei ole olemassa'
+    enchanted: 'Lumottiin tavara lumouksella &d%enchantment% &ftasolle %level%'
+    removed-enchant: 'Poistettiin lumous %enchantment%'
+    unenchanted: 'Tavaran kaikki lumoukset  poistettiin'
+    too-big-level: 'Lumouksen taso on liian korkea, maksimi: %limit%'
   play-sound:
     help: |-
-      %prefix%Äänet
+      Äänet
        &6/playsound Sound Volume Speed Seed &7- Toista ääni itsellesi
        &6/playsound Username Sound Volume Speed Seed &7- Toista ääni toiselle pelaajalle
-    played: '%prefix%&fPlayed sound &6%sound% &fwith volume &6%volume%&f and speed
+    played: '&fPlayed sound &6%sound% &fwith volume &6%volume%&f and speed
       &6%pitch%&f to player &6%player%'
-    bad-sound: '%prefix%&cÄäntä %sound% ei löytynyt'
+    bad-sound: '&x&e&f&4&4&4&4Ääntä %sound% ei löytynyt'
   stop-sound:
     help: |-
-      %prefix%Voit pysäyttää äänen itseltäsi tai toiselta pelaajalta
+      Voit pysäyttää äänen itseltäsi tai toiselta pelaajalta
        &6/stopsound &7- Pysäytä äänet itseltäsi
        &6/stopsound Categories/Sounds &7- Pysäytä tietyt äänet tai äänikategoriat itseltäsi
        &6/stopsound Categories/Sounds Nickname &7- Pysäyttää äänet toiselta pelaajalta
-    stopped-sound: '%prefix%&fPysäytettiin ääni &6%sound%&f pelaajalta &6%player%&f'
-    stopped-category: '%prefix%&fPysäytettiin kategorian &6%category%&f äänet pelaajalta
+    stopped-sound: '&fPysäytettiin ääni &6%sound%&f pelaajalta &6%player%&f'
+    stopped-category: '&fPysäytettiin kategorian &6%category%&f äänet pelaajalta
       &6%player%&f'
-    stopped-all: '%prefix%&fPysäytettiin äänet pelaajalta &6%player%&f'
+    stopped-all: '&fPysäytettiin äänet pelaajalta &6%player%&f'
   locate:
-    help: '%prefix%To find the world where a player is playing, type in the chat:
+    help: 'To find the world where a player is playing, type in the chat:
       &6/locate Username'
-    found: "%prefix%&fPlayer &6%player%&f is currently playing in the world: \n&f\
+    found: "&fPlayer &6%player%&f is currently playing in the world: \n&f\
       \ %planetName%\n &f\n&a &a [Click to join]&f\n &f"
-    offline: '%prefix%&cThe player is not currently playing in any worlds.'
+    offline: '&x&e&f&4&4&4&4The player is not currently playing in any worlds.'
 # Ei käännetä violationeita (?)
 filters:
   hover-text: |-
     &fRule: &7%rule%
     &fText: &6%match%
   sign-violation:
-    player: '%prefix%&cWarning: Your sign text violated one of the server rules.'
-    staff: '%prefix%&7Filtered sign text from %player%. &3[?]'
+    player: '&x&e&f&4&4&4&4Warning: Your sign text violated one of the server rules.'
+    staff: '&7Filtered sign text from %player%. &3[?]'
   chat-violation:
-    player: '%prefix%&cWarning: Your chat message violated one of the server rules.'
-    staff: '%prefix%&7Filtered chat message from %player%. &3[?]'
+    player: '&x&e&f&4&4&4&4Warning: Your chat message violated one of the server rules.'
+    staff: '&7Filtered chat message from %player%. &3[?]'
   book-violation:
-    player: '%prefix%&cWarning: Your book text violated one of the server rules.'
-    staff: '%prefix%&7Filtered book text from %player%. &3[?]'
+    player: '&x&e&f&4&4&4&4Warning: Your book text violated one of the server rules.'
+    staff: '&7Filtered book text from %player%. &3[?]'
   anvil-violation:
-    player: '%prefix%&cWarning: The new item name violated one of the server rules.'
-    staff: '%prefix%&7Filtered new item name from %player%. &3[?]'
+    player: '&x&e&f&4&4&4&4Warning: The new item name violated one of the server rules.'
+    staff: '&7Filtered new item name from %player%. &3[?]'
 modules:
   help: |-
-    %prefix%Module is prepared coding blocks lines, made by players, that add some features in your world. They can be inserted in developers world. To browse modules use &6/module&f command.
+    Module is prepared coding blocks lines, made by players, that add some features in your world. They can be inserted in developers world. To browse modules use &6/module&f command.
     &6 /module load ID &f- Loads module by specified ID
-  not-found: '%prefix%&cModuulia jonka ID on %id% ei löytynyt '
-  private: '%prefix%&cTämä moduuli on yksityinen, joten vain sinä voit käyttää sitä '
-  created: '%prefix%Loit &6moduulin&f! Pelaajat voivat käyttää moduulin koodia. Voit
+  not-found: '&x&e&f&4&4&4&4Moduulia jonka ID on %id% ei löytynyt'
+  private: '&x&e&f&4&4&4&4Tämä moduuli on yksityinen, joten vain sinä voit käyttää sitä '
+  created: 'Loit &6moduulin&f! Pelaajat voivat käyttää moduulin koodia. Voit
     muuttaa moduulin asetuksia ja ulkonäköä moduuliselaimessa.'
-  deleted: '%prefix%Moduuli &6%moduleID%&f poistettiin '
-  installed: '%prefix%&6%player%&f asensi moduulin &6%moduleName% &f(tekijä: %moduleOwner%)'
-  few-space: '%prefix%&cKoodialustoilla ei ole tarpeeksi tilaa moduulille.'
-  error: '%prefix%&cModuulin koodia ei saatu tallennettua. Korjaa mahdolliset koodiongelmat'
-  fail: '%prefix%&cModuulin %moduleName%&c (tekijä:%moduleOwner%) lataaminen epäonnistui'
+  deleted: 'Moduuli &6%moduleID%&f poistettiin '
+  installed: '&6%player%&f asensi moduulin &6%moduleName% &f(tekijä: %moduleOwner%)'
+  few-space: '&x&e&f&4&4&4&4Koodialustoilla ei ole tarpeeksi tilaa moduulille.'
+  error: '&x&e&f&4&4&4&4Moduulin koodia ei saatu tallennettua. Korjaa mahdolliset koodiongelmat'
+  fail: '&x&e&f&4&4&4&4Moduulin %moduleName%&c (tekijä:%moduleOwner%) lataaminen epäonnistui'
   default-name: '&7%player%''s Module'
   default-description: '&7My cool module!'
   info: |-
-    %prefix%&fModule Information: &6%moduleName%
+    &fModule Information: &6%moduleName%
      &fKuvaus: &6%moduleDescription%&r
      &fOmistaja: &6%moduleOwner%
      &fID: &6%moduleID%
@@ -188,15 +187,15 @@ modules:
      &fTykkäykset: &6%moduleReputation%
      &fKäyttö: &6%moduleSharing%
   rating:
-    not-installed: '%prefix%&cAsenna moduuli maailmaan, jotta voit arvioida sen'
-    liked: '%prefix%Tykkäsit moduulia '
-    disliked: '%prefix%Et tykännyt moduulia '
-    already-rated: '%prefix%&cOlet jo arvioinut moduulin'
+    not-installed: '&cAsenna moduuli maailmaan, jotta voit arvioida sen'
+    liked: 'Pidit moduulista'
+    disliked: 'Et pitänyt moduulista'
+    already-rated: '&cOlet jo arvioinut moduulin'
   sharing:
     public: '&aJulkinen'
     private: '&cYksityinen'
   list:
-    amount: '%prefix%List of all modules (%amount%):'
+    amount: 'List of all modules (%amount%):'
     module: '&6%moduleID% &7- %moduleOwner%&7 - &7%moduleName%&f'
 profiles:
   # experimental feature. dont translate right now
@@ -208,26 +207,26 @@ profiles:
     unknown: '&7Not specified'
 environment:
   help: |-
-    "%prefix%Manage code, variables, and the world for developers.\n \n&6 /env\
+    "Manage code, variables, and the world for developers.\n \n&6 /env\
     \ variables clear &f- Clear variables\n&6 /env variables size &f- Number of variables\n\
     &6 /env variables list &f- List of variables"
   variables:
-    cleared: '%prefix%All variables have been successfully removed.'
+    cleared: 'Kaikki muuttujat poistettiin' # Success colour
     size: |-
-      %prefix%Maailmassa on &6%count%&f muuttujaa.
-       &fTähän kuuluu listojen ja sanakirjojen arvot.
+      Maailmassa on &6%count%&f muuttujaa.
+       &fTähän kuuluu listojen ja sanakirjojen arvot
     get:
-      empty: '%prefix%&cMuuttujaa ei ole olemassa '
+      empty: '&cMuuttujaa ei ole olemassa'
       message: |-
-        %prefix%Muuttuja &6%variable%&f:
+        Muuttuja &6%variable%&f:
          &fTyyppi: %type%
          &fAvaruus: %valuetype%
          &fArvo: &6%value%
     list:
-      empty: '%prefix%Maailmassa ei ole muuttujia.'
+      empty: 'Maailmassa ei ole muuttujia'
       header: |2-
 
-        %prefix%Maailman muuttujat (&f%current% / %amount%):
+        Maailman muuttujat (&f%current% / %amount%):
       variable: '&f  &6 %name% &fAvaruus: &6%type%&f Arvo: &6%value%'
       next-page: '&a                   [Seuraava →]'
       previous-page: '&c[← Edellinen]'
@@ -236,27 +235,27 @@ environment:
         &f Navigation: MISSÄ TÄMÄ TEKSTI ESIINTYY
     set:
       help: |-
-        %prefix%To change variable value type in chat:
+        To change variable value type in chat:
          &6/env var set [Variable Name] [global/saved] [text,number,item,location] (Value)
         &f Item, that will be used in setting item is from main hand.
-      limit: '%prefix%&cMuuttuja raja (%limit%) saavutettu'
-      message: '%prefix%Muuttuja määritetty %variable%&f: &7%value%'
+      limit: '&cMuuttuja raja (%limit%) saavutettu'
+      message: 'Muuttuja määritetty %variable%&f: &7%value%'
   save-location:
-    enabled: '%prefix%Koodimaailma muistaa sijaintisi'
-    disabled: '%prefix%Spawnaat aina koodimaailman alkuun'
+    enabled: 'Koodimaailma muistaa sijaintisi'
+    disabled: 'Spawnaat aina koodimaailman alkuun'
   night-vision:
-    enabled: '%prefix%Pimeänäkö päällä'
-    disabled: '%prefix%Pimeänäkö pois päältä'
+    enabled: 'Hämäränäkö päällä'
+    disabled: 'Hämäränäkö pois päältä'
   drops:
-    enabled: '%prefix%Now coding items will be &6dropped &fwhen you destroy a chest.'
-    disabled: '%prefix%You &6disabled coding items drop&f on chest destroy.'
+    enabled: 'Now coding items will be &6dropped &fwhen you destroy a chest.'
+    disabled: 'You &6disabled coding items drop&f on chest destroy.'
   debug:
     help: |-
-      %prefix%Debug mode sends event, action, and condition execution to the chat, along with their internal values.
+      Debug mode sends event, action, and condition execution to the chat, along with their internal values.
        &6/env debug enable &f- Enable debug mode
        &6/env debug disable &f- Disable debug mode
-    enabled: '%prefix%&fWorld developer &6%player% &fenabled debug mode.'
-    disabled: '%prefix%&fWorld developer &6%player% &fdisabled debug mode.'
+    enabled: '&fWorld developer &6%player% &fenabled debug mode.'
+    disabled: '&fWorld developer &6%player% &fdisabled debug mode.'
   values:
     text: '&6Teksti'
     number: '&aNumero'
@@ -272,18 +271,18 @@ environment:
     map: '&eSanakirja'
   execute:
     help: |-
-      %prefix%Call executors by yourself, and they will execute code.
+      Call executors by yourself, and they will execute code.
        &6/env execute function [Name] &f- Call Function.
        &6/env execute method [Name] &f- Call Method.
        &6/env execute player_join [Player] &f- Call Player Join event.
-    offline: '%prefix%&cPelaaja ei ole maailmassa'
-    function: '%prefix%Suoritetaan funktio &9%function%&f...'
-    function-not-found: '%prefix%&cFunktiota ei ole olemassa '
-    method: '%prefix%Suoritetaan metodi &a%method%&f...'
-    method-not-found: '%prefix%&cMetodia ei ole olemassa '
+    offline: '&cPelaaja ei ole maailmassa'
+    function: 'Suoritetaan funktio &9%function%&f...'
+    function-not-found: '&cFunktiota ei ole olemassa '
+    method: 'Suoritetaan metodi &a%method%&f...'
+    method-not-found: '&cMetodia ei ole olemassa '
   platform:
-    claimed: '%prefix%Koodialusta lisätty'
-    limit: '%prefix%&cKoodialustojen raja (%amount%) saavutettu '
+    claimed: 'Koodialusta lisätty'
+    limit: '&cKoodialustojen raja (%amount%) saavutettu '
   hints:
     # Dev mode locales. low priority
     cycle: '&aNumber &f- Time in ticks, &6Text&f - Name'
@@ -315,70 +314,70 @@ environment:
   prompter:
     # AI coding. translate never
     help: |-
-      %prefix%You can try to generate a simple code by your words:
+      You can try to generate a simple code by your words:
        &6/env make [Your wishes]
-    thinking: '%prefix%Thinking, please wait...'
-    disabled: '%prefix%&cPrompt generation is disabled '
-    limited: '%prefix%&cSeems like the prompt handler reached limit of requests, try
+    thinking: 'Thinking, please wait...'
+    disabled: '&cPrompt generation is disabled '
+    limited: '&cSeems like the prompt handler reached limit of requests, try
       again later '
-    bad-prompt: '%prefix%&cTry to explain your wishes more clear, for example: When
+    bad-prompt: '&cTry to explain your wishes more clear, for example: When
       player clicks on magma block, it will give random item to player.'
-    timeout: '%prefix%&cSeems like the prompt handler was thinking for too long..
+    timeout: '&cSeems like the prompt handler was thinking for too long..
       Well, you have to make your wishes smaller '
-    unauthorized: '%prefix%&cSeems like token of prompt handler is expired, contact
+    unauthorized: '&cSeems like token of prompt handler is expired, contact
       the admins '
-    unavailable: '%prefix%&cSeems like the prompt handler is down, try again later '
-    unknown-host: '%prefix%&cSeems like server is not connected to the Internet, or
+    unavailable: '&cSeems like the prompt handler is down, try again later '
+    unknown-host: '&cSeems like server is not connected to the Internet, or
       site of prompt handler doesn''t exist '
-    few-space: '%prefix%&cSeems like the code you requested requires a lot of space!
+    few-space: '&cSeems like the code you requested requires a lot of space!
       Try to split your wishes, or free space in coding world.'
-    success: "%prefix%Successfully&a generated&f a code from your wish in %time% seconds\
+    success: "Successfully&a generated&f a code from your wish in %time% seconds\
       \ \n &6%idea%\n&fTo apply changes type &6/play&f."
     broadcast:
-      request: '%prefix%&6%player%&f requested prompt handler to create code by their
+      request: '&6%player%&f requested prompt handler to create code by their
         wish, a new code can appear soon... &3[Details]'
-      success: '%prefix%&fPrompt handler &6successfully&f installed code by &6%player%&f. '
-      failed: '%prefix%&cPrompt handler failed to create code by %player%''s wish.. '
+      success: '&fPrompt handler &6successfully&f installed code by &6%player%&f. '
+      failed: '&cPrompt handler failed to create code by %player%''s wish.. '
       hover: '&6%idea%'
-    few-args: '%prefix%&cYou need to describe your ideas in more detail, this is too
+    few-args: '&cYou need to describe your ideas in more detail, this is too
       few words.. '
   duplication:
-    success: '%prefix%&fKoodirivit kopioitiin eri riveille '
-    fail: '%prefix%&cKoodirivien kopiointi epäonnistui '
-    few-space: '%prefix%&cKoodiriveille ei ollut tarpeeksi tilaa. Vapauta %required%
+    success: '&fKoodirivit kopioitiin eri riveille '
+    fail: '&cKoodirivien kopiointi epäonnistui '
+    few-space: '&cKoodiriveille ei ollut tarpeeksi tilaa. Vapauta %required%
       riviä jotta koodi mahtuu.'
 help:
-  placeholders: '%prefix%List of placeholders: &6%player% %player_uuid% %entity% %entity_uuid%
+  placeholders: 'List of placeholders: &6%player% %player_uuid% %entity% %entity_uuid%
     %target% %target_uuid% %players_amount% %entities_amount% %online%'
 creative:
-  reloading: '%prefix%Reloading configuration and localization files, please wait...'
-  reloaded: '%prefix%Plugin has been &6successfully&f reloaded!'
-  set-spawn: '%prefix%Set &6new spawn location&f in lobby: &6%x% &6%y% &6%z% &6%yaw%
+  reloading: 'Reloading configuration and localization files, please wait...'
+  reloaded: 'Plugin has been &x&a&7&8&b&f&asuccessfully&f reloaded'
+  set-spawn: 'Set &6new spawn location&f in lobby: &6%x% &6%y% &6%z% &6%yaw%
     %pitch%'
-  fireworks: '%prefix%Launching fireworks &6%amount% times&f every &6%cooldown% seconds&f!
+  fireworks: 'Launching fireworks &6%amount% times&f every &6%cooldown% seconds&f!
     :)'
-  updated-icons: '%prefix%World and module icons &6updated&f :)'
-  all-worlds-amount: '%prefix%Amount of all created worlds on server: &6%amount%'
+  updated-icons: 'World and module icons &6updated&f :)'
+  all-worlds-amount: 'Amount of all created worlds on server: &6%amount%'
   loaded-worlds:
-    no-worlds: '%prefix%No worlds loaded..'
-    list: '%prefix%Total &6%amount% worlds loaded&f (%build% gameplay, %dev% coding).'
+    no-worlds: 'No worlds loaded..'
+    list: 'Total &6%amount% worlds loaded&f (%build% gameplay, %dev% coding).'
     world: '&6 %id% &7- &6%name% &7- Online: %online% &7- Created &6%creation-time%'
     world-dev: '&3 %id% &7- &7Coding world %id%'
   player-worlds:
-    no-worlds: '%prefix%Player &6%player%&f has no worlds..'
-    list: '%prefix%Player &6%player% &fhas %amount% worlds.'
+    no-worlds: 'Player &6%player%&f has no worlds..'
+    list: 'Player &6%player% &fhas %amount% worlds.'
     world: '&6 %id% &7- &6%name% &7- Online: %online% &7- Created &6%creation-time%'
   groups:
     set-limit: |-
-      %prefix%New limit &6%type%&f has been set for group &6%group%&f: &6%value%&f.
+      New limit &6%type%&f has been set for group &6%group%&f: &6%value%&f.
       &7World limits can be modified by modifiers: limit + (modifier * player count).
-    set-modifier: '%prefix%New limit modifier &6%type%&f has been set for group &6%group%&f:
+    set-modifier: 'New limit modifier &6%type%&f has been set for group &6%group%&f:
       &6%value%'
-    removed: '%prefix%Group &6%group%&f has now been &cremoved&f..'
-    not-found: '%prefix%&cGroup %group% does not exist O_o'
-    wrong-limit: '%prefix%&cLimit %limit% does not exist O_o'
+    removed: 'Group &6%group%&f has now been &cremoved&f..'
+    not-found: '&cGroup %group% does not exist O_o'
+    wrong-limit: '&cLimit %limit% does not exist O_o'
     info:
-      beginning: '%prefix%&fInformation about group &6%group%&f:'
+      beginning: '&fInformation about group &6%group%&f:'
       cooldowns: |-
         &fUsage cooldowns:
          &7Commands &f- &6%generic% seconds
@@ -399,136 +398,136 @@ creative:
         &fWorld size: &6%size%
           &7Group %group%
   locale:
-    changed: '%prefix%&fChanged language to &6Finnish&f!'
-    not-found: '%prefix%&cNot found localization file for this language '
-    resetting: '%prefix%Loading default localization files, please wait...'
-    reset: '%prefix%Plugin has &6successfully&f reset the localization files to defaults!'
-    updated: '%prefix%Plugin has &6successfully&f added the missing &6%amount% message
+    changed: '&fVaihdetttiin kieleen suomi'
+    not-found: '&cNot found localization file for this language '
+    resetting: 'Loading default localization files, please wait...'
+    reset: 'Plugin has &6successfully&f reset the localization files to defaults!'
+    updated: 'Plugin has &6successfully&f added the missing &6%amount% message
       lines&f to localization file!'
-    cant-update: '%prefix%Current localization file &6is not built in plugin &fby
+    cant-update: 'Current localization file &6is not built in plugin &fby
       default.'
-    not-updated: '%prefix%Localization file is &6up to date&f, no missing lines '
-    ignored-message: '%prefix%&fNow the message at path &6%path%&f will no longer
+    not-updated: 'Localization file is &6up to date&f, no missing lines '
+    ignored-message: '&fNow the message at path &6%path%&f will no longer
       reset when loading the original localization files '
-    unignored-message: '%prefix%&fNow the message at path &6%path%&f will &nreset&f
+    unignored-message: '&fNow the message at path &6%path%&f will &nreset&f
       when loading the original localization files..'
-    unknown-message: '%prefix%&cMessage at path %path% not found.. '
-    already-ignored-message: '%prefix%&cThe message at path %path% is already in the
+    unknown-message: '&cMessage at path %path% not found.. '
+    already-ignored-message: '&cThe message at path %path% is already in the
       ignore list for reset when loading the original localization files..'
-    already-unignored-message: '%prefix%&cThe message at path %path% was not in the
+    already-unignored-message: '&cThe message at path %path% was not in the
       ignore list for reset when loading the original localization files..'
   stability:
-    cannot: '%prefix%&cServer experiences a stability problem, action cannot be done.
+    cannot: '&cServer experiences a stability problem, action cannot be done.
       Please try again later...'
-    unload: '%prefix%Unloading worlds due to stability downfall...'
-    shutdown: '%prefix%Shutting down server due to stability downfall...'
+    unload: 'Unloading worlds due to stability downfall...'
+    shutdown: 'Shutting down server due to stability downfall...'
     actionbar: '&fTPS: %tps%&f, RAM: %memory%&f, DISK: %storage%&f, DB: %database%&f.'
     fine: '&aFine'
     not-okay: '&6Not okay'
     nightmare: '&cVery bad'
   updates:
     available: |-
-      %prefix%New version of OpenCreative+ &6%new%&f is available (current: %old%).
+      New version of OpenCreative+ &6%new%&f is available (current: %old%).
       &f Download here: &6%link%
-    up-to-date: '%prefix%This version %version% is last, no need to update '
-    cant-check: '%prefix%&cCan''t check updates, maybe server is not connected with
+    up-to-date: 'This version %version% is last, no need to update '
+    cant-check: '&cCan''t check updates, maybe server is not connected with
       Internet, or site with updates is down.'
   deprecated-worlds:
-    list: '%prefix%List of old worlds (total %amount%): '
+    list: 'List of old worlds (total %amount%): '
     world: '&f ID: &6%id% &fOwner: &6%owner% &fCreated: &6%created% &fLast owner join:
       &6%seen%'
   corrupted-worlds:
-    list: '%prefix%List of corrupted worlds (total %amount%): '
+    list: 'List of corrupted worlds (total %amount%): '
     world: '&f ID: &6%id% &3[Click to connect]'
-    set-owner: '%prefix%Changed planet''s owner to &6%player%&f, now it will be listed
+    set-owner: 'Changed planet''s owner to &6%player%&f, now it will be listed
       in worlds browser.'
   creative-chat:
-    cleared: '%prefix%The chat has been cleared by the server administration...'
-    'false': '%prefix%Creative chat is currently &6unavailable&f for communication,
+    cleared: 'The chat has been cleared by the server administration...'
+    'false': 'Creative chat is currently &6unavailable&f for communication,
       as it has been &6disabled&f by the server administration for all players Please
       wait for the administration''s decision...'
-    disabled: '%prefix%A server admin &6%player%&f has &cdisabled&f creative chat...'
-    enabled: '%prefix%A server admin &6%player%&f has &aenabled&f creative chat! Please
+    disabled: 'A server admin &6%player%&f has &cdisabled&f creative chat...'
+    enabled: 'A server admin &6%player%&f has &aenabled&f creative chat! Please
       follow the chat rules.'
   maintenance:
-    starting-notification: "%prefix%&cAttention!&f In &6%time% seconds, &fa maintenance\
+    starting-notification: "&cAttention!&f In &6%time% seconds, &fa maintenance\
       \ break will begin, during which all worlds will be unloaded for technical work.\
       \ \n \n&f If you are in a world, save your items and leave it by typing the\
       \ command &6/spawn&f in the chat."
-    starting-in: '%prefix%&fMaintenance break will start in &6%time% seconds&f.'
-    started: "\n%prefix%Maintenance break has &6begun&f, during which the server may\
+    starting-in: '&fMaintenance break will start in &6%time% seconds&f.'
+    started: "\nMaintenance break has &6begun&f, during which the server may\
       \ be restarted.\n \n &fIt's time to take a break from the game, &6make yourself\
       \ some tea&f and &6wait for the maintenance to end&f!"
-    ended: '%prefix%Huoltokatko on päättynyt'
-    restarting: "%prefix%&fThe maintenance break will &6continue&f after the &6server\
+    ended: 'Huoltokatko on päättynyt'
+    restarting: "&fThe maintenance break will &6continue&f after the &6server\
       \ restart&f.\n \n &fYou can rejoin later, and for now &6have some tea&f and\
       \ take a break from the game."
-    restarting-end: '%prefix%&fThe maintenance break will &6end &fafter the &6server
+    restarting-end: '&fThe maintenance break will &6end &fafter the &6server
       restart&f.'
-    already-started: '%prefix%&cThe maintenance break has already started.. '
-    already-ended: '%prefix%&cThe maintenance break has not started yet.. '
+    already-started: '&cThe maintenance break has already started.. '
+    already-ended: '&cThe maintenance break has not started yet.. '
   debug:
-    enabled: '%prefix%&fDebug mode is &6enabled&f, some experimental features will
+    enabled: '&fDebug mode is &6enabled&f, some experimental features will
       be able and console will get additional logs.'
-    disabled: '%prefix%&fDebug mode is &6disabled&f, goodbye experiments!'
+    disabled: '&fDebug mode is &6disabled&f, goodbye experiments!'
   spy:
-    enabled: '%prefix%&fYou can &6now see&f messages from players in other worlds.
+    enabled: '&fYou can &6now see&f messages from players in other worlds.
       Get ready for having too many messages!'
-    already-enabled: '%prefix%&cYou are already spying on chats from other worlds.'
-    disabled: '%prefix%&fYou have &6disabled&f seeing messages from players in other
+    already-enabled: '&cYou are already spying on chats from other worlds.'
+    disabled: '&fYou have &6disabled&f seeing messages from players in other
       worlds.'
-    already-disabled: '%prefix%&cYou are already not spying on chats from other worlds.'
+    already-disabled: '&cYou are already not spying on chats from other worlds.'
   sounds:
-    set: '%prefix%&fChanged sound theme to &6%theme%&f, have a good listening!'
-    not-found: '%prefix%&cNot found this sound theme in configuration O_o'
+    set: '&fChanged sound theme to &6%theme%&f, have a good listening!'
+    not-found: '&cNot found this sound theme in configuration O_o'
   items:
-    changed: '%prefix%&fYou have set the item in kit &6%kit%&f that will appear in
+    changed: '&fYou have set the item in kit &6%kit%&f that will appear in
       slot &6%slot%&f.'
-    given: '%prefix%&fYou received the system item &6%item%&f.'
-    received-from-kit: '%prefix%&fYou received the item from kit &6%kit%&f in slot
+    given: '&fYou received the system item &6%item%&f.'
+    received-from-kit: '&fYou received the item from kit &6%kit%&f in slot
       &6%slot%&f.'
-    received-kit: '%prefix%&fYou have received the item kit &6%kit%&f.'
-    wrong-kit: '%prefix%&cItem kit %kit% not found O_o'
-    reset-kit: '%prefix%&fYou have reset the items kit &6%kit%&f, now players will
+    received-kit: '&fYou have received the item kit &6%kit%&f.'
+    wrong-kit: '&cItem kit %kit% not found O_o'
+    reset-kit: '&fYou have reset the items kit &6%kit%&f, now players will
       get &6default items&f :)'
-    empty-slot: '%prefix%&cSlot %slot% in kit %kit% does not contain an item.'
+    empty-slot: '&cSlot %slot% in kit %kit% does not contain an item.'
   experiments:
-    enabled: "%prefix%&fYou have &6enabled &fexperiment &6%name% &7(%description%)&f,\
+    enabled: "&fYou have &6enabled &fexperiment &6%name% &7(%description%)&f,\
       \ now its features will be available to you \n &cWarning: Experiments may break\
       \ world data!"
-    already-enabled: '%prefix%&cThis experiment %name% is already enabled..'
-    disabled: '%prefix%&fYou have &6disabled &fexperiment &6%name%&f, its features
+    already-enabled: '&cThis experiment %name% is already enabled..'
+    disabled: '&fYou have &6disabled &fexperiment &6%name%&f, its features
       will no longer be available.. But it’s safer!'
-    already-disabled: '%prefix%&cThis experiment %name% is already disabled..'
-    not-found: '%prefix%&cExperiment %id% does not exist.. '
+    already-disabled: '&cThis experiment %name% is already disabled..'
+    not-found: '&cExperiment %id% does not exist.. '
     list:
-      empty: '%prefix%&fThere are no experiments in this version.. '
-      amount: '%prefix%&fList of all experiments (%amount%):'
+      empty: '&fThere are no experiments in this version.. '
+      amount: '&fList of all experiments (%amount%):'
       element: |-
         &7 %status%&6 %id% &7%name%
          &7 &7 %description%
       status:
         enabled: '&a●'
         disabled: '&7○'
-not-owner: '%prefix%&cYou are not the owner of this world.'
-not-developer: '%prefix%&cYou are not the developer of this world.'
-not-builder: '%prefix%&cYou are not the builder of this world.'
-only-in-world: '%prefix%&cThis can only be used in the world.'
-only-in-dev-world: '%prefix%&cThis can only be used in the world for developers (/dev).'
-only-in-lobby: '%prefix%&cThis can only be used in the lobby (/spawn).'
-not-for-lobby: '%prefix%&cCreate your own world to do it!'
-no-money: '%prefix%&cIt seems you don''t have enough coins! You need at least %money%
+not-owner: '&cEt ole tämän maailman omistaja'
+not-developer: '&cEt ole You are not the developer of this world.'
+not-builder: '&cYou are not the builder of this world.'
+only-in-world: '&cThis can only be used in the world.'
+only-in-dev-world: '&cThis can only be used in the world for developers (/dev).'
+only-in-lobby: '&cThis can only be used in the lobby (/spawn).'
+not-for-lobby: '&cCreate your own world to do it!'
+no-money: '&cIt seems you don''t have enough coins! You need at least %money%
   coins!'
-no-planet-found: '%prefix%&cThis world does not exist.'
-private-planet: '%prefix%This world is currently &6private&f, only the owner can enter.'
-blacklisted-in-planet: '%prefix%You cannot visit this world because you are &6blacklisted&f
+no-planet-found: '&cThis world does not exist.'
+private-planet: 'This world is currently &6private&f, only the owner can enter.'
+blacklisted-in-planet: 'You cannot visit this world because you are &6blacklisted&f
   in it.'
-no-player-found: '%prefix%&cThis player was not found.'
-same-player: '%prefix%&cYou cannot specify yourself.'
-same-world: '%prefix%&cYou are already playing in this world.'
-player-error: '%prefix%&fA player error occurred. Please report this to the developer:
+no-player-found: '&cThis player was not found.'
+same-player: '&cYou cannot specify yourself.'
+same-world: '&cYou are already playing in this world.'
+player-error: '&fA player error occurred. Please report this to the developer:
   &6%error%'
-planet-error: '%prefix%&fAn error occurred in the world: &6%error%'
+planet-error: '&fAn error occurred in the world: &6%error%'
 chat-no-near-players: |-
   &c Seems like there's no players in world.. Maybe you can try to use global chat?
    &cAdd ! in the begin of message, or use /cc command.
@@ -663,15 +662,15 @@ lobby:
     \ <color:#64748b>[BETA]</color> \n \n<white>Kuin Roblox, mutta Minecraftissa!\
     \ \n<white>Aloita luomalla oma maailma tai selaa muiden tekemiä maailmoja"
 creating-world:
-  not-enough-played: '%prefix%&fSinun täytyy pelata &6%time%&f ennen kuin voit luoda
+  not-enough-played: '&fSinun täytyy pelata &6%time%&f ennen kuin voit luoda
     uuden maailman'
   title: '&eLuodaan uutta maailmaa'
   subtitle: '&fOdota...'
   default-world-name: '&7Pelaajan %player% maailma'
   default-world-description: '&7Oma pikku maailma'
-  welcome-title: '&aMorjens'
+  welcome-title: ''
   welcome-subtitle: '&fTervetuloa maailmaasi'
-  welcome: "\n &f\n&a  Welcome to your world!\n&f This is your &a&nprivate space&f,\
+  welcome: "+\n &f\n&a  Welcome to your world!\n&f This is your &a&nprivate space&f,\
     \ where you will &a&ncreate&f.\n &fYour goal is to &ecreate an interesting world\
     \ for everyone&f.\n \n&f Check out the &duseful&f commands:\n &6/world &7- &fCustomize\
     \ your world and player permissions.\n &6    /ad &7- &fInvite players to your\
@@ -683,171 +682,165 @@ settings:
     title: '&fNimi'
     subtitle: '&fSyötä nimi chattiin'
     usage: |-
-      %prefix%Enter a new &6name&f for the world, for example &7Parkour by %player%&f.
+      Enter a new &6name&f for the world, for example &7Parkour by %player%&f.
       &f - The name must comply with the server rules.
     error: |-
-      %prefix%The world name does not meet one of the requirements:
+      The world name does not meet one of the requirements:
       &f- The name must be at least %min% characters long and no more than %max%.
-    changed: '%prefix%Olet asettanut uuden nimen maailmalle: %name%'
+    changed: 'Olet asettanut uuden nimen maailmalle: %name%'
   world-id:
     title: '&fID'
     subtitle: '&fSyötä ID chattiin'
     usage: |-
-      %prefix%Enter a new &6ID&f for the world, for example &6parkour&f.
+      Enter a new &6ID&f for the world, for example &6parkour&f.
       &f - The world ID must not contain forbidden characters.
     error: |-
-      %prefix%The world ID does not meet one of the requirements:
+      The world ID does not meet one of the requirements:
       &f- The world ID must not contain forbidden characters.
       &f- The world ID must be at least %min% characters long and no more than %max%.
-    changed: '%prefix%You have set a new &6ID&f for the world: %id%&f. Players can
+    changed: 'You have set a new &6ID&f for the world: %id%&f. Players can
       now join the world using the command &6/join %id%'
-    taken: '%prefix%&cThis ID is already taken by another world.'
+    taken: '&cThis ID is already taken by another world.'
   world-description:
     title: '&fKuvaus'
     subtitle: '&fSyötä kuvaus chattiin'
     usage: |-
-      %prefix%Enter a new &6description&f for the world, for example &dCool, detailed parkour&f.
+      Enter a new &6description&f for the world, for example &dCool, detailed parkour&f.
       &f - The description must comply with the server rules.
     error: |-
-      %prefix%The world description does not meet one of the requirements:
+      The world description does not meet one of the requirements:
       &f- The description must be at least 5 characters long and no more than 30.
-    changed: '%prefix%You have set a new &6description&f for the world: %description%'
+    changed: 'You have set a new &6description&f for the world: %description%'
   world-spawn:
     title: '&bSpawni sijainti'
-    subtitle: '&fSpawni sijainti asetettu.'
+    subtitle: '&fSpawni sijainti asetettu'
   world-icon:
-    changed: '%prefix%Kuvake muutettiin.'
-    error: '%prefix%&cEi pätevä tavara.'
+    changed: 'Kuvake muutettiin'
+    error: '&cEi pätevä tavara'
   world-sharing:
-    enabled: '%prefix%Maailma avattiin'
-    disabled: '%prefix%Maailma suljettiin'
+    enabled: 'Maailma avattiin'
+    disabled: 'Maailma suljettiin'
   world-category:
-    changed: '%prefix%Maailman kategoriaksi asetettiin &6%category%&f'
+    changed: 'Maailman kategoriaksi asetettiin &6%category%&f'
   autosave:
-    enabled: '%prefix%&fAutomaattinen tallennus päällä'
-    disabled: '%prefix%&cAutomaattinen tallennus sammutettu'
-    warning: '%prefix%&cMaailman muutokset eivät tallennu. Muuta pistämällä automaattiset
+    enabled: '&fAutomaattinen tallennus päällä'
+    disabled: '&cAutomaattinen tallennus sammutettu'
+    warning: '&cMaailman muutokset eivät tallennu. Muuta pistämällä automaattiset
       tallennukset päälle'
   module-name:
     title: '&fNimi'
     subtitle: '&fSyötä nimi chattiin'
     usage: |-
-      %prefix%Enter a new &6name&f for the module, for example &7WorldEditor by %player%&f.
+      Enter a new &6name&f for the module, for example &7WorldEditor by %player%&f.
       &f - The name must comply with the server rules.
     error: |-
-      %prefix%The module name does not meet one of the requirements:
+      The module name does not meet one of the requirements:
       &f- The name must be at least %min% characters long and no more than %max%.
-    changed: '%prefix%You have set a new &6name&f for the module: %name%'
+    changed: 'You have set a new &6name&f for the module: %name%'
   module-description:
     title: '&fKuvaus'
     subtitle: '&fSyötä kuvaus chattiin'
     usage: |-
-      %prefix%Enter a new &6description&f for the module, for example &eUseful utils for world owners&f.
+      Enter a new &6description&f for the module, for example &eUseful utils for world owners&f.
       &f - The description must comply with the server rules.
     error: |-
-      %prefix%The module description does not meet one of the requirements:
+      The module description does not meet one of the requirements:
       &f- The description must be at least 5 characters long and no more than 30.
-    changed: '%prefix%You have set a new &6description&f for the module: %description%'
+    changed: 'You have set a new &6description&f for the module: %description%'
   module-icon:
-    changed: '%prefix%Kuvake muutettiin.'
-    error: '%prefix%&cEi pätevä tavara.'
+    changed: 'Kuvake muutettiin.'
+    error: '&cEi pätevä tavara.'
   module-sharing:
-    enabled: '%prefix%Muut voivat käyttää moduuliasi'
-    disabled: '%prefix%Moduuli on vain sinun käytössäsi'
+    enabled: 'Muut voivat käyttää moduuliasi'
+    disabled: 'Moduuli on vain sinun käytössäsi'
   profile-description:
     title: '&fEnter in chat'
     subtitle: '&fnew &6profile description&f.'
     usage: |-
-      %prefix%Enter a new &6profile description&f, for example &aCreating beautiful worlds&f.
+      Enter a new &6profile description&f, for example &aCreating beautiful worlds&f.
       &f - The description must not violate the server rules.
     error: |-
-      %prefix%The profile description violates one of the requirements:
+      The profile description violates one of the requirements:
       &f- The description must not be shorter than %min% characters or longer than %max%.
-    changed: '%prefix%You have set a new &6profile description&f: %description%'
+    changed: 'You have set a new &6profile description&f: %description%'
   profile-social-discord:
     title: '&fEnter in chat'
     subtitle: '&fyour &9Discord tag&f.'
-    usage: '%prefix%Enter your &6Discord tag&f, for example &9@wampus&f.'
-    error: '%prefix%&cYour Discord tag must not be shorter than %min% characters and
+    usage: 'Enter your &6Discord tag&f, for example &9@wampus&f.'
+    error: '&cYour Discord tag must not be shorter than %min% characters and
       longer than %max%! '
-    changed: '%prefix%You have set a new &6Discord tag&f: %social%'
+    changed: 'You have set a new &6Discord tag&f: %social%'
   profile-social-twitter:
     title: '&fEnter in chat'
     subtitle: '&fyour &3X username&f.'
-    usage: '%prefix%Enter your &6X username&f, for example &3@twitter&f.'
-    error: '%prefix%&cYour X username must not be shorter than %min% characters and
+    usage: 'Enter your &6X username&f, for example &3@twitter&f.'
+    error: '&cYour X username must not be shorter than %min% characters and
       longer than %max%! '
-    changed: '%prefix%You have set a new &3X tag&f: %social%'
+    changed: 'You have set a new &3X tag&f: %social%'
   profile-social-youtube:
     title: '&fEnter in chat'
     subtitle: '&fyour &cYouTube username&f.'
-    usage: '%prefix%Enter your &6YouTube username&f, for example &c@youtube&f.'
-    error: '%prefix%&cYour YouTube username must not be shorter than %min% characters
+    usage: 'Enter your &6YouTube username&f, for example &c@youtube&f.'
+    error: '&cYour YouTube username must not be shorter than %min% characters
       and longer than %max%! '
-    changed: '%prefix%You have set a new &cYouTube username&f: %social%'
+    changed: 'You have set a new &cYouTube username&f: %social%'
   profile-social-telegram:
     title: '&fEnter in chat'
     subtitle: '&fyour &bTelegram username&f.'
-    usage: '%prefix%Enter your &6Telegram username&f, for example &b@telegram&f.'
-    error: '%prefix%&cYour Telegram username must not be shorter than %min% characters
+    usage: 'Enter your &6Telegram username&f, for example &b@telegram&f.'
+    error: '&cYour Telegram username must not be shorter than %min% characters
       and longer than %max%! '
-    changed: '%prefix%You have set a new &bTelegram username&f: %social%'
+    changed: 'You have set a new &bTelegram username&f: %social%'
 deleting-world:
-  title: '&cPoistetaan ◌'
+  title: '&cPoistetaan'
   subtitle: '&fOdota hetki...'
-  message: '%prefix%World &6successfully&f deleted.'
+  message: 'World &6successfully&f deleted'
 world:
-  joined: '%prefix%%player% has joined the world.'
-  left: '%prefix%%player% has left the world.'
+  joined: '%player% liittyi maailmaan'
+  left: '%player% poistui maailmasta'
   connecting:
-    title: '&aYhdistetään... '
+    title: '&fYhdistetään... '
     subtitle: '&fOdota hetki...'
     owner-help: |-
-      %prefix%Tervetuloa maailmaasi!
-       Muokkaa maailmaa kompassilla tai &6/world&f komennolla.
-    busy: '%prefix%&cOlet jo liittymässä maailmaan...'
-    unloading: '%prefix%&cMaailmaa ladataan. Yritä uudelleen...'
-    error: "%prefix%&cFailed to connect to world %id% :(\n \n&c Was loaded before:\
-      \ %wasloaded%\n&c Currently loaded: %loaded%\n&c Phase: %phase%\n \n&c Error:\
-      \ %error%"
+      Tervetuloa!
+      Muokkaa maailmaa kompassilla tai &x&a&7&8&b&f&a/world&f komennolla
+    busy: 'Olet jo liittymässä maailmaan...'
+    unloading: 'Maailmaa ladataan. Yritä uudelleen...'
+    error: "Maailmaan %id% yhdistäminen epäonnistui"
   play-mode:
-    name: '&3Play'
+    name: '&3Pelitila'
     message:
-      players: '%prefix%The world is now running in &6play mode&f.'
-      owner: '%prefix%The world is now running in &6play mode&f, the developer''s
-        world code will be active.'
-    cant-damage-near-spawn: '&cYou can''t harm players near the spawn point.'
+      players: 'Maailma on nyt &x&a&7&8&b&f&apelitilassa'
+      owner: 'Maailma on nyt &x&a&7&8&b&f&apelitilassa&f, ohjelmointimaailman koodi on nyt aktiivinen.'
+    cant-damage-near-spawn: '&cEt voi satuttaa muita pelaajia lähellä spawnia'
   build-mode:
-    name: '&6Build'
+    name: '&6Rakennustila'
     message:
-      players: '%prefix%The world is now running in &6build mode&f, observe the world
-        construction.'
-      owner: '%prefix%The world is now running in &6build mode&f, start building the
-        map for your world!'
-    title: '&fYou are in &6build mode&f!'
-    subtitle: '&fBuild the &6map&f for your world'
-    cant-build-when-offline: '%prefix%&cYou cannot build while the world owner is
-      offline.'
-    cant-damage: '&cYou cannot deal damage while in build mode.'
-    changed-because-of-code: '%prefix%&fCoding block &7(%x%, %y%, %z%) &fswitched
+      players: 'Maailma on nyt &x&a&7&8&b&f&arakennustilassa&f, tarkkaile rakennusprosessia.'
+      owner: 'Maailma on nyt &x&a&7&8&b&f&arakennustilassa'
+    title: ''
+    subtitle: ''
+    cant-build-when-offline: '&x&e&f&4&4&4&4Et voi rakentaa, jos omistaja ei ole paikalla'
+    cant-damage: '&x&e&f&4&4&4&4Et voi tehdä vahinkoa rakennustilassa'
+    changed-because-of-code: '&fCoding block &7(%x%, %y%, %z%) &fswitched
       world''s mode to &6Build&f.'
   dev-mode:
     connecting:
       title: '&Yhdistetään... '
       subtitle: '&fEntering developer mode...'
-      error: "%prefix%&cFailed to connect to development world %id% :(\n \n&c Was\
+      error: "&cFailed to connect to development world %id% :(\n \n&c Was\
         \ loaded before: %wasloaded%\n&c Currently loaded: %loaded%\n&c Phase: %phase%\n\
         \ \n&c Error: %error%"
     title: '&bCoding your world'
     subtitle: '&fCreate a &6game &fusing &6coding blocks'
-    help: "%prefix%You have entered the &bdevelopment&f world. \n &f\n&f Check out\
+    help: "You have entered the &bdevelopment&f world. \n &f\n&f Check out\
       \ the blocks in your inventory: &bEvents&f, &7Actions&f, &6Conditions&f. The\
       \ platform consists of glass blocks where you need to place these blocks.\n\
       &f\n&f Form your code on the glass line. Some &7actions&f and &6conditions&f\
       \ place a chest where you need to put the specified values. Values can be &anumber&f,\
       \ &6text&f, &eitem&f, &flocation&f.\n&f"
-    joined: '%prefix%&6%player% &fhas joined the coding world.'
-    left: '%prefix%&6%player% &fhas left the coding world.'
+    joined: '&6%player% &fliittyi koodimaailmaan'
+    left: '&6%player% &fhas left the coding world.'
     cant-place-on-floor: '&cOnly chests, shulker boxes, and anvils can be placed on
       the platform.'
     cant-place-event-on-action: '&cThis block must be placed with &7ACTIONS&c or &6CONDITIONS&c.'
@@ -863,22 +856,22 @@ world:
     set-events: '&bEvent set:'
     set-actions: '&7Action set:'
     set-conditions: '&6Condition set:'
-    cant-build-when-offline: '%prefix%&cYou cannot build while the world owner is
+    cant-build-when-offline: '&cYou cannot build while the world owner is
       offline.'
-    cant-dev: '%prefix%&cYou cannot change the code, contact the world owner.'
-    cant-dev-when-offline: '%prefix%&cYou cannot change the code while the world owner
+    cant-dev: '&cYou cannot change the code, contact the world owner.'
+    cant-dev-when-offline: '&cYou cannot change the code while the world owner
       is offline.'
-    changed-fly-speed: '%prefix%&fYour flight speed is now set to &f%speed%'
-    disabled: '%prefix%&cCoding is disabled, the only available mode is Build! '
-    already-saving-code: '%prefix%&cThe code is already being processed...'
-  cant-block-interact: '%prefix%&cSinulla ei ole oikeutta tehdä tuota maailmassa.'
-  cant-mob-interact: '%prefix%&cSinulla ei ole oikeutta tehdä tuota maailmassa.'
+    changed-fly-speed: '&fYour flight speed is now set to &f%speed%'
+    disabled: '&cCoding is disabled, the only available mode is Build! '
+    already-saving-code: '&cThe code is already being processed...'
+  cant-block-interact: '&cSinulla ei ole oikeutta tehdä tuota maailmassa.'
+  cant-mob-interact: '&cSinulla ei ole oikeutta tehdä tuota maailmassa.'
   delete-mobs:
-    items: '%prefix%&6%count%&f esinettä poistettu.'
-    entities: '%prefix%&6%count%&f olentoa poistettu.'
-    mobs: '%prefix%&6%count%&f olentoa poistettu.'
+    items: '&6%count%&f esinettä poistettu.'
+    entities: '&6%count%&f olentoa poistettu.'
+    mobs: '&6%count%&f olentoa poistettu.'
   info: |-
-    %prefix%&fMaailman tiedot: &6%name%
+    &fMaailman tiedot: &6%name%
      &f Kuvaus: &6%description%&r
      &f Omistaja: &6%owner%
      &f ID: &6%id%
@@ -890,26 +883,26 @@ world:
      &f World mode: &6%mode%
      &f Pelaajia: &6%online%
   size: |-
-    %prefix%&fMaailman koko: &6%total%
+    &fMaailman koko: &6%total%
     &f Maailman koko: &6%world%
     &f Kehittäjien maailma: &6%dev%
     &f Script size: &6%script%
     &f Variables size: &6%variables%
     &f Asetusten koko: &6%settings%
     &f Players data size: &6%data%
-  not-in-play-mode: '%prefix%The world is not currently in &6play mode&f.'
-  not-in-build-mode: '%prefix%The world is not currently in &6build mode&f.'
-  chat-cooldown: '%prefix%Odota &6%cooldown% sekunttia&f ennen kuin voit pistää uuden
+  not-in-play-mode: 'The world is not currently in &6play mode&f.'
+  not-in-build-mode: 'The world is not currently in &6build mode&f.'
+  chat-cooldown: 'Odota &6%cooldown% sekunttia&f ennen kuin voit pistää uuden
     viestin.'
-  entity-limit: '%prefix%Maailman olentoraja saavutettu! &6(%count%)&f &3[Poista olennot]'
-  entity-limit-hover: '&fPaina poistaaksesi KAIKKI olennot.'
-  redstone-limit: '%prefix%Maailman punakivioperaatioraja saavutettu! &6(%count%)'
+  entity-limit: 'Maailman olentoraja saavutettu! &6(%count%)&f &3[Poista olennot]'
+  entity-limit-hover: '&fPoista painamalla KAIKKI olennot.'
+  redstone-limit: 'Maailman punakivioperaatioraja saavutettu! &6(%count%)'
   favorites:
-    added: '%prefix%You marked this world &7%id% &fas &6favorite&f '
-    removed: '%prefix%You removed world &7%id%&f from favorites..'
-    already-added: '%prefix%&cThis world %id% is already not in the favorites list..'
-    already-removed: '%prefix%&cThis world %id% is already in the favorites list..'
-    limit: '%prefix%&cYou reached maximum amount of favorite worlds (%limit%)! To
+    added: 'You marked this world &7%id% &fas &6favorite&f '
+    removed: 'You removed world &7%id%&f from favorites..'
+    already-added: '&cThis world %id% is already not in the favorites list..'
+    already-removed: '&cThis world %id% is already in the favorites list..'
+    limit: '&cYou reached maximum amount of favorite worlds (%limit%)! To
       add new favorite worlds remove old ones.'
   categories:
     sandbox: '&e&lHiekkalaatikko'
@@ -921,107 +914,106 @@ world:
     experiment: '&c&lKokeellinen'
     simulator: '&c&lSimulaattori'
   sharing:
-    public: '&a&lPUBLIC'
-    private: '&c&lPRIVATE'
+    public: '&a&lJulkinen'
+    private: '&c&lYksityinen'
   liked: "&f \n &8&l| &7%player% &f&nliked&f this world!\n &8&l| &fIf you liked it\
     \ too, type &e/like\n &f"
-  disliked: '%prefix%You &6didn''t like&f this world '
-  unliked: '%prefix%&fYou have &6removed your rating&f for this world.'
-  already-rated: '%prefix%You have &6already&f rated this world.'
-  cant-rate: '%prefix%&cThis world cannot be rated, because it''s created just now!
+  disliked: 'You &6didn''t like&f this world '
+  unliked: '&fYou have &6removed your rating&f for this world.'
+  already-rated: 'You have &6already&f rated this world.'
+  cant-rate: '&cThis world cannot be rated, because it''s created just now!
     Maybe you can help world owner?'
   players:
     kick:
-      kicked: '%prefix%Potkittiin pelaaja &6%player%&f pois maailmasta.'
-      player: '%prefix%Sinut potkittiin maailmasta.'
-      all: '%prefix%Potkittiin &6kaikki&f pelaajat pois maailmasta.'
-      cannot: '%prefix%&cPotkiminen epäonnistui! Tätä pelaajaa ei voi potkia. '
-      owner: '%prefix%Sinut yritettiin potkia pois maailmasta! '
+      kicked: 'Potkittiin pelaaja &6%player%&f pois maailmasta.'
+      player: 'Sinut potkittiin maailmasta.'
+      all: 'Potkittiin &6kaikki&f pelaajat pois maailmasta.'
+      cannot: '&cPotkiminen epäonnistui! Tätä pelaajaa ei voi potkia. '
+      owner: 'Sinut yritettiin potkia pois maailmasta! '
     builders:
-      added: '%prefix%&6%player%&f on nyt rakentaja.'
-      trusted: '%prefix%&6%player%&f voi rakentaa kun et ole paikalla.'
-      removed: '%prefix%&6%player%&f ei ole enään rakentaja.'
-      player: '%prefix%Sinusta tehtiin rakentaja! Voit nyt mennä rakennustilaan (/build)'
-      limit: '%prefix%Rakentajia voi olla enintään &6%limit%&f!'
+      added: '&6%player%&f on nyt rakentaja.'
+      trusted: '&6%player%&f voi rakentaa kun et ole paikalla.'
+      removed: '&6%player%&f ei ole enään rakentaja.'
+      player: 'Sinusta tehtiin rakentaja! Voit avata rakennustilaan komennolla &x&a&7&8&b&f&a/build'
+      limit: 'Rakentajia voi olla enintään &x&a&7&8&b&f&a%limit%'
     developers:
-      guest: '%prefix%&6%player%&f voi vierailla ohjelmointimaailmassa.'
-      added: '%prefix%&6%player%&f on nyt ohjelmoija.'
-      trusted: '%prefix%&6%player%&f voi ohjelmoida kun et ole paikalla.'
-      removed: '%prefix%&6%player%&f is no longer a coder.'
-      player: '%prefix%Sinusta tehtiin ohjelmoija! Voit nyt mennä ohjelmointitilaan
-        (/dev)'
-      player-guest: '%prefix%Voit nyt mennä ohjelmointitilaan (/dev)'
-      limit: '%prefix%Ohjelmoijia voi olla enintään &6%limit%&f!'
+      guest: '&6%player%&f voi vierailla ohjelmointimaailmassa.'
+      added: '&6%player%&f on nyt ohjelmoija.'
+      trusted: '&6%player%&f voi ohjelmoida kun et ole paikalla.'
+      removed: '&6%player%&f is no longer a coder.'
+      player: 'Sinusta tehtiin ohjelmoija! Voit avata ohjelmointitilan komennolla &x&a&7&8&b&f&a/dev'
+      player-guest: 'Voit avata ohjelmointitilan komennolla &x&a&7&8&b&f&a/dev'
+      limit: 'Ohjelmoijia voi olla enintään &x&a&7&8&b&f&a%limit%'
     black-list:
-      added: '%prefix%Pelaaja &6%player%&f sai porttikiellon maailmaan.'
-      removed: '%prefix%Pelaajan &6%player%&f porttikielto maailmaan peruttiin.'
-      player: '%prefix%Sait porttikiellot maailmaan. '
-      cannot: '%prefix%&cEt voi estää kyseistä pelaajaa.'
-      limit: '%prefix%Musta lista on täynnä &6%limit%&f'
+      added: 'Pelaaja &6%player%&f sai porttikiellon maailmaan'
+      removed: 'Pelaajan &6%player%&f porttikielto maailmaan peruttiin'
+      player: 'Sait porttikiellon maailmaan'
+      cannot: 'Et voi estää kyseistä pelaajaa'
+      limit: 'Musta lista täynnä &x&a&7&8&b&f&a%limit%&f'
     white-list:
-      added: '%prefix%Myönnettiin pääsy pelaajalle &6%player%&f'
-      removed: '%prefix%Peruttiin pääsy pelaajalle &6%player%&f'
-      player: '%prefix%Pääset nyt maailmaan, kun se on suljettu'
-      limit: '%prefix%Whitelistin raja saavutettu &6%limit%&f'
+      added: 'Myönnettiin pääsy pelaajalle &x&a&7&8&b&f&a%player%'
+      removed: 'Peruttiin pääsy pelaajalta &x&a&7&8&b&f&a%player%'
+      player: 'Pääset nyt maailmaan, kun se on suljettu'
+      limit: 'Sallittujen pelaajien lista täynnä &x&a&7&8&b&f&a%limit%'
     transfer-ownership:
-      confirm-new: '%prefix%The world owner &6wants to transfer ownership of the world&f
+      confirm-new: 'The world owner &6wants to transfer ownership of the world&f
         to you, which means you will have full control over it. If you want to accept,
         type in the chat: &6%id%'
-      confirm-old: '%prefix%Are you sure you want to &6transfer ownership of this
+      confirm-old: 'Are you sure you want to &6transfer ownership of this
         world&f to %player%? This means &6this player will have full control over
         the world&f, but &6you will lose the ability to manage it&f. To confirm, type
         in the chat: &6%id%'
-      transferred-old: '%prefix%You have &6transferred ownership&f of this world to
+      transferred-old: 'You have &6transferred ownership&f of this world to
         %player%. You no longer have any rights to manage the world.'
-      transferred-new: '%prefix%You have &6received ownership&f of this world. The
+      transferred-new: 'You have &6received ownership&f of this world. The
         previous owner no longer has any rights to manage it, but you can grant them
         permissions in the player management settings.'
-      wrong-id: '%prefix%You entered the &6wrong world ID&f, the transfer process
+      wrong-id: 'You entered the &6wrong world ID&f, the transfer process
         was canceled.'
-      offline: '%prefix%The player is currently &6not in the world&f, the transfer
+      offline: 'The player is currently &6not in the world&f, the transfer
         process was canceled.'
-      limit: '%prefix%The player already &6has too many worlds&f. Ask them to delete
+      limit: 'The player already &6has too many worlds&f. Ask them to delete
         unnecessary worlds, and the transfer process was canceled.'
-      awaiting: '%prefix%You have &6sent a transfer request&f to the player, awaiting
+      awaiting: 'You have &6sent a transfer request&f to the player, awaiting
         their response...'
-      cancelled: '%prefix%&fThe player &6canceled the transfer request&f for your
+      cancelled: '&fThe player &6canceled the transfer request&f for your
         world.'
   # admin commands?
-  loaded: '%prefix%World &6%id% &fhas been successfully &aloaded&f...'
-  already-loaded: '%prefix%&cThe world %id% is already loaded!'
-  unloaded: '%prefix%World &6%id% &fhas been successfully &7unloaded&f...'
-  already-unloaded: '%prefix%&cThe world %id% is already unloaded!'
-  not-numeric-id: '%prefix%&cWorld''s ID needs to be numeric.'
-  not-found: '%prefix%&cNot found world with ID %id%, please check does &6%path%&c
+  loaded: 'World &6%id% &fhas been successfully &aloaded&f...'
+  already-loaded: '&cThe world %id% is already loaded!'
+  unloaded: 'World &6%id% &fhas been successfully &7unloaded&f...'
+  already-unloaded: '&cThe world %id% is already unloaded!'
+  not-numeric-id: '&cWorld''s ID needs to be numeric.'
+  not-found: '&cNot found world with ID %id%, please check does &6%path%&c
     exist?'
-  already-registered: '%prefix%&fWorld &6%id%&f is already registered. To update world''s
+  already-registered: '&fWorld &6%id%&f is already registered. To update world''s
     information, use: &6/oc worlds reload %id%'
-  updated-info: '%prefix%&fUpdated world information for &6%id%&f.'
-  registered: '%prefix%&fRegistered a world &6%id%&f. Now it can appear in worlds
+  updated-info: '&fUpdated world information for &6%id%&f.'
+  registered: '&fRegistered a world &6%id%&f. Now it can appear in worlds
     browser menu and can be visited by &6/join %id%&f!'
-  unregistered: '%prefix%&fUnregistered a world &6%id%&f. It will not appear in worlds
+  unregistered: '&fUnregistered a world &6%id%&f. It will not appear in worlds
     browser menu &6til next server restart&f, if world files exist.'
-  recommended: '%prefix%&fWorld &6%id%&f has been added to the recommended list, it
+  recommended: '&fWorld &6%id%&f has been added to the recommended list, it
     will now appear on the first page of the world browser '
-  unrecommended: '%prefix%&fWorld &6%id%&f has been removed from recommendations.. '
+  unrecommended: '&fWorld &6%id%&f has been removed from recommendations.. '
   set-owner: |-
-    %prefix%&fA new owner has been set for world %id%: &6%player%
+    &fA new owner has been set for world %id%: &6%player%
     &7 %uuid%
-  already-recommended: '%prefix%&cThis world %id% is already in recommendations.. '
-  already-unrecommended: '%prefix%&cThis world %id% is not in recommendations anyway.. '
-  same-owner: '%prefix%&cIn this world %id% the owner is the same as the one specified.. '
-  set-size: '%prefix%&fA new world size has been set for %id%: &6%size% by %size%
+  already-recommended: '&cThis world %id% is already in recommendations.. '
+  already-unrecommended: '&cThis world %id% is not in recommendations anyway.. '
+  same-owner: '&cIn this world %id% the owner is the same as the one specified.. '
+  set-size: '&fA new world size has been set for %id%: &6%size% by %size%
     blocks&f!'
-  same-size: '%prefix%&cThe world already has the same size &6%size% by %size% blocks.. '
-  reset-size: '%prefix%&fYou have &6reset&f the size of the world %id%. Its size will
+  same-size: '&cThe world already has the same size &6%size% by %size% blocks.. '
+  reset-size: '&fYou have &6reset&f the size of the world %id%. Its size will
     now match the size of the owner’s group world.'
-  bad-size: '%prefix%&cThe world size must be greater than 0.. '
+  bad-size: '&cThe world size must be greater than 0.. '
   platformer:
-    set: '%prefix%&fSuccessfully &6changed&f world''s coding platforms generator to:
+    set: '&fSuccessfully &6changed&f world''s coding platforms generator to:
       &6%id%&f.'
-    reset: '%prefix%&fSuccessfully &6changed&f world''s coding platforms generator
+    reset: '&fSuccessfully &6changed&f world''s coding platforms generator
       to server''s default.'
-    not-found: '%prefix%&cCan''t find registered coding platforms generator with ID:
+    not-found: '&cCan''t find registered coding platforms generator with ID:
       %id%.'
   script-size-limit: Code won't be started, because script file is too big (%amount%/%limit%
     MB). Please try to reduce code amount or coding items in containers (/dev).
@@ -1029,15 +1021,15 @@ world:
     archive: Archive of world %id%
     build-folder: Map world of %id%
     dev-folder: Coding world of %id%
-    unavailable: '%prefix%&cWorld downloading is currently disabled.. '
-    size-limit: '%prefix%&cThe world is too large, we cannot deliver its files to
+    unavailable: '&cWorld downloading is currently disabled.. '
+    size-limit: '&cThe world is too large, we cannot deliver its files to
       you.. '
-    uploading: '%prefix%&fSaving the world into an archive, please wait...'
-    uploaded: "%prefix%&fYou &6can download the world&f by following the link:\n&6\
+    uploading: '&fSaving the world into an archive, please wait...'
+    uploaded: "&fYou &6can download the world&f by following the link:\n&6\
       \ &n%link%&r\n \n&fThe link will be available only for a few minutes!"
-    failed: '%prefix%&cFailed to save the world into an archive, please try again
+    failed: '&cFailed to save the world into an archive, please try again
       later.. '
-    timeout: '%prefix%&cThe world download time has expired, the link is no longer
+    timeout: '&cThe world download time has expired, the link is no longer
       working.'
 creative-chat:
   turned-on: '%cc-prefix%&fYou have &6enabled&f creative chat, you can now communicate.
@@ -1049,14 +1041,14 @@ creative-chat:
   cooldown: '%cc-prefix%&fPlease wait &6%cooldown% seconds&f before sending another
     message.'
 advertisement:
-  message: "%prefix%&6Kutsu:\n&f&7%player% &fkutsuu pelaajia maailmaansa: \n&f %world%&r\n\
+  message: "&6Kutsu:\n&f&7%player% &fkutsuu pelaajia maailmaansa: \n&f %world%&r\n\
     \ &f\n&x&a&7&8&b&f&a[Liity maailmaan]&f\n &f"
   hover: "&f%planetName%\n&8Luonut %planetOwner%\n \n&7Pelaajia: &a%planetOnline%\n\
     &7Tykkäykset: &f%planetReputation%\n&7Kategoria: &f%planetCategory%\n \n&aPaina\
     \ liittyäksesi"
-  no-money: '%prefix%&cYou need to have %money% more coins to advertise this world'
-  cooldown: '%prefix%Odota &6%cooldown% sekunttia&f ennen kuin voit mainostaa uudelleen'
-  closed-world: '%prefix%&fAvaa maailma muille, jotta voit mainostaa sitä'
+  no-money: '&cYou need to have %money% more coins to advertise this world'
+  cooldown: 'Odota &6%cooldown% sekunttia&f ennen kuin voit mainostaa uudelleen'
+  closed-world: '&fAvaa maailma muille, jotta voit mainostaa sitä'
 items:
   disabled:
     name: '&c'
@@ -2006,7 +1998,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': No, don’t give it AI
               'true': Yes, let it have AI
@@ -2029,7 +2021,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': No, it should make sounds
               'true': Yes, keep it silent
@@ -2052,7 +2044,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': No, allow passing through
               'true': Yes, make it push on movement
@@ -2075,7 +2067,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': No, keep it floating in the air
               'true': Yes, let it fall
@@ -2124,7 +2116,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': Set
               'true': Add
@@ -2189,7 +2181,7 @@ items:
             - '%2%'
             - '%3%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               all: Both
               left: Left
@@ -2294,7 +2286,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': Set
               'true': Add
@@ -2382,7 +2374,7 @@ items:
             - '&7here, they will'
             - '&7be replaced with air.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - '&fChoices:'
             - '%1%'
@@ -2632,7 +2624,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': No, do not grant XP
               'true': Yes, grant XP
@@ -2710,7 +2702,7 @@ items:
             - '%2%'
             - '%3%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               misc: Miscellaneous
               building: Building Blocks
@@ -2789,7 +2781,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               misc: Miscellaneous
               building: Building Blocks
@@ -2976,7 +2968,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': No, require exact shape
               'true': Yes, allow any arrangement
@@ -2990,7 +2982,7 @@ items:
             - '%1%'
             - '%2%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': No, check item data
               'true': Yes, accept any item data
@@ -3005,7 +2997,7 @@ items:
             - '%3%'
             - '%4%'
             - ''
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               misc: Miscellaneous
               building: Building
@@ -3033,7 +3025,7 @@ items:
             - '%1%'
             - '%2%'
             - ' '
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': Set
               'true': Add
@@ -3059,7 +3051,7 @@ items:
             - '%1%'
             - '%2%'
             - ' '
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': Set
               'true': Add
@@ -3085,7 +3077,7 @@ items:
             - '%1%'
             - '%2%'
             - ' '
-            - '&ePaina muuttaaksesi'
+            - '&eMuuta painamalla'
             choices:
               'false': Set
               'true': Add
@@ -3538,7 +3530,7 @@ items:
             - '&7Use GET to retrieve content from the website'
             - '&7or POST to send data.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -3553,7 +3545,7 @@ items:
             - '&7the request body is in valid format.'
             - '&7Example JSON: &6{"content":"Hello"}'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -3600,7 +3592,7 @@ items:
             name: '&fMenu''s type'
             lore:
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -3669,7 +3661,7 @@ items:
             - '&7will be added to the current'
             - '&7amount the player has.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -3696,7 +3688,7 @@ items:
             - '&7will be added to the current'
             - '&7amount the entity has.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -3779,7 +3771,7 @@ items:
             - '&7items in empty slots will be'
             - '&7replaced by air.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -3991,7 +3983,7 @@ items:
             - '&7Choose how to join the texts'
             - '&7and display them on hotbar.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4121,7 +4113,7 @@ items:
             - '&7Choose how to display the message'
             - '&7in the chat.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4295,7 +4287,7 @@ items:
             - '&7by the player will also be added'
             - '&7to the container''s inventory.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4343,7 +4335,7 @@ items:
             lore:
             - '&7Choose the style of the advancement.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4427,7 +4419,7 @@ items:
             - '&7this category, they may not hear'
             - '&7the sound.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4488,7 +4480,7 @@ items:
             - '&7It is recommended that the player'
             - '&7is already in the air at some height.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4516,7 +4508,7 @@ items:
             - '&7Make the player glow'
             - '&7or disable glowing.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4541,7 +4533,7 @@ items:
             - '&7Select shoulder to release'
             - '&7parrots from it.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4572,7 +4564,7 @@ items:
             - '&7Lets the player fly over the map'
             - '&7to explore and take screenshots.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4587,7 +4579,7 @@ items:
             - '&7after landing or stopping their'
             - '&7flight.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4614,7 +4606,7 @@ items:
             - '&7movement speed will'
             - '&7increase.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4641,7 +4633,7 @@ items:
             - '&7will start sneaking, which'
             - '&7should reduce their speed.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4667,7 +4659,7 @@ items:
             - '&7will appear burning, but'
             - '&7won’t take any damage.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4812,7 +4804,7 @@ items:
             - '&7will appear burning, but'
             - '&7won’t take any damage.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4837,7 +4829,7 @@ items:
             - '&7If set to yes, the fox'
             - '&7will sleep on the ground.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4862,7 +4854,7 @@ items:
             - '&7If set to yes, the fox'
             - '&7will sit on the ground.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4887,7 +4879,7 @@ items:
             - '&7If set to yes, snow golem'
             - '&7will have a pumpkin.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4912,7 +4904,7 @@ items:
             - '&7If set to yes, the'
             - '&7bee will have nectar.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4937,7 +4929,7 @@ items:
             - '&7If set to yes, the'
             - '&7bee will have a stinger.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4962,7 +4954,7 @@ items:
             - '&7If set to yes, the'
             - '&7cat will lie on the ground.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -4988,7 +4980,7 @@ items:
             - '&7horse or donkey will have'
             - '&7a chest.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5014,7 +5006,7 @@ items:
             - '&7will be removed when it is'
             - '&7too far from spawn.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5041,7 +5033,7 @@ items:
             - '&7will become aggressive and'
             - '&7attack its targets.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5066,7 +5058,7 @@ items:
             - '&7If set to yes, the mob'
             - '&7will move on its own.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5434,7 +5426,7 @@ items:
             - '&7Choose the mode to let the'
             - '&7player build, explore, or watch.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5477,7 +5469,7 @@ items:
             - '&7health will increase by the'
             - '&7specified amount.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5508,7 +5500,7 @@ items:
             - '&7health will increase by the'
             - '&7specified amount.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5537,7 +5529,7 @@ items:
             - '&7health will increase by the'
             - '&7specified amount.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5565,7 +5557,7 @@ items:
             - '&7hunger will increase by the'
             - '&7specified amount.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5729,7 +5721,7 @@ items:
             - '&7Choose whether the action'
             - '&7includes sound.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5816,7 +5808,7 @@ items:
             - '&7items in empty slots will be'
             - '&7replaced by air.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5875,7 +5867,7 @@ items:
             - '&7items in empty slots will be'
             - '&7replaced by air.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -5916,7 +5908,7 @@ items:
             - '&7Choose which side of the sign'
             - '&7the player will edit.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6229,7 +6221,7 @@ items:
             - '&7on which this action'
             - '&7should be performed.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6257,7 +6249,7 @@ items:
             - '&7on which this action'
             - '&7should be performed.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6275,7 +6267,7 @@ items:
             - '&7the sign can still be edited'
             - '&7by players'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6304,7 +6296,7 @@ items:
             - '&7on which this action'
             - '&7should be performed.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6566,7 +6558,7 @@ items:
             - '&7breaking a block, particles of'
             - '&7breaking will appear around it.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6582,7 +6574,7 @@ items:
             - '&7breaking a block, experience'
             - '&7may appear, like when mining ores.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6613,7 +6605,7 @@ items:
             - '&7Enable redstone signal or'
             - '&7disable and turn off the mechanism.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6667,7 +6659,7 @@ items:
             - '&7If set to yes, the item'
             - '&7will be dropped with an offset'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6844,7 +6836,7 @@ items:
             - '&7Choose the overlay type'
             - '&7that the bossbar will have.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6890,7 +6882,7 @@ items:
             - '&7If no damage is dealt, the'
             - '&7lightning will just be an effect.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6929,7 +6921,7 @@ items:
             - '&7With fire, some blocks'
             - '&7will catch fire.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -6945,7 +6937,7 @@ items:
             - '&7for beauty, other times for'
             - '&7destruction.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7018,7 +7010,7 @@ items:
             - '&7Without AI, the mob can''t'
             - '&7move or make sounds.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7033,7 +7025,7 @@ items:
             - '&7With no gravity, the mob will'
             - '&7float in the air.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7049,7 +7041,7 @@ items:
             - '&7have a glow and can be seen'
             - '&7through walls.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7064,7 +7056,7 @@ items:
             - '&7With this option, you won''t need'
             - '&7to hover to see the mob''s name.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7080,7 +7072,7 @@ items:
             - '&7able to see the mob, but it can'
             - '&7still see you!'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7096,7 +7088,7 @@ items:
             - '&7can''t take damage, but you can'
             - '&7still throw it into the void.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7113,7 +7105,7 @@ items:
             - '&7personal mobs only visible to one,'
             - '&7this option is for you.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7143,7 +7135,7 @@ items:
             - '&7This will set the weather visible'
             - '&7only to this player.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7183,7 +7175,7 @@ items:
             - '&7This will set the weather visible'
             - '&7only to this player.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7387,7 +7379,7 @@ items:
             - '&7will be added to the current'
             - '&7value of the player.'
             - ' '
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ' '
             - ' '
             - '%1%'
@@ -7414,7 +7406,7 @@ items:
             - '&7will be added to the current'
             - '&7value of the player.'
             - ' '
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ' '
             - ' '
             - '%1%'
@@ -7622,7 +7614,7 @@ items:
             - '&7will be added to the current'
             - '&7value of the display entity.'
             - ' '
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ' '
             - ' '
             - '%1%'
@@ -7653,7 +7645,7 @@ items:
             - '&7will be added to the current'
             - '&7value of the display entity.'
             - ' '
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ' '
             - ' '
             - '%1%'
@@ -7684,7 +7676,7 @@ items:
             - '&7will be added to the current'
             - '&7value of the display entity.'
             - ' '
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ' '
             - ' '
             - '%1%'
@@ -7723,7 +7715,7 @@ items:
             - '&7will be seen by players'
             - '&7around it.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7842,7 +7834,7 @@ items:
             - '&7your value will be added to the'
             - '&7player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7870,7 +7862,7 @@ items:
             - '&7your value will be added to the'
             - '&7player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7899,7 +7891,7 @@ items:
             - '&7your value will be added to the'
             - '&7player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7928,7 +7920,7 @@ items:
             - '&7your value will be added'
             - '&7to the player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7959,7 +7951,7 @@ items:
             - '&7your value will be added'
             - '&7to the player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -7989,7 +7981,7 @@ items:
             - '&7your value will be added'
             - '&7to the player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8019,7 +8011,7 @@ items:
             - '&7your value will be added'
             - '&7to the player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8048,7 +8040,7 @@ items:
             - '&7your value will be added'
             - '&7to the player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8129,7 +8121,7 @@ items:
             name: '&3Hand for swing'
             lore:
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - '&fChoices:'
             - '%1%'
@@ -8175,7 +8167,7 @@ items:
             - '&7your value will be added'
             - '&7to the player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8204,7 +8196,7 @@ items:
             - '&7your value will be added'
             - '&7to the player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8246,7 +8238,7 @@ items:
             - '&7your value will be added'
             - '&7to the player''s current value.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8274,7 +8266,7 @@ items:
             - '&7the current value will be'
             - '&7increased by yours.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8303,7 +8295,7 @@ items:
             - '&7the current value will be'
             - '&7increased by yours.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8332,7 +8324,7 @@ items:
             - '&7the current value will be'
             - '&7increased by yours.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8360,7 +8352,7 @@ items:
             - '&7the current value will be'
             - '&7increased by yours.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8423,7 +8415,7 @@ items:
             - '&7the player will not move, but'
             - '&7their camera will turn.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -8954,7 +8946,7 @@ items:
             - '&7it''s better to use the'
             - '&7compact version.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -9315,7 +9307,7 @@ items:
             - '&7those that are the first'
             - '&7or the last.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -9795,7 +9787,7 @@ items:
             - '&7Choose how the number'
             - '&7will be rounded.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -9922,7 +9914,7 @@ items:
             lore:
             - '&7Choose how to concat the texts. '
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10265,7 +10257,7 @@ items:
             lore:
             - '&7Choose how to trace the ray.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10315,7 +10307,7 @@ items:
             lore:
             - '&7Choose how to trace the ray.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10356,7 +10348,7 @@ items:
             - '&7will be added to the list'
             - '&7when hit by the ray.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10371,7 +10363,7 @@ items:
             lore:
             - '&7Choose how to trace the ray.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10497,7 +10489,7 @@ items:
             - '&7the actions between pistons'
             - '&7will also execute.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10702,7 +10694,7 @@ items:
             - '&7all mobs exist, or when'
             - '&7any of them exists.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10731,7 +10723,7 @@ items:
             - '&7all players are in the world, or when'
             - '&7any one of them is.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10747,7 +10739,7 @@ items:
             - '&7is in the build world or in'
             - '&7the coding world.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10777,7 +10769,7 @@ items:
             - '&7all locations are inside'
             - '&7the mob, or any of them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10807,7 +10799,7 @@ items:
             - '&7all blocks intersect'
             - '&7with the mob, or any of them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10823,7 +10815,7 @@ items:
             - '&7instead of the placed'
             - '&7block''s actual size.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10854,7 +10846,7 @@ items:
             - '&7all blocks are inside the mob,'
             - '&7or any of them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10870,7 +10862,7 @@ items:
             - '&7instead of the placed'
             - '&7block''s actual size.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10900,7 +10892,7 @@ items:
             - '&7the mob hitbox is inside all'
             - '&7blocks, or any of them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10916,7 +10908,7 @@ items:
             - '&7instead of the placed'
             - '&7block''s actual size.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10953,7 +10945,7 @@ items:
             - '&7all values are true, or when'
             - '&7any one of them is.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -10980,7 +10972,7 @@ items:
             - '&7all cycles are running, or when'
             - '&7any one of them is running.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11051,7 +11043,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11078,7 +11070,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11105,7 +11097,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11133,7 +11125,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11160,7 +11152,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11187,7 +11179,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11214,7 +11206,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11241,7 +11233,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11268,7 +11260,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11295,7 +11287,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11324,7 +11316,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11353,7 +11345,7 @@ items:
             - '&7all values match, or when'
             - '&7at least one of them matches.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11573,7 +11565,7 @@ items:
             - '&7the item has values for'
             - '&7all keys, or any of them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11654,7 +11646,7 @@ items:
             - '&7will be met only if the item has'
             - '&7all the specified enchantments.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11671,7 +11663,7 @@ items:
             - '&7it will only check if the'
             - '&7enchantment type exists.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11705,7 +11697,7 @@ items:
             - '&7in the text differ in'
             - '&7UPPERCASE or lowercase.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11720,7 +11712,7 @@ items:
             - '&7color codes, since it''s quite'
             - '&7rare to require them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11750,7 +11742,7 @@ items:
             - '&7in the text differ in'
             - '&7UPPERCASE or lowercase.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11765,7 +11757,7 @@ items:
             - '&7color codes, since it''s quite'
             - '&7rare to require them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11795,7 +11787,7 @@ items:
             - '&7in the text differ in'
             - '&7UPPERCASE or lowercase.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11810,7 +11802,7 @@ items:
             - '&7color codes, since it''s quite'
             - '&7rare to require them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11840,7 +11832,7 @@ items:
             - '&7in the text differ in'
             - '&7UPPERCASE or lowercase.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11855,7 +11847,7 @@ items:
             - '&7color codes, since it''s quite'
             - '&7rare to require them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11893,7 +11885,7 @@ items:
             - '&7will pass only if the list contains'
             - '&7all specified values.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11922,7 +11914,7 @@ items:
             - '&7it can also be equal to the'
             - '&7specified number.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11951,7 +11943,7 @@ items:
             - '&7it can also be equal to the'
             - '&7specified number.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11983,7 +11975,7 @@ items:
             - '&7it can also be equal to the'
             - '&7specified number.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -11999,7 +11991,7 @@ items:
             - '&7it can also be equal to the'
             - '&7specified number.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12027,7 +12019,7 @@ items:
             - '&7all variables are empty, or when'
             - '&7at least one of them is empty.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12055,7 +12047,7 @@ items:
             - '&7all variables exist, or when'
             - '&7at least one of them exists.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12090,7 +12082,7 @@ items:
             - '&7specified items or'
             - '&7any one of them.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12106,7 +12098,7 @@ items:
             - '&7an item in that slot,'
             - '&7the check will fail.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12121,7 +12113,7 @@ items:
             - '&7whether the player has enough'
             - '&7items.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12136,7 +12128,7 @@ items:
             - '&7using an'
             - '&7anvil.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12151,7 +12143,7 @@ items:
             - '&7commands, plugins,'
             - '&7or mods.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12166,7 +12158,7 @@ items:
             - '&7using an anvil or'
             - '&7enchanting table.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12181,7 +12173,7 @@ items:
             - '&7usually added through'
             - '&7NBT editors.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12196,7 +12188,7 @@ items:
             - '&7tools, weapons,'
             - '&7or armor.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12294,7 +12286,7 @@ items:
             - '&7while in Creative mode they can'
             - '&7even destroy the entire world.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12362,7 +12354,7 @@ items:
             - '&7can develop in /dev and'
             - '&7run the game with /play.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12429,7 +12421,7 @@ items:
             - '&7the case of letters (CAPS)'
             - '&7and lowercase letters.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12476,7 +12468,7 @@ items:
             - '&7Perform actions if the condition'
             - '&7matches for all or any players'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12503,7 +12495,7 @@ items:
             - '&7Perform actions if the condition'
             - '&7matches for all or any entities.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12566,7 +12558,7 @@ items:
             - '&7will pass only if the player has'
             - '&7all listed potion effects.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12598,7 +12590,7 @@ items:
             - '&7the case of letters (CAPS)'
             - '&7and lowercase letters.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12613,7 +12605,7 @@ items:
             - '&7color codes, as it''s rare'
             - '&7when needed.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12686,7 +12678,7 @@ items:
             - '&7will check if the message'
             - '&7matches upper and lower case.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12715,7 +12707,7 @@ items:
             - '&7if the player has enough'
             - '&7of an item.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12729,7 +12721,7 @@ items:
             - '&7Items can be renamed via'
             - '&7an anvil.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12744,7 +12736,7 @@ items:
             - '&7a code or mod and creative'
             - '&7may be needed.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12758,7 +12750,7 @@ items:
             - '&7Items can be enchanted via'
             - '&7an anvil or enchanting table.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12772,7 +12764,7 @@ items:
             - '&7These special tags'
             - '&7are set via NBT editor (mod).'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12786,7 +12778,7 @@ items:
             - '&7Useful when comparing'
             - '&7items with the same name.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12800,7 +12792,7 @@ items:
             - '&7Useful when item is tool,'
             - '&7weapon or armor.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12828,7 +12820,7 @@ items:
             - '&7The player can hold an item'
             - '&7in the main or off hand.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12847,7 +12839,7 @@ items:
             - '&7if the player has enough'
             - '&7of an item.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12861,7 +12853,7 @@ items:
             - '&7Items can be renamed via'
             - '&7an anvil.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12876,7 +12868,7 @@ items:
             - '&7a code or mod and creative'
             - '&7may be needed.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12890,7 +12882,7 @@ items:
             - '&7Items can be enchanted via'
             - '&7an anvil or enchanting table.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12904,7 +12896,7 @@ items:
             - '&7These special tags'
             - '&7are set via NBT editor (mod).'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12918,7 +12910,7 @@ items:
             - '&7Useful when comparing'
             - '&7items with the same name.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12932,7 +12924,7 @@ items:
             - '&7Useful when item is tool,'
             - '&7weapon or armor.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12976,7 +12968,7 @@ items:
             - '&7if the player has enough'
             - '&7items.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -12991,7 +12983,7 @@ items:
             - '&7renamed via'
             - '&7anvil.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13005,7 +12997,7 @@ items:
             - '&7To set the item lore,'
             - '&7a code or mod is required.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13020,7 +13012,7 @@ items:
             - '&7enchanted via'
             - '&7anvil or table.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13035,7 +13027,7 @@ items:
             - '&7are set via'
             - '&7NBT editor (mod).'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13050,7 +13042,7 @@ items:
             - '&7items with same'
             - '&7names.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13064,7 +13056,7 @@ items:
             - '&7Useful when item is tool,'
             - '&7weapon or armor.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13093,7 +13085,7 @@ items:
             - '&7If item data is ignored,'
             - '&7only the material will be checked.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13124,7 +13116,7 @@ items:
             - '&7will be met only if the player'
             - '&7has all specified items.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13140,7 +13132,7 @@ items:
             - '&7If data is ignored, only the'
             - '&7item material will be checked.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13182,7 +13174,7 @@ items:
             - '&7the case of letters (CAPS)'
             - '&7and lowercase letters.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -13197,7 +13189,7 @@ items:
             - '&7color codes, as it''s rare'
             - '&7when needed.'
             - ''
-            - '&ePaina  muuttaaksesi'
+            - '&eMuuta painamalla'
             - ''
             - ' '
             - '%1%'
@@ -14681,21 +14673,21 @@ menus:
         - '%3%'
         - '%4%'
         - ''
-        - '&e Paina  muuttaaksesi'
+        - '&eMuuta painamalla'
       build:
-        name: '&c Rakentaminen'
+        name: '&cRakentaminen'
         choices:
           none: Ei voi rakentaa
           not-trusted: Voi rakentaa kun olet paikalla
           trusted: Voi aina rakentaa
         lore:
-        - '&7 Oikeudet rakennustilassa.'
+        - '&7Oikeudet rakennustilassa'
         - ''
         - '%1%'
         - '%2%'
         - '%3%'
         - ''
-        - '&e Paina  muuttaaksesi'
+        - '&e Muuta painamalla'
       flight:
         name: '&fLentäminen'
         choices:
@@ -14707,40 +14699,40 @@ menus:
         - '%1%'
         - '%2%'
         - ''
-        - '&e Paina  muuttaaksesi'
+        - '&eMuuta painamalla'
       unban:
-        name: '&a☻ Peruuta esto'
+        name: '&aPeruuta esto'
         lore:
         - '&7 Päästä pelaaja takaisin maailmaan'
         - ''
-        - '&e Paina puruuttaksesi esto'
+        - '&e Peruuta esto painamalla'
       kick:
-        name: '&3⌀ Potki'
+        name: '&3Potki'
         lore:
         - '&7 Potkii pelaajan pois maailmasta'
         - ''
-        - '&e Paina potkiaksesi'
+        - '&e Potki painamalla'
         - ''
       ban:
-        name: '&c✘ Estä'
+        name: '&cEstä'
         lore:
         - '&7 Estää pelaajan pääsyn maailmaan'
         - ''
-        - '&e Paina estääksesi'
+        - '&e Estä painamalla'
         - ''
       whitelist:
         name: '&bLisää pääsylistoille'
         lore:
         - '&7 Sallii pääsyn, kun maailma on suljettu'
         - ' '
-        - '&e Paina lisätäksesi'
+        - '&e Lisää painamalla'
         - ''
       whitelist-remove:
         name: '&cPoista pääsylistoilta'
         lore:
         - '&7 Estää pääsyn, kun maailma on suljettu'
         - ''
-        - '&e Paina poistaaksesi'
+        - '&e Poista painamalla'
         - ''
       transfer-ownership:
         name: '&dSiirrä maailma pelaajalle'
@@ -14749,12 +14741,12 @@ menus:
         - ''
         - '&cEt voi perua tätä!'
         - ''
-        - '&ePaina vaihtaaksesi omistajaa'
+        - '&eVaihda omistajaa painamalla'
         - ''
       back:
         name: '&6← &eEdellinen...'
         lore:
-        - '&7Paina avataksesi pelaajalista'
+        - '&7Avaa pelaajalista painamalla'
   players-browser:
     title: '&1Pelaajien hallinta'
     items:
@@ -14769,7 +14761,7 @@ menus:
           - '&b%white-list%'
           - '&f%flight%'
           - ''
-          - '&eVasenklikkaa &7- Muuta asetuksia'
+          - '&eVasenklikkaa &7-Muuta asetuksia'
           - ''
           - '&3Oikeaklikkaa &7- Teleporttaa pelaajan luokse'
           - '&3Oikeaklikkaa + SHIFT &7- Teleporttaa luoksesi'
@@ -14782,7 +14774,7 @@ menus:
           - '&7%build%'
           - '&7%white-list%'
           - ''
-          - '&eVasenklikkaa &7- Muuta asetuksia'
+          - '&eVasenklikkaa &7-Muuta  asetuksia'
           - ''
         banned:
           name: '&7Pelaaja &f%name%'
@@ -14850,8 +14842,8 @@ menus:
         - '&7Hieman yksinäistä...'
   entities-browser:
     title: '&4Olentojen hallinta'
-    removed: '%prefix%&f%player% poisti olennon &6%name%&f (%x%,%y%,%z%)'
-    removed-all: '%prefix%&f%player% poisti &6%count%&f olentoa'
+    removed: '&f%player% poisti olennon &6%name%&f (%x%,%y%,%z%)'
+    removed-all: '&f%player% poisti &6%count%&f olentoa'
     items:
       entity:
         name: '&7Nimi: &e%name%'
@@ -14897,7 +14889,7 @@ menus:
         - '&7  Poistaa kaikki olennot,'
         - '&7  jotka näkyvät listalla.'
         - ''
-        - '&e  Paina poistaaksesi'
+        - '&e  Poista painamalla'
       previous-page:
         name: '&6← &eEdellinen...... #%page%'
         lore:
@@ -14970,7 +14962,7 @@ menus:
         - '&7Map, players data, variables'
         - '&7and world''s code will be loaded.'
         - ''
-        - '&ePaina ladataksesi'
+        - '&eLataa painamalla'
       unload:
         name: '&5Poista maailma'
         lore:
@@ -14984,7 +14976,7 @@ menus:
         - '&7Unloads map, saves players'
         - '&7data and current variables.'
         - ''
-        - '&e Paina poistaaksesi'
+        - '&e Poista painamalla'
         - ''
       connect-silent:
         name: '&aYhdistä maailmaan'
@@ -14995,7 +14987,7 @@ menus:
         - '&7but join message will not'
         - '&7appear in chat.'
         - ''
-        - '&a Paina yhdistääksesi'
+        - '&a Yhdistä painamalla'
       connect-dev-silent:
         name: ' '
         lore:
@@ -15006,7 +14998,7 @@ menus:
         - '&7for developers, but message'
         - '&7about join will not appear.'
         - ''
-        - '&ePaina yhdistääksesi'
+        - '&e Yhdistä painamalla'
   world-access:
     title: '&0%name%'
     items:
@@ -15018,31 +15010,31 @@ menus:
         - ' '
         - '&ePaina mainostaaksesi'
       play-mode:
-        name: '&bPelailutila'
+        name: '&bPelitila'
         lore:
         - '&7Pelit käyntiin!'
         - '&7Pelaajat pääsevät seikkailemaan maailmaan'
         - ' '
-        - '&ePaina vaihtaaksesi tilaa'
+        - '&eVaihda tilaa painamalla'
       build-mode:
         name: '&cRakennustila'
         lore:
         - '&7Pelaajat voivat tarkastella sinua,'
         - '&7kun rakennat maailmaa'
         - ' '
-        - '&ePaina vaihtaaksesi tilaa'
+        - '&eVaihda tilaa painamalla'
       delete:
-        name: '&4Poista tämä maailma'
+        name: '&4Poista maailma'
         lore:
         - '&cTätä toimintoa ei voi peruuttaa'
         - ' '
         - '&7Tämä toiminto poistaa maailmasi ja siihen liittyvät tiedot'
         - ' '
-        - '&cPaina poistaaksesi'
+        - '&cPoista painamalla'
       connect:
-        name: '&dYhdistä maailmaan...'
+        name: '&dYhdistä maailmaan'
         lore:
-        - '&ePaina yhdistääksesi'
+        - ''
       opened:
         name: '&aJulkinen pääsy'
         lore:
@@ -15228,10 +15220,10 @@ menus:
         - '&e Click to check.'
         - ''
   recommended-worlds:
-    title: '&5Suositellut maailmat'
+    title: '&x&a&7&8&b&f&aSuositellut maailmat'
     items:
       all-worlds:
-        name: '&eNäytä kaikki maailmat'
+        name: '&fNäytä kaikki maailmat'
         lore:
         - ' '
       sandbox:
@@ -15309,28 +15301,28 @@ menus:
         - '&ePaina katsoaksesi maailmoja'
   all-worlds:
     title: '&3Pelaajien maailmat'
-    title-pages: '&3⌂ Pelaajien maailmat (%page%/%pages%)'
+    title-pages: '&3Pelaajien maailmat (%page%/%pages%)'
     chosen: '&a⏺ &n'
     not-chosen: '&7○ '
     turned-on: '&a  ⏺ &n'
     turned-off: '&7  ○ '
     items:
       previous-page:
-        name: '&6← &eEdellinen... #%page%'
+        name: '&x&a&7&8&b&f&a← Edellinen'
         lore:
         - ''
       next-page:
-        name: '&e Seuraava... #%page% &6→'
+        name: '&x&a&7&8&b&f&aSeuraava →'
         lore:
         - ''
       no-worlds:
         name: '&cEi maailmoja'
         lore:
-        - '&7Kukaan ei ole luonut maailmoja'
+        - '&fKukaan ei ole luonut maailmoja'
       recommended:
-        name: '&eSuositellut maailmat'
+        name: '&x&a&7&8&b&f&aSuositellut maailmat'
         lore:
-        - '&7Paina tutustuaksesi'
+        - '&7Tutustu painamalla'
       category:
         name: '&eValitse kategoria'
         choices:
@@ -15385,12 +15377,12 @@ menus:
         owner: maailman luoja
         title: '&fEnter in chat'
         subtitle: '&6%search%&f to search'
-        usage: '%prefix%Syötä &6%search%&f chattiin etsiäksesi maailmaa'
-        not-found: '%prefix%Maailmaa ei löytynyt'
+        usage: 'Syötä &6%search%&f chattiin etsiäksesi maailmaa'
+        not-found: 'Maailmaa ei löytynyt'
       own-worlds:
         name: '&aOmat maailmat'
         lore:
-        - '&ePaina tarkastellaksesi omia maailmoja'
+        - ''
       world:
         name: '&f%planetName%'
         lore:
@@ -15398,14 +15390,14 @@ menus:
         - ''
         - '&7 %planetDescription%'
         - ''
-        - '&a &7 Pelaajia: &a%planetOnline%'
-        - '&e &7 Tykkäykset: &f%planetReputation%'
-        - '&3 &7 Kategoria: &f%planetCategory%'
+        - '&fPelaajia: &x&a&7&8&b&f&a%planetOnline%'
+        - '&fTykkäykset: %planetReputation%' # Cannot change the color of planetReputation this way (colorcoded with negative, neutral, positive)
+        - '&fKategoria: &x&a&7&8&b&f&a%planetCategory%'
+        - '&fID: %planetCustomID%'
         - ''
         - '&2 ⏵ &aLiity maailmaan'
-        - '&8 &8 &8 ID: %planetCustomID%'
       back-to-categories:
-        name: ' &6← &eEdellinen...'
+        name: '&x&a&7&8&b&f&a← &eEdellinen'
         lore:
         - ''
   
@@ -15528,7 +15520,7 @@ menus:
           - '%1%'
           - '%2%'
           - ' '
-          - '&e Paina muuttaaksesi'
+          - '&eMuuta  painamalla'
         time:
           name: '&eKoodimaailman päivänaika'
           choices:
@@ -15544,13 +15536,13 @@ menus:
           - '%3%'
           - '%4%'
           - ' '
-          - '&e Paina muuttaaksesi'
+          - '&eMuuta  painamalla'
         clear-variables:
           name: '&cNollaa muuttujat'
           lore:
           - '&7 Poistaa kaikki maailman muuttujat!'
           - ' '
-          - '&4 Paina poistaaksesi muuttujat'
+          - '&4 Poista painamalla muuttujat'
         variables-list:
           name: '&6Näytä muuttujat'
           lore:
@@ -15574,7 +15566,7 @@ menus:
           - '%1%'
           - '%2%'
           - ' '
-          - '&ePaina muuttaaksesi'
+          - '&eMuuta painamalla'
         event-material:
           name: '&fAseta tapahtuma väri'
           lore:
@@ -17378,7 +17370,7 @@ menus:
         - '&e  &7Tykkäykset: &a%moduleReputation%'
         - '&6  &7Lataukset: &a%moduleDownloads%'
         - ' '
-        - '&2 ⏵ &nPaina ladataksesi'
+        - '&2 ⏵ &nLataa painamalla'
         - '&8  ID: %moduleID%'
         - ' '
   module-settings:
@@ -17392,7 +17384,7 @@ menus:
         - ''
         - '&7 Lyhyt ja tunnistettava nimi on parhain'
         - ' '
-        - '&e Paina muuttaaksesi nimeä.'
+        - '&eMuuta  painamalla nimeä.'
         - ''
       change-description:
         name: '&6 ✂ Moduulin kuvaus'
@@ -17400,7 +17392,7 @@ menus:
         - ''
         - '&7 Kuvaa moduulin ominaisuuksia '
         - ' '
-        - '&e Paina muuttaaksesi kuvausta.'
+        - '&eMuuta  painamalla kuvausta.'
         - ''
       change-sharing:
         name: '&a ⚓ Moduulin käyttö '
@@ -17414,7 +17406,7 @@ menus:
         - '%1%'
         - '%2%'
         - ' '
-        - '&e Paina  muuttaaksesi'
+        - '&eMuuta  painamalla'
         - ' '
       install:
         name: '&a  Asenna moduuli'
@@ -17549,7 +17541,7 @@ menus:
         - '&7 so players can contact'
         - '&7 you on Discord.'
         - ' '
-        - '&e Paina  muuttaaksesi'
+        - '&eMuuta  painamalla'
         - ''
       change-social-telegram:
         name: ' '
@@ -17561,7 +17553,7 @@ menus:
         - '&7 so players can contact'
         - '&7 you on Telegram.'
         - ' '
-        - '&e Paina  muuttaaksesi'
+        - '&eMuuta  painamalla'
         - ''
       change-social-twitter:
         name: ' '
@@ -17573,7 +17565,7 @@ menus:
         - '&7 so players can contact'
         - '&7 you on X (Twitter).'
         - ' '
-        - '&e Paina  muuttaaksesi'
+        - '&eMuuta  painamalla'
         - ''
       change-social-youtube:
         name: ' '
@@ -17585,7 +17577,7 @@ menus:
         - '&7 so players can find'
         - '&7 your YouTube channel.'
         - ' '
-        - '&e Paina  muuttaaksesi'
+        - '&eMuuta  painamalla'
         - ''
       gender:
         name: ' '
@@ -17660,39 +17652,33 @@ menus:
         - '&8  ID: %moduleID%'
         - ' '
   own-worlds:
-    title: '&2Omat maailmat'
+    title: '&x&a&7&8&b&f&aOmat maailmat'
     items:
       previous-page:
-        name: ' '
+        name: '&x&a&7&8&b&f&a← &eEdellinen'
         lore:
-        - ' &6← &eEdellinen #%page%'
-        - ''
-        - '&7  Paina nähdäksesi edelliset maailmat'
         - ''
       next-page:
-        name: ' '
+        name: '&x&a&7&8&b&f&aSeuraava →'
         lore:
-        - '&e Seuraava... #%page% &6→'
-        - ''
-        - '&7  Paina nähdäksesi seuraavat maailmat'
         - ''
       no-worlds:
         name: '&c&oEi maailmoja'
         lore:
         - '&7Luo ensimmäinen maailmasi'
       limit:
-        name: '&oMaailmojen raja saavutettu!'
+        name: '&oMaailmojen raja saavutettu'
         lore:
-        - '&7Maksimi maailmojen määrä on %limit%.'
+        - '&7Maksimi maailmojen määrä on %limit%'
       create-world:
         name: Luo maailma
         lore:
         - '&7Henkilökohtainen tila kokeilla luovuutesi rajoja'
         - '&7palikoiden ja koodin avulla, yksin tai yhdessä muiden kanssa'
       recommended:
-        name: Suositellut maailmat
+        name: '&x&a&7&8&b&f&aSuositellut maailmat'
         lore:
-        - '&7Paina tutustuaksesi suositeltuihin maailmoihin'
+        - '&7Tutustu painamalla'
       world:
         name: '&f%planetName%'
         lore:
@@ -17738,7 +17724,7 @@ menus:
         lore:
         - '&7Kuvaile maailmasi ihmeitä!'
         - ' '
-        - '&ePaina muuttaaksesi kuvausta'
+        - '&eMuuta painamalla kuvausta'
       entities-control:
         name: '&cOlentojen hallinta'
         lore:
@@ -17772,7 +17758,7 @@ menus:
         - '&7Käytetään liittymiskomennossa:'
         - '&7 &c/join ID'
         - ''
-        - '&ePaina muuttaaksesi ID:tä'
+        - '&eMuuta painamalla ID:tä'
       change-spawn:
         name: '&3Spawn sijainti'
         lore:
@@ -17803,12 +17789,12 @@ menus:
         - ' '
         - '&ePaina mainostaaksesi'
       play-mode:
-        name: '&bPelailutila'
+        name: '&bPelitila'
         lore:
         - '&7Pistää koodin pyörimään ja'
         - '&7laittaa pelaajat pelimuotoon'
         - ''
-        - '&ePaina vaihtaaksesi tilaa'
+        - '&eVaihda tilaa painamalla'
       build-mode:
         name: '&cRakennustila'
         lore:
@@ -17817,7 +17803,7 @@ menus:
         - ' '
         - '&7Muut pääsevät katsomaan kun rakennat!'
         - ' '
-        - '&ePaina vaihtaaksesi tilaa'
+        - '&eVaihda tilaa painamalla'
       dev-mode:
         name: '&eOhjelmointitila'
         lore:
@@ -17826,7 +17812,7 @@ menus:
         - ''
         - '&7Ohjelmointi on englanniksi'
         - ' '
-        - '&ePaina vaihtaaksesi tilaa'
+        - '&eVaihda tilaa painamalla'
       environment:
         name: '&dKoodiympäristö'
         lore:
@@ -17849,7 +17835,7 @@ menus:
         - '%3%'
         - '%4%'
         - ''
-        - '&ePaina vaihtaaksesi aikaa'
+        - '&eVaihda aikaa painamalla'
       autosave:
         choices:
           'true': Tallenna pelitilan muutokset
@@ -17861,7 +17847,7 @@ menus:
         - '%1%'
         - '%2%'
         - ''
-        - '&cPaina muuttaaksesi'
+        - '&cMuuta painamalla'
   world-settings-categories:
     title: Valitse kategoria
     items:
@@ -17937,7 +17923,7 @@ menus:
           '4': Älä näytä rajaa
         name: '&bMaailman raja'
         lore:
-        - '&ePaina  muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - ' '
         - '%1%'
@@ -17953,7 +17939,7 @@ menus:
           '5': Estä PvP ja putoamisvahinko
         name: '&ePelaajavaihinko'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -17967,7 +17953,7 @@ menus:
           '3': Sää muuttuu
         name: '&bSäätila'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -17978,7 +17964,7 @@ menus:
           '2': Piilota viestit
         name: '&aLiittymisviestit'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -17989,9 +17975,9 @@ menus:
           '3': Estä redstonekomponenttien muuttaminen
           '4': Estä ovien ja arkkujen käyttö
           '5': Salli vain napit, vivut ja painelaatat
-        name: '&6Palikka vuorovaikutukset'
+        name: '&6Palikoiden vuorovaikutukset'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18007,7 +17993,7 @@ menus:
           '5': Spawnaa vain hirviöitä
         name: '&2Mobien spawnaaminen'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18021,7 +18007,7 @@ menus:
           '3': Estä kehysten ja telineiden muuttamiset
         name: '&3Mobi vuorovaikutukset'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18032,7 +18018,7 @@ menus:
           '2': Uuudelleensyntyy välittömästi
         name: '&7Pelaajien uudelleensyntyminen'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18042,7 +18028,7 @@ menus:
           '2': Mobit eivät pudota esineitään
         name: '&aMobien pudotukset'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18052,7 +18038,7 @@ menus:
           '2': Vahinko ei paraannu
         name: '&dElämän palautuminen'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18062,7 +18048,7 @@ menus:
           '2': Tavarat pysyvät pelaajalla
         name: '&6Kuolintavarat'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18072,7 +18058,7 @@ menus:
           '2': Palikat eivät muutu itsestään
         name: '&bPalikoiden muuttuminen'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18082,7 +18068,7 @@ menus:
           '2': Piilota /like ilmoitukset
         name: '&aIlmoita maailman tykkäyksistä'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18092,7 +18078,7 @@ menus:
           '2': Piilota kuolinviesit
         name: '&cKuolinviestit'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18102,7 +18088,7 @@ menus:
           '2': Estä palikoiden räjähtäminen
         name: '&cPalikoiden vahingoittuminen'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18112,7 +18098,7 @@ menus:
           '2': Tuli ei leviä
         name: '&eTulen leviäminen'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18122,7 +18108,7 @@ menus:
           '2': Piilota paikannuspalkki
         name: '&7Paikannuspalkki'
         lore:
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
         - ''
         - '%1%'
         - '%2%'
@@ -18147,12 +18133,12 @@ menus:
         - '%4%'
         - '%5%'
         - ''
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
       environment:
         choices:
           normal: Tavallinen maailma
-          nether: Netherympäristö
-          the_end: End-ympäristö
+          nether: nether
+          the_end: End
         name: '&bYmpäristö'
         lore:
         - ''
@@ -18160,7 +18146,7 @@ menus:
         - '%2%'
         - '%3%'
         - ''
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
       generate-structures:
         choices:
           'true': Kyllä
@@ -18173,7 +18159,7 @@ menus:
         - '%1%'
         - '%2%'
         - ''
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
       biome:
         choices:
           all: Useita
@@ -18195,141 +18181,45 @@ menus:
         - '%4%'
         - '%5%'
         - ''
-        - '&ePaina muuttaaksesi'
+        - '&eMuuta painamalla'
       create:
         name: Luo maailma
         lore:
-        - '&fKaikki valmiina? Sit mennää!'
+        - '&fKaikki valmiina? Sit mennään'
         - ''
-        - '&ePaina luodaksesi'
+        - '&eLuo painamalla'
 deaths:
-  title: '&cDied!'
-  subtitle: '&7You %death%...'
-  message: ' &7%player% &f%death%'
-  block-explosion: exploded
-  contact: was impaled to death
-  cramming: was suffocated by a crowd
-  dragon-breath: breathed dragon's breath
-  drowning: drowned
-  dryout: dried out
-  entity-attack: was attacked by %entity%
-  entity-explosion: exploded by %entity%
-  entity-sweep-attack: was slain by %entity%
-  fall: fell to their death
-  falling-block: was crushed by a block
-  fire: burned to death
-  fire-tick: burned to death
-  fly-into-wall: crashed into a wall
-  hot-floor: stepped on magma
-  lava: burned in lava
-  lightning: was struck by lightning
-  magic: was killed by magic
-  melting: melted
-  poison: was poisoned
-  projectile: was shot
-  starvation: died of hunger
-  suffocation: was suffocated in a block
-  suicide: self-destructed
+  title: 'Kuolit'
+  subtitle: ''
+  message: '&x&a&7&8&b&f&a%player% &f%death%'
+  block-explosion: räjähti
+  contact: kuoli
+  cramming: joutui väkijoukon puristuksiin
+  dragon-breath: hengitti lohikäärmeen henkäystä 
+  drowning: hukkui
+  dryout: kuivui kuoliaaksi
+  entity-attack: joutui hyökkäyksen kohteeksi %entity% toimesta 
+  entity-explosion: räjähti %entity% toimesta
+  entity-sweep-attack: kuoli %entity% iskuun
+  fall: putosi kuolemaan
+  falling-block: jäi flyygelin alle
+  fire: paloi elävältä
+  fire-tick: paloi elävältä
+  fly-into-wall: heitti päärynän seinään
+  hot-floor: astui magmaan
+  lava: paloi elävältä
+  lightning: sai iskun salamasta
+  magic: kuoli taikaan
+  melting: suli
+  poison: myrkytettiin
+  projectile: sai osuman nuolesta
+  starvation: kuoli nälkään
+  suffocation: tukehtui palikkaan
+  suicide: painoi itsetuhonappulaa
   thorns: was pricked by armor
-  void: fell into the void
-  wither: withered away
-  custom: died
-entities:
-  player: Player
-  mob: Mob
-  inventory-holder: Inventory Holder
-  living-entity: Living Entity
-  human-entity: Humanoid
-  ageable: Ageable
-  throwable-projectile: Throwable Projectile
-  projectile: Projectile
-  npc: NPC
-  creature: Creature
-  enemy: Enemy
-  monster: Monster
-  abstract-horse: Horse-like
-  fireball: Fireball
-  experience-orb: Experience Orb
-  item-frame: Item Frame
-  glow-item-frame: Glow Item Frame
-  painting: Painting
-  armor-stand: Armor Stand
-  item-display: Item Display
-  block-display: Block Display
-  text-display: Text Display
-  snowball: Snowball
-  iron-golem: Iron Golem
-  minecart: Minecart
-  boat: Boat
-  blaze: Blaze
-  bogged: Bogged
-  breeze: Breeze
-  creeper: Creeper
-  elder-guardian: Elder Guardian
-  ender-dragon: Ender Dragon
-  endermite: Endermite
-  evoker: Evoker
-  ghast: Ghast
-  guardian: Guardian
-  hoglin: Hoglin
-  husk: Husk
-  magma-cube: Magma Cube
-  phantom: Phantom
-  pillager: Pillager
-  ravager: Ravager
-  shulker: Shulker
-  silverfish: Silverfish
-  skeleton: Skeleton
-  slime: Slime
-  stray: Stray
-  vex: Vex
-  vindicator: Vindicator
-  warden: Warden
-  witch: Witch
-  wither: Wither
-  wither-skeleton: Wither Skeleton
-  zoglin: Zoglin
-  zombie: Zombie
-  zombie-villager: Zombie Villager
-  allay: Allay
-  armadillo: Armadillo
-  axolotl: Axolotl
-  bat: Bat
-  camel: Camel
-  cat: Cat
-  chicken: Chicken
-  cod: Cod
-  cow: Cow
-  donkey: Donkey
-  fox: Fox
-  frog: Frog
-  glow-squid: Glow Squid
-  horse: Horse
-  mooshroom: Mooshroom
-  mule: Mule
-  ocelot: Ocelot
-  parrot: Parrot
-  pig: Pig
-  pufferfish: Pufferfish
-  rabbit: Rabbit
-  salmon: Salmon
-  sheep: Sheep
-  skeleton-horse: Skeleton Horse
-  sniffer: Sniffer
-  snow-golem: Snow Golem
-  squid: Squid
-  strider: Strider
-  tadpole: Tadpole
-  tropical-fish: Tropical Fish
-  turtle: Turtle
-  villager: Villager
-  wandering-trader: Wandering Trader
-  bee: Bee
-  goat: Goat
-  llama: Llama
-  panda: Panda
-  polar-bear: Polar Bear
-  wolf: Wolf
+  void: putosi kaukaisuuteen
+  wither: kuihtui pois
+  custom: kuoli
 blocks:
   not: '&c! NOT !'
   # selection
