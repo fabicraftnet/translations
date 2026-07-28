@@ -20,7 +20,7 @@ info_website: Verkkosivu
 info_version: Versio
 info_newestversion: Uusin versio
 page: Sivu
-help: Apua
+help: Ohjeet
 team: Tiimi
 none: none
 unknown_page: '<#ef4444>Tuntematon sivu <#facc15>{page}'
@@ -74,10 +74,10 @@ specialblock_removed: '&6Removed special block of type &e{type}'
 removed_spawners: '&2{number} &aspawners have been removed from {arena}!'
 start_round: '&aPeli alkaa'
 stop_round: '&aPeli pysäytetty'
-kicked_player: '&aPotkittiin pelaaja &2{player} &akartasta &2{arena}'
-kicked_player_toplayer: '&cSinut potkittiin pelistä'
+kicked_player: '<#4ade80><white>{player}</white> potkittiin kartasta <white>{arena}'
+kicked_player_toplayer: '<#ef4444>Sinut potkittiin pelistä'
 list_arenas: 'Kaikki kartat: '
-list_arenas_local: '&eLocal arenas: &6'
+list_arenas_local: 'Paikalliset kartat: &6'
 list_arenas_remote: '&cRemote arenas: &6'
 only_betamember: '&cYou are now allowed to join while bedwars is in the beta!'
 notavailable_color: '<#ef4444>Tuntematon väri <#facc15>{color}'
@@ -103,8 +103,8 @@ countdown_voting_counting: '&6The arena voting ends in &e{number} &6seconds!'
 toofew_materials: '&#ef4444Sinulla ei ole tarpeeksi materiaaleja'
 no_inventory_space: '&#ef4444Ei tilaa tavaraluettelossa'
 tooless_players: '&cInsufficient amount of players in this round!'
-needmore_players_than: '&cYou need more players than &4{amount}&c!'
-win_money: '&6You''ve won &e{number}&6$!' # Unused
+needmore_players_than: '<#ef4444>Tarvitset enemmän kuin <#facc15>{amount}</#facc15> pelaajaa'
+win_money: 'Voitit {number}$' # Unused
 player_notingameanymore: '<#ef4444><#facc15>{player}</#facc15> ei ole enää pelissä'
 player_notfound: '<#ef4444>Pelaajaa <#facc15>{player}</#facc15> ei löydetty'
 player_cheating: '&6{player} &ehas been kicked for cheating!'
@@ -112,10 +112,10 @@ player_loosing: '&6{player} &ehävisi pelin'
 players: Pelaajat
 team_won: '{colorcode}{color}<white> tiimi voitti pelin!'
 team_notaddedyet: '&cThe {teamcolor}{team} &cteam has not been added yet to the arena &4{arena}&c!'
-changeteam_full: '{colorcode}{color}&7 tiimi täynnä'
-changeteam_alreadyinside: '&7Olet jo tiimissä {colorcode}{color}'
-changeteam_changed: '&7Pelaat nyt {colorcode}{color} &7tiimissä'
-changeteam_none: '&7Poistuit tiimistä'
+changeteam_full: '{colorcode}{color}<#ef4444> tiimi on täynnä'
+changeteam_alreadyinside: '<#ef4444>Olet jo tiimissä {colorcode}{color}'
+changeteam_changed: 'Pelaat nyt {colorcode}{color}<white> tiimissä'
+changeteam_none: '<#ef4444>Poistuit tiimistä'
 changed_postitions: '&aThe positions have been successfully changed!'
 changed_lobbylocation: '&aThe lobby position of the arena &2{arena} &ahas been successfully
   changed!'
@@ -129,7 +129,7 @@ insidearena_gamedonelocation:
 - '&cPlace it somewhere else - namely where you are supposed to get teleported to
   when you leave the match'
 stats_info_entry: '{name} <#a78bfa>{value}'
-stat_default_rank: Taso
+stat_default_rank: Sijoitus
 stat_default_win_streak: Nykyinen voittoputki
 stat_default_top_win_streak: Korkein voittoputki
 stat_default_won: Voitot
@@ -153,10 +153,12 @@ destroyed_bed_subtitle_playerless: ''
 destroyed_bed_own_title: ''
 destroyed_bed_own_subtitle: '&#ef4444{player} tuhosi punkkasi' # Titles don't support MiniMessage yet :(
 destroyed_bed_chat: '<#ef4444>{player} tuhosi tiimin {teamcolor}{team}<#ef4444> punkan'
-destroyed_bed_chat_left: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as they left the game.'
-destroyed_bed_chat_leftignoredrejoin: '%Prefix% {teamcolor}{team}&f''s bed has been destroyed as they left and didn''t rejoin in time.'
+destroyed_bed_chat_left: '{teamcolor}{team}<#ef4444> punkka on tuhottu, koska tiimin jäsenet poistuivat pelistä'
+destroyed_bed_chat_leftignoredrejoin: '{teamcolor}{team}<#ef4444> punkka on tuhottu, koska tiimin jäsenet eivät yhdistäneet takaisin'
 number_notone: '<#facc15>{number}<#ef4444> ei ole numero'
-stats_by: Pelaajan {player} tilastot
+stats_by:
+  - '<#4ade80>Pelaajan <white>{player}</white> tilastot'
+  - '<#94a3b8>--------'
 gui_achievements_title: 'Saavutukset'
 gui_selectteam_title: 'Valitse tiimi'
 gui_spectator_teleporter: 'Teleporttaa'
@@ -170,21 +172,21 @@ disabling_gracefully_arena: '&eDisabling running match within &6{arena} &egracef
 create_arena: '&2{arena} &ahas been successfully created!'
 remove_arena: '&2{arena} &ahas been successfully removed!'
 usage: '&6Käyttö: &e{usage}'
-search_update: Searching for an update...
+search_update: 'Etsitään päivitystä...'
 offline_updateservice: The update-service is probably offline!
 inwork_job: This job is already in work!
-newupdate: A new update has been found
+newupdate: Uusi päivitys on saatavilla
 nonewupdate: There is currently no update for this resource!
 arena_hastobestopped:
 - '&cThe arena &4{arena}&c has to be stopped!'
 - '&6You may use the following command: &e{command}'
 arena_joinissue_worlddoesntexists: '&cThe arena &4{arena}&c has an issue: The world doesn''t exist!'
-fixproblemsbeforeenabled: '&cPlease fix these problems before enabling'
-use_trueorfalse: '&cUse <true/false>!'
+fixproblemsbeforeenabled: '<#ef4444>Korjaa nämä ongelmat ennen käyttöönottoa'
+use_trueorfalse: '<#ef4444>Käytä <true/false>'
 reseting_now: '&2{arena} &ais now being regenerated!'
 reseting_start_failed: '&cFailed to start regeneration of the arena &4{arena}'
 reseting_start_failed_alreadyrunning: '&cFailed to start the regeneration process of the arena &4{arena}&c as already an other one is running'
-locateplayer_notinarena: '&4{player} &cis online, but is not inside an arena.'
+locateplayer_notinarena: '<#facc15>{player}<#ef4444> on paikalla, mutta ei pelissä'
 locateplayer_inarena:
 - '&3======= &b{player} &3======='
 - '&2Palvelin: &a{server}'
@@ -201,10 +203,10 @@ spawned_dealer: '&2Dealer &ahas been successfully spawned!'
 spawned_upgradedealer: '&2Upgrade Dealer &ahas been successfully spawned!'
 notlooking_atsign: '&cYou''re not looking at a sign!'
 notlooking_atplayerhead: '&cYou''re not looking at a player head!'
-sign_lobby: '&eOdottaa pelaajia'
-sign_running: '&6Käynnissä'
-sign_stopped: '&cPysäytetty'
-sign_reseting: '&aNollataan'
+sign_lobby: '&#4ade80Odottaa pelaajia'
+sign_running: '&#facc15Käynnissä'
+sign_stopped: '&#ef4444Pysäytetty'
+sign_reseting: '&#facc15Nollataan'
 enabled: Käytössä
 disabled: Poissa käytöstä
 notallowed_beddestroy: '<#facc15>Et voi tuhota omaa punkkaasi'
@@ -218,13 +220,13 @@ lobby_item_selectteam: 'Valitse tiimi'
 lobby_item_votearena: 'Äänestä karttaa'
 lobby_printmapinfo_arenaname: Kartan nimi
 lobby_printmapinfo_buildby: 'Rakentaja(t)'
-spectator_item_teleporter: '&fTeleporttaa pelaajaan'
-spectator_item_changespeed: '&fVaihda nopeutta'
+spectator_item_teleporter: 'Teleporttaa pelaajaan' # Items don't support MiniMessage yet :(
+spectator_item_changespeed: 'Vaihda lentonopeutta' # Items don't support MiniMessage yet :(
 spectator_item_leave: '&#ef4444Poistu pelistä' # Items don't support MiniMessage yet :(
-spectator_item_nextround: '&6Vaihda karttaa'
+spectator_item_nextround: 'Vaihda karttaa' # Items don't support MiniMessage yet :(
 arrow_damage: ''
 trap: '<#facc15>Ansa laukaistu'
-magicmilk_use: '&eTraps will not be able to detect your for {time} seconds!' # Not in use
+magicmilk_use: '&eTraps will not be able to detect your for {time} seconds!' # Unused
 teleporter: 'Teleportataan...'
 teleporter_failed: '<#ef4444>Teleporttaus keskeytetty'
 bridge_notenoughmaterials: '<#ef4444>Tarvitset lisää materiaalia <#facc15>{material}'
@@ -234,17 +236,17 @@ lobby_waiting: 'Odotetaan <#a78bfa>{amount}</#a78bfa> pelaajaa...'
 lobby_enough: '<#4ade80>Pelaajia on tarpeeksi pelin aloitukseen'
 alreadyinside_arena: '<#ef4444>Olet jo pelissä'
 noarenaforparty: '&cThere isn''t enough space available for all your party members'
-requires_worldedit: '&4WorldEdit &cis required for that!'
+requires_worldedit: '<#ef4444>Tuo tarvitsee <#facc15>WorldEditin</#facc15> toimiakseen'
 crashmessage_missingbed: Missing bed locations
 crashmessage_missingteamspawn: Missing team-spawnpoints
 crashmessage_missinglobbylocation: Missing lobby location
 crashmessage_missinggamedonelocation: Missing hub-position
-crashmessage_missinggameworld: Game world hasn't been set
+crashmessage_missinggameworld: Maailmaa ei ole asetettu
 crashmessage_missingcorners: Corners haven't been set
 crashmessage_uppercorneroutofbounds: Upper corner is greater than the worlds's max height
 crashmessage_lowercorneroutofbounds: Lower corner is less than the worlds's min height
 crashmessage_worldtypearenainmainworld: The arena's regeneration type is WORLD, and the arena's world is the server's main world
-crashmessage_notloadedgameworld: Game world isn't loaded
+crashmessage_notloadedgameworld: Maailma ei ole ladattuna
 crashmessage_matchareacolliding: Match area collides with other arenas
 crashmessage_gamedonelocationinterfering: Your hub-position is within the match area
 regeneration_done: '&aThe arena &2{arena} &ahas been successfully regenerated after &2{time} seconds&a!'
@@ -280,8 +282,8 @@ scoreboard_arena: Kartta
 scoreboard_stats: Tilastot
 scoreboard_yourteam: Oma tiimi
 scoreboard_teams: Tiimit
-bed_onlydestroyablewith_tnt: '&cYou can only destroy this bed with tnt!'
-itemspawner_hologram_title: '{spawner} &7{time} &fsekuntia'
+bed_onlydestroyablewith_tnt: '&cYou can only destroy this bed with tnt!' # Unused
+itemspawner_hologram_title: '{spawner} <#94a3b8>{time}</#94a3b8> <white>sekuntia'
 maxplayers: Maksimi pelaajamäärä
 lobby_countdowntitle_goodluck: 'Tsemppiä!'
 minishop_title: '{title} &#94a3b8({time}sekuntia)'
@@ -291,7 +293,7 @@ ranking_unranked: Unranked
 wait_allarenasloaded: '&cWait until every arena has been successfully loaded!'
 please_savearena: '&6Make sure to save your arena with: &e/bw arena saveblocks <arena name>'
 getsetuptool: '&aGave you the &2setup tool'
-onetimepurchase: '&cVoit ostaa tämän vain kerran'
+onetimepurchase: '&#ef4444Voit ostaa tämän vain kerran'
 arenasgui_title: 'Kaikki kartat'
 arena_collidingarena:
 - '&cPlease change the location of your arena.'
@@ -346,7 +348,7 @@ timer_ending: '&#facc15Peli päättyy {seconds} sekunnin kuluttua'
 command_blocked: '&#ef4444Et voi käyttää tätä komentoa pelissä'
 cancel: Peruuta
 apply: Hyväksy
-authors: Rakentaja(t)
+authors: Kehittäjät
 nobody: Ei kukaan
 customname_isenabled: Custom name is enabled
 customname: Custom name
@@ -784,9 +786,9 @@ shop_item_tnt: TNT
 ## Upgrade Shop
 ###########################
 upgradeshop: Tiimipäivitykset
-upgradeshop_buy_upgrade_broadcast: '&e{player} päivitti &6{upgrade} &6tasolle {newlvl}'
-upgradeshop_buy_trap_broadcast: '&e{player} osti &6{upgrade}'
-upgradeshop_toofew_materials: '&cSinulla ei ole tarpeeksi materiaaleja'
+upgradeshop_buy_upgrade_broadcast: '<#4ade80><white>{player}</white> päivitti <white>{upgrade}</white> tasolle <white>{newlvl}'
+upgradeshop_buy_trap_broadcast: '<#4ade80><white>{player}</white> osti <white>{upgrade}'
+upgradeshop_toofew_materials: '&#ef4444Sinulla ei ole tarpeeksi materiaaleja'
 upgradeshop_max_upgrade: '&#ef4444Olet jo ostanut tämän päivityksen'
 upgradeshop_buystate_purchasable: '&#4ade80Osta painamalla'
 upgradeshop_buystate_not_purchasable: '&#ef4444Sinulla ei ole tarpeeksi materiaaleja'
