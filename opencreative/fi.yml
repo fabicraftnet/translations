@@ -4380,8 +4380,8 @@ menus:
       build-mode:
         name: <red>Rakennustila
         lore:
-        - <gray>Pysäyttää maailman ja
-        - <gray>laittaa rakentajat luovaan pelimuotoon.
+        - <gray>Pysäyttää maailman ja antaa rakentajille
+        - <gray>luovan pelimuodon ja WorldEditin.
         - ' '
         - <gray>Muut pääsevät katsomaan kun rakennat!
         - ' '
